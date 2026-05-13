@@ -1,27 +1,26 @@
 import React from 'react'
 
-const NAV_ITEMS = [
-  { id: 'home',         icon: '🏠', label: 'Home',     tip: 'Übersicht' },
-  { id: 'pruefung',     icon: '🎯', label: 'Quiz',     tip: 'Prüfung' },
-  { id: 'fachbegriffe', icon: '🔤', label: 'Begriffe', tip: 'Fachbegriffe' },
-  { id: 'praxis',       icon: '🏨', label: 'Praxis',   tip: 'Praxis Modus' },
-  { id: 'heute',        icon: '📅', label: 'Heute',    tip: 'Heute lernen' },
+const NAV = [
+  { id:'home',         icon:'🏠', label:'Home' },
+  { id:'pruefung',     icon:'🎯', label:'Quiz' },
+  { id:'fachbegriffe', icon:'🔤', label:'Begriffe' },
+  { id:'praxis',       icon:'🏨', label:'Praxis' },
+  { id:'heute',        icon:'📅', label:'Heute' },
 ]
 
 export default function Sidebar({ screen, onNav }) {
-  const activeBase = ['lektion','detail','quiz'].includes(screen) ? null : screen
+  const active = ['lektion','detail','quiz'].includes(screen) ? null : screen
 
   return (
     <nav className="sidebar">
-      {NAV_ITEMS.map(item => (
+      {NAV.map(item => (
         <button
           key={item.id}
-          className={`s-btn${activeBase === item.id ? ' active' : ''}`}
+          className={`s-btn${active === item.id ? ' active' : ''}`}
           onClick={() => onNav(item.id)}
         >
           <span style={{ fontSize:'1.4rem' }}>{item.icon}</span>
           <span className="s-label">{item.label}</span>
-          <span className="s-tip">{item.tip}</span>
         </button>
       ))}
     </nav>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useProgress } from './store/useProgress.js'
 import { THEMES } from './data/themes.js'
 import { QUIZZES } from './data/quizzes.js'
@@ -6,102 +6,94 @@ import { LESSON_CONTENT } from './data/lessons.js'
 import { FACHBEGRIFFE } from './data/fachbegriffe.js'
 import { PRAXIS_DATA } from './data/praxis.js'
 
-// Screens
-import Home        from './screens/Home.jsx'
-import Pruefung    from './screens/Pruefung.jsx'
-import Fachbegriffe from './screens/Fachbegriffe.jsx'
-import Praxis      from './screens/Praxis.jsx'
-import Heute       from './screens/Heute.jsx'
-import Detail      from './screens/Detail.jsx'
-import Lektion     from './screens/Lektion.jsx'
-import Quiz        from './screens/Quiz.jsx'
-
-// Components
-import Topbar    from './components/Topbar.jsx'
-import Sidebar   from './components/Sidebar.jsx'
+import Topbar from './components/Topbar.jsx'
+import Sidebar from './components/Sidebar.jsx'
+import Home from './screens/Home.jsx'
 
 export const AppContext = React.createContext(null)
 
 export default function App() {
-  const { progress, saveProgress, theme, toggleTheme, userName, saveName, checkStreak } = useProgress()
-  const [screen, setScreen]         = useState('home')
+  const { progress, saveProgress, theme, toggleTheme, checkStreak } = useProgress()
+
+  // ── Navigation ──
+  const [screen, setScreen]           = useState('home')
   const [currentTheme, setCurrentTheme] = useState(null)
   const [currentLesson, setCurrentLesson] = useState(null)
-  const [quizState, setQuizState]   = useState(null)
+  const [quizState, setQuizState]     = useState(null)
 
-  // Appliquer le thème sur <html>
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
   }, [theme])
 
-  // Vérifier streak au chargement
   useEffect(() => { checkStreak() }, [])
 
-  // Navigation principale
+  // ── Fonctions navigation ──
   const nav = (s) => setScreen(s)
 
-  const openDetail = (theme) => {
-    setCurrentTheme(theme)
+  const openDetail = (t) => {
+    setCurrentTheme(t)
     setScreen('detail')
   }
 
   const openLesson = (themeId, lessonName) => {
-    const t = THEMES.find(t => t.id === themeId)
+    const t = THEMES.find(th => th.id === themeId)
     setCurrentTheme(t)
     setCurrentLesson(lessonName)
     setScreen('lektion')
   }
 
-  const startQuiz = (themeId, level, fromLesson = false) => {
-    const questions = (QUIZZES[themeId] || [])
-      .filter(q => q.level === level + 1)
-    setQuizState({ themeId, level, questions, fromLesson })
+  const startQuiz = (themeId, level) => {
+    const qs = (QUIZZES[themeId] || []).filter(q => q.level === level + 1)
+    setQuizState({ themeId, level, questions: qs })
+    setCurrentTheme(THEMES.find(t => t.id === themeId))
     setScreen('quiz')
   }
 
-  const ctx = {
-    screen, nav, theme, toggleTheme,
-    progress, saveProgress,
-    userName, saveName,
-    THEMES, QUIZZES, LESSON_CONTENT, FACHBEGRIFFE, PRAXIS_DATA,
-    openDetail, openLesson, startQuiz,
-    currentTheme, currentLesson, quizState,
+  const goBack = () => {
+    if (screen === 'lektion') { setScreen('detail') }
+    else if (screen === 'quiz') { setScreen('detail') }
+    else if (screen === 'detail') { setScreen('home') }
+    else { setScreen('home') }
   }
 
-  const isLektionMode = screen === 'lektion' || screen === 'detail' || screen === 'quiz'
+  const ctx = {
+    // Navigation
+    screen, nav, goBack,
+    openDetail, openLesson, startQuiz,
+    // État
+    currentTheme, currentLesson, quizState,
+    // Données
+    THEMES, QUIZZES, LESSON_CONTENT, FACHBEGRIFFE, PRAXIS_DATA,
+    // Progress
+    progress, saveProgress, theme, toggleTheme,
+  }
+
+  const inLektionMode = ['lektion','detail','quiz'].includes(screen)
 
   return (
     <AppContext.Provider value={ctx}>
       <div className="app" data-theme={theme}>
         <Topbar
-          isLektionMode={isLektionMode}
           screen={screen}
           currentTheme={currentTheme}
           currentLesson={currentLesson}
-          onBack={() => {
-            if (screen === 'lektion') openDetail(currentTheme)
-            else if (screen === 'quiz') {
-              // Retour au level select
-              setCurrentLesson(null)
-              setScreen('detail')
-            }
-            else nav('home')
-          }}
+          inLektionMode={inLektionMode}
+          onBack={goBack}
           onToggleTheme={toggleTheme}
           theme={theme}
-          streak={progress.streak}
+          streak={progress.streak || 0}
         />
         <Sidebar screen={screen} onNav={nav} />
         <main className="main">
           <div className="content">
-            {screen === 'home'         && <Home />}
-            {screen === 'pruefung'     && <Pruefung />}
-            {screen === 'fachbegriffe' && <Fachbegriffe />}
-            {screen === 'praxis'       && <Praxis />}
-            {screen === 'heute'        && <Heute />}
-            {screen === 'detail'       && <Detail />}
-            {screen === 'lektion'      && <Lektion />}
-            {screen === 'quiz'         && <Quiz />}
+            {screen === 'home'     && <Home />}
+            {screen === 'pruefung' && <div style={{padding:20,color:'var(--ink)'}}>Quiz — bald verfügbar</div>}
+            {screen === 'fachbegriffe' && <div style={{padding:20,color:'var(--ink)'}}>Fachbegriffe — bald verfügbar</div>}
+            {screen === 'praxis'   && <div style={{padding:20,color:'var(--ink)'}}>Praxis — bald verfügbar</div>}
+            {screen === 'heute'    && <div style={{padding:20,color:'var(--ink)'}}>Heute — bald verfügbar</div>}
+            {screen === 'detail'   && <div style={{padding:20,color:'var(--ink)'}}>Detail — bald verfügbar</div>}
+            {screen === 'lektion'  && <div style={{padding:20,color:'var(--ink)'}}>Lektion — bald verfügbar</div>}
+            {screen === 'quiz'     && <div style={{padding:20,color:'var(--ink)'}}>Quiz — bald verfügbar</div>}
           </div>
         </main>
       </div>

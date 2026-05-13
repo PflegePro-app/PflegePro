@@ -1,52 +1,47 @@
 import React from 'react'
 
-export default function Topbar({ isLektionMode, screen, currentTheme, currentLesson, onBack, onToggleTheme, theme, streak }) {
-  const isLesson = screen === 'lektion'
-  const isQuiz   = screen === 'quiz'
-  const isDetail = screen === 'detail'
+export default function Topbar({ screen, currentTheme, currentLesson, inLektionMode, onBack, onToggleTheme, theme, streak }) {
 
-  const showBack = isLesson || isQuiz || isDetail
-
-  const backLabel = isLesson ? currentLesson
-    : isQuiz    ? (currentTheme?.name || 'Quiz')
-    : isDetail  ? (currentTheme?.name || '')
+  const backLabel = screen === 'lektion' ? currentLesson
+    : screen === 'quiz' ? 'Quiz'
+    : screen === 'detail' ? currentTheme?.name || ''
     : ''
 
   return (
-    <header className="topbar" id="topbar">
-      {showBack ? (
-        /* ── Mode leçon/quiz — topbar transformée ── */
+    <header className="topbar">
+      {inLektionMode ? (
+        // ── Mode leçon/detail/quiz ──
         <div style={{ display:'flex', alignItems:'center', width:'100%', gap:12 }}>
           <button
             onClick={onBack}
-            className="topbar-back-btn"
             style={{
               display:'flex', alignItems:'center', gap:6,
-              background:'linear-gradient(135deg,var(--teal-dark),var(--teal))',
+              background:'linear-gradient(135deg,#0d7377,#2dd4bf)',
               border:'none', color:'#fff', borderRadius:50,
-              padding:'7px 16px 7px 12px', fontSize:'.8rem', fontWeight:700,
-              fontFamily:'DM Sans,sans-serif', cursor:'pointer',
-              whiteSpace:'nowrap', transition:'all .2s', flexShrink:0,
-              boxShadow:'0 2px 10px rgba(0,0,0,0.2)'
+              padding:'7px 16px 7px 12px',
+              fontSize:'.8rem', fontWeight:700,
+              fontFamily:'DM Sans,sans-serif',
+              cursor:'pointer', whiteSpace:'nowrap',
+              flexShrink:0, boxShadow:'0 2px 10px rgba(0,0,0,0.2)',
+              transition:'all .2s'
             }}
           >
             ← Zurück
           </button>
           <div style={{
-            fontFamily:'DM Sans,sans-serif', fontSize:'.85rem', fontWeight:700,
-            color:'var(--ink)', whiteSpace:'nowrap', overflow:'hidden',
+            fontFamily:'DM Sans,sans-serif', fontSize:'.85rem',
+            fontWeight:700, color:'var(--ink)',
+            whiteSpace:'nowrap', overflow:'hidden',
             textOverflow:'ellipsis', flex:1, textAlign:'center'
           }}>
             {backLabel}
           </div>
-          <div style={{ flexShrink:0, minWidth:60, display:'flex', justifyContent:'flex-end' }}>
-            <div className="streak-badge" style={{ fontSize:'.72rem' }}>
-              🔥 {streak}
-            </div>
+          <div className="streak-badge" style={{ fontSize:'.72rem', flexShrink:0 }}>
+            🔥 {streak}
           </div>
         </div>
       ) : (
-        /* ── Mode normal ── */
+        // ── Mode normal ──
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', width:'100%' }}>
           <div className="t-title">
             <div className="t-logo">🏥</div>
@@ -56,7 +51,7 @@ export default function Topbar({ isLektionMode, screen, currentTheme, currentLes
             <span className="theme-mode-label">
               {theme === 'dark' ? '🌙 Dunkel' : '☀️ Hell'}
             </span>
-            <button className="theme-toggle" onClick={onToggleTheme} aria-label="Theme wechseln">
+            <button className="theme-toggle" onClick={onToggleTheme}>
               <div className="theme-toggle-knob">
                 {theme === 'dark' ? '🌙' : '☀️'}
               </div>

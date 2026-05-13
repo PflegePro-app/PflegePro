@@ -1,40 +1,74 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { AppContext } from '../App.jsx'
 
-export default function Home() {
-  const { progress, userName, THEMES, openDetail } = useContext(AppContext)
+// Renard animé
+function Mascot({ name }) {
+  const [frame, setFrame] = useState(0)
+  const frames = ['🦊', '🦊', '🦊']
 
-  const mastered = progress.mastered?.length || 0
-  const avgScore = progress.scores?.length
-    ? Math.round(progress.scores.reduce((a,b) => a+b, 0) / progress.scores.length)
-    : 0
+  useEffect(() => {
+    const t = setInterval(() => setFrame(f => (f + 1) % frames.length), 800)
+    return () => clearInterval(t)
+  }, [])
 
   const hour = new Date().getHours()
   const greeting = hour < 12 ? 'Guten Morgen' : hour < 18 ? 'Guten Tag' : 'Guten Abend'
 
   return (
-    <div className="screen active" id="screen-home">
-      {/* Salutation */}
-      <div style={{ marginBottom:24 }}>
-        <div style={{ fontFamily:'Fraunces,serif', fontSize:'clamp(1.3rem,3vw,1.8rem)', color:'var(--ink)', lineHeight:1.2 }}>
-          {greeting}{userName ? `, ${userName}` : ''}! 👋
+    <div style={{
+      background: 'linear-gradient(135deg,#0d7377,#2dd4bf)',
+      borderRadius: 20, padding:'20px 22px',
+      marginBottom: 20, position:'relative', overflow:'hidden'
+    }}>
+      {/* Cercles déco */}
+      <div style={{ position:'absolute', right:-20, top:-20, width:100, height:100, borderRadius:'50%', background:'rgba(255,255,255,0.06)' }}/>
+      <div style={{ position:'absolute', right:20, bottom:-30, width:140, height:140, borderRadius:'50%', background:'rgba(255,255,255,0.04)' }}/>
+
+      <div style={{ display:'flex', alignItems:'center', gap:16, position:'relative' }}>
+        <div style={{ fontSize:'3rem', filter:'drop-shadow(0 4px 8px rgba(0,0,0,0.2))' }}>
+          {frames[frame]}
         </div>
-        <div style={{ fontSize:'.85rem', color:'var(--ink2)', marginTop:6 }}>
-          Bereit für deine Pflegeausbildung?
+        <div>
+          <div style={{ fontFamily:'Fraunces,serif', fontSize:'1.15rem', color:'white', fontWeight:700 }}>
+            {greeting}{name ? `, ${name}` : ''}!
+          </div>
+          <div style={{ fontSize:'.8rem', color:'rgba(255,255,255,0.75)', marginTop:4 }}>
+            Bereit für deine Pflegeausbildung?
+          </div>
         </div>
       </div>
+    </div>
+  )
+}
+
+export default function Home() {
+  const { progress, THEMES, QUIZZES, openDetail } = useContext(AppContext)
+
+  const avgScore = progress.scores?.length
+    ? Math.round(progress.scores.reduce((a,b) => a+b, 0) / progress.scores.length)
+    : 0
+
+  // Stats
+  const stats = [
+    { label:'Quiz gemacht', value: progress.quizDone || 0, col:'teal' },
+    { label:'Ø Score',      value: avgScore + '%',          col:'amber' },
+    { label:'Streak',       value: (progress.streak||0) + ' 🔥', col:'rose' },
+    { label:'Gemeistert',   value: (progress.mastered?.length||0) + ' 🏆', col:'green' },
+  ]
+
+  return (
+    <div>
+      <Mascot />
 
       {/* Stats */}
-      <div className="stats-row" style={{ display:'grid', gap:12, marginBottom:28 }}>
-        {[
-          { label:'Quiz gemacht', value:progress.quizDone || 0, color:'teal' },
-          { label:'Ø Score', value:avgScore+'%', color:'amber' },
-          { label:'Streak', value:(progress.streak||0)+' 🔥', color:'rose' },
-          { label:'Gemeistert', value:mastered+' 🏆', color:'green' },
-        ].map(s => (
-          <div key={s.label} className={`stat-card stat-card-${s.color === 'teal' ? 'quiz' : s.color === 'amber' ? 'score' : s.color === 'rose' ? 'streak' : 'master'}`}
-            style={{ background:`var(--${s.color}-dim)`, border:`1px solid rgba(var(--${s.color}-rgb),.2)`, borderRadius:14, padding:'14px 16px' }}>
-            <div style={{ fontSize:'1.3rem', fontWeight:800, color:`var(--${s.color})` }}>{s.value}</div>
+      <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10, marginBottom:24 }}>
+        {stats.map(s => (
+          <div key={s.label} style={{
+            background:`var(--${s.col}-dim)`,
+            border:`1px solid var(--${s.col}-dim)`,
+            borderRadius:14, padding:'14px 16px'
+          }}>
+            <div style={{ fontSize:'1.3rem', fontWeight:800, color:`var(--${s.col})` }}>{s.value}</div>
             <div style={{ fontSize:'.72rem', color:'var(--ink2)', marginTop:2 }}>{s.label}</div>
           </div>
         ))}
@@ -44,17 +78,61 @@ export default function Home() {
       <div style={{ fontFamily:'Fraunces,serif', fontSize:'1.1rem', color:'var(--ink)', marginBottom:14 }}>
         📚 Lernthemen
       </div>
-      <div className="theme-grid">
-        {THEMES.map(t => (
-          <div key={t.id} className="theme-card" onClick={() => openDetail(t)}
-            style={{ cursor:'pointer' }}>
-            <div className="theme-icon" style={{ background:`var(--${t.col}-dim)`, fontSize:'1.6rem', borderRadius:12, width:48, height:48, display:'flex', alignItems:'center', justifyContent:'center', marginBottom:10 }}>
-              {t.icon}
+      <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12 }}>
+        {THEMES.map(t => {
+          const levels = progress.levels?.[t.id] || {}
+          const passed = Object.values(levels).filter(s => s >= 0.7).length
+          const total = Math.min(3, Math.ceil((QUIZZES[t.id]?.length || 0) / 7))
+          const hasQuiz = !!QUIZZES[t.id]
+
+          return (
+            <div key={t.id}
+              onClick={() => openDetail(t)}
+              style={{
+                background:'var(--card)', border:'1px solid var(--border)',
+                borderRadius:16, padding:'16px 14px',
+                cursor:'pointer', transition:'all .2s'
+              }}
+            >
+              {/* Icône */}
+              <div style={{
+                width:44, height:44, borderRadius:12,
+                background:`var(--${t.col}-dim)`,
+                display:'flex', alignItems:'center',
+                justifyContent:'center', fontSize:'1.4rem',
+                marginBottom:10
+              }}>
+                {t.icon}
+              </div>
+              {/* Nom */}
+              <div style={{ fontWeight:700, fontSize:'.82rem', color:'var(--ink)', marginBottom:4, lineHeight:1.3 }}>
+                {t.name}
+              </div>
+              <div style={{ fontSize:'.72rem', color:'var(--ink2)', marginBottom:8 }}>
+                {t.lessons.length} Lerneinheiten
+              </div>
+              {/* Progression quiz */}
+              {hasQuiz && total > 0 && (
+                <div style={{ display:'flex', alignItems:'center', gap:6 }}>
+                  {Array.from({length: total}, (_,i) => (
+                    <div key={i} style={{
+                      width:18, height:18, borderRadius:'50%',
+                      background: (levels[i] >= 0.7) ? 'var(--green)' : 'var(--bg3)',
+                      display:'flex', alignItems:'center', justifyContent:'center',
+                      fontSize:'.6rem', color: (levels[i] >= 0.7) ? 'white' : 'var(--ink3)',
+                      fontWeight:700
+                    }}>
+                      {i+1}
+                    </div>
+                  ))}
+                  <span style={{ fontSize:'.68rem', color:'var(--ink3)', marginLeft:2 }}>
+                    {passed}/{total} Niveau
+                  </span>
+                </div>
+              )}
             </div>
-            <div style={{ fontWeight:700, fontSize:'.88rem', color:'var(--ink)', marginBottom:4 }}>{t.name}</div>
-            <div style={{ fontSize:'.72rem', color:'var(--ink2)' }}>{t.lessons.length} Lerneinheiten</div>
-          </div>
-        ))}
+          )
+        })}
       </div>
     </div>
   )
