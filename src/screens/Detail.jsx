@@ -58,7 +58,7 @@ export default function Detail() {
       }}>
         <div style={{
           width: 50, height: 50, borderRadius: 14,
-          background: `var(--${t.color}-dim)`,
+          background: `var(--${t.col}-dim)`,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           fontSize: '1.6rem', flexShrink: 0,
         }}>
@@ -86,59 +86,66 @@ export default function Detail() {
       </div>
 
       {/* Lerneinheiten */}
-      <div style={{ fontSize: '.7rem', fontWeight: 700, letterSpacing: '.7px', textTransform: 'uppercase', color: 'var(--ink3)', marginBottom: 12 }}>
+      <div style={{
+        fontSize: '.7rem', fontWeight: 700, letterSpacing: '.7px',
+        textTransform: 'uppercase', color: 'var(--ink3)', marginBottom: 12
+      }}>
         📖 Lerneinheiten
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 28 }}>
-        {t.lessons.map((lesson, i) => {
-          const isReady = lesson.ready !== false
-          return (
-            <div
-              key={i}
-              onClick={() => isReady && openLesson(t.id, lesson.name)}
-              style={{
-                background: 'var(--card)',
-                border: '1px solid var(--border)',
-                borderRadius: 12,
-                padding: '14px 18px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 12,
-                cursor: isReady ? 'pointer' : 'default',
-                opacity: isReady ? 1 : 0.6,
-                transition: 'all .2s',
-              }}
-              onMouseEnter={e => { if (isReady) e.currentTarget.style.borderColor = 'rgba(45,212,191,.25)' }}
-              onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)' }}
-            >
-              <div style={{
-                width: 28, height: 28, borderRadius: 7,
-                background: 'var(--bg3)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: '.7rem', fontWeight: 700, color: 'var(--ink2)', flexShrink: 0,
-              }}>
-                {i + 1}
-              </div>
-              <div style={{ flex: 1, fontWeight: 500, fontSize: '.85rem', color: 'var(--ink)' }}>
-                {lesson.name}
-              </div>
-              <span style={{
-                fontSize: '.67rem', fontWeight: 700, padding: '2px 8px', borderRadius: 6,
-                background: isReady ? 'var(--teal-dim)' : 'var(--bg3)',
-                color: isReady ? 'var(--teal)' : 'var(--ink3)',
-              }}>
-                {isReady ? 'Bereit' : 'Bald'}
-              </span>
+        {t.lessons.map((lessonName, i) => (
+          <div
+            key={i}
+            onClick={() => openLesson(t.id, lessonName)}
+            style={{
+              background: 'var(--card)',
+              border: '1px solid var(--border)',
+              borderRadius: 12,
+              padding: '14px 18px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 12,
+              cursor: 'pointer',
+              transition: 'all .2s',
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.borderColor = 'rgba(45,212,191,.25)'
+              e.currentTarget.style.background = 'var(--teal-dim)'
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.borderColor = 'var(--border)'
+              e.currentTarget.style.background = 'var(--card)'
+            }}
+          >
+            <div style={{
+              width: 28, height: 28, borderRadius: 7,
+              background: 'var(--bg3)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: '.7rem', fontWeight: 700, color: 'var(--ink2)', flexShrink: 0,
+            }}>
+              {i + 1}
             </div>
-          )
-        })}
+            <div style={{ flex: 1, fontWeight: 500, fontSize: '.85rem', color: 'var(--ink)' }}>
+              {lessonName}
+            </div>
+            <span style={{
+              fontSize: '.67rem', fontWeight: 700, padding: '2px 8px', borderRadius: 6,
+              background: 'var(--teal-dim)', color: 'var(--teal)',
+            }}>
+              Bereit
+            </span>
+          </div>
+        ))}
       </div>
 
       {/* Quiz Niveaux */}
       {hasQuiz && (
         <>
-          <div style={{ fontSize: '.7rem', fontWeight: 700, letterSpacing: '.7px', textTransform: 'uppercase', color: 'var(--ink3)', marginBottom: 12 }}>
+          <div style={{
+            fontSize: '.7rem', fontWeight: 700, letterSpacing: '.7px',
+            textTransform: 'uppercase', color: 'var(--ink3)', marginBottom: 12
+          }}>
             🎯 Quiz — Niveaux
           </div>
 
@@ -154,10 +161,10 @@ export default function Detail() {
               return (
                 <div
                   key={lvl}
-                  onClick={() => unlocked && nav('lektion', { themeId: t.id, level: lvl })}
+                  onClick={() => unlocked && nav('lektion')}
                   style={{
                     background: 'var(--card)',
-                    border: `1px solid ${unlocked ? (passed ? 'rgba(74,222,128,.3)' : 'var(--border)') : 'var(--border)'}`,
+                    border: `1px solid ${passed ? 'rgba(74,222,128,.3)' : 'var(--border)'}`,
                     borderRadius: 14,
                     padding: '16px 18px',
                     display: 'flex',
@@ -168,9 +175,8 @@ export default function Detail() {
                     transition: 'all .2s',
                   }}
                   onMouseEnter={e => { if (unlocked) e.currentTarget.style.borderColor = 'rgba(45,212,191,.3)' }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = unlocked ? (passed ? 'rgba(74,222,128,.3)' : 'var(--border)') : 'var(--border)' }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = passed ? 'rgba(74,222,128,.3)' : 'var(--border)' }}
                 >
-                  {/* Badge niveau */}
                   <div style={{
                     width: 38, height: 38, borderRadius: 11,
                     background: unlocked ? (passed ? 'var(--green-dim)' : 'var(--teal-dim)') : 'var(--bg3)',
@@ -180,17 +186,19 @@ export default function Detail() {
                     {unlocked ? getLevelBadge(lvl) : '🔒'}
                   </div>
 
-                  {/* Info */}
                   <div style={{ flex: 1 }}>
                     <div style={{ fontWeight: 600, fontSize: '.88rem', color: 'var(--ink)', marginBottom: 2 }}>
                       {levelNames[lvl]}
                     </div>
                     <div style={{ fontSize: '.72rem', color: 'var(--ink2)' }}>
-                      {unlocked ? (hasPrev ? '▶ Fortgesetzt' : score !== null ? (passed ? '✓ Bestanden' : 'Wiederholen') : 'Starten') : 'Niveau ' + lvl + ' bestehen um freizuschalten'}
+                      {!unlocked
+                        ? 'Niveau ' + lvl + ' bestehen um freizuschalten'
+                        : hasPrev ? '▶ Fortgesetzt'
+                        : score !== null ? (passed ? '✓ Bestanden' : 'Wiederholen')
+                        : 'Starten'}
                     </div>
                   </div>
 
-                  {/* Score ou flèche */}
                   {score !== null ? (
                     <div style={{
                       width: 48, height: 48, borderRadius: '50%',
@@ -202,9 +210,7 @@ export default function Detail() {
                       {score}%
                     </div>
                   ) : (
-                    unlocked && (
-                      <span style={{ color: 'var(--ink3)', fontSize: '1.2rem' }}>›</span>
-                    )
+                    unlocked && <span style={{ color: 'var(--ink3)', fontSize: '1.2rem' }}>›</span>
                   )}
                 </div>
               )
