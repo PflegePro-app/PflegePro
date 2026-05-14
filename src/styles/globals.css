@@ -527,3 +527,4 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--ink);
     display: flex !important;
   }
 }
+.t-logo{margin-right:4px}

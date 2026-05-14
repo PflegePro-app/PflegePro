@@ -43,10 +43,10 @@ export default function Topbar({ screen, currentTheme, currentLesson, inLektionM
       ) : (
         // ── Mode normal ──
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', width:'100%' }}>
-          <div className="t-title">
-            <div className="t-logo">🏥</div>
-            Pflege<span>Pro</span>
-          </div>
+          <div className="t-title" style={{gap:0}}>🏥 <span style={{color:"var(--ink)"}}>Pflege</span><span style={{color:"var(--teal)"}}>Pro</span></div>
+
+
+
           <div className="t-right">
             <span className="theme-mode-label">
               {theme === 'dark' ? '🌙 Dunkel' : '☀️ Hell'}
