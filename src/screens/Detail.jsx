@@ -21,7 +21,7 @@ export default function Detail() {
   }
 
   function getTotalLevels(themeId) {
-    return Math.min(3, Math.ceil((QUIZZES[themeId] || []).length / 7))
+    return Math.min(3, Math.ceil((QUIZZES[themeId] || []).length / 3))
   }
 
   function isLevelUnlocked(themeId, level) {
@@ -46,7 +46,7 @@ export default function Detail() {
   return (
     <div style={{ maxWidth: "100%" }}>
 
-      {/* Header du thème */}
+      {/* Header du thème — sans bouton Zurück */}
       <div style={{
         background: 'var(--card)',
         border: '1px solid var(--border)',
@@ -73,17 +73,6 @@ export default function Detail() {
             {t.lessons.length} Lerneinheiten
           </div>
         </div>
-        <button
-          onClick={() => nav('home')}
-          style={{
-            background: 'var(--bg3)', border: '1px solid var(--border)',
-            color: 'var(--ink2)', padding: '7px 14px', borderRadius: 9,
-            cursor: 'pointer', fontFamily: 'DM Sans, sans-serif',
-            fontSize: '.78rem', fontWeight: 600, whiteSpace: 'nowrap',
-          }}
-        >
-          ← Zurück
-        </button>
       </div>
 
       {/* Lerneinheiten */}
