@@ -39,7 +39,7 @@ export default function Pruefung() {
   const quizCount = progress.quizCount || 0
 
   return (
-    <div style={{ maxWidth: 700, margin: '0 auto' }}>
+    <div style={{ maxWidth: "100%" }}>
 
       {/* Header */}
       <div style={{

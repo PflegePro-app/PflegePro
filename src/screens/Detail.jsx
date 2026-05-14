@@ -44,7 +44,7 @@ export default function Detail() {
   const totalLevels = hasQuiz ? getTotalLevels(t.id) : 0
 
   return (
-    <div style={{ maxWidth: 700, margin: '0 auto' }}>
+    <div style={{ maxWidth: "100%" }}>
 
       {/* Header du thème */}
       <div style={{

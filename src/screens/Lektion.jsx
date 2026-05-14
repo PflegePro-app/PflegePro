@@ -31,7 +31,7 @@ export default function Lektion() {
   const html = lessonFn ? lessonFn() : null
 
   return (
-    <div ref={scrollRef} style={{ maxWidth: 760, margin: '0 auto' }}>
+    <div ref={scrollRef} style={{ maxWidth: "100%" }}>
 
       {/* Bouton retour */}
       <button

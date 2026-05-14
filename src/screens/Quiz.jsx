@@ -105,7 +105,7 @@ export default function Quiz() {
     const correctCount = results.filter(r => r.correct).length
 
     return (
-      <div style={{ maxWidth: 600, margin: '0 auto', padding: '10px 0' }}>
+      <div style={{ maxWidth: "100%" }}>
         <div style={{
           background: 'var(--card)', border: '1px solid var(--border)',
           borderRadius: 20, padding: '36px 28px', textAlign: 'center', marginBottom: 20,
@@ -187,7 +187,7 @@ export default function Quiz() {
 
   // — Écran question —
   return (
-    <div style={{ maxWidth: 640, margin: '0 auto', padding: '10px 0' }}>
+    <div style={{ maxWidth: "100%" }}>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
         <button onClick={() => nav('detail')} style={{

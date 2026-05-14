@@ -69,7 +69,7 @@ export default function Home() {
   }
 
   return (
-    <div style={{ maxWidth: 720, margin: '0 auto' }}>
+    <div style={{ maxWidth: "100%" }}>
 
       <Mascot name={progress.userName} />
 

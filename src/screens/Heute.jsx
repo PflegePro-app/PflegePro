@@ -45,7 +45,7 @@ export default function Heute() {
   const levelNames = ['Basis', 'Fortgeschritten', 'Experte']
 
   return (
-    <div style={{ maxWidth: 700, margin: '0 auto' }}>
+    <div style={{ maxWidth: "100%" }}>
 
       {/* Header */}
       <div style={{
