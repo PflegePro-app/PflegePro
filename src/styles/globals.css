@@ -115,15 +115,13 @@
 [data-theme="light"] .material-item,
 [data-theme="light"] .fach-card,
 [data-theme="light"] .rev-item {
-  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 6px #0000000d;
 }
 
 [data-theme="light"] .stat-card-quiz{background:linear-gradient(135deg,rgba(45,212,191,.12),rgba(45,212,191,.04));border-color:rgba(45,212,191,.35)}
 [data-theme="light"] .stat-card-score{background:linear-gradient(135deg,rgba(217,119,6,.1),rgba(217,119,6,.03));border-color:rgba(217,119,6,.3)}
 [data-theme="light"] .stat-card-streak{background:linear-gradient(135deg,rgba(220,38,38,.1),rgba(220,38,38,.03));border-color:rgba(220,38,38,.3)}
 [data-theme="light"] .stat-card-master{background:linear-gradient(135deg,rgba(22,163,74,.1),rgba(22,163,74,.03));border-color:rgba(22,163,74,.3)}
-  background: rgba(0,0,0,0.05);
-}
 
 [data-theme="light"] .s-btn.active {
   background: var(--teal-dim);
