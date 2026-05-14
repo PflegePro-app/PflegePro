@@ -34,26 +34,6 @@ export default function Lektion() {
     <div ref={scrollRef} style={{ maxWidth: "100%" }}>
 
       {/* Bouton retour */}
-      <button
-        onClick={() => nav('detail')}
-        style={{
-          background: 'var(--bg3)',
-          border: '1px solid var(--border)',
-          color: 'var(--ink2)',
-          padding: '7px 14px',
-          borderRadius: 9,
-          cursor: 'pointer',
-          fontFamily: 'DM Sans, sans-serif',
-          fontSize: '.78rem',
-          fontWeight: 600,
-          marginBottom: 20,
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: 6,
-        }}
-      >
-        ← {t.name}
-      </button>
 
       {/* Contenu */}
       {html ? (
