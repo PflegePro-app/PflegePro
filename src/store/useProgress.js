@@ -8,9 +8,9 @@ function loadProgress() {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {
       quizDone: 0, scores: [], streak: 0, lastDate: null,
-      mastered: [], levels: {}
+      mastered: [], levels: {}, lessonsRead: [],
     }
-  } catch { return { quizDone:0, scores:[], streak:0, lastDate:null, mastered:[], levels:{} } }
+  } catch { return { quizDone: 0, scores: [], streak: 0, lastDate: null, mastered: [], levels: {}, lessonsRead: [] } }
 }
 
 export function useProgress() {
@@ -19,6 +19,8 @@ export function useProgress() {
   const [userName, setUserName] = useState(() => localStorage.getItem(NAME_KEY) || '')
 
   const saveProgress = useCallback((newP) => {
+    // S'assurer que lessonsRead existe toujours
+    if (!newP.lessonsRead) newP.lessonsRead = []
     setProgress(newP)
     localStorage.setItem(STORAGE_KEY, JSON.stringify(newP))
   }, [])
@@ -26,14 +28,25 @@ export function useProgress() {
   const toggleTheme = useCallback(() => {
     const next = theme === 'dark' ? 'light' : 'dark'
     setThemeState(next)
-    localStorage.setItem(THEME_KEY, next)
     document.documentElement.setAttribute('data-theme', next)
+    localStorage.setItem(THEME_KEY, next)
   }, [theme])
 
   const saveName = useCallback((name) => {
     setUserName(name)
     localStorage.setItem(NAME_KEY, name)
   }, [])
+
+  // Marquer une leçon comme lue
+  const markLessonRead = useCallback((themeId, lessonName) => {
+    const key = `${themeId}::${lessonName}`
+    const current = loadProgress()
+    if (!current.lessonsRead) current.lessonsRead = []
+    if (!current.lessonsRead.includes(key)) {
+      current.lessonsRead = [...current.lessonsRead, key]
+      saveProgress(current)
+    }
+  }, [saveProgress])
 
   const checkStreak = useCallback(() => {
     const today = new Date().toDateString()
@@ -47,5 +60,5 @@ export function useProgress() {
     return newP.streak
   }, [progress, saveProgress])
 
-  return { progress, saveProgress, theme, toggleTheme, userName, saveName, checkStreak }
+  return { progress, saveProgress, theme, toggleTheme, userName, saveName, checkStreak, markLessonRead }
 }

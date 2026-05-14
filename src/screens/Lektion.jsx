@@ -7,6 +7,7 @@ export default function Lektion() {
     currentLesson,
     nav,
     LESSON_CONTENT,
+    markLessonRead,
   } = useContext(AppContext)
 
   const scrollRef = useRef(null)
@@ -14,6 +15,13 @@ export default function Lektion() {
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = 0
   }, [currentLesson])
+
+  // Marquer la leçon comme lue dès qu'on l'ouvre
+  useEffect(() => {
+    if (currentTheme && currentLesson) {
+      markLessonRead(currentTheme.id, currentLesson)
+    }
+  }, [currentTheme?.id, currentLesson])
 
   if (!currentTheme || !currentLesson) return null
 
@@ -23,13 +31,8 @@ export default function Lektion() {
   const html = lessonFn ? lessonFn() : null
 
   return (
-    <div
-      ref={scrollRef}
-      style={{
-        maxWidth: 760,
-        margin: '0 auto',
-      }}
-    >
+    <div ref={scrollRef} style={{ maxWidth: 760, margin: '0 auto' }}>
+
       {/* Bouton retour */}
       <button
         onClick={() => nav('detail')}
@@ -52,27 +55,18 @@ export default function Lektion() {
         ← {t.name}
       </button>
 
-      {/* Contenu de la leçon */}
+      {/* Contenu */}
       {html ? (
-        <div
-          dangerouslySetInnerHTML={{ __html: html }}
-          style={{ width: '100%' }}
-        />
+        <div dangerouslySetInnerHTML={{ __html: html }} style={{ width: '100%' }} />
       ) : (
-        /* Leçon sans contenu encore */
         <div style={{
-          background: 'var(--card)',
-          border: '1px solid var(--border)',
-          borderRadius: 16,
-          padding: '40px 28px',
-          textAlign: 'center',
+          background: 'var(--card)', border: '1px solid var(--border)',
+          borderRadius: 16, padding: '40px 28px', textAlign: 'center',
         }}>
           <div style={{ fontSize: '2.5rem', marginBottom: 16 }}>🚧</div>
           <div style={{
-            fontFamily: 'Fraunces, serif',
-            fontSize: '1.2rem',
-            color: 'var(--ink)',
-            marginBottom: 8,
+            fontFamily: 'Fraunces, serif', fontSize: '1.2rem',
+            color: 'var(--ink)', marginBottom: 8,
           }}>
             {currentLesson}
           </div>
