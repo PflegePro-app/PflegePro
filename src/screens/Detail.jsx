@@ -161,7 +161,7 @@ export default function Detail() {
               return (
                 <div
                   key={lvl}
-                  onClick={() => unlocked && nav('lektion')}
+                  onClick={() => unlocked && startQuiz(t.id, lvl)}
                   style={{
                     background: 'var(--card)',
                     border: `1px solid ${passed ? 'rgba(74,222,128,.3)' : 'var(--border)'}`,

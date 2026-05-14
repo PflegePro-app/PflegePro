@@ -11,6 +11,7 @@ import Sidebar from './components/Sidebar.jsx'
 import Home from './screens/Home.jsx'
 import Detail from './screens/Detail.jsx'
 import Lektion from './screens/Lektion.jsx'
+import Quiz from './screens/Quiz.jsx'
 
 export const AppContext = React.createContext(null)
 
@@ -45,6 +46,11 @@ export default function App() {
   }
 
   const startQuiz = (themeId, level) => {
+    const allQ = QUIZZES[themeId] || []
+    const questions = allQ.filter(q => q.level === level + 1)
+    const t = THEMES.find(th => th.id === themeId)
+    setCurrentTheme(t)
+    setQuizState({ themeId, level, questions })
     setScreen('quiz')
   }
 
@@ -88,11 +94,11 @@ export default function App() {
             {screen === 'home'         && <Home />}
             {screen === 'detail'       && <Detail />}
             {screen === 'lektion'      && <Lektion />}
-            {screen === 'pruefung'     && <div style={{padding:20,color:'var(--ink)'}}>Quiz — bald verfügbar</div>}
+            {screen === 'quiz'         && <Quiz />}
+            {screen === 'pruefung'     && <div style={{padding:20,color:'var(--ink)'}}>Prüfung — bald verfügbar</div>}
             {screen === 'fachbegriffe' && <div style={{padding:20,color:'var(--ink)'}}>Fachbegriffe — bald verfügbar</div>}
             {screen === 'praxis'       && <div style={{padding:20,color:'var(--ink)'}}>Praxis — bald verfügbar</div>}
             {screen === 'heute'        && <div style={{padding:20,color:'var(--ink)'}}>Heute — bald verfügbar</div>}
-            {screen === 'quiz'         && <div style={{padding:20,color:'var(--ink)'}}>Quiz — bald verfügbar</div>}
           </div>
         </main>
       </div>
