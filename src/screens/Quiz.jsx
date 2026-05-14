@@ -1,7 +1,6 @@
 import { useContext, useState, useMemo } from 'react'
 import { AppContext } from '../App'
 
-// Mélange un tableau (Fisher-Yates)
 function shuffle(arr) {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {
@@ -11,7 +10,6 @@ function shuffle(arr) {
   return a
 }
 
-// Prépare les questions avec options mélangées
 function prepareQuestions(questions) {
   return questions.map(q => {
     const correctText = q.opts[q.correct]
@@ -28,13 +26,14 @@ export default function Quiz() {
     nav,
     progress,
     saveProgress,
+    startQuiz,
+    QUIZZES,
   } = useContext(AppContext)
 
   const rawQuestions = quizState?.questions || []
   const level = quizState?.level ?? 0
   const themeId = quizState?.themeId
 
-  // Mémoriser les questions mélangées (ne change pas au re-render)
   const questions = useMemo(() => prepareQuestions(rawQuestions), [quizState])
 
   const [idx, setIdx] = useState(0)
@@ -59,6 +58,11 @@ export default function Quiz() {
   const total = questions.length
   const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte']
 
+  // Vérifie si le niveau suivant existe
+  const allQ = QUIZZES[themeId] || []
+  const totalLevels = Math.min(3, Math.ceil(allQ.length / 3))
+  const hasNextLevel = level + 1 < totalLevels
+
   function handleSelect(i) {
     if (selected !== null) return
     setSelected(i)
@@ -71,13 +75,11 @@ export default function Quiz() {
     setResults(newResults)
 
     if (idx + 1 >= total) {
-      // Calcul du score sur TOUTES les réponses incluant la dernière
       const correctCount = newResults.filter(r => r.correct).length
       const score = correctCount / total
       setFinalScore(score)
       setFinished(true)
 
-      // Sauvegarder
       const newProgress = { ...progress }
       if (!newProgress.levels) newProgress.levels = {}
       if (!newProgress.levels[themeId]) newProgress.levels[themeId] = { levelScores: [] }
@@ -134,18 +136,30 @@ export default function Quiz() {
             </div>
           )}
 
+          {/* Boutons */}
           <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
             <button onClick={() => nav('detail')} style={{
               ...btnStyle, background: 'var(--bg3)', color: 'var(--ink2)',
             }}>
               ← Thema
             </button>
+
             <button onClick={() => {
               setIdx(0); setSelected(null); setShowExp(false)
               setResults([]); setFinished(false); setFinalScore(0)
-            }} style={{ ...btnStyle, background: 'var(--teal)', color: 'white' }}>
+            }} style={{ ...btnStyle, background: 'var(--card)', color: 'var(--ink)' }}>
               🔄 Wiederholen
             </button>
+
+            {/* Niveau suivant si réussi */}
+            {passed && hasNextLevel && (
+              <button
+                onClick={() => startQuiz(themeId, level + 1)}
+                style={{ ...btnStyle, background: 'var(--teal)', color: 'white' }}
+              >
+                {levelNames[level + 1]} →
+              </button>
+            )}
           </div>
         </div>
 
@@ -175,7 +189,6 @@ export default function Quiz() {
   return (
     <div style={{ maxWidth: 640, margin: '0 auto', padding: '10px 0' }}>
 
-      {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
         <button onClick={() => nav('detail')} style={{
           ...btnStyle, padding: '6px 12px',
@@ -196,7 +209,6 @@ export default function Quiz() {
         </div>
       </div>
 
-      {/* Leçon label */}
       {q.lesson && (
         <div style={{
           fontSize: '.68rem', fontWeight: 700, letterSpacing: '.5px',
@@ -206,7 +218,6 @@ export default function Quiz() {
         </div>
       )}
 
-      {/* Question */}
       <div style={{
         background: 'var(--card)', border: '1px solid var(--border)',
         borderRadius: 16, padding: '22px 20px', marginBottom: 16,
@@ -219,7 +230,6 @@ export default function Quiz() {
         </div>
       </div>
 
-      {/* Options */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 16 }}>
         {q.opts.map((opt, i) => {
           let bg = 'var(--card)'
@@ -237,17 +247,13 @@ export default function Quiz() {
           }
 
           return (
-            <div
-              key={i}
-              onClick={() => handleSelect(i)}
-              style={{
-                background: bg, border: `1px solid ${border}`,
-                borderRadius: 12, padding: '14px 16px',
-                cursor: selected === null ? 'pointer' : 'default',
-                display: 'flex', alignItems: 'center', gap: 12,
-                transition: 'all .2s', color,
-              }}
-            >
+            <div key={i} onClick={() => handleSelect(i)} style={{
+              background: bg, border: `1px solid ${border}`,
+              borderRadius: 12, padding: '14px 16px',
+              cursor: selected === null ? 'pointer' : 'default',
+              display: 'flex', alignItems: 'center', gap: 12,
+              transition: 'all .2s', color,
+            }}>
               <div style={{
                 width: 28, height: 28, borderRadius: 7, flexShrink: 0,
                 background: selected === null ? 'var(--bg3)'
@@ -260,15 +266,12 @@ export default function Quiz() {
                   ? (i === q.correct ? '✓' : i === selected ? '✗' : ['A','B','C','D'][i])
                   : ['A','B','C','D'][i]}
               </div>
-              <span style={{ fontSize: '.85rem', fontWeight: 500, lineHeight: 1.4 }}>
-                {opt}
-              </span>
+              <span style={{ fontSize: '.85rem', fontWeight: 500, lineHeight: 1.4 }}>{opt}</span>
             </div>
           )
         })}
       </div>
 
-      {/* Explication */}
       {showExp && q.explanation && (
         <div style={{
           background: selected === q.correct ? 'var(--green-dim)' : 'var(--rose-dim)',
@@ -283,11 +286,9 @@ export default function Quiz() {
         </div>
       )}
 
-      {/* Bouton suivant */}
       {showExp && (
         <button onClick={handleNext} style={{
-          ...btnStyle,
-          width: '100%', background: 'var(--teal)', color: 'white',
+          ...btnStyle, width: '100%', background: 'var(--teal)', color: 'white',
           fontSize: '.9rem', padding: '14px',
         }}>
           {idx + 1 >= total ? '📊 Ergebnis anzeigen' : 'Weiter →'}
