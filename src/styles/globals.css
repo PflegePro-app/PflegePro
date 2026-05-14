@@ -479,7 +479,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);min-
 @media(min-width:600px) and (max-width:899px){
   .stats-row{grid-template-columns:repeat(4,1fr)}
   .theme-grid{grid-template-columns:repeat(2,1fr)}
-  .content{padding:20px}
+  .content{padding:20px;max-width:100%}
 }
 @media(min-width:900px){
   .theme-grid{grid-template-columns:repeat(3,1fr)}
@@ -573,4 +573,17 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);min-
   #heute-progress-section,
   #lesson-list,
   .detail-header{max-width:680px}
+}
+/* === RESPONSIVE === */
+@media (min-width: 768px) {
+  .content { padding: 28px 40px; }
+}
+@media (min-width: 1024px) {
+  .content { padding: 32px 60px; }
+}
+@media (min-width: 1280px) {
+  .content { padding: 36px 80px; }
+}
+@media (min-width: 1600px) {
+  .content { padding: 40px 120px; }
 }
