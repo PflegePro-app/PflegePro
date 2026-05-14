@@ -95,7 +95,7 @@ export default function App() {
             {screen === 'home'         && <Home />}
             {screen === 'detail'       && <Detail />}
             {screen === 'lektion'      && <Lektion />}
-            {screen === 'quiz'         && <Quiz />}
+            {screen === 'quiz' && <Quiz key={JSON.stringify(quizState)} />}
             {screen === 'pruefung'     && <div style={{padding:20,color:'var(--ink)'}}>Prüfung — bald verfügbar</div>}
             {screen === 'fachbegriffe' && <div style={{padding:20,color:'var(--ink)'}}>Fachbegriffe — bald verfügbar</div>}
             {screen === 'praxis'       && <div style={{padding:20,color:'var(--ink)'}}>Praxis — bald verfügbar</div>}
