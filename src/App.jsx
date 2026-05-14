@@ -12,13 +12,13 @@ import Home from './screens/Home.jsx'
 import Detail from './screens/Detail.jsx'
 import Lektion from './screens/Lektion.jsx'
 import Quiz from './screens/Quiz.jsx'
+import Fachbegriffe from './screens/Fachbegriffe.jsx'
 
 export const AppContext = React.createContext(null)
 
 export default function App() {
   const { progress, saveProgress, theme, toggleTheme, checkStreak } = useProgress()
 
-  // — Navigation —
   const [screen, setScreen] = useState('home')
   const [currentTheme, setCurrentTheme] = useState(null)
   const [currentLesson, setCurrentLesson] = useState(null)
@@ -30,7 +30,6 @@ export default function App() {
 
   useEffect(() => { checkStreak() }, [])
 
-  // — Fonctions navigation —
   const nav = (s) => setScreen(s)
 
   const openDetail = (t) => {
@@ -63,14 +62,10 @@ export default function App() {
   }
 
   const ctx = {
-    // Navigation
     screen, nav, goBack,
     openDetail, openLesson, startQuiz,
-    // État
     currentTheme, currentLesson, quizState,
-    // Données
     THEMES, QUIZZES, LESSON_CONTENT, FACHBEGRIFFE, PRAXIS_DATA,
-    // Progress
     progress, saveProgress, theme, toggleTheme,
   }
 
@@ -95,9 +90,9 @@ export default function App() {
             {screen === 'home'         && <Home />}
             {screen === 'detail'       && <Detail />}
             {screen === 'lektion'      && <Lektion />}
-            {screen === 'quiz' && <Quiz key={JSON.stringify(quizState)} />}
+            {screen === 'quiz'         && <Quiz key={JSON.stringify(quizState)} />}
+            {screen === 'fachbegriffe' && <Fachbegriffe />}
             {screen === 'pruefung'     && <div style={{padding:20,color:'var(--ink)'}}>Prüfung — bald verfügbar</div>}
-            {screen === 'fachbegriffe' && <div style={{padding:20,color:'var(--ink)'}}>Fachbegriffe — bald verfügbar</div>}
             {screen === 'praxis'       && <div style={{padding:20,color:'var(--ink)'}}>Praxis — bald verfügbar</div>}
             {screen === 'heute'        && <div style={{padding:20,color:'var(--ink)'}}>Heute — bald verfügbar</div>}
           </div>
