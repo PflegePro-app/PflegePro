@@ -15,6 +15,7 @@ import Quiz from './screens/Quiz.jsx'
 import Fachbegriffe from './screens/Fachbegriffe.jsx'
 import Praxis from './screens/Praxis.jsx'
 import Heute from './screens/Heute.jsx'
+import Pruefung from './screens/Pruefung.jsx'
 
 export const AppContext = React.createContext(null)
 
@@ -97,7 +98,7 @@ export default function App() {
             {screen === 'fachbegriffe' && <Fachbegriffe />}
             {screen === 'praxis'       && <Praxis />}
             {screen === 'heute'        && <Heute />}
-            {screen === 'pruefung'     && <div style={{padding:20,color:'var(--ink)'}}>Prüfung — bald verfügbar</div>}
+            {screen === 'pruefung' && <Pruefung />}
           </div>
         </main>
       </div>
