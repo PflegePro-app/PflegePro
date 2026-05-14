@@ -8,6 +8,7 @@ export default function Detail() {
     nav,
     progress,
     QUIZZES,
+    startQuiz,
   } = useContext(AppContext)
 
   if (!currentTheme) return null
