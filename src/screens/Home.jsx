@@ -107,6 +107,81 @@ function Mascot({ name }) {
   )
 }
 
+// Barre de stats horizontale compacte
+function StatsBar({ quizCount, avgScore, streak, mastered }) {
+  const stats = [
+    { icon:'✅', value: quizCount,      label:'Quiz',       color:'var(--teal)',  bar: Math.min(quizCount*10,100) },
+    { icon:'📊', value: `${avgScore}%`, label:'Score',      color:'var(--amber)', bar: avgScore },
+    { icon:'🔥', value: streak,         label:'Streak',     color:'var(--rose)',  bar: Math.min(streak*14,100) },
+    { icon:'🏆', value: mastered,       label:'Gemeistert', color:'var(--green)', bar: Math.min(mastered*33,100) },
+  ]
+
+  return (
+    <div style={{
+      background: 'var(--card)',
+      border: '1px solid var(--border)',
+      borderRadius: 16,
+      padding: '14px 18px',
+      marginBottom: 20,
+      display: 'flex',
+      alignItems: 'center',
+      gap: 0,
+    }}>
+      {stats.map((s, i) => (
+        <div key={i} style={{
+          flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 4,
+          padding: '0 8px',
+          borderRight: i < stats.length - 1 ? '1px solid var(--border)' : 'none',
+        }}>
+          {/* Valeur + icône */}
+          <div style={{ display:'flex', alignItems:'center', gap:5 }}>
+            <span style={{
+              fontFamily:"'Fraunces',serif",
+              fontSize:'1.3rem',
+              fontWeight:700,
+              color: s.color,
+              lineHeight:1,
+            }}>
+              {s.value}
+            </span>
+            <span style={{ fontSize:'.85rem' }}>{s.icon}</span>
+          </div>
+          {/* Label */}
+          <div style={{
+            fontSize:'.6rem',
+            color:'var(--ink3)',
+            fontWeight:600,
+            letterSpacing:'.2px',
+            textTransform:'uppercase',
+          }}>
+            {s.label}
+          </div>
+          {/* Mini barre */}
+          <div style={{
+            width:'100%', height:3,
+            borderRadius:2,
+            background:'var(--bg3)',
+            overflow:'hidden',
+            marginTop:2,
+          }}>
+            <div style={{
+              height:'100%',
+              borderRadius:2,
+              background: s.color,
+              width:`${s.bar}%`,
+              transition:'width 1s ease',
+            }}/>
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export default function Home() {
   const { progress, THEMES, QUIZZES, openDetail } = useContext(AppContext)
 
@@ -130,35 +205,18 @@ export default function Home() {
     return Math.min(3, Math.ceil((QUIZZES[themeId] || []).length / 3))
   }
 
-  const stats = [
-    { cls:'stat-card-quiz',   icon:'✅', iconBg:'rgba(45,212,191,.2)',  color:'var(--teal)',  value:quizCount,      label:'Quiz gemacht', barColor:'var(--teal)',  barW:Math.min(quizCount*10,100) },
-    { cls:'stat-card-score',  icon:'📊', iconBg:'rgba(251,191,36,.2)',  color:'var(--amber)', value:`${avgScore}%`, label:'Ø Score',      barColor:'var(--amber)', barW:avgScore },
-    { cls:'stat-card-streak', icon:'🔥', iconBg:'rgba(248,113,113,.2)', color:'var(--rose)',  value:streak,         label:'Streak 🔥',    barColor:'var(--rose)',  barW:Math.min(streak*14,100) },
-    { cls:'stat-card-master', icon:'🏆', iconBg:'rgba(74,222,128,.2)',  color:'var(--green)', value:mastered,       label:'Gemeistert',   barColor:'var(--green)', barW:Math.min(mastered*33,100) },
-  ]
-
   return (
     <div style={{ maxWidth:'100%' }}>
 
       <Mascot name={progress.userName} />
 
-      {/* STAT CARDS */}
-      <div className="stats-row">
-        {stats.map((s, i) => (
-          <div key={i} className={`stat-card ${s.cls}`}>
-            <div className="stat-top">
-              <div>
-                <div className="stat-num" style={{ color:s.color }}>{s.value}</div>
-                <div className="stat-lbl">{s.label}</div>
-              </div>
-              <div className="stat-icon" style={{ background:s.iconBg }}>{s.icon}</div>
-            </div>
-            <div className="stat-mini-bar">
-              <div className="stat-mini-fill" style={{ width:`${s.barW}%`, background:s.barColor }}/>
-            </div>
-          </div>
-        ))}
-      </div>
+      {/* BARRE STATS HORIZONTALE COMPACTE */}
+      <StatsBar
+        quizCount={quizCount}
+        avgScore={avgScore}
+        streak={streak}
+        mastered={mastered}
+      />
 
       {/* SECTION TITRE */}
       <div className="sec-title">📚 Lernthemen</div>
