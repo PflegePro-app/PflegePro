@@ -13,6 +13,7 @@ import Detail from './screens/Detail.jsx'
 import Lektion from './screens/Lektion.jsx'
 import Quiz from './screens/Quiz.jsx'
 import Fachbegriffe from './screens/Fachbegriffe.jsx'
+import Praxis from './screens/Praxis.jsx'
 
 export const AppContext = React.createContext(null)
 
@@ -92,8 +93,8 @@ export default function App() {
             {screen === 'lektion'      && <Lektion />}
             {screen === 'quiz'         && <Quiz key={JSON.stringify(quizState)} />}
             {screen === 'fachbegriffe' && <Fachbegriffe />}
+            {screen === 'praxis'       && <Praxis />}
             {screen === 'pruefung'     && <div style={{padding:20,color:'var(--ink)'}}>Prüfung — bald verfügbar</div>}
-            {screen === 'praxis'       && <div style={{padding:20,color:'var(--ink)'}}>Praxis — bald verfügbar</div>}
             {screen === 'heute'        && <div style={{padding:20,color:'var(--ink)'}}>Heute — bald verfügbar</div>}
           </div>
         </main>
