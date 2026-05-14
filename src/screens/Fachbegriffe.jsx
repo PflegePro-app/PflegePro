@@ -1,165 +1,175 @@
 import { useContext, useState } from 'react'
 import { AppContext } from '../App'
 
+// Couleurs exactes des thèmes PflegePro
+const CAT_STYLES = {
+  'Haut':       { bg: 'var(--green-dim)',  color: 'var(--green)',  back: '#0d2e1a' },
+  'Dekubitus':  { bg: 'var(--rose-dim)',   color: 'var(--rose)',   back: '#3f1515' },
+  'Blutzucker': { bg: 'var(--teal-dim)',   color: 'var(--teal)',   back: '#0d3330' },
+  'Niere':      { bg: 'var(--blue-dim)',   color: 'var(--blue)',   back: '#1e3a5f' },
+  'Pflege':     { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a3f' },
+}
+
+const CAT_ICONS = {
+  'Haut':       '🩹',
+  'Dekubitus':  '🩺',
+  'Blutzucker': '🩸',
+  'Niere':      '💧',
+  'Pflege':     '💙',
+}
+
 export default function Fachbegriffe() {
   const { FACHBEGRIFFE } = useContext(AppContext)
 
   const [search, setSearch] = useState('')
-  const [expanded, setExpanded] = useState(null)
+  const [activeFilter, setActiveFilter] = useState('Alle')
+  const [flipped, setFlipped] = useState({})
 
-  // Aplatir tous les termes en un seul tableau
   const allTerms = Array.isArray(FACHBEGRIFFE)
     ? FACHBEGRIFFE
     : Object.values(FACHBEGRIFFE).flat()
 
-  // Filtrer par recherche
-  const filtered = search.trim()
-    ? allTerms.filter(t =>
-        t.term.toLowerCase().includes(search.toLowerCase()) ||
-        t.def.toLowerCase().includes(search.toLowerCase())
-      )
-    : allTerms
+  const categories = ['Alle', ...Object.keys(CAT_STYLES)]
+
+  const filtered = allTerms.filter(t => {
+    const matchSearch = !search.trim() ||
+      t.term.toLowerCase().includes(search.toLowerCase()) ||
+      t.def.toLowerCase().includes(search.toLowerCase())
+    const matchCat = activeFilter === 'Alle' || (t.category || 'Pflege') === activeFilter
+    return matchSearch && matchCat
+  })
+
+  const toggleFlip = (i) => {
+    setFlipped(prev => ({ ...prev, [i]: !prev[i] }))
+  }
+
+  function getCatStyle(cat) {
+    return CAT_STYLES[cat] || CAT_STYLES['Pflege']
+  }
 
   return (
-    <div style={{ maxWidth: "100%" }}>
+    <div style={{ maxWidth: '100%' }}>
 
       {/* Header */}
-      <div style={{
-        background: 'var(--card)', border: '1px solid var(--border)',
-        borderRadius: 16, padding: '18px 20px', marginBottom: 20,
-        display: 'flex', alignItems: 'center', gap: 14,
-      }}>
-        <div style={{
-          width: 46, height: 46, borderRadius: 12,
-          background: 'var(--purple-dim)',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: '1.4rem', flexShrink: 0,
-        }}>
-          📖
+      <div className="fach-header">
+        <div className="fach-search-wrap">
+          <span className="fach-search-icon">🔍</span>
+          <input
+            className="fach-search"
+            type="text"
+            placeholder="Begriff suchen..."
+            value={search}
+            onChange={e => { setSearch(e.target.value); setFlipped({}) }}
+          />
+          {search && (
+            <button
+              onClick={() => { setSearch(''); setFlipped({}) }}
+              style={{ position:'absolute', right:14, top:'50%', transform:'translateY(-50%)', background:'none', border:'none', cursor:'pointer', color:'var(--ink3)', fontSize:'1rem', padding:0 }}
+            >✕</button>
+          )}
         </div>
-        <div>
-          <div style={{ fontFamily: 'Fraunces, serif', fontSize: '1.2rem', color: 'var(--ink)' }}>
-            Fachbegriffe
-          </div>
-          <div style={{ fontSize: '.78rem', color: 'var(--ink2)', marginTop: 2 }}>
-            {allTerms.length} Begriffe
-          </div>
-        </div>
+        <div className="fach-stats">{filtered.length} / {allTerms.length} Begriffe</div>
       </div>
 
-      {/* Barre de recherche */}
-      <div style={{
-        background: 'var(--card)', border: '1px solid var(--border)',
-        borderRadius: 12, padding: '10px 16px',
-        display: 'flex', alignItems: 'center', gap: 10,
-        marginBottom: 16,
-      }}>
-        <span style={{ color: 'var(--ink3)', fontSize: '1rem' }}>🔍</span>
-        <input
-          type="text"
-          placeholder="Begriff suchen..."
-          value={search}
-          onChange={e => { setSearch(e.target.value); setExpanded(null) }}
-          style={{
-            flex: 1, border: 'none', outline: 'none',
-            background: 'transparent',
-            fontFamily: 'DM Sans, sans-serif', fontSize: '.88rem',
-            color: 'var(--ink)',
-          }}
-        />
-        {search && (
-          <button
-            onClick={() => { setSearch(''); setExpanded(null) }}
-            style={{
-              background: 'none', border: 'none', cursor: 'pointer',
-              color: 'var(--ink3)', fontSize: '1rem', padding: 0,
-            }}
-          >
-            ✕
-          </button>
-        )}
+      {/* Filtres par catégorie avec icônes */}
+      <div className="fach-filter">
+        <button
+          className={`fach-filter-btn${activeFilter === 'Alle' ? ' active' : ''}`}
+          onClick={() => { setActiveFilter('Alle'); setFlipped({}) }}
+        >
+          Alle
+        </button>
+        {Object.keys(CAT_STYLES).map(cat => {
+          const cs = CAT_STYLES[cat]
+          const isActive = activeFilter === cat
+          return (
+            <button
+              key={cat}
+              onClick={() => { setActiveFilter(cat); setFlipped({}) }}
+              style={{
+                background: isActive ? cs.color : 'var(--bg3)',
+                border: `1.5px solid ${isActive ? cs.color : 'var(--border)'}`,
+                color: isActive ? 'white' : 'var(--ink2)',
+                padding: '5px 14px',
+                borderRadius: 20,
+                cursor: 'pointer',
+                fontSize: '.72rem',
+                fontWeight: 600,
+                transition: 'all .2s',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 5,
+                fontFamily: "'DM Sans', sans-serif",
+              }}
+            >
+              {CAT_ICONS[cat]} {cat}
+            </button>
+          )
+        })}
       </div>
 
-      {/* Résultats */}
-      {search && (
-        <div style={{ fontSize: '.72rem', color: 'var(--ink3)', marginBottom: 10 }}>
-          {filtered.length} Ergebnis{filtered.length !== 1 ? 'se' : ''}
+      {/* Grille flip cards */}
+      {filtered.length === 0 ? (
+        <div className="fach-empty">
+          Kein Begriff gefunden für „{search}"
         </div>
-      )}
+      ) : (
+        <div className="fach-grid">
+          {filtered.map((item, i) => {
+            const cat = item.category || 'Pflege'
+            const cs = getCatStyle(cat)
+            const isFlipped = !!flipped[i]
 
-      {/* Liste des termes */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-        {filtered.length === 0 ? (
-          <div style={{
-            textAlign: 'center', padding: '40px 20px',
-            color: 'var(--ink3)', fontSize: '.85rem',
-          }}>
-            Kein Begriff gefunden für „{search}"
-          </div>
-        ) : (
-          filtered.map((item, i) => {
-            const isOpen = expanded === i
             return (
               <div
                 key={i}
-                onClick={() => setExpanded(isOpen ? null : i)}
-                style={{
-                  background: 'var(--card)',
-                  border: `1px solid ${isOpen ? 'rgba(45,212,191,.3)' : 'var(--border)'}`,
-                  borderRadius: 12,
-                  overflow: 'hidden',
-                  cursor: 'pointer',
-                  transition: 'all .2s',
-                }}
+                className={`fach-card${isFlipped ? ' flipped' : ''}`}
+                onClick={() => toggleFlip(i)}
+                style={{ animationDelay: `${(i % 12) * 40}ms` }}
               >
-                {/* Term header */}
-                <div style={{
-                  padding: '13px 16px',
-                  display: 'flex', alignItems: 'center', gap: 12,
-                }}>
-                  <div style={{
-                    width: 32, height: 32, borderRadius: 8, flexShrink: 0,
-                    background: isOpen ? 'var(--teal-dim)' : 'var(--bg3)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: '.72rem', fontWeight: 700,
-                    color: isOpen ? 'var(--teal)' : 'var(--ink3)',
-                    transition: 'all .2s',
-                  }}>
-                    {item.term.slice(0, 2).toUpperCase()}
-                  </div>
-                  <div style={{
-                    flex: 1, fontWeight: 600, fontSize: '.88rem',
-                    color: isOpen ? 'var(--teal)' : 'var(--ink)',
-                    transition: 'color .2s',
-                  }}>
-                    {item.term}
-                  </div>
-                  <span style={{
-                    color: 'var(--ink3)', fontSize: '.9rem',
-                    transform: isOpen ? 'rotate(90deg)' : 'none',
-                    transition: 'transform .2s', display: 'inline-block',
-                  }}>
-                    ›
-                  </span>
-                </div>
+                <div className="fach-card-inner">
 
-                {/* Définition */}
-                {isOpen && (
-                  <div style={{
-                    padding: '0 16px 14px 60px',
-                    fontSize: '.82rem', color: 'var(--ink)',
-                    lineHeight: 1.6,
-                    borderTop: '1px solid var(--border)',
-                    paddingTop: 12,
-                  }}>
-                    {item.def}
+                  {/* FACE AVANT */}
+                  <div className="fach-front">
+                    <div>
+                      <div
+                        className="fach-category"
+                        style={{ background: cs.bg, color: cs.color }}
+                      >
+                        {CAT_ICONS[cat]} {cat}
+                      </div>
+                      <div className="fach-term" style={{ marginTop: 8 }}>
+                        {item.term}
+                      </div>
+                    </div>
+                    <div className="fach-hint-txt">
+                      👆 Tippen zum Aufdecken
+                    </div>
                   </div>
-                )}
+
+                  {/* FACE ARRIÈRE */}
+                  <div
+                    className="fach-back"
+                    style={{
+                      background: cs.back,
+                      border: `1.5px solid ${cs.color}40`,
+                    }}
+                  >
+                    <div className="fach-def">{item.def}</div>
+                    <div
+                      className="fach-term-small"
+                      style={{ color: cs.color }}
+                    >
+                      {item.term}
+                    </div>
+                  </div>
+
+                </div>
               </div>
             )
-          })
-        )}
-      </div>
+          })}
+        </div>
+      )}
     </div>
   )
 }
