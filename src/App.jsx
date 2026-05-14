@@ -26,6 +26,7 @@ export default function App() {
   const [currentTheme, setCurrentTheme] = useState(null)
   const [currentLesson, setCurrentLesson] = useState(null)
   const [quizState, setQuizState] = useState(null)
+  const [quizOrigin, setQuizOrigin] = useState('detail') // 'detail' ou 'pruefung' ou 'heute'
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -47,19 +48,20 @@ export default function App() {
     setScreen('lektion')
   }
 
-  const startQuiz = (themeId, level) => {
+  const startQuiz = (themeId, level, origin) => {
     const allQ = QUIZZES[themeId] || []
     const perLevel = Math.ceil(allQ.length / 3)
     const questions = allQ.slice(level * perLevel, (level + 1) * perLevel)
     const t = THEMES.find(th => th.id === themeId)
     setCurrentTheme(t)
     setQuizState({ themeId, level, questions })
+    setQuizOrigin(origin || 'detail')
     setScreen('quiz')
   }
 
   const goBack = () => {
     if (screen === 'lektion') { setScreen('detail') }
-    else if (screen === 'quiz') { setScreen('detail') }
+    else if (screen === 'quiz') { setScreen(quizOrigin) }
     else if (screen === 'detail') { setScreen('home') }
     else { setScreen('home') }
   }
@@ -98,7 +100,7 @@ export default function App() {
             {screen === 'fachbegriffe' && <Fachbegriffe />}
             {screen === 'praxis'       && <Praxis />}
             {screen === 'heute'        && <Heute />}
-            {screen === 'pruefung' && <Pruefung />}
+            {screen === 'pruefung'     && <Pruefung />}
           </div>
         </main>
       </div>

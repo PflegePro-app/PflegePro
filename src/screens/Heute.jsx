@@ -211,7 +211,7 @@ export default function Heute() {
                 return (
                   <div
                     key={lvl}
-                    onClick={() => unlocked && startQuiz(t.id, lvl)}
+                    onClick={() => unlocked && startQuiz(t.id, lvl, 'heute')}
                     style={{
                       flex: 1, minWidth: 80,
                       background: bg,

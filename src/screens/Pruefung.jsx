@@ -170,7 +170,7 @@ export default function Pruefung() {
                 return (
                   <div
                     key={lvl}
-                    onClick={() => unlocked && startQuiz(t.id, lvl)}
+                    onClick={() => unlocked && startQuiz(t.id, lvl, 'pruefung')}
                     style={{
                       background: bg,
                       border: `1px solid ${borderCol}`,
