@@ -19,7 +19,6 @@ export default function Heute() {
   const readCount = lessonsRead.length
   const quizCount = progress.quizCount || 0
 
-  // Score moyen
   const allScores = Object.values(levels).flatMap(l => l.levelScores || []).filter(s => s !== undefined)
   const avgScore = allScores.length > 0
     ? Math.round(allScores.reduce((a, b) => a + b, 0) / allScores.length * 100)
@@ -30,6 +29,13 @@ export default function Heute() {
     if (!ld?.levelScores) return null
     const s = ld.levelScores[lvl]
     return s !== undefined ? Math.round(s * 100) : null
+  }
+
+  function isLevelUnlocked(themeId, lvl) {
+    if (lvl === 0) return true
+    const ld = levels[themeId]
+    if (!ld?.levelScores) return false
+    return (ld.levelScores[lvl - 1] || 0) >= 0.70
   }
 
   function getTotalLevels(themeId) {
@@ -68,10 +74,10 @@ export default function Heute() {
       {/* Stats globales */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 24 }}>
         {[
-          { label: 'Leçons lues', value: `${readCount} / ${totalLessons}`, icon: '📖', col: 'teal' },
-          { label: 'Quiz gemacht', value: quizCount, icon: '🎯', col: 'blue' },
-          { label: 'Ø Score', value: `${avgScore}%`, icon: '📊', col: 'green' },
-          { label: 'Streak', value: `${progress.streak || 0} 🔥`, icon: '🔥', col: 'amber' },
+          { label: 'Lektionen gelesen', value: `${readCount} / ${totalLessons}`, icon: '📖' },
+          { label: 'Quiz gemacht', value: quizCount, icon: '🎯' },
+          { label: 'Ø Score', value: `${avgScore}%`, icon: '📊' },
+          { label: 'Streak', value: `${progress.streak || 0} 🔥`, icon: '🔥' },
         ].map((s, i) => (
           <div key={i} style={{
             background: 'var(--card)', border: '1px solid var(--border)',
@@ -166,23 +172,54 @@ export default function Heute() {
             </div>
 
             {/* Quiz niveaux */}
-            <div style={{ fontSize: '.7rem', fontWeight: 700, color: 'var(--ink3)', marginBottom: 8, letterSpacing: '.5px', textTransform: 'uppercase' }}>
+            <div style={{
+              fontSize: '.7rem', fontWeight: 700, color: 'var(--ink3)',
+              marginBottom: 8, letterSpacing: '.5px', textTransform: 'uppercase',
+            }}>
               🎯 Quiz
             </div>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               {Array.from({ length: totalLvl }, (_, lvl) => {
                 const score = getLevelScore(t.id, lvl)
+                const unlocked = isLevelUnlocked(t.id, lvl)
                 const passed = score !== null && score >= 70
+
+                let bg = 'var(--bg3)'
+                let borderCol = 'var(--border)'
+                let scoreColor = 'var(--ink3)'
+                let statusText = '🔒 Gesperrt'
+
+                if (unlocked) {
+                  if (score === null) {
+                    bg = 'var(--card)'
+                    borderCol = 'var(--teal)'
+                    scoreColor = 'var(--teal)'
+                    statusText = '▶ Starten'
+                  } else if (passed) {
+                    bg = 'var(--green-dim)'
+                    borderCol = 'rgba(74,222,128,.3)'
+                    scoreColor = 'var(--green)'
+                    statusText = '✓ Bestanden'
+                  } else {
+                    bg = 'var(--rose-dim)'
+                    borderCol = 'rgba(251,113,133,.2)'
+                    scoreColor = 'var(--rose)'
+                    statusText = '↺ Wiederholen'
+                  }
+                }
+
                 return (
                   <div
                     key={lvl}
-                    onClick={() => startQuiz(t.id, lvl)}
+                    onClick={() => unlocked && startQuiz(t.id, lvl)}
                     style={{
                       flex: 1, minWidth: 80,
-                      background: passed ? 'var(--green-dim)' : score !== null ? 'var(--rose-dim)' : 'var(--bg3)',
-                      border: `1px solid ${passed ? 'rgba(74,222,128,.3)' : score !== null ? 'rgba(251,113,133,.2)' : 'var(--border)'}`,
+                      background: bg,
+                      border: `1px solid ${borderCol}`,
                       borderRadius: 10, padding: '10px 8px',
-                      textAlign: 'center', cursor: 'pointer',
+                      textAlign: 'center',
+                      cursor: unlocked ? 'pointer' : 'default',
+                      opacity: unlocked ? 1 : 0.5,
                       transition: 'all .2s',
                     }}
                   >
@@ -191,12 +228,12 @@ export default function Heute() {
                     </div>
                     <div style={{
                       fontFamily: 'Fraunces, serif', fontSize: '1.1rem',
-                      color: passed ? 'var(--green)' : score !== null ? 'var(--rose)' : 'var(--ink3)',
+                      color: scoreColor,
                     }}>
-                      {score !== null ? `${score}%` : '—'}
+                      {!unlocked ? '🔒' : score !== null ? `${score}%` : '—'}
                     </div>
-                    <div style={{ fontSize: '.65rem', color: 'var(--ink3)', marginTop: 2 }}>
-                      {score === null ? 'Starten' : passed ? '✓ Bestanden' : 'Wiederholen'}
+                    <div style={{ fontSize: '.65rem', color: scoreColor, marginTop: 2, fontWeight: 600 }}>
+                      {statusText}
                     </div>
                   </div>
                 )
