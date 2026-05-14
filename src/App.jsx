@@ -47,7 +47,8 @@ export default function App() {
 
   const startQuiz = (themeId, level) => {
     const allQ = QUIZZES[themeId] || []
-    const questions = allQ.filter(q => q.level === level + 1)
+    const perLevel = Math.ceil(allQ.length / 3)
+    const questions = allQ.slice(level * perLevel, (level + 1) * perLevel)
     const t = THEMES.find(th => th.id === themeId)
     setCurrentTheme(t)
     setQuizState({ themeId, level, questions })
