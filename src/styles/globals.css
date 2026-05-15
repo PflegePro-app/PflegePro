@@ -535,3 +535,17 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--ink);
     display: none !important;
   }
 }
+
+/* ── FACHBEGRIFFE HEADER STICKY ── */
+.fach-sticky {
+  position: sticky;
+  top: 56px;
+  z-index: 100;
+  background: var(--bg);
+  padding: 12px 0 8px;
+  margin-bottom: 4px;
+}
+
+/* ── FACHBEGRIFFE HEADER STICKY ── */
+.fach-header { position:sticky; top:56px; z-index:100; background:var(--bg); padding-top:12px; padding-bottom:4px; }
+.fach-filter { position:sticky; top:112px; z-index:99; background:var(--bg); padding-bottom:8px; }
