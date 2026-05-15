@@ -1,22 +1,22 @@
 {
-  "name": "PflegePro — Pflegeausbildung",
+  "name": "PflegePro \u2014 Pflegeausbildung",
   "short_name": "PflegePro",
-  "description": "Deine persönliche Lernapp für die Pflegeausbildung",
-  "start_url": "/PflegePro/",
-  "scope": "/PflegePro/",
+  "description": "Deine pers\u00f6nliche Lernapp f\u00fcr die Pflegeausbildung",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0d1117",
   "theme_color": "#2dd4bf",
   "icons": [
     {
-      "src": "/PflegePro/icon-192.png",
+      "src": "/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/PflegePro/icon-512.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
