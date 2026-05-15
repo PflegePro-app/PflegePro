@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#0d1117"/>
+  <rect x="156" y="156" width="200" height="200" rx="20" fill="#1c2128" stroke="#2dd4bf" stroke-width="8"/>
+  <rect x="236" y="176" width="40" height="160" rx="8" fill="#2dd4bf"/>
+  <rect x="176" y="236" width="160" height="40" rx="8" fill="#2dd4bf"/>
+  <text x="256" y="420" font-family="serif" font-size="48" fill="#2dd4bf" text-anchor="middle" font-weight="bold">PflegePro</text>
+</svg>
