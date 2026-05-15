@@ -49,7 +49,7 @@ export default function Quiz() {
         <div style={{ fontSize: '2rem', marginBottom: 12 }}>⚠️</div>
         Keine Fragen verfügbar.
         <br /><br />
-        <button onClick={() => nav('detail')} style={btnStyle}>← Zurück</button>
+        <button onClick={() => nav('lektion')} style={btnStyle}>← Zurück</button>
       </div>
     )
   }
@@ -138,7 +138,7 @@ export default function Quiz() {
 
           {/* Boutons */}
           <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button onClick={() => nav('detail')} style={{
+            <button onClick={() => nav('lektion')} style={{
               ...btnStyle, background: 'var(--bg3)', color: 'var(--ink2)',
             }}>
               ← Thema
@@ -190,7 +190,7 @@ export default function Quiz() {
     <div style={{ maxWidth: "100%" }}>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
-        <button onClick={() => nav('detail')} style={{
+        <button onClick={() => nav('lektion')} style={{
           ...btnStyle, padding: '6px 12px',
           background: 'var(--bg3)', color: 'var(--ink2)', fontSize: '.75rem',
         }}>

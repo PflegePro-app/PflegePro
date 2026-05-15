@@ -46,6 +46,12 @@ export default function App() {
   const nav = (s) => setScreen(s)
 
   const openDetail = (t) => {
+    if (t.lessons && t.lessons.length > 0) {
+      setCurrentTheme(t)
+      setCurrentLesson(t.lessons[0])
+      setScreen("lektion")
+      return
+    }
     setCurrentTheme(t)
     setScreen('detail')
   }
@@ -69,7 +75,7 @@ export default function App() {
   }
 
   const goBack = () => {
-    if (screen === 'lektion') { setScreen('detail') }
+    if (screen === 'lektion') { setScreen('home') }
     else if (screen === 'quiz') { setScreen(quizOrigin) }
     else if (screen === 'detail') { setScreen('home') }
     else { setScreen('home') }
