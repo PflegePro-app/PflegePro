@@ -64,6 +64,11 @@ export default function Lektion() {
     if (currentTheme && currentLesson) markLessonRead(currentTheme.id, currentLesson)
   }, [currentTheme?.id, currentLesson])
 
+
+
+
+
+
   // Init widgets after render
   useEffect(() => {
     if (!currentTheme) return
@@ -108,6 +113,16 @@ export default function Lektion() {
         if (el && el.getBoundingClientRect().top < 150) current = lessonName
       })
       setActiveLesson(current)
+      // Marquer comme lue si visible à plus de 80%
+      currentTheme.lessons.forEach(lessonName => {
+        const el = lessonRefs.current[lessonName]
+        if (el) {
+          const rect = el.getBoundingClientRect()
+          const visible = (rect.bottom - rect.top) > 0
+          const readEnough = rect.bottom < 100
+          if (visible && readEnough) markLessonRead(currentTheme.id, lessonName)
+        }
+      })
     }
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)

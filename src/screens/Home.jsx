@@ -145,7 +145,7 @@ function Mascot({ name }) {
   const greeting =
     hour < 6  ? '🌙 Gute Nacht' :
     hour < 12 ? '🌅 Guten Morgen' :
-    hour < 14 ? '☀️ Guten Tag' :
+    hour < 18 ? '☀️ Guten Tag' :
     hour < 21 ? '🌆 Guten Abend' : '🌙 Gute Nacht'
 
   const motivations = [
