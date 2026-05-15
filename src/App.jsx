@@ -8,6 +8,7 @@ import { PRAXIS_DATA } from './data/praxis.js'
 
 import Topbar from './components/Topbar.jsx'
 import Sidebar from './components/Sidebar.jsx'
+import WelcomeModal from './components/WelcomeModal.jsx'
 import Home from './screens/Home.jsx'
 import Detail from './screens/Detail.jsx'
 import Lektion from './screens/Lektion.jsx'
@@ -20,19 +21,27 @@ import Pruefung from './screens/Pruefung.jsx'
 export const AppContext = React.createContext(null)
 
 export default function App() {
-  const { progress, saveProgress, theme, toggleTheme, checkStreak, markLessonRead } = useProgress()
+  const { progress, saveProgress, theme, toggleTheme, checkStreak, markLessonRead, userName, saveName } = useProgress()
 
   const [screen, setScreen] = useState('home')
   const [currentTheme, setCurrentTheme] = useState(null)
   const [currentLesson, setCurrentLesson] = useState(null)
   const [quizState, setQuizState] = useState(null)
-  const [quizOrigin, setQuizOrigin] = useState('detail') // 'detail' ou 'pruefung' ou 'heute'
+  const [quizOrigin, setQuizOrigin] = useState('detail')
+
+  // Afficher le modal si pas de nom encore
+  const [showWelcome, setShowWelcome] = useState(() => !localStorage.getItem('pflegepro_name'))
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
   }, [theme])
 
   useEffect(() => { checkStreak() }, [])
+
+  const handleSaveName = (name) => {
+    saveName(name)
+    setShowWelcome(false)
+  }
 
   const nav = (s) => setScreen(s)
 
@@ -73,6 +82,7 @@ export default function App() {
     THEMES, QUIZZES, LESSON_CONTENT, FACHBEGRIFFE, PRAXIS_DATA,
     progress, saveProgress, theme, toggleTheme,
     markLessonRead,
+    userName,
   }
 
   const inLektionMode = ['lektion', 'detail', 'quiz'].includes(screen)
@@ -80,6 +90,10 @@ export default function App() {
   return (
     <AppContext.Provider value={ctx}>
       <div className="app" data-theme={theme}>
+
+        {/* Modal de bienvenue — premier lancement */}
+        {showWelcome && <WelcomeModal onSave={handleSaveName} />}
+
         <Topbar
           screen={screen}
           currentTheme={currentTheme}

@@ -233,7 +233,7 @@ function StatsBar({ quizCount, avgScore, streak, mastered }) {
 }
 
 export default function Home() {
-  const { progress, THEMES, QUIZZES, openDetail } = useContext(AppContext)
+  const { progress, THEMES, QUIZZES, openDetail, userName } = useContext(AppContext)
 
   const levels = progress.levels || {}
   const allScores = Object.values(levels)
@@ -256,7 +256,7 @@ export default function Home() {
 
   return (
     <div style={{ maxWidth:'100%' }}>
-      <Mascot name={progress.userName} />
+      <Mascot name={userName} />
       <StatsBar quizCount={quizCount} avgScore={avgScore} streak={streak} mastered={mastered} />
       <div className="sec-title">📚 Lernthemen</div>
       <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
