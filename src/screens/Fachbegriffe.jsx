@@ -25,9 +25,7 @@ export default function Fachbegriffe() {
   const [activeFilter, setActiveFilter] = useState('Alle')
   const [flipped, setFlipped] = useState({})
 
-  const allTerms = Array.isArray(FACHBEGRIFFE)
-    ? FACHBEGRIFFE
-    : Object.values(FACHBEGRIFFE).flat()
+  const allTerms = [...(Array.isArray(FACHBEGRIFFE) ? FACHBEGRIFFE : Object.values(FACHBEGRIFFE).flat())].sort(() => Math.random() - 0.5)
 
   const categories = ['Alle', ...Object.keys(CAT_STYLES)]
 
