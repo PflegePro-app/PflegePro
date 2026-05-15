@@ -60,7 +60,7 @@ export default function Quiz() {
 
   // Vérifie si le niveau suivant existe
   const allQ = QUIZZES[themeId] || []
-  const totalLevels = Math.min(3, Math.ceil(allQ.length / 3))
+  const totalLevels = Math.ceil(allQ.length / 12)
   const hasNextLevel = level + 1 < totalLevels
 
   function handleSelect(i) {

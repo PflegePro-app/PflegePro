@@ -251,7 +251,7 @@ export default function Home() {
     return ld.levelScores.filter(s => s >= 0.70).length
   }
   function getTotalLevels(themeId) {
-    return Math.min(3, Math.ceil((QUIZZES[themeId] || []).length / 3))
+    return Math.ceil((QUIZZES[themeId] || []).length / 12)
   }
 
   return (

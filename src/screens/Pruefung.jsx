@@ -28,7 +28,7 @@ export default function Pruefung() {
   }
 
   function getTotalLevels(themeId) {
-    return Math.min(3, Math.ceil((QUIZZES[themeId] || []).length / 3))
+    return Math.ceil((QUIZZES[themeId] || []).length / 12)
   }
 
   // Stats globales quiz
