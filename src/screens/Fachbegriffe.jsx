@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useState, useMemo } from 'react'
 import { AppContext } from '../App'
 
 // Couleurs exactes des thèmes PflegePro
@@ -25,7 +25,7 @@ export default function Fachbegriffe() {
   const [activeFilter, setActiveFilter] = useState('Alle')
   const [flipped, setFlipped] = useState({})
 
-  const allTerms = [...(Array.isArray(FACHBEGRIFFE) ? FACHBEGRIFFE : Object.values(FACHBEGRIFFE).flat())].sort(() => Math.random() - 0.5)
+  const allTerms = useMemo(() => [...(Array.isArray(FACHBEGRIFFE) ? FACHBEGRIFFE : Object.values(FACHBEGRIFFE).flat())].sort(() => Math.random() - 0.5), [FACHBEGRIFFE])
 
   const categories = ['Alle', ...Object.keys(CAT_STYLES)]
 
