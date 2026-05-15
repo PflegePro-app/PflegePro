@@ -21,6 +21,8 @@ jobs:
         with:
           node-version: 20
       - run: npm install
+      - name: Update service worker version
+        run: sed -i "s/pflegepro-[0-9-]*/pflegepro-$(date +%Y-%m-%d-%H%M)/" public/sw.js
       - run: npm run build
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
