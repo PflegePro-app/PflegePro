@@ -1,3 +1,42 @@
+// Modules thématiques - regroupent les thèmes par système/domaine
+export const MODULES = [
+  {
+    id: 'haut-wunden',
+    name: 'Haut & Wunden',
+    icon: '🩹',
+    color: 'green',
+    description: 'Hautpflege, Wundversorgung & Prophylaxe',
+  },
+  {
+    id: 'stoffwechsel',
+    name: 'Stoffwechsel',
+    icon: '💉',
+    color: 'teal',
+    description: 'Diabetes, Ernährung & Hormone',
+  },
+  {
+    id: 'kreislauf',
+    name: 'Herz-Kreislauf',
+    icon: '❤️',
+    color: 'rose',
+    description: 'Herz, Blutdruck & Gefäße',
+  },
+  {
+    id: 'ausscheidung',
+    name: 'Ausscheidung',
+    icon: '💧',
+    color: 'amber',
+    description: 'Niere, Blase & Harnwege',
+  },
+  {
+    id: 'allgemein',
+    name: 'Allgemeine Pflege',
+    icon: '👩‍⚕️',
+    color: 'teal',
+    description: 'Grundlagen & Pflegetechniken',
+  },
+]
+
 // Thèmes PflegePro
 export const THEMES = [
   {
@@ -5,6 +44,8 @@ export const THEMES = [
     name: 'Haut — Anatomie & Physiologie',
     icon: '🩹',
     col: 'green',
+    module: 'haut-wunden',
+    related: ['dekubitus'],
     lessons: [
       'Haut und ihre Aufgaben',
       'Aufbau der Haut (Schichten)',
@@ -21,6 +62,8 @@ export const THEMES = [
     name: 'Dekubitus — Prophylaxe & Therapie',
     icon: '🩺',
     col: 'rose',
+    module: 'haut-wunden',
+    related: ['haut'],
     lessons: [
       'Definition & Expertenstandard',
       'Risikofaktoren & Entstehung',
@@ -34,6 +77,8 @@ export const THEMES = [
     name: 'Blutzucker / Diabetes Mellitus',
     icon: '🩸',
     col: 'teal',
+    module: 'stoffwechsel',
+    related: [],
     lessons: [
       'Grundlagen Blutzucker & Pankreas',
       'Diabetes Typ 1 – Pathophysiologie',
@@ -46,4 +91,4 @@ export const THEMES = [
       'Komaformen – Ketoazidose & Hyperosmolar',
     ],
   },
-];
+]

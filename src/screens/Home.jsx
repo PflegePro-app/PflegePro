@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import { AppContext } from '../App'
+import { MODULES } from '../data/themes'
 
 // ── INFIRMIÈRE (6h–14h) ──
 function NurseF() {
@@ -323,45 +324,92 @@ export default function Home() {
       <Mascot name={userName} />
       <DailyChallengeCard />
       <StatsBar quizCount={quizCount} avgScore={avgScore} streak={streak} mastered={mastered} />
-      <div className="sec-title">📚 Lernthemen</div>
-      <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
-        {THEMES.map(t => {
-          const realLevel = getRealLevel(t.id)
-          const totalLvl  = getTotalLevels(t.id)
-          const ld        = levels[t.id]
-          const topScore  = ld?.levelScores?.length > 0
-            ? Math.round(Math.max(...ld.levelScores.filter(s => s !== undefined)) * 100) : null
-          return (
-            <div key={t.id} className="theme-card" onClick={() => openDetail(t)}>
-              <div className="t-icon" style={{ background:`var(--${t.col}-dim)` }}>{t.icon}</div>
-              <div className="t-info">
-                <div className="t-name">{t.name}</div>
-                <div className="t-sub">{t.lessons.length} Lerneinheiten</div>
-                <div style={{ display:'flex', alignItems:'center', gap:5, marginTop:6 }}>
-                  {Array.from({ length: totalLvl }, (_, i) => {
-                    const passed    = realLevel > i
-                    const isCurrent = realLevel === i
-                    return (
-                      <div key={i} style={{
-                        width:20, height:20, borderRadius:5,
-                        background: passed ? 'var(--green)' : isCurrent ? 'var(--teal-dim)' : 'var(--bg3)',
-                        border:`1px solid ${passed ? 'var(--green)' : isCurrent ? 'var(--teal)' : 'var(--border)'}`,
-                        display:'flex', alignItems:'center', justifyContent:'center',
-                        fontSize:'.58rem', fontWeight:700,
-                        color: passed ? 'white' : isCurrent ? 'var(--teal)' : 'var(--ink3)',
-                      }}>{i+1}</div>
-                    )
-                  })}
-                  {topScore !== null && (
-                    <span style={{ fontSize:'.68rem', color:'var(--ink3)', marginLeft:3 }}>Best: {topScore}%</span>
-                  )}
+      {/* Groupement par modules */}
+      {MODULES.map(mod => {
+        const themesInModule = THEMES.filter(t => t.module === mod.id)
+        if (themesInModule.length === 0) return null
+        return (
+          <div key={mod.id} style={{ marginBottom: 24 }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10,
+              padding: '8px 12px', borderRadius: 12,
+              background: `var(--${mod.color}-dim)`,
+              borderLeft: `4px solid var(--${mod.color})`,
+            }}>
+              <span style={{ fontSize: '1.4rem' }}>{mod.icon}</span>
+              <div style={{ flex: 1 }}>
+                <div style={{
+                  fontFamily: "'Fraunces',serif", fontSize: '1.05rem',
+                  fontWeight: 700, color: 'var(--ink)', lineHeight: 1.2,
+                }}>{mod.name}</div>
+                <div style={{ fontSize: '.72rem', color: 'var(--ink2)', marginTop: 1 }}>
+                  {mod.description}
                 </div>
               </div>
-              <div className="t-arrow">›</div>
+              <div style={{
+                fontSize: '.7rem', color: 'var(--ink3)', fontWeight: 600,
+                background: 'var(--card)', padding: '3px 8px', borderRadius: 999,
+              }}>{themesInModule.length}</div>
             </div>
-          )
-        })}
-      </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, paddingLeft: 14, marginTop: 4 }}>
+              {themesInModule.map(t => {
+                const realLevel = getRealLevel(t.id)
+                const totalLvl  = getTotalLevels(t.id)
+                const ld        = levels[t.id]
+                const topScore  = ld?.levelScores?.length > 0
+                  ? Math.round(Math.max(...ld.levelScores.filter(s => s !== undefined)) * 100) : null
+                return (
+                  <div key={t.id} onClick={() => openDetail(t)} style={{
+                    display: 'flex', alignItems: 'center', gap: 10,
+                    padding: '7px 12px', borderRadius: 10,
+                    background: 'var(--card)', border: '1px solid var(--border)',
+                    borderLeft: `3px solid var(--${t.col})`,
+                    cursor: 'pointer', transition: 'transform .15s, box-shadow .15s',
+                  }}>
+                    <div style={{
+                      width: 26, height: 26, borderRadius: 7,
+                      background: `var(--${t.col}-dim)`, display: 'flex',
+                      alignItems: 'center', justifyContent: 'center',
+                      fontSize: '.9rem', flexShrink: 0,
+                    }}>{t.icon}</div>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <div style={{
+                        fontFamily: "'Fraunces',serif", fontSize: '.85rem',
+                        fontWeight: 600, color: 'var(--ink)', lineHeight: 1.2,
+                        marginBottom: 2, overflow: 'hidden', textOverflow: 'ellipsis',
+                        whiteSpace: 'nowrap',
+                      }}>{t.name}</div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '.72rem', color: 'var(--ink2)' }}>
+                        <span>{t.lessons.length} Lektionen</span>
+                        <span style={{ display: 'flex', gap: 3 }}>
+                          {Array.from({ length: totalLvl }, (_, i) => {
+                            const passed = realLevel > i
+                            const isCurrent = realLevel === i
+                            return (
+                              <span key={i} style={{
+                                width: 14, height: 14, borderRadius: 4,
+                                background: passed ? 'var(--green)' : isCurrent ? 'var(--teal-dim)' : 'var(--bg3)',
+                                border: `1px solid ${passed ? 'var(--green)' : isCurrent ? 'var(--teal)' : 'var(--border)'}`,
+                                display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                                fontSize: '.5rem', fontWeight: 700,
+                                color: passed ? 'white' : isCurrent ? 'var(--teal)' : 'var(--ink3)',
+                              }}>{i+1}</span>
+                            )
+                          })}
+                        </span>
+                        {topScore !== null && (
+                          <span style={{ marginLeft: 'auto', fontSize: '.68rem', color: 'var(--ink3)' }}>{topScore}%</span>
+                        )}
+                      </div>
+                    </div>
+                    <div style={{ color: 'var(--ink3)', fontSize: '1.2rem', flexShrink: 0 }}>›</div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )
+      })}
     </div>
   )
 }

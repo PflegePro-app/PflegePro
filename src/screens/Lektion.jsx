@@ -38,7 +38,7 @@ function initBusWidget(container) {
 
 export default function Lektion() {
   const {
-    currentTheme, currentLesson, startQuiz,
+    currentTheme, currentLesson, startQuiz, openDetail, THEMES,
     LESSON_CONTENT, QUIZZES, markLessonRead, progress,
   } = useContext(AppContext)
 
@@ -179,6 +179,39 @@ export default function Lektion() {
             </div>
           )
         })}
+
+        {/* Verwandte Themen */}
+        {t.related && t.related.length > 0 && (
+          <div style={{
+            background: 'var(--card)', border: '1px solid var(--border)',
+            borderRadius: 14, padding: '16px 18px', marginBottom: 16,
+          }}>
+            <div style={{
+              fontSize: '.72rem', fontWeight: 700, letterSpacing: '.5px',
+              textTransform: 'uppercase', color: 'var(--ink3)', marginBottom: 10,
+            }}>🔗 Verwandte Themen</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+              {t.related.map(relId => {
+                const rt = THEMES.find(th => th.id === relId)
+                if (!rt) return null
+                return (
+                  <div key={relId} onClick={() => { openDetail(rt); setTimeout(() => window.scrollTo(0, 0), 50) }} style={{
+                    display: 'flex', alignItems: 'center', gap: 8,
+                    padding: '8px 12px', borderRadius: 999,
+                    background: `var(--${rt.col}-dim)`,
+                    border: `1px solid var(--${rt.col})`,
+                    cursor: 'pointer', transition: 'transform .15s',
+                    fontSize: '.82rem', fontWeight: 600, color: 'var(--ink)',
+                  }}>
+                    <span style={{ fontSize: '1rem' }}>{rt.icon}</span>
+                    <span>{rt.name}</span>
+                    <span style={{ color: 'var(--ink3)', fontSize: '.9rem' }}>→</span>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )}
 
         {/* Bouton Quiz à la fin */}
         {hasQuiz && (
