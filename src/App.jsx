@@ -35,12 +35,40 @@ export default function App() {
   // Afficher le modal si pas de nom encore
   const [showWelcome, setShowWelcome] = useState(() => !localStorage.getItem('pflegepro_name'))
   const [showSearch, setShowSearch] = useState(false)
+  const [focusMode, setFocusMode] = useState(false)
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
   }, [theme])
 
   useEffect(() => { checkStreak() }, [])
+
+  // Auto-focus mode : cacher les barres pendant le scroll, les remontrer à l'arrêt
+  useEffect(() => {
+    if (screen !== 'lektion') {
+      setFocusMode(false)
+      return
+    }
+    let scrollTimer = null
+    let lastScrollY = window.scrollY
+    const onScroll = () => {
+      const currentY = window.scrollY
+      const diff = Math.abs(currentY - lastScrollY)
+      // Cacher seulement si scroll significatif (>5px) et pas en haut de page
+      if (diff > 5 && currentY > 100) {
+        setFocusMode(true)
+      }
+      lastScrollY = currentY
+      if (scrollTimer) clearTimeout(scrollTimer)
+      // Remontrer les barres après 800ms sans scroll
+      scrollTimer = setTimeout(() => setFocusMode(false), 800)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      if (scrollTimer) clearTimeout(scrollTimer)
+    }
+  }, [screen])
 
   const handleSaveName = (name) => {
     saveName(name)
@@ -108,6 +136,7 @@ export default function App() {
   const goBack = () => {
     if (screen === 'lektion') {
       setLastLessonContext(null)
+      setFocusMode(false)
       setScreen('home')
     }
     else if (screen === 'quiz') { setScreen(quizOrigin) }
@@ -131,7 +160,7 @@ export default function App() {
 
   return (
     <AppContext.Provider value={ctx}>
-      <div className="app" data-theme={theme}>
+      <div className={`app ${focusMode ? 'focus-mode' : ''}`} data-theme={theme}>
 
         {/* Modal de bienvenue — premier lancement */}
         {showWelcome && <WelcomeModal onSave={handleSaveName} />}
@@ -146,9 +175,11 @@ export default function App() {
           theme={theme}
           streak={progress.streak || 0}
           onSearch={() => setShowSearch(true)}
+          focusMode={focusMode}
+          onToggleFocus={() => setFocusMode(f => !f)}
         />
         {showSearch && <SearchModal onClose={() => setShowSearch(false)} />}
-        <Sidebar screen={screen} onNav={nav} />
+        {!focusMode && <Sidebar screen={screen} onNav={nav} />}
         <main className="main">
           <div className="content">
             {screen === 'home'         && <Home />}

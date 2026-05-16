@@ -561,3 +561,24 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--ink);
 /* ── FACHBEGRIFFE HEADER STICKY ── */
 .fach-header { position:sticky; top:56px; z-index:100; background:var(--bg); padding-top:12px; padding-bottom:4px; }
 .fach-filter { position:sticky; top:112px; z-index:99; background:var(--bg); padding-bottom:8px; }
+
+
+/* === MODE FOCUS AUTO (scroll) === */
+.topbar, .sidebar {
+  transition: transform .3s ease, opacity .3s ease;
+}
+.app.focus-mode .topbar {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.app.focus-mode .sidebar {
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.app.focus-mode .inhalt-sidebar {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+}

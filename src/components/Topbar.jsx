@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Topbar({ screen, currentTheme, currentLesson, inLektionMode, onBack, onToggleTheme, theme, streak, onSearch }) {
+export default function Topbar({ screen, currentTheme, currentLesson, inLektionMode, onBack, onToggleTheme, theme, streak, onSearch, focusMode, onToggleFocus }) {
 
   const backLabel = screen === 'lektion' ? currentLesson
     : screen === 'quiz' ? 'Quiz'
