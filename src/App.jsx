@@ -28,6 +28,7 @@ export default function App() {
   const [currentLesson, setCurrentLesson] = useState(null)
   const [quizState, setQuizState] = useState(null)
   const [quizOrigin, setQuizOrigin] = useState('detail')
+  const [lastLessonContext, setLastLessonContext] = useState(null)
 
   // Afficher le modal si pas de nom encore
   const [showWelcome, setShowWelcome] = useState(() => !localStorage.getItem('pflegepro_name'))
@@ -43,7 +44,33 @@ export default function App() {
     setShowWelcome(false)
   }
 
-  const nav = (s) => setScreen(s)
+  const nav = (s) => {
+    // Si on est dans une leçon et qu'on quitte vers un autre onglet → mémoriser
+    if (screen === 'lektion' && s !== 'lektion' && s !== 'home') {
+      setLastLessonContext({ theme: currentTheme, lesson: currentLesson, scrollY: window.scrollY })
+    }
+    // Si on clique sur HOME depuis un autre onglet et qu'on a une leçon en cours → retour leçon
+    if (s === 'home' && lastLessonContext && screen !== 'lektion' && screen !== 'home') {
+      window.__skipNextScroll = true
+      window.__restoreScroll = lastLessonContext.scrollY || 0
+      setCurrentTheme(lastLessonContext.theme)
+      setCurrentLesson(lastLessonContext.lesson)
+      setScreen('lektion')
+      // Attendre que le DOM soit rendu et que la page ait sa hauteur finale
+      const tryRestore = (attempts = 0) => {
+        const targetY = window.__restoreScroll
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight
+        if (maxScroll >= targetY || attempts > 20) {
+          window.scrollTo(0, targetY)
+        } else {
+          setTimeout(() => tryRestore(attempts + 1), 30)
+        }
+      }
+      requestAnimationFrame(() => tryRestore())
+      return
+    }
+    setScreen(s)
+  }
 
   const openDetail = (t) => {
     if (t.lessons && t.lessons.length > 0) {
@@ -76,7 +103,10 @@ export default function App() {
   }
 
   const goBack = () => {
-    if (screen === 'lektion') { setScreen('home') }
+    if (screen === 'lektion') {
+      setLastLessonContext(null)
+      setScreen('home')
+    }
     else if (screen === 'quiz') { setScreen(quizOrigin) }
     else if (screen === 'detail') { setScreen('home') }
     else { setScreen('home') }

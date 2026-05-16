@@ -46,17 +46,8 @@ export default function Lektion() {
   const [activeLesson, setActiveLesson] = useState(currentLesson)
   const [readProgress, setReadProgress] = useState(0)
 
-  // Scroll to current lesson when it changes
+  // Scroll to current lesson when it changes (disabled - only on explicit click)
   useEffect(() => {
-    if (currentLesson && lessonRefs.current[currentLesson]) {
-      setTimeout(() => {
-        const el = lessonRefs.current[currentLesson]
-        if (el) {
-          const top = el.getBoundingClientRect().top + window.scrollY - 80
-          window.scrollTo({ top, behavior: 'smooth' })
-        }
-      }, 150)
-    }
     setActiveLesson(currentLesson)
   }, [currentLesson, currentTheme])
 
