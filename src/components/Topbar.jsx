@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Topbar({ screen, currentTheme, currentLesson, inLektionMode, onBack, onToggleTheme, theme, streak }) {
+export default function Topbar({ screen, currentTheme, currentLesson, inLektionMode, onBack, onToggleTheme, theme, streak, onSearch }) {
 
   const backLabel = screen === 'lektion' ? currentLesson
     : screen === 'quiz' ? 'Quiz'
@@ -42,12 +42,23 @@ export default function Topbar({ screen, currentTheme, currentLesson, inLektionM
         </div>
       ) : (
         // ── Mode normal ──
-        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', width:'100%' }}>
-          <div className="t-title" style={{gap:0}}>🏥 <span style={{color:"var(--ink)"}}>Pflege</span><span style={{color:"var(--teal)"}}>Pro</span></div>
+        <div style={{ display:'flex', alignItems:'center', gap:12, width:'100%' }}>
+          <div className="t-title" style={{gap:0, flexShrink:0}}>🏥 <span style={{color:"var(--ink)"}}>Pflege</span><span style={{color:"var(--teal)"}}>Pro</span></div>
 
+          <button onClick={onSearch} className="topbar-search" style={{
+            flex: 1, minWidth: 0,
+            background: 'var(--bg3)', border: '1px solid var(--border)',
+            color: 'var(--ink3)', borderRadius: 999,
+            padding: '7px 12px', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', gap: 8,
+            fontSize: '.82rem', fontFamily: 'DM Sans,sans-serif',
+            transition: 'all .2s', overflow: 'hidden',
+          }}>
+            <span style={{ fontSize: '1rem', flexShrink: 0 }}>🔍</span>
+            <span style={{ flex: 1, textAlign: 'left', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>Suchen...</span>
+          </button>
 
-
-          <div className="t-right">
+          <div className="t-right" style={{ flexShrink: 0 }}>
             <span className="theme-mode-label">
               {theme === 'dark' ? '🌙 Dunkel' : '☀️ Hell'}
             </span>

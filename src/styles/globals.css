@@ -92,6 +92,18 @@
   white-space: nowrap;
 }
 
+/* Sur petit écran, cacher le label Hell/Dunkel pour laisser place à la barre de recherche */
+@media (max-width: 640px) {
+  .theme-mode-label { display: none; }
+  .topbar-search { font-size: .78rem; }
+}
+
+/* Sur très petit écran, cacher aussi le texte "Suchen..." (garder juste l'icône) */
+@media (max-width: 420px) {
+  .topbar-search span:nth-child(2) { display: none; }
+  .topbar-search { flex: 0 0 auto; width: 38px; padding: 7px; justify-content: center; }
+}
+
 [data-theme="light"] .sidebar { box-shadow: 2px 0 12px rgba(0,0,0,0.06); }
 [data-theme="light"] .topbar  { box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
 

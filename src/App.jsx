@@ -9,6 +9,7 @@ import { PRAXIS_DATA } from './data/praxis.js'
 import Topbar from './components/Topbar.jsx'
 import Sidebar from './components/Sidebar.jsx'
 import WelcomeModal from './components/WelcomeModal.jsx'
+import SearchModal from './components/SearchModal.jsx'
 import Home from './screens/Home.jsx'
 import Detail from './screens/Detail.jsx'
 import Lektion from './screens/Lektion.jsx'
@@ -33,6 +34,7 @@ export default function App() {
 
   // Afficher le modal si pas de nom encore
   const [showWelcome, setShowWelcome] = useState(() => !localStorage.getItem('pflegepro_name'))
+  const [showSearch, setShowSearch] = useState(false)
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -143,7 +145,9 @@ export default function App() {
           onToggleTheme={toggleTheme}
           theme={theme}
           streak={progress.streak || 0}
+          onSearch={() => setShowSearch(true)}
         />
+        {showSearch && <SearchModal onClose={() => setShowSearch(false)} />}
         <Sidebar screen={screen} onNav={nav} />
         <main className="main">
           <div className="content">
