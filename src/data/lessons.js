@@ -3421,4 +3421,549 @@ export const LESSON_CONTENT = {
 </div></div>`
   },
 
+  niere: {
+
+    'Anatomie & Funktionen der Niere': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#78350f,#92400e,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,191,36,.2);border:1px solid rgba(251,191,36,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(253,224,71,.95)">💧 Niere · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Anatomie & Funktionen der Niere</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Filterorgane des Körpers — Blutreinigung, Hormonproduktion und Regulation</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Hauptaufgaben der Nieren</div></div>
+  <p class="lekt-prose">Die Nieren sind <strong>lebenswichtige Filterorgane</strong> – sie reinigen das Blut, regulieren den Wasser- und Elektrolythaushalt und produzieren wichtige Hormone.</p>
+
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fbbf24">🎯 Die 6 Hauptfunktionen</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:12px">
+        <div style="font-weight:700;font-size:.8rem;color:#fbbf24;margin-bottom:4px">💧 Urinbildung</div>
+        <div style="font-size:.73rem;color:var(--ink2);line-height:1.5">Durch die Nephrone — bis zu 180 L Primärharn/Tag, davon ~1,5–2 L Endurin</div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:12px">
+        <div style="font-weight:700;font-size:.8rem;color:#fb923c;margin-bottom:4px">🩸 Blutreinigung</div>
+        <div style="font-size:.73rem;color:var(--ink2);line-height:1.5">Entfernung von Kreatinin, Harnstoff, Harnsäure und Giftstoffen</div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:12px">
+        <div style="font-weight:700;font-size:.8rem;color:#60a5fa;margin-bottom:4px">⚖️ Wasser & Elektrolyte</div>
+        <div style="font-size:.73rem;color:var(--ink2);line-height:1.5">Ausscheidung und Rückresorption von Wasser, Elektrolyten, Glucose, kleinen Proteinen</div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:12px">
+        <div style="font-weight:700;font-size:.8rem;color:#f87171;margin-bottom:4px">❤️ Blutdruckregulation</div>
+        <div style="font-size:.73rem;color:var(--ink2);line-height:1.5">Über Wasserhaushalt und Hormon <strong>Renin</strong> → Blutdruck steigt</div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:12px">
+        <div style="font-weight:700;font-size:.8rem;color:#a78bfa;margin-bottom:4px">⚗️ Säure-Basen-Haushalt</div>
+        <div style="font-size:.73rem;color:var(--ink2);line-height:1.5">pH-Wert des Blutes: <strong>7,37–7,4</strong></div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:12px">
+        <div style="font-weight:700;font-size:.8rem;color:#34d399;margin-bottom:4px">💊 Hormonausschüttung</div>
+        <div style="font-size:.73rem;color:var(--ink2);line-height:1.5">Renin, Erythropoetin, aktives Vitamin D3 (Calcitriol)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Die 3 wichtigsten Nieren-Hormone</div></div>
+  <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:10px;padding:14px 16px">
+      <div style="font-weight:700;color:#fb7185;margin-bottom:4px">🩸 Renin</div>
+      <div style="font-size:.85rem;color:var(--ink2);line-height:1.5">Bei niedrigem Blutdruck ausgeschüttet → mehr Wasserrückresorption → <strong>Blutdruckanstieg</strong></div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:10px;padding:14px 16px">
+      <div style="font-weight:700;color:#ef4444;margin-bottom:4px">🩸 Erythropoetin (EPO)</div>
+      <div style="font-size:.85rem;color:var(--ink2);line-height:1.5">Stimuliert die Bildung von <strong>Erythrozyten</strong> im Knochenmark. Mangel → renale Anämie bei Nierenversagen</div>
+    </div>
+    <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:10px;padding:14px 16px">
+      <div style="font-weight:700;color:#fbbf24;margin-bottom:4px">☀️ Calcitriol (Vit. D3)</div>
+      <div style="font-size:.85rem;color:var(--ink2);line-height:1.5">Aktive Form von Vitamin D → wichtig für <strong>Knochenaufbau</strong> und Calciumstoffwechsel</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>Merke:</strong> Die Nieren sind <strong>Multifunktionsorgane</strong> — sie filtern, regulieren und produzieren Hormone. Bei Nierenversagen fallen ALLE diese Funktionen aus!
+</div>
+</div></div>`,
+
+    'Nephrone & Urinbildung': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#78350f,#92400e,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,191,36,.2);border:1px solid rgba(251,191,36,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(253,224,71,.95)">💧 Niere · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Nephrone & Urinbildung</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Die mikroskopischen Filtereinheiten der Niere — Primär- und Sekundärharn</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was sind Nephrone?</div></div>
+  <p class="lekt-prose">Das <strong>Nephron</strong> ist die <strong>kleinste Funktionseinheit der Niere</strong>. Jede Niere enthält ca. <strong>1–1,5 Millionen Nephrone</strong> — beide Nieren zusammen ca. 2–3 Mio.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fbbf24">🔬 Aufbau eines Nephrons</div>
+    <p style="font-size:.85rem;color:var(--ink2);line-height:1.6;margin-top:6px">Ein Nephron besteht aus <strong>zwei Hauptteilen</strong>:</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+      <div style="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.2);border-radius:10px;padding:12px">
+        <div style="font-weight:700;font-size:.85rem;color:#fbbf24;margin-bottom:6px">1️⃣ Nierenkörperchen</div>
+        <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Glomerulus + Bowman-Kapsel<br>→ liegt in der <strong>Nierenrinde</strong></div>
+      </div>
+      <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.2);border-radius:10px;padding:12px">
+        <div style="font-weight:700;font-size:.85rem;color:#60a5fa;margin-bottom:6px">2️⃣ Nierenkanälchen</div>
+        <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Tubulusapparat<br>→ in <strong>Rinde + Mark</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Primärharn-Bildung im Glomerulus</div></div>
+  <p class="lekt-prose">Im <strong>Nierenkörperchen</strong> (Glomerulus + Bowman-Kapsel) entsteht der <strong>Primärharn</strong> — die Vorstufe des Urins.</p>
+  <div class="lekt-card" style="background:rgba(251,191,36,.05);border-color:rgba(251,191,36,.2)">
+    <div class="lekt-card-label" style="color:#fbbf24">📥 Was wird filtriert?</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Wasser</li>
+      <li>Elektrolyte</li>
+      <li>Glucose</li>
+      <li>Kleine Proteine</li>
+      <li>Giftstoffe, Kreatinin, Harnstoff, Harnsäure</li>
+    </ul>
+    <div class="lekt-card-label" style="color:#ef4444;margin-top:12px">🚫 Was bleibt im Blut?</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Erythrozyten, Leukozyten, Thrombozyten <strong>(zu groß!)</strong></li>
+    </ul>
+  </div>
+  <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:14px 16px;margin-top:12px">
+    <div style="font-weight:700;color:#60a5fa;margin-bottom:4px">💡 Filtration & Blutdruck</div>
+    <div style="font-size:.85rem;color:var(--ink2);line-height:1.5">Die Filtration wird durch den <strong>Blutdruck</strong> gesteuert. Bei zu niedrigem RR → Niere schüttet <strong>Renin</strong> aus → mehr Wasserrückresorption → Blutdruckerhöhung → bessere Filtration</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Sekundärharn-Bildung im Tubulus</div></div>
+  <p class="lekt-prose">In den <strong>Nierenkanälchen</strong> (Tubulusapparat) wird der Primärharn <strong>aufkonzentriert</strong> → es entsteht der <strong>Sekundärharn</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#34d399">🔄 Rückresorption</div>
+    <p style="font-size:.85rem;color:var(--ink2);line-height:1.6;margin-top:6px">Aus dem Primärharn werden Wasser, Elektrolyte, Glucose und kleinste Proteine ins Blut <strong>zurückgeholt</strong>.</p>
+  </div>
+
+  <div style="background:linear-gradient(135deg,rgba(251,191,36,.08),rgba(96,165,250,.08));border:1px solid rgba(251,191,36,.2);border-radius:12px;padding:14px 16px;margin-top:14px">
+    <div style="font-weight:700;color:#fbbf24;margin-bottom:8px">🚰 Weg des Sekundärharns nach außen</div>
+    <div style="font-size:.85rem;color:var(--ink2);line-height:1.8">Sammelrohre → Nierenkelche → <strong>Nierenbecken</strong> → Harnleiter → <strong>Harnblase</strong> → Harnröhre → Ausscheidung</div>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>Merke:</strong> Im Nierenkörperchen entsteht der Primärharn (~180 L/Tag). In den Nierenkanälchen wird er aufkonzentriert zum Sekundärharn (~1,5–2 L/Tag).
+</div>
+</div></div>`,
+
+    'Ableitende Harnwege & Miktionsreflex': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#78350f,#92400e,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,191,36,.2);border:1px solid rgba(251,191,36,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(253,224,71,.95)">💧 Niere · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Ableitende Harnwege & Miktionsreflex</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wie das Wasserlassen gesteuert wird — Reflex vs. willkürliche Kontrolle</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Wann entsteht Harndrang?</div></div>
+  <p class="lekt-prose">Der <strong>Harndrang</strong> entsteht ab ca. <strong>150–300 ml</strong> Blasenfüllung. Die maximale Blasenkapazität liegt bei <strong>400–600 ml</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fbbf24">📊 Blasenfüllung & Reaktion</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+      <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px">
+        <div style="font-weight:700;font-size:.78rem;color:#22c55e">150–300 ml</div>
+        <div style="font-size:.72rem;color:var(--ink2);margin-top:3px">Erster Harndrang</div>
+      </div>
+      <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:10px">
+        <div style="font-weight:700;font-size:.78rem;color:#ef4444">400–600 ml</div>
+        <div style="font-size:.72rem;color:var(--ink2);margin-top:3px">Maximale Kapazität</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Miktion bei Säuglingen (bis 3. Lebensjahr)</div></div>
+  <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.2);border-radius:12px;padding:16px;margin-top:8px">
+    <div style="font-weight:700;color:#60a5fa;margin-bottom:8px">🍼 Reflektorisch (über das Rückenmark)</div>
+    <ol style="margin:0 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.8">
+      <li>Blasenfüllung steigt → Innendruck steigt</li>
+      <li><strong>Dehnungsrezeptoren</strong> registrieren die Dehnung</li>
+      <li>Weiterleitung ans <strong>Rückenmark</strong></li>
+      <li>Parasympathikus aktiviert <strong>M. detrusor vesicae</strong> → Kontraktion</li>
+      <li>Innerer Sphinkter erschlafft</li>
+      <li>Äußerer Sphinkter (Beckenboden) erschlafft</li>
+      <li>→ <strong>Miktion findet statt</strong></li>
+    </ol>
+    <div style="margin-top:10px;font-size:.8rem;color:#fb923c;font-weight:600">⚠️ Noch keine Gehirnkontrolle → Windeln notwendig</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Miktion ab dem 3. Lebensjahr</div></div>
+  <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.2);border-radius:12px;padding:16px;margin-top:8px">
+    <div style="font-weight:700;color:#a78bfa;margin-bottom:8px">🧠 Zentralgesteuert (über das Gehirn)</div>
+    <p style="font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:10px">Das <strong>Miktionszentrum</strong> nimmt den Harndrang <strong>bewusst</strong> wahr und entscheidet:</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+      <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#22c55e;font-size:.85rem;margin-bottom:4px">🛑 Blasenfüllungszentrum</div>
+        <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Hemmt parasympathische Fasern → Detrusor entspannt → Schließmuskel kontrahiert → <strong>Kontinenz</strong></div>
+      </div>
+      <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#fb7185;font-size:.85rem;margin-bottom:4px">💧 Blasenentleerungszentrum</div>
+        <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Parasympathikus aktiviert → Detrusor kontrahiert → Schließmuskeln erschlaffen → <strong>Miktion</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Wichtige Nerven für die Miktion</div></div>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+    <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.85rem">Nervus pelvicus (Beckennerv)</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px;line-height:1.5">Parasympathisch (S2–S4) — innerviert den Detrusor → löst Miktion aus</div>
+    </div>
+    <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.85rem">Nervus pudendus</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px;line-height:1.5">Innerviert den <strong>äußeren Schließmuskel</strong> (Beckenboden) → ermöglicht willkürliche Kontrolle</div>
+    </div>
+    <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.85rem">Nervus hypogastricus</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px;line-height:1.5">Sympathisch — hemmt die Miktion → fördert Kontinenz</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>Merke:</strong> Bis zum 3. Lebensjahr läuft die Miktion <strong>rein reflektorisch</strong> über das Rückenmark. Danach übernimmt das Gehirn die <strong>willkürliche Kontrolle</strong>.
+</div>
+</div></div>`,
+
+    'Harninkontinenz — Definition & Formen': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#78350f,#92400e,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,191,36,.2);border:1px solid rgba(251,191,36,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(253,224,71,.95)">💧 Niere · Lektion 4</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Harninkontinenz — Definition</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Symptom, nicht Krankheit — Definitionen, Prävalenz & Tabuthema</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Definitionen</div></div>
+
+  <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:10px;padding:14px 16px;margin-bottom:12px">
+    <div style="font-weight:700;color:#22c55e;margin-bottom:4px">✅ Kontinenz</div>
+    <div style="font-size:.85rem;color:var(--ink2);line-height:1.5"><strong>Willkürliche Blasenentleerung</strong> zu passender Zeit an passendem Ort.</div>
+  </div>
+
+  <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:10px;padding:14px 16px;margin-bottom:12px">
+    <div style="font-weight:700;color:#fb7185;margin-bottom:4px">❌ Harninkontinenz (Norton 1999)</div>
+    <div style="font-size:.85rem;color:var(--ink2);line-height:1.5">"Unfreiwilliges Ausscheiden oder Abgehen von Urin an unpassenden Orten oder zu unpassenden Zeiten, <strong>≥ 2× im Monat</strong>, unabhängig von der Urinmenge."</div>
+  </div>
+
+  <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:14px 16px">
+    <div style="font-weight:700;color:#60a5fa;margin-bottom:4px">📋 ICS-Definition</div>
+    <div style="font-size:.85rem;color:var(--ink2);line-height:1.5">"Symptom des <strong>unfreiwilligen Urinverlusts jeglichen Ausmaßes</strong>."</div>
+  </div>
+
+  <div style="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.3);border-radius:12px;padding:14px 16px;margin-top:14px">
+    <div style="font-weight:700;color:#fbbf24;margin-bottom:6px">⚠️ Wichtig zu wissen</div>
+    <div style="font-size:.85rem;color:var(--ink2);line-height:1.6">Harninkontinenz ist <strong>keine Erkrankung, sondern ein Symptom</strong>! Die Ursache muss differentialdiagnostisch abgeklärt werden.</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Prävalenz in Deutschland</div></div>
+  <p class="lekt-prose">Harninkontinenz ist ein <strong>häufiges Problem</strong>, das mit dem Alter <strong>deutlich zunimmt</strong>. Sie betrifft <strong>Frauen häufiger als Männer</strong>.</p>
+
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fbbf24">📊 Häufigkeitsverteilung</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+      <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:1.2rem;font-weight:700;color:#fb7185">4,5–53%</div>
+        <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">👩 Frauen gesamt</div>
+      </div>
+      <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.2);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:1.2rem;font-weight:700;color:#60a5fa">1,6–24%</div>
+        <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">👨 Männer gesamt</div>
+      </div>
+      <div style="background:rgba(251,113,133,.12);border:1px solid rgba(251,113,133,.3);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:1.2rem;font-weight:700;color:#fb7185">~27/100</div>
+        <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Frauen > 60 J.</div>
+      </div>
+      <div style="background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.3);border-radius:10px;padding:12px;text-align:center">
+        <div style="font-size:1.2rem;font-weight:700;color:#60a5fa">~18/100</div>
+        <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Männer > 60 J.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:10px;padding:12px 14px;margin-top:14px">
+    <div style="font-weight:700;color:#ef4444;margin-bottom:4px">🤫 Tabuthema</div>
+    <div style="font-size:.82rem;color:var(--ink2);line-height:1.5">Die tatsächlichen Zahlen liegen <strong>deutlich höher</strong> — viele Betroffene verschweigen das Problem aus Scham!</div>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>Merke:</strong> Harninkontinenz ist ein <strong>Symptom</strong>, kein eigenständiges Krankheitsbild. Sie ist häufig (besonders bei älteren Frauen) und oft unterschätzt wegen Scham.
+</div>
+</div></div>`,
+
+    'Inkontinenzformen im Detail': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#78350f,#92400e,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,191,36,.2);border:1px solid rgba(251,191,36,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(253,224,71,.95)">💧 Niere · Lektion 5</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Inkontinenzformen im Detail</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Belastung, Drang, Retention, Reflex — Differenzialdiagnose & Therapie</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Belastungsinkontinenz (Stressinkontinenz)</div></div>
+  <div class="lekt-zusammen" style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185">
+    <strong>Definition:</strong> Unfreiwilliger Harnabgang bei <strong>körperlicher Belastung — ohne Harndrang</strong>.
+  </div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">📊 Schweregrade</div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+      <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px">
+        <strong style="color:#22c55e">Grad I</strong> <span style="color:var(--ink2);font-size:.85rem">— Harnverlust bei Husten, Niesen, Lachen</span>
+      </div>
+      <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:8px;padding:10px">
+        <strong style="color:#fbbf24">Grad II</strong> <span style="color:var(--ink2);font-size:.85rem">— Harnverlust bei Heben, Treppensteigen, Aufstehen</span>
+      </div>
+      <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:10px">
+        <strong style="color:#ef4444">Grad III</strong> <span style="color:var(--ink2);font-size:.85rem">— Harnverlust <strong>im Liegen</strong></span>
+      </div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+    <div style="background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.8rem;margin-bottom:4px">👩 Frauen</div>
+      <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Beckenbodenschwäche nach Geburten, Bindegewebsschwäche, Hormonmangel post menopause</div>
+    </div>
+    <div style="background:rgba(96,165,250,.05);border:1px solid rgba(96,165,250,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.8rem;margin-bottom:4px">👨 Männer</div>
+      <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Prostata-OP (Verletzung des Verschlussmuskels)</div>
+    </div>
+  </div>
+  <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:10px;padding:12px;margin-top:12px">
+    <div style="font-weight:700;color:#22c55e;font-size:.85rem;margin-bottom:6px">💊 Therapie</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6"><strong>Konservativ:</strong> Beckenbodentraining, Pessartherapie, Biofeedbacktraining<br><strong>Operativ:</strong> bei Blasensenkung, Gebärmutter-/Scheidenvorfall</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Dranginkontinenz (Überaktive Blase)</div></div>
+  <div class="lekt-zusammen" style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa">
+    <strong>Definition:</strong> "Überaktivität der Blasenmuskulatur" — Blase kann Harn nicht mehr speichern trotz intakten Verschlussmechanismus. Leichte Form = <strong>Reizblase</strong>.
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+    <div style="background:rgba(167,139,250,.05);border:1px solid rgba(167,139,250,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.8rem;margin-bottom:4px">⚠️ Ursachen</div>
+      <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Neurologische Erkrankungen: <strong>Schlaganfall, Parkinson, MS, Alzheimer, Diabetes mellitus, Epilepsie</strong>. Auch: Blasensteine, Blasenentzündung, Bestrahlung, psychisch.</div>
+    </div>
+    <div style="background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.8rem;margin-bottom:4px">🚨 Symptome</div>
+      <div style="font-size:.75rem;color:var(--ink2);line-height:1.5"><strong>Starker, kaum unterdrückbarer Harndrang</strong>. Bei Reizblase noch unterdrückbar.</div>
+    </div>
+  </div>
+  <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:10px;padding:12px;margin-top:12px">
+    <div style="font-weight:700;color:#22c55e;font-size:.85rem;margin-bottom:6px">💊 Therapie</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6">Blasentraining, medikamentös (blasenberuhigende Medikamente), Elektrostimulation</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Chronische Harnretention (Überlauf)</div></div>
+  <div class="lekt-zusammen" style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa">
+    <strong>Definition:</strong> Überdehnung des Blasenmuskels durch Restharn → "Überlaufen" → unwillkürlicher Verlust kleiner Harnmengen. <strong>Betrifft v.a. Männer!</strong>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+    <div style="background:rgba(96,165,250,.05);border:1px solid rgba(96,165,250,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.8rem;margin-bottom:4px">⚠️ Ursachen</div>
+      <div style="font-size:.75rem;color:var(--ink2);line-height:1.5"><strong>Prostatavergrößerung (BPH)</strong>, Blasenstein, Blasentumor, Urethrastriktur, Diabetes, Psychopharmaka, Bandscheibenvorfall</div>
+    </div>
+    <div style="background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.8rem;margin-bottom:4px">🚨 Symptome</div>
+      <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Verlängerte Entleerungszeit, Startschwierigkeiten, schwacher Strahl, <strong>Nachträufeln</strong>, häufige kleine Mengen</div>
+    </div>
+  </div>
+  <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:10px;padding:12px;margin-top:12px">
+    <div style="font-weight:700;color:#22c55e;font-size:.85rem;margin-bottom:6px">💊 Therapie</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6"><strong>Operative Entfernung</strong> des Abflusshindernisses. Überbrückend: SPK, DK, <strong>ISK</strong></div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Reflexinkontinenz (Neurogene Inkontinenz)</div></div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>Definition:</strong> Störung der blasensteuernden Nerven → unkontrollierter Harnverlust. <strong>⚠️ Erhöhter Blasendruck schädigt langfristig die Nieren!</strong>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+    <div style="background:rgba(239,68,68,.05);border:1px solid rgba(239,68,68,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.8rem;margin-bottom:4px">⚠️ Ursachen</div>
+      <div style="font-size:.75rem;color:var(--ink2);line-height:1.5"><strong>Rückenmarkschädigung, Querschnittslähmung</strong>, Tumore am Rückenmark, MS, Parkinson</div>
+    </div>
+    <div style="background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.8rem;margin-bottom:4px">🚨 Symptome</div>
+      <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Keine willentliche Entleerung möglich. Blase nicht wahrnehmbar voll. <strong>Zufallsreiz (Husten) löst Entleerung aus</strong></div>
+    </div>
+  </div>
+  <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:10px;padding:12px;margin-top:12px">
+    <div style="font-weight:700;color:#22c55e;font-size:.85rem;margin-bottom:6px">💊 Therapie</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6"><strong>ISK</strong> zur restharnfreien Entleerung, medikamentöse Drucksenkung, Elektrostimulation</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Weitere Formen</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.85rem">🔀 Misch-Harninkontinenz</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Kombination aus <strong>Drang- und Belastungsinkontinenz</strong></div>
+    </div>
+    <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.85rem">🚿 Extraurethrale Inkontinenz</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Harnabgang unter Umgehung der Harnröhre (Fistelgänge, ektope Harnleiter) — <strong>nur operativ behandelbar!</strong></div>
+    </div>
+    <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.85rem">♿ Funktionelle Inkontinenz</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Harndrangkontrolle intakt, aber Gang zur Toilette unmöglich (<strong>Demenz, eingeschränkte Mobilität, Depression</strong>)</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>Merke:</strong> Die 4 Hauptformen sind <strong>Belastung, Drang, Retention, Reflex</strong>. Die Differenzialdiagnose ist entscheidend für die richtige Therapie!
+</div>
+</div></div>`,
+
+    'Expertenstandard & Pflege bei Inkontinenz': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#78350f,#92400e,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,191,36,.2);border:1px solid rgba(251,191,36,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(253,224,71,.95)">💧 Niere · Lektion 6</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Expertenstandard & Pflege</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Nationaler Expertenstandard zur Förderung der Harnkontinenz</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Das Ziel des Expertenstandards</div></div>
+  <div style="background:rgba(34,197,94,.08);border:1.5px solid rgba(34,197,94,.3);border-radius:12px;padding:16px;margin-top:8px">
+    <div style="font-weight:700;color:#22c55e;margin-bottom:6px">🎯 Grundprinzip</div>
+    <p style="font-size:.9rem;color:var(--ink);line-height:1.6;margin:0">Der Nationale Expertenstandard geht davon aus, dass bei <strong>jedem Pflegebedürftigen</strong> Harnkontinenz <strong>erhalten oder gefördert werden kann</strong>.</p>
+    <p style="font-size:.82rem;color:var(--ink2);margin-top:8px;line-height:1.5">Eine identifizierte Inkontinenz wird <strong>beseitigt, reduziert oder kompensiert</strong>.</p>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Die 6 Schritte des Expertenstandards</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(251,191,36,.05);border-left:3px solid #fbbf24;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.85rem;margin-bottom:3px">1️⃣ Identifikation</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Erkennen der Harninkontinenz und der jeweiligen Form</div>
+    </div>
+    <div style="background:rgba(251,191,36,.05);border-left:3px solid #fbbf24;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.85rem;margin-bottom:3px">2️⃣ Einschätzung</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Differenzierte Einschätzung → Erstellung eines <strong>Kontinenzprofils</strong></div>
+    </div>
+    <div style="background:rgba(251,191,36,.05);border-left:3px solid #fbbf24;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.85rem;margin-bottom:3px">3️⃣ Beratung</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Beratung zu formspezifischen Maßnahmen zur Kontinenzförderung</div>
+    </div>
+    <div style="background:rgba(251,191,36,.05);border-left:3px solid #fbbf24;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.85rem;margin-bottom:3px">4️⃣ Planung</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Planung der Maßnahmen und Ziele</div>
+    </div>
+    <div style="background:rgba(251,191,36,.05);border-left:3px solid #fbbf24;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.85rem;margin-bottom:3px">5️⃣ Durchführung</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Koordination und Umsetzung der geplanten Maßnahmen</div>
+    </div>
+    <div style="background:rgba(251,191,36,.05);border-left:3px solid #fbbf24;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.85rem;margin-bottom:3px">6️⃣ Evaluation</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Bewertung anhand des angestrebten Kontinenzprofils</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Anamnese-Fragen bei Inkontinenz</div></div>
+  <p class="lekt-prose">Wichtige Fragen laut Expertenstandard zur differenzierten Einschätzung:</p>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.05);border:1px solid rgba(96,165,250,.2);border-radius:10px;padding:10px 12px">
+      <div style="font-size:.85rem;color:var(--ink)">🔵 Verlieren Sie <strong>ungewollt Harn</strong>?</div>
+    </div>
+    <div style="background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:10px 12px">
+      <div style="font-size:.85rem;color:var(--ink)">🔴 Verlieren Sie Harn beim <strong>Husten, Lachen oder Heben</strong>? <span style="font-size:.72rem;color:var(--ink3)">→ Belastungsinkontinenz</span></div>
+    </div>
+    <div style="background:rgba(167,139,250,.05);border:1px solid rgba(167,139,250,.2);border-radius:10px;padding:10px 12px">
+      <div style="font-size:.85rem;color:var(--ink)">🟣 Verlieren Sie Harn <strong>auf dem Weg zur Toilette</strong>? <span style="font-size:.72rem;color:var(--ink3)">→ Dranginkontinenz</span></div>
+    </div>
+    <div style="background:rgba(251,191,36,.05);border:1px solid rgba(251,191,36,.2);border-radius:10px;padding:10px 12px">
+      <div style="font-size:.85rem;color:var(--ink)">🟡 Tragen Sie <strong>Einlagen/Vorlagen</strong>?</div>
+    </div>
+    <div style="background:rgba(167,139,250,.05);border:1px solid rgba(167,139,250,.2);border-radius:10px;padding:10px 12px">
+      <div style="font-size:.85rem;color:var(--ink)">🟣 Verspüren Sie <strong>starken, nicht unterdrückbaren Harndrang</strong>?</div>
+    </div>
+    <div style="background:rgba(96,165,250,.05);border:1px solid rgba(96,165,250,.2);border-radius:10px;padding:10px 12px">
+      <div style="font-size:.85rem;color:var(--ink)">🔵 Müssen Sie <strong>pressen</strong>, um die Blase zu entleeren? <span style="font-size:.72rem;color:var(--ink3)">→ Retention</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Therapeutische Maßnahmen</div></div>
+  <div style="display:grid;grid-template-columns:1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.05);border:1px solid rgba(239,68,68,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.85rem;margin-bottom:6px">💊 Medizinisch</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Medikamentöse Therapie, operative Verfahren</div>
+    </div>
+    <div style="background:rgba(34,197,94,.05);border:1px solid rgba(34,197,94,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#22c55e;font-size:.85rem;margin-bottom:6px">👩‍⚕️ Pflegemanagement</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Verhaltenstherapie (<strong>Toilettentraining</strong>), Hilfsmittelanpassung und -schulung</div>
+    </div>
+    <div style="background:rgba(96,165,250,.05);border:1px solid rgba(96,165,250,.2);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.85rem;margin-bottom:6px">🏋️ Physikalisch</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5"><strong>Beckenbodentraining</strong>, Biofeedbacktraining, Elektrostimulation</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Assessment-Faktoren im Überblick</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fbbf24">🔍 Was wird erfasst?</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.8">
+      <li>Mobilität und Orientiertheit</li>
+      <li>Verständigung und Grad der Selbstpflege</li>
+      <li><strong>Akzeptanz</strong> der Inkontinenz</li>
+      <li>Therapiebereitschaft</li>
+      <li>Trink- und Ausscheidungsgewohnheiten</li>
+      <li>Medikation</li>
+      <li><strong>Psychosoziale Auswirkungen</strong></li>
+    </ul>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>Merke:</strong> Der Expertenstandard folgt 6 Schritten — von der <strong>Identifikation</strong> über die <strong>Beratung</strong> bis zur <strong>Evaluation</strong>. Das Ziel: Kontinenz erhalten oder fördern bei <strong>jedem</strong> Pflegebedürftigen.
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT

@@ -139,7 +139,7 @@ export default function Heute() {
     return Math.ceil((QUIZZES[themeId] || []).length / 12)
   }
 
-  const levelNames = ['Basis', 'Fortgeschritten', 'Experte']
+  const levelNames = ['Basis', 'Fortgeschritten', 'Experte', 'Meister', 'Champion']
 
   return (
     <div style={{ maxWidth: "100%" }}>

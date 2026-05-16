@@ -91,4 +91,20 @@ export const THEMES = [
       'Komaformen – Ketoazidose & Hyperosmolar',
     ],
   },
+  {
+    id: 'niere',
+    name: 'Niere, Miktion & Harninkontinenz',
+    icon: '💧',
+    col: 'amber',
+    module: 'ausscheidung',
+    related: [],
+    lessons: [
+      'Anatomie & Funktionen der Niere',
+      'Nephrone & Urinbildung',
+      'Ableitende Harnwege & Miktionsreflex',
+      'Harninkontinenz — Definition & Formen',
+      'Inkontinenzformen im Detail',
+      'Expertenstandard & Pflege bei Inkontinenz',
+    ],
+  },
 ]

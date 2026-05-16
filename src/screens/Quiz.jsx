@@ -56,7 +56,7 @@ export default function Quiz() {
 
   const q = questions[idx]
   const total = questions.length
-  const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte']
+  const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte', 'Niveau 4 – Meister', 'Niveau 5 – Champion']
 
   // Vérifie si le niveau suivant existe
   const allQ = QUIZZES[themeId] || []

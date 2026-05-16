@@ -146,7 +146,7 @@ export default function Detail() {
               const passed = score !== null && score >= 70
               const ld = getLevelData(t.id)
               const hasPrev = ld.inProgress && ld.inProgress.level === lvl
-              const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte']
+              const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte', 'Niveau 4 – Meister', 'Niveau 5 – Champion']
 
               return (
                 <div

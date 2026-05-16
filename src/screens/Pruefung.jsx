@@ -10,7 +10,7 @@ export default function Pruefung() {
   } = useContext(AppContext)
 
   const levels = progress.levels || {}
-  const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte']
+  const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte', 'Niveau 4 – Meister', 'Niveau 5 – Champion']
   const levelIcons = ['🟢', '🟡', '🔴']
 
   function getLevelScore(themeId, lvl) {

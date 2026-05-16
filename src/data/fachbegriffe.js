@@ -23,6 +23,30 @@ export const FACHBEGRIFFE = [
   {term:'Kontinenzprofil',def:'Pflegediagnostisches Ziel im Expertenstandard: beschreibt angestrebte Kontinenzsituation des Pflegebedürftigen',category:'Niere'},
   {term:'Beckenbodentraining',def:'Gezielte Kräftigung der Beckenbodenmuskulatur → Unterstützung des äußeren Schließmuskels → Indikation: Belastungsinkontinenz',category:'Niere'},
 
+  // === NIERE — Suppléments (PDF Niere, Miktion & Harninkontinenz) ===
+  {term:'Bowman-Kapsel',def:'Hülle um den Glomerulus; nimmt den Primärharn auf und leitet ihn in die Nierenkanälchen weiter.',category:'Niere'},
+  {term:'Tubulusapparat',def:'Nierenkanälchen — Teil des Nephrons in Nierenrinde und Nierenmark; zuständig für Rückresorption und Bildung des Sekundärharns.',category:'Niere'},
+  {term:'Calcitriol (Vit. D3)',def:'Aktive Form des Vitamin D, gebildet in der Niere. Wichtig für den Knochenaufbau und Calciumstoffwechsel.',category:'Niere'},
+  {term:'Rückresorption',def:'Wiederaufnahme von Stoffen (Wasser, Elektrolyte, Glucose) aus dem Primärharn zurück ins Blut in den Nierenkanälchen.',category:'Niere'},
+  {term:'Miktion',def:'Medizinischer Begriff für Wasserlassen (Blasenentleerung). Gesteuerter Vorgang durch Nerven, Muskeln und ab dem 3. Lebensjahr durch das Gehirn.',category:'Niere'},
+  {term:'Sphinkter (Schließmuskel)',def:'Muskelring, der die Harnröhre verschließt. Innerer Sphinkter: unwillkürlich. Äußerer Sphinkter (im Beckenboden): willkürlich kontrollierbar.',category:'Niere'},
+  {term:'Nervus pudendus',def:'Nerv, der den äußeren Harnröhrenschließmuskel und den Beckenboden innerviert; wichtig für die willkürliche Kontrolle der Miktion.',category:'Niere'},
+  {term:'Nervus pelvicus',def:'Parasympathischer Nerv (S2–S4); innerviert den Blasenmuskel (Detrusor) und löst bei Aktivierung die Miktion aus.',category:'Niere'},
+  {term:'Reizblase',def:'Leichte Form der Dranginkontinenz. Vermehrte Toilettengänge, Harndrang jedoch noch unterdrückbar.',category:'Niere'},
+  {term:'Misch-Harninkontinenz',def:'Kombination aus Drang- und Belastungsinkontinenz.',category:'Niere'},
+  {term:'Extraurethrale Inkontinenz',def:'Harnabgang unter Umgehung der Harnröhre (ektoper Harnleiter, Fistelgänge). Angeboren oder nach OP. Nur operativ behandelbar.',category:'Niere'},
+  {term:'Prostatahyperplasie (BPH)',def:'Gutartige Vergrößerung der Prostata → Harnröhrenverengung → Abflusshindernis → chronische Harnretention. Häufigste Ursache bei Männern.',category:'Niere'},
+  {term:'ISK (Intermittierender Selbstkatheterismus)',def:'Regelmäßiges Einführen eines Katheters zur restharnfreien Blasenentleerung. Therapie der Wahl bei Reflexinkontinenz und chronischer Harnretention.',category:'Niere'},
+  {term:'SPK (Suprapubischer Katheter)',def:'Katheter, der durch die Bauchdecke oberhalb des Schambeins in die Harnblase eingeführt wird. Überbrückungsmaßnahme bei Abflusshindernis.',category:'Niere'},
+  {term:'Biofeedbacktraining',def:'Methode des Beckenbodentrainings mit Messsonde (vaginal oder rektal) zur sichtbaren Rückmeldung über Muskelaktivität.',category:'Niere'},
+  {term:'Elektrostimulation',def:'Gezielte Nervenstimulation der Beckenbodenmuskulatur durch elektrische Impulse. Eingesetzt bei Drang-, Reflex- und Belastungsinkontinenz.',category:'Niere'},
+  {term:'Inkontinenzfragebogen nach Gaudenz',def:'Standardisiertes Assessmentinstrument zur Unterscheidung zwischen Belastungs- und Dranginkontinenz anhand von Drang- und Belastungs-Score.',category:'Niere'},
+  {term:'Harnwegsinfekt (HWI)',def:'Bakterielle Infektion der Harnwege → kann Dranginkontinenz-ähnliche Symptome auslösen. Häufig bei Frauen und älteren Menschen. Therapie: Antibiotika + Flüssigkeitszufuhr.',category:'Niere'},
+  {term:'Prävalenz',def:'Häufigkeit einer Erkrankung oder eines Merkmals innerhalb einer bestimmten Population zu einem Zeitpunkt. Epidemiologischer Begriff.',category:'Niere'},
+  {term:'Dehnungsrezeptoren',def:'Sensoren in der Blasenwand, die den Füllungszustand registrieren und Signale an Rückenmark/Gehirn weiterleiten.',category:'Niere'},
+
+
+
   // === DEKUBITUS ===
   {term:'Dekubitus',def:'Lokal begrenzte Schädigung der Haut/des Gewebes über knöchernen Vorsprüngen infolge von Druck oder Druck + Scherkräften (NPUAP/EPUAP)',category:'Dekubitus'},
   {term:'Ischämie',def:'Mangeldurchblutung eines Gewebes durch Druckkompression der Blutgefäße → Hypoxie → Zelluntergang',category:'Dekubitus'},
