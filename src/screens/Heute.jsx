@@ -1,6 +1,103 @@
 import { useContext } from 'react'
 import { AppContext } from '../App'
 
+// === BADGES SYSTEM ===
+const ALL_BADGES = [
+  // Champion (Daily Challenge)
+  { id: 'champion_1',  cat: 'Champion', icon: '🏆', name: 'Erster Sieg',       desc: '1. Daily Challenge bestanden',  check: p => (p.challengeStreak || 0) >= 1 || (p.badges || []).includes('champion_1') },
+  { id: 'champion_3',  cat: 'Champion', icon: '🥉', name: 'Bronze Champion',   desc: '3 Tage Challenge in Folge',     check: p => (p.challengeStreak || 0) >= 3 },
+  { id: 'champion_7',  cat: 'Champion', icon: '🥈', name: 'Silber Champion',   desc: '7 Tage Challenge in Folge',     check: p => (p.challengeStreak || 0) >= 7 },
+  { id: 'champion_14', cat: 'Champion', icon: '🥇', name: 'Gold Champion',     desc: '14 Tage Challenge in Folge',    check: p => (p.challengeStreak || 0) >= 14 },
+  { id: 'champion_30', cat: 'Champion', icon: '💎', name: 'Diamant Champion',  desc: '30 Tage Challenge in Folge',    check: p => (p.challengeStreak || 0) >= 30 },
+  // Streak
+  { id: 'streak_3',    cat: 'Streak',   icon: '🔥', name: 'Heißer Start',      desc: '3 Tage Streak',                 check: p => (p.streak || 0) >= 3 },
+  { id: 'streak_7',    cat: 'Streak',   icon: '🌟', name: 'Eine Woche!',       desc: '7 Tage Streak',                 check: p => (p.streak || 0) >= 7 },
+  { id: 'streak_14',   cat: 'Streak',   icon: '⚡', name: 'Unaufhaltsam',      desc: '14 Tage Streak',                check: p => (p.streak || 0) >= 14 },
+  { id: 'streak_30',   cat: 'Streak',   icon: '🚀', name: 'Pflege-Profi',      desc: '30 Tage Streak',                check: p => (p.streak || 0) >= 30 },
+  // Lecture
+  { id: 'read_1',      cat: 'Lesen',    icon: '📖', name: 'Erste Lektion',     desc: '1 Lektion gelesen',             check: (p, r) => r >= 1 },
+  { id: 'read_10',     cat: 'Lesen',    icon: '📚', name: 'Bücherwurm',        desc: '10 Lektionen gelesen',          check: (p, r) => r >= 10 },
+  { id: 'read_25',     cat: 'Lesen',    icon: '🎓', name: 'Wissensdurst',      desc: '25 Lektionen gelesen',          check: (p, r) => r >= 25 },
+  { id: 'read_50',     cat: 'Lesen',    icon: '🧠', name: 'Gelehrter',         desc: '50 Lektionen gelesen',          check: (p, r) => r >= 50 },
+]
+
+function BadgesSection({ progress, readCount }) {
+  const unlocked = ALL_BADGES.filter(b => b.check(progress, readCount))
+  const total = ALL_BADGES.length
+
+  return (
+    <div style={{
+      background: 'linear-gradient(135deg, rgba(245,158,11,.08), rgba(245,158,11,.02))',
+      border: '1px solid rgba(245,158,11,.25)',
+      borderRadius: 16, padding: '16px 18px', marginBottom: 16,
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <span style={{ fontSize: '1.4rem' }}>🏆</span>
+          <div>
+            <div style={{ fontFamily: 'Fraunces,serif', fontSize: '1.05rem', fontWeight: 700, color: 'var(--ink)' }}>
+              Meine Abzeichen
+            </div>
+            <div style={{ fontSize: '.72rem', color: 'var(--ink2)' }}>
+              {unlocked.length} von {total} freigeschaltet
+            </div>
+          </div>
+        </div>
+        <div style={{
+          background: 'var(--card)', padding: '6px 12px', borderRadius: 999,
+          fontSize: '.85rem', fontWeight: 700, color: '#f59e0b',
+          border: '1px solid rgba(245,158,11,.3)',
+        }}>{unlocked.length}/{total}</div>
+      </div>
+
+      {/* Progress bar globale */}
+      <div style={{ height: 6, background: 'var(--bg3)', borderRadius: 3, overflow: 'hidden', marginBottom: 14 }}>
+        <div style={{
+          height: '100%', borderRadius: 3,
+          background: 'linear-gradient(90deg, #f59e0b, #ef4444)',
+          width: `${(unlocked.length / total) * 100}%`,
+          transition: 'width .5s ease',
+        }}/>
+      </div>
+
+      {/* Grille des badges */}
+      <div style={{
+        display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(80px, 1fr))', gap: 8,
+      }}>
+        {ALL_BADGES.map(b => {
+          const isUnlocked = b.check(progress, readCount)
+          return (
+            <div key={b.id} title={`${b.name} - ${b.desc}`} style={{
+              background: isUnlocked ? 'var(--card)' : 'var(--bg3)',
+              border: `1.5px solid ${isUnlocked ? '#f59e0b' : 'var(--border)'}`,
+              borderRadius: 10, padding: '10px 6px', textAlign: 'center',
+              opacity: isUnlocked ? 1 : 0.4,
+              transition: 'transform .15s ease',
+              cursor: 'help',
+            }}
+            onMouseEnter={e => { if (isUnlocked) e.currentTarget.style.transform = 'scale(1.08)' }}
+            onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)' }}
+            >
+              <div style={{
+                fontSize: '1.6rem', marginBottom: 4,
+                filter: isUnlocked ? 'none' : 'grayscale(1)',
+              }}>{isUnlocked ? b.icon : '🔒'}</div>
+              <div style={{
+                fontSize: '.62rem', fontWeight: 700,
+                color: isUnlocked ? 'var(--ink)' : 'var(--ink3)',
+                lineHeight: 1.2, marginBottom: 2,
+              }}>{b.name}</div>
+              <div style={{ fontSize: '.55rem', color: 'var(--ink3)', lineHeight: 1.2 }}>
+                {b.desc}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 export default function Heute() {
   const {
     progress,
@@ -55,42 +152,39 @@ export default function Heute() {
       }}>
         <div style={{
           width: 46, height: 46, borderRadius: 12,
-          background: 'var(--amber-dim)',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: '1.4rem', flexShrink: 0,
+          background: 'white', border: '1.5px solid var(--rose)',
+          display: 'flex', flexDirection: 'column',
+          alignItems: 'center', justifyContent: 'center',
+          flexShrink: 0, overflow: 'hidden',
+          boxShadow: '0 2px 6px rgba(0,0,0,.08)',
         }}>
-          📅
+          <div style={{
+            width: '100%', background: 'var(--rose)', color: 'white',
+            fontSize: '.55rem', fontWeight: 700, textAlign: 'center',
+            padding: '2px 0', letterSpacing: '.3px', textTransform: 'uppercase',
+          }}>
+            {new Date().toLocaleDateString('de-DE', { month: 'short' })}
+          </div>
+          <div style={{
+            fontFamily: 'Fraunces,serif', fontSize: '1.2rem',
+            fontWeight: 700, color: '#1f2937', lineHeight: 1,
+            marginTop: 3,
+          }}>
+            {new Date().getDate()}
+          </div>
         </div>
         <div>
           <div style={{ fontFamily: 'Fraunces, serif', fontSize: '1.2rem', color: 'var(--ink)' }}>
             Mein Fortschritt
           </div>
           <div style={{ fontSize: '.78rem', color: 'var(--ink2)', marginTop: 2 }}>
-            Übersicht · Stand heute
+            Übersicht · {new Date().toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}
           </div>
         </div>
       </div>
 
-      {/* Stats globales */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 24 }}>
-        {[
-          { label: 'Lektionen gelesen', value: `${readCount} / ${totalLessons}`, icon: '📖' },
-          { label: 'Quiz gemacht', value: quizCount, icon: '🎯' },
-          { label: 'Ø Score', value: `${avgScore}%`, icon: '📊' },
-          { label: 'Streak', value: `${progress.streak || 0} 🔥`, icon: '🔥' },
-        ].map((s, i) => (
-          <div key={i} style={{
-            background: 'var(--card)', border: '1px solid var(--border)',
-            borderRadius: 14, padding: '16px',
-          }}>
-            <div style={{ fontSize: '1.4rem', marginBottom: 6 }}>{s.icon}</div>
-            <div style={{ fontFamily: 'Fraunces, serif', fontSize: '1.5rem', color: 'var(--ink)', marginBottom: 2 }}>
-              {s.value}
-            </div>
-            <div style={{ fontSize: '.72rem', color: 'var(--ink3)' }}>{s.label}</div>
-          </div>
-        ))}
-      </div>
+      {/* === SECTION BADGES === */}
+      <BadgesSection progress={progress} readCount={readCount} />
 
       {/* Par thème */}
       {THEMES.map(t => {
