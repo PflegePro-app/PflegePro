@@ -5,12 +5,16 @@ const THEME_KEY   = 'pflegepro_theme'
 const NAME_KEY    = 'pflegepro_name'
 
 function loadProgress() {
+  const defaults = {
+    quizDone: 0, scores: [], streak: 0, lastDate: null,
+    mastered: [], levels: {}, lessonsRead: [],
+    dailyChallenge: { date: null, completed: false, score: 0 },
+    badges: [], challengeStreak: 0, challengeBest: 0,
+  }
   try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {
-      quizDone: 0, scores: [], streak: 0, lastDate: null,
-      mastered: [], levels: {}, lessonsRead: [],
-    }
-  } catch { return { quizDone: 0, scores: [], streak: 0, lastDate: null, mastered: [], levels: {}, lessonsRead: [] } }
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}
+    return { ...defaults, ...saved }
+  } catch { return defaults }
 }
 
 export function useProgress() {
@@ -60,5 +64,35 @@ export function useProgress() {
     return newP.streak
   }, [progress, saveProgress])
 
-  return { progress, saveProgress, theme, toggleTheme, userName, saveName, checkStreak, markLessonRead }
+  // Compléter le Daily Challenge
+  const completeChallenge = useCallback((score) => {
+    const today = new Date().toDateString()
+    const current = loadProgress()
+    const passed = score >= 0.8
+    // Only mark as completed if passed (allow retries if failed)
+    current.dailyChallenge = { date: today, completed: passed, score: Math.round(score * 100) }
+    if (passed) {
+      const yesterday = new Date(Date.now() - 86400000).toDateString()
+      current.challengeStreak = current.dailyChallenge?.date === yesterday
+        ? (current.challengeStreak || 0) + 1
+        : 1
+      const newBadge = `champion_${current.challengeStreak}`
+      if (!current.badges.includes(newBadge)) {
+        current.badges = [...current.badges, newBadge]
+      }
+      if (Math.round(score * 100) > (current.challengeBest || 0)) {
+        current.challengeBest = Math.round(score * 100)
+      }
+    }
+    saveProgress(current)
+    return passed
+  }, [saveProgress])
+
+  // Vérifier si Challenge fait aujourd'hui
+  const isChallengeCompletedToday = useCallback(() => {
+    const today = new Date().toDateString()
+    return progress.dailyChallenge?.date === today && progress.dailyChallenge?.completed
+  }, [progress])
+
+  return { progress, saveProgress, theme, toggleTheme, userName, saveName, checkStreak, markLessonRead, completeChallenge, isChallengeCompletedToday }
 }

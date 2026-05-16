@@ -232,6 +232,70 @@ function StatsBar({ quizCount, avgScore, streak, mastered }) {
   )
 }
 
+function DailyChallengeCard() {
+  const { nav, isChallengeCompletedToday, progress } = useContext(AppContext)
+  const done = isChallengeCompletedToday()
+  const score = progress.dailyChallenge?.score || 0
+  const challengeStreak = progress.challengeStreak || 0
+
+  if (done) {
+    return (
+      <div style={{
+        marginBottom: 18, padding: '16px 20px',
+        background: 'linear-gradient(135deg, #10b98115, #10b98108)',
+        border: '1.5px solid #10b98140',
+        borderRadius: 20, display: 'flex', alignItems: 'center', gap: 14,
+      }}>
+        <div style={{ fontSize: '2rem' }}>✅</div>
+        <div style={{ flex: 1 }}>
+          <div style={{
+            fontFamily: "'Fraunces',serif", fontSize: '1.05rem',
+            fontWeight: 700, color: 'var(--ink)', marginBottom: 2,
+          }}>Heute geschafft! 🏆</div>
+          <div style={{ fontSize: '.85rem', color: 'var(--ink2)' }}>
+            Score: {score}% · Streak {challengeStreak}🔥
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div onClick={() => nav('challenge')} style={{
+      marginBottom: 18, padding: '18px 20px', cursor: 'pointer',
+      background: 'linear-gradient(135deg, #f59e0b, #ef4444)',
+      borderRadius: 20, display: 'flex', alignItems: 'center', gap: 14,
+      position: 'relative', overflow: 'hidden',
+      boxShadow: '0 8px 24px rgba(239,68,68,.25)',
+    }}>
+      <div style={{
+        position: 'absolute', top: -20, right: -10, width: 100, height: 100,
+        borderRadius: '50%', background: 'rgba(255,255,255,.1)',
+        pointerEvents: 'none',
+      }}/>
+      <div style={{ fontSize: '2.4rem', animation: 'flameBounce 1.5s ease-in-out infinite', zIndex: 1 }}>🔥</div>
+      <div style={{ flex: 1, zIndex: 1 }}>
+        <div style={{
+          fontFamily: "'Fraunces',serif", fontSize: '1.15rem',
+          fontWeight: 700, color: 'white', marginBottom: 3,
+        }}>Tägliche Challenge</div>
+        <div style={{ fontSize: '.85rem', color: 'rgba(255,255,255,.92)' }}>
+          5 Fragen · Schaffst du es? ⚡
+        </div>
+      </div>
+      <div style={{
+        fontSize: '1.4rem', color: 'white', zIndex: 1,
+        background: 'rgba(255,255,255,.2)', borderRadius: '50%',
+        width: 36, height: 36, display: 'flex',
+        alignItems: 'center', justifyContent: 'center',
+      }}>›</div>
+      <style>{`
+        @keyframes flameBounce { 0%,100%{transform:scale(1) rotate(-3deg)} 50%{transform:scale(1.1) rotate(3deg)} }
+      `}</style>
+    </div>
+  )
+}
+
 export default function Home() {
   const { progress, THEMES, QUIZZES, openDetail, userName } = useContext(AppContext)
 
@@ -257,6 +321,7 @@ export default function Home() {
   return (
     <div style={{ maxWidth:'100%' }}>
       <Mascot name={userName} />
+      <DailyChallengeCard />
       <StatsBar quizCount={quizCount} avgScore={avgScore} streak={streak} mastered={mastered} />
       <div className="sec-title">📚 Lernthemen</div>
       <div style={{ display:'flex', flexDirection:'column', gap:10 }}>

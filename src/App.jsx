@@ -17,11 +17,12 @@ import Fachbegriffe from './screens/Fachbegriffe.jsx'
 import Praxis from './screens/Praxis.jsx'
 import Heute from './screens/Heute.jsx'
 import Pruefung from './screens/Pruefung.jsx'
+import DailyChallenge from './screens/DailyChallenge.jsx'
 
 export const AppContext = React.createContext(null)
 
 export default function App() {
-  const { progress, saveProgress, theme, toggleTheme, checkStreak, markLessonRead, userName, saveName } = useProgress()
+  const { progress, saveProgress, theme, toggleTheme, checkStreak, markLessonRead, userName, saveName, completeChallenge, isChallengeCompletedToday } = useProgress()
 
   const [screen, setScreen] = useState('home')
   const [currentTheme, setCurrentTheme] = useState(null)
@@ -120,6 +121,8 @@ export default function App() {
     progress, saveProgress, theme, toggleTheme,
     markLessonRead,
     userName,
+    completeChallenge,
+    isChallengeCompletedToday,
   }
 
   const inLektionMode = ['lektion', 'detail', 'quiz'].includes(screen)
@@ -152,6 +155,7 @@ export default function App() {
             {screen === 'praxis'       && <Praxis />}
             {screen === 'heute'        && <Heute />}
             {screen === 'pruefung'     && <Pruefung />}
+            {screen === 'challenge'    && <DailyChallenge />}
           </div>
         </main>
       </div>
