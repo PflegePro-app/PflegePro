@@ -3966,4 +3966,315 @@ export const LESSON_CONTENT = {
 
   },
 
+  gefaesse: {
+
+    'Aufbau & Klappen der Gefäße': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Gefäße · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Aufbau & Klappen der Gefäße</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Schichten der Gefäßwand, Venenklappen und der venöse Rücktransport</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Wandaufbau der Blutgefäße</div></div>
+  <p class="lekt-prose">Die Wand der Blutgefäße besteht von <strong>innen nach außen</strong> aus drei Schichten:</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🔬 Die 3 Schichten</div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+      <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:10px 12px">
+        <div style="font-weight:700;color:#60a5fa">1. Intima</div>
+        <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Glatte Zellschicht innen (Endothel)</div>
+      </div>
+      <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:8px;padding:10px 12px">
+        <div style="font-weight:700;color:#fb7185">2. Media</div>
+        <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Glatte Muskelschicht und elastische Fasern</div>
+      </div>
+      <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:8px;padding:10px 12px">
+        <div style="font-weight:700;color:#fbbf24">3. Adventitia</div>
+        <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Lockeres Bindegewebe — Verbindung zum umliegenden Gewebe</div>
+      </div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Der Wandaufbau ist bei Arterien und Venen prinzipiell gleich — die Schichten unterscheiden sich jedoch in <strong>Dicke und Zusammensetzung</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Bauunterschiede Venen vs. Arterien</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.95rem;margin-bottom:6px">🩸 Arterien</div>
+      <ul style="margin:0 0 0 16px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+        <li><strong>Kleiner</strong> Gefäßdurchmesser</li>
+        <li><strong>Dicke</strong> Muskelschicht</li>
+        <li>Halten dem hohen Druck stand</li>
+      </ul>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.95rem;margin-bottom:6px">💧 Venen</div>
+      <ul style="margin:0 0 0 16px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+        <li><strong>Größerer</strong> Gefäßdurchmesser</li>
+        <li><strong>Dünne</strong> Muskelschicht</li>
+        <li>Besitzen <strong>Venenklappen</strong></li>
+      </ul>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24"><strong>⚠️ Wichtig:</strong> Nicht alle Venen besitzen Klappen. <strong>Venenklappenlos</strong> sind die Hohlvenen, die Lungenvenen und die Hirnvenen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Funktion der Venenklappen</div></div>
+  <p class="lekt-prose">Venenklappen sind <strong>taschenförmige Aussackungen der Intima</strong> und wirken wie Ventile, die den Blutstrom nur in Richtung Herz zulassen.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#22c55e;font-size:.85rem;margin-bottom:4px">💪 Muskelkontraktion</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Blut wird nach oben Richtung Herz gepresst. Die untere geschlossene Klappe verhindert den Rückstrom.</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.85rem;margin-bottom:4px">😌 Muskelentspannung</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Blut kann von unten durch die wieder geöffnete Klappe nachfließen.</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>🩺 Pathologie:</strong> Sind die Venen erweitert, schließen die Klappen nicht mehr vollständig (<strong>Klappeninsuffizienz</strong>). Blut strömt in die Peripherie zurück. Bei längerem Bestehen entstehen <strong>Varikose</strong> (Krampfadern).
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Venöser Rücktransport zum Herz — die 4 Mechanismen</div></div>
+  <p class="lekt-prose">Venenklappen unterstützen <strong>vier Mechanismen</strong>, durch die das Blut <strong>gegen die Schwerkraft</strong> zum Herzen transportiert wird:</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">1️⃣ Arterio-venöse Kopplung</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Venen verlaufen häufig mit Arterien (Begleitvenen). Die Druckwelle der Arterien <strong>komprimiert die Venen</strong> und treibt das Blut voran.</div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#fb7185;font-size:.88rem">2️⃣ Muskelpumpe</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Wirkt v.a. in den Beinen. Die Beinmuskulatur komprimiert bei Kontraktion die Venen.</div>
+    </div>
+    <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.88rem">3️⃣ Sogwirkung des rechten Vorhofs</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Während der <strong>Systole</strong> verschiebt sich die Ventilebene zur Herzspitze → Sog in den Vorhöfen. In der <strong>Diastole</strong> strömt das Blut in die erschlafften Ventrikel.</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem">4️⃣ Unterdruck bei der Inspiration</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Bei der Einatmung erweitert sich der Thoraxinnenraum, der Venendruck fällt — die Venen erweitern sich.</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.1);border-left:3px solid #ef4444">
+    <strong>🏥 Klinische Bedeutung:</strong> Bewegungsmangel (Bettlägerigkeit, langes Sitzen) schwächt die Muskelpumpe → <strong>erhöhtes Thromboserisiko</strong>. <strong>Mobilisation</strong> ist eine zentrale pflegerische Maßnahme!
+  </div>
+</div>
+</div></div>`,
+
+    'Anatomie der Venen — Bein, Arm, Hals': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Gefäße · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Anatomie der Venen</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Bein, Arm und Hals — Venensysteme im Detail</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Untere Hohlvene (V. cava inferior)</div></div>
+  <p class="lekt-prose">Die <strong>V. cava inferior</strong> sammelt das Blut aller Organe der <strong>unteren Körperhälfte</strong> und bringt es zum <strong>rechten Atrium</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🔗 Entstehung</div>
+    <p style="font-size:.85rem;color:var(--ink2);line-height:1.6;margin-top:6px">Sie entsteht aus den beiden Beckenvenen (<strong>V. iliaca communis</strong>). Diese erhält Blut aus:</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:10px">
+        <div style="font-weight:700;color:#fb7185;font-size:.8rem">V. iliaca interna</div>
+        <div style="font-size:.72rem;color:var(--ink2);margin-top:3px">Genitalregion</div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:10px">
+        <div style="font-weight:700;color:#fb7185;font-size:.8rem">V. iliaca externa</div>
+        <div style="font-size:.72rem;color:var(--ink2);margin-top:3px">Bein</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Venensysteme des Beins</div></div>
+  <p class="lekt-prose">Am Bein existieren <strong>zwei Venensysteme</strong>, verbunden durch Kollateralen:</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem;margin-bottom:4px">🔵 Tiefes System</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Erhält Blut vom oberflächlichen System</div>
+    </div>
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:12px;padding:12px">
+      <div style="font-weight:700;color:#22c55e;font-size:.88rem;margin-bottom:4px">🟢 Oberflächliches System</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Versorgung der Haut</div>
+    </div>
+  </div>
+
+  <div class="lekt-card" style="margin-top:14px">
+    <div class="lekt-card-label" style="color:#60a5fa">🔵 Tiefes Venensystem — Fuß → Becken</div>
+    <div style="background:rgba(96,165,250,.05);border-radius:10px;padding:12px;margin-top:8px;font-size:.85rem;color:var(--ink2);line-height:2">
+      <strong>V. tibialis ant./post.</strong> (Schienbeinvenen) → <strong>V. poplitea</strong> (Kniekehlenvene) → <strong>V. femoralis</strong> (Oberschenkelvene) → <strong>V. iliaca externa</strong>
+    </div>
+  </div>
+
+  <div class="lekt-card" style="margin-top:14px">
+    <div class="lekt-card-label" style="color:#22c55e">🟢 Oberflächliches Venensystem</div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+      <div style="background:rgba(34,197,94,.05);border-left:3px solid #22c55e;border-radius:8px;padding:10px">
+        <div style="font-weight:700;color:#22c55e;font-size:.82rem">V. saphena parva</div>
+        <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Wadenbeinseite (kleiner Zeh) → V. poplitea (kurze Strecke)</div>
+      </div>
+      <div style="background:rgba(34,197,94,.05);border-left:3px solid #22c55e;border-radius:8px;padding:10px">
+        <div style="font-weight:700;color:#22c55e;font-size:.82rem">V. saphena magna</div>
+        <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Schienbeinseite (großer Zeh) → V. femoralis (lange Strecke)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lekt-zusammen">
+    <strong>🩺 Klinischer Hinweis:</strong> Die <strong>V. saphena magna</strong> wird häufig als <strong>Bypass</strong> verwendet. Heute werden für koronare Bypässe jedoch bevorzugt arterielle Gefäße (z.B. <strong>A. mammaria interna</strong>) eingesetzt — höhere langfristige Erfolgsraten!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Obere Hohlvene & Armvenen</div></div>
+  <p class="lekt-prose">Die <strong>V. cava superior</strong> leitet das venöse Blut der <strong>oberen Extremität</strong> (Arme und Kopf) zum Herzen. Sie entsteht aus dem Zusammenschluss der <strong>linken und rechten V. brachiocephalica</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🩸 Weg der Armvenen</div>
+    <div style="background:rgba(251,113,133,.05);border-radius:10px;padding:12px;margin-top:8px;font-size:.85rem;color:var(--ink2);line-height:2">
+      <strong>V. radialis + V. ulnaris</strong> → <strong>V. brachialis</strong> → <strong>V. axillaris</strong> → <strong>V. subclavia</strong> → <strong>V. brachiocephalica</strong> → V. cava superior
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Halsbereich — Arterien und Venen</div></div>
+  <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:10px;padding:14px;margin-top:8px">
+    <div style="font-weight:700;color:#ef4444;margin-bottom:8px">🩸 Arterien</div>
+    <p style="font-size:.82rem;color:var(--ink2);line-height:1.6;margin-bottom:8px">Die <strong>A. carotis communis</strong> (Halsschlagader) teilt sich in:</p>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <div style="background:rgba(255,255,255,.03);border-radius:8px;padding:8px 10px">
+        <div style="font-weight:700;color:#ef4444;font-size:.8rem">A. carotis externa</div>
+        <div style="font-size:.72rem;color:var(--ink2);margin-top:2px">Versorgt den äußeren Schädelbereich (Gesicht, Kopfhaut)</div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border-radius:8px;padding:8px 10px">
+        <div style="font-weight:700;color:#ef4444;font-size:.8rem">A. carotis interna</div>
+        <div style="font-size:.72rem;color:var(--ink2);margin-top:2px">Versorgt das Gehirn. Hier liegt das <strong>Glomus caroticum</strong> mit Chemorezeptoren (O₂, CO₂, pH)</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:14px;margin-top:12px">
+    <div style="font-weight:700;color:#60a5fa;margin-bottom:8px">💧 Venen</div>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <div style="background:rgba(255,255,255,.03);border-radius:8px;padding:8px 10px">
+        <div style="font-weight:700;color:#60a5fa;font-size:.8rem">V. jugularis interna</div>
+        <div style="font-size:.72rem;color:var(--ink2);margin-top:2px">Leitet Blut aus dem Gehirn ab — verläuft mit der A. carotis</div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border-radius:8px;padding:8px 10px">
+        <div style="font-weight:700;color:#60a5fa;font-size:.8rem">V. jugularis externa</div>
+        <div style="font-size:.72rem;color:var(--ink2);margin-top:2px">Oberflächlich — <strong>bei Herzinsuffizienz als gestaute Halsvene sichtbar</strong>!</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Die V. jugularis interna bildet mit der V. subclavia den <strong>Venenwinkel (Angulus venosus)</strong> und vereinigt sich zur <strong>V. brachiocephalica</strong> (auch V. anonyma genannt).
+  </div>
+</div>
+</div></div>`,
+
+    'ZVK & Pfortaderkreislauf': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Gefäße · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">ZVK & Pfortaderkreislauf</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Zentraler Venenkatheter und das portale System</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist ein ZVK?</div></div>
+  <p class="lekt-prose">Ein <strong>ZVK</strong> (Zentraler Venenkatheter) wird in eine größere Körpervene eingeführt.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🎯 Indikationen</div>
+    <ul style="margin:8px 0 0 16px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Intravenöse <strong>Medikamenten- und Infusionsgabe</strong></li>
+      <li>Messung des <strong>zentralen Venendrucks (ZVD)</strong></li>
+    </ul>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Punktionsorte</div></div>
+  <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.25);border-radius:12px;padding:14px;margin-top:8px">
+    <div style="font-weight:700;color:#fb7185;margin-bottom:8px">🎯 Häufigste Punktionsorte</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div style="background:rgba(255,255,255,.03);border-radius:8px;padding:10px">
+        <div style="font-weight:700;color:#fb7185;font-size:.85rem">V. jugularis interna</div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border-radius:8px;padding:10px">
+        <div style="font-weight:700;color:#fb7185;font-size:.85rem">V. subclavia</div>
+      </div>
+    </div>
+    <div style="margin-top:10px;font-size:.78rem;color:var(--ink2)"><strong>Seltener verwendet:</strong> V. jugularis externa, V. brachiocephalica, V. femoralis</div>
+  </div>
+
+  <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px;margin-top:12px">
+    <div style="font-weight:700;color:#60a5fa;margin-bottom:8px">📍 Periphere Anlage (PICC)</div>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <div style="background:rgba(255,255,255,.03);border-radius:8px;padding:10px">
+        <div style="font-weight:700;color:#60a5fa;font-size:.82rem">V. cephalica</div>
+        <div style="font-size:.72rem;color:var(--ink2);margin-top:2px">Vom Handrücken über Bizeps direkt in die V. subclavia</div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border-radius:8px;padding:10px">
+        <div style="font-weight:700;color:#60a5fa;font-size:.82rem">V. basilica</div>
+        <div style="font-size:.72rem;color:var(--ink2);margin-top:2px">Vom Handrücken über die Innenseite in die V. brachialis</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">⚠️ Wichtige pflegerische Hinweise</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.85rem;margin-bottom:4px">🚨 Bevorzugt RECHTS!</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Links mündet der <strong>Ductus thoracicus</strong> (Lymphbahn) in den Venenwinkel → Verletzungsgefahr</div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#fb7185;font-size:.85rem;margin-bottom:4px">💧 Bei Volumenmangel</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Die V. jugularis kann kollabiert sein → V. subclavia besser geeignet</div>
+    </div>
+    <div style="background:rgba(239,68,68,.12);border:1.5px solid #ef4444;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.85rem;margin-bottom:4px">⚠️ Gefahr bei V. subclavia: PNEUMOTHORAX!</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Luftansammlung im Pleuraspalt → Lungenkollaps</div>
+    </div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.85rem;margin-bottom:4px">✅ Vorteile V. brachiocephalica</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Gerader Verlauf, großer Durchmesser, <strong>keine Venenklappen</strong>, kürzester Weg zum rechten Herzen</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Der Pfortaderkreislauf</div></div>
+  <p class="lekt-prose">Der Pfortaderkreislauf sammelt das venöse Blut aus dem <strong>gesamten Magen-Darm-Trakt</strong> und der <strong>Milz</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fbbf24">🔄 Der Weg des Blutes</div>
+    <div style="background:rgba(251,191,36,.05);border-radius:10px;padding:14px;margin-top:8px;font-size:.88rem;color:var(--ink);line-height:2;text-align:center">
+      <strong>Magen-Darm + Milz</strong><br>↓<br><strong>V. portae (Pfortader)</strong><br>↓<br><strong>LEBER</strong> 🧴<br>↓<br><strong>V. cava inferior</strong>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa">
+    <strong>💡 Besonderheit:</strong> Der Pfortaderkreislauf ist ein <strong>portales System</strong> — das Blut durchläuft <strong>zwei Kapillarbetten hintereinander</strong> (Darm/Milz → Leber → V. cava inferior). So kann die Leber Nährstoffe und Toxine verarbeiten, bevor sie in den systemischen Kreislauf gelangen.
+  </div>
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT

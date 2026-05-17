@@ -7,6 +7,7 @@ const CAT_STYLES = {
   'Dekubitus':  { bg: 'var(--rose-dim)',   color: 'var(--rose)',   back: '#3f1515' },
   'Blutzucker': { bg: 'var(--teal-dim)',   color: 'var(--teal)',   back: '#0d3330' },
   'Niere':      { bg: 'var(--blue-dim)',   color: 'var(--blue)',   back: '#1e3a5f' },
+  'Gefäße':     { bg: 'var(--rose-dim)',   color: 'var(--rose)',   back: '#3f1515' },
   'Pflege':     { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a3f' },
 }
 
@@ -15,6 +16,7 @@ const CAT_ICONS = {
   'Dekubitus':  '🩺',
   'Blutzucker': '🩸',
   'Niere':      '💧',
+  'Gefäße':     '🩸',
   'Pflege':     '💙',
 }
 

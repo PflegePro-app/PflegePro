@@ -107,4 +107,17 @@ export const THEMES = [
       'Expertenstandard & Pflege bei Inkontinenz',
     ],
   },
+  {
+    id: 'gefaesse',
+    name: 'Blutgefäße — Aufbau & Anatomie',
+    icon: '🩸',
+    col: 'rose',
+    module: 'kreislauf',
+    related: [],
+    lessons: [
+      'Aufbau & Klappen der Gefäße',
+      'Anatomie der Venen — Bein, Arm, Hals',
+      'ZVK & Pfortaderkreislauf',
+    ],
+  },
 ]
