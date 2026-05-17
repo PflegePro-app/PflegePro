@@ -4277,4 +4277,294 @@ export const LESSON_CONTENT = {
 
   },
 
+  herz: {
+
+    'Das Herz — Lage, Größe & Funktion': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🫀 Herz · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Das Herz — Lage, Größe & Funktion</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Das muskuläre Hohlorgan — zentrale Pumpe des Körpers</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist das Herz?</div></div>
+  <p class="lekt-prose">Das <strong>Herz</strong> ist ein muskuläres Hohlorgan und arbeitet als zentrale <strong>Pumpe</strong> des Herz-Kreislauf-Systems. Es liegt im <strong>Thorax</strong> hinter dem Brustbein (<strong>retrosternal</strong>) und wird vom Herzbeutel (<strong>Perikard</strong>) umgeben.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">📍 Die wichtigsten Fakten</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+      <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#fb7185;font-size:.8rem;margin-bottom:4px">📍 Lage</div>
+        <div style="font-size:.78rem;color:var(--ink2);line-height:1.5"><strong>2/3 links</strong> und 1/3 rechts im Brustkorb</div>
+      </div>
+      <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#fb7185;font-size:.8rem;margin-bottom:4px">✊ Größe</div>
+        <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Ungefähr so groß wie die <strong>Faust</strong> des Besitzers</div>
+      </div>
+      <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#fb7185;font-size:.8rem;margin-bottom:4px">⚖️ Gewicht</div>
+        <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">ca. <strong>250 g</strong> bei Frauen, <strong>300 g</strong> bei Männern</div>
+      </div>
+      <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.2);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#fb7185;font-size:.8rem;margin-bottom:4px">⚙️ Funktion</div>
+        <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Transport von sauerstoffreichem & sauerstoffarmem Blut</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Arbeitsweise</div></div>
+  <p class="lekt-prose">Das Herz arbeitet durch eine <strong>rhythmische Pumpbewegung</strong> mit zwei Hauptphasen:</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.88rem">💪 Systole</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Auswurfphase — Blut wird gepumpt</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem">😌 Diastole</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Füllungsphase — Kammern füllen sich</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>Merke:</strong> Das Herz schlägt etwa <strong>100.000 Mal pro Tag</strong> und pumpt mehrere tausend Liter Blut durch den Körper!
+</div>
+</div></div>`,
+
+    'Aufbau des Herzens': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🫀 Herz · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Aufbau des Herzens</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Vier Hohlräume — getrennt durch das Septum</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Die 4 Herzräume</div></div>
+  <p class="lekt-prose">Das Herz besteht aus <strong>vier Hohlräumen</strong> und wird durch das <strong>Septum</strong> in eine rechte und linke Herzhälfte getrennt.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🫀 Die 4 Räume</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+      <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#60a5fa;font-size:.85rem;margin-bottom:4px">🔵 Rechter Vorhof</div>
+        <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Nimmt <strong>sauerstoffarmes</strong> Blut aus dem Körper auf</div>
+      </div>
+      <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#60a5fa;font-size:.85rem;margin-bottom:4px">🔵 Rechte Kammer</div>
+        <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Pumpt Blut in den <strong>Lungenkreislauf</strong></div>
+      </div>
+      <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#ef4444;font-size:.85rem;margin-bottom:4px">🔴 Linker Vorhof</div>
+        <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Empfängt <strong>sauerstoffreiches</strong> Blut aus der Lunge</div>
+      </div>
+      <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#ef4444;font-size:.85rem;margin-bottom:4px">🔴 Linke Kammer</div>
+        <div style="font-size:.75rem;color:var(--ink2);line-height:1.5">Pumpt Blut in den <strong>Körperkreislauf</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Das Septum</div></div>
+  <p class="lekt-prose">Das <strong>Septum</strong> ist die Herzscheidewand zwischen rechter und linker Herzhälfte. Es trennt das sauerstoffarme vom sauerstoffreichen Blut.</p>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>🩺 Pflegerelevanz:</strong> Die <strong>linke Herzkammer</strong> besitzt eine <strong>dickere Muskelschicht</strong>, weil sie gegen den höheren Druck des Körperkreislaufs arbeiten muss!
+</div>
+</div></div>`,
+
+    'Herzklappen': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🫀 Herz · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Herzklappen</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Segel- und Taschenklappen — gerichteter Blutfluss</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Aufgabe der Herzklappen</div></div>
+  <p class="lekt-prose">Die Herzklappen sorgen für einen <strong>gerichteten Blutfluss</strong> im Herzen. Man unterscheidet <strong>Segelklappen</strong> und <strong>Taschenklappen</strong>.</p>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Segelklappen</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem;margin-bottom:4px">🔵 Trikuspidalklappe</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Zwischen <strong>rechtem Vorhof</strong> und <strong>rechter Kammer</strong></div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.88rem;margin-bottom:4px">🔴 Mitralklappe</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Zwischen <strong>linkem Vorhof</strong> und <strong>linker Kammer</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Taschenklappen</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem;margin-bottom:4px">🔵 Pulmonalklappe</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Zwischen <strong>rechter Kammer</strong> und <strong>Lungenarterie</strong></div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.88rem;margin-bottom:4px">🔴 Aortenklappe</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Zwischen <strong>linker Kammer</strong> und <strong>Aorta</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Stabilisierung der Segelklappen</div></div>
+  <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:10px;padding:12px;margin-top:8px">
+    <p style="font-size:.85rem;color:var(--ink2);line-height:1.6">Die <strong>Papillarmuskeln</strong> und <strong>Chordae tendineae</strong> (Sehnenfäden) verhindern das Zurückschlagen der Segelklappen während der Systole.</p>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>Merke:</strong><br>
+  • <strong>Segelklappen</strong> liegen zwischen Vorhof und Kammer<br>
+  • <strong>Taschenklappen</strong> liegen zwischen Kammer und Gefäß
+</div>
+</div></div>`,
+
+    'Systole & Diastole': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🫀 Herz · Lektion 4</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Systole & Diastole</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Die zwei Hauptphasen des Herzzyklus</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Systole — Auswurfphase</div></div>
+  <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px;margin-top:8px">
+    <div style="font-weight:700;color:#ef4444;font-size:.95rem;margin-bottom:8px">💪 Was passiert?</div>
+    <ul style="margin:0 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.8">
+      <li><strong>Anspannungsphase:</strong> Herzmuskel zieht sich zusammen</li>
+      <li><strong>Austreibungsphase:</strong> Blut wird in die Gefäße gepumpt</li>
+      <li>Blut wird aus den Kammern <strong>in die Aorta und Lungenarterie</strong> gepresst</li>
+    </ul>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Diastole — Füllungsphase</div></div>
+  <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px;margin-top:8px">
+    <div style="font-weight:700;color:#60a5fa;font-size:.95rem;margin-bottom:8px">😌 Was passiert?</div>
+    <ul style="margin:0 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.8">
+      <li><strong>Entspannungsphase:</strong> Herzmuskel erschlafft</li>
+      <li><strong>Füllungsphase:</strong> Kammern füllen sich mit Blut</li>
+      <li>Vorbereitung auf den nächsten Auswurf</li>
+    </ul>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>🩺 Klinik:</strong> Beim Blutdruck <strong>120/80 mmHg</strong> entspricht der obere Wert dem <strong>systolischen</strong> Druck (Auswurf), der untere dem <strong>diastolischen</strong> Druck (Füllung).
+</div>
+</div></div>`,
+
+    'Herzhäute & Herzskelett': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🫀 Herz · Lektion 5</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Herzhäute & Herzskelett</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Die Schichten des Herzens — von innen nach außen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Die 4 Herzschichten</div></div>
+  <p class="lekt-prose">Das Herz besitzt <strong>mehrere Schichten</strong> und ein stabiles Bindegewebsgerüst.</p>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem">1️⃣ Endokard</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Innere Herzschicht — kleidet das Herz von innen aus</div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.88rem">2️⃣ Myokard</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px"><strong>Herzmuskelschicht</strong> — die dickste und wichtigste Schicht</div>
+    </div>
+    <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.88rem">3️⃣ Epikard</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Äußere Herzschicht</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">4️⃣ Perikard</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px"><strong>Herzbeutel</strong> — umhüllt das ganze Herz</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Das Herzskelett</div></div>
+  <p class="lekt-prose">Das <strong>Herzskelett</strong> ist eine Bindegewebsstruktur, die die <strong>Herzklappen verankert</strong> und stabilisiert.</p>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>🧠 Eselsbrücke:</strong> <strong>Endo → Myo → Epi → Peri</strong><br>
+  (innen nach außen)
+</div>
+</div></div>`,
+
+    'Windkesselfunktion & Puls': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🫀 Herz · Lektion 6</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Windkesselfunktion & Puls</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wie die Aorta einen kontinuierlichen Blutfluss erzeugt</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist die Windkesselfunktion?</div></div>
+  <p class="lekt-prose">Die elastische <strong>Aorta</strong> speichert während der <strong>Systole</strong> Energie und gibt sie in der <strong>Diastole</strong> wieder ab. Dadurch entsteht ein <strong>kontinuierlicher Blutfluss</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🔄 So funktioniert es</div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+      <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:10px 12px">
+        <strong style="color:#ef4444">Systole:</strong> <span style="color:var(--ink2);font-size:.85rem">Aorta dehnt sich → Energie wird gespeichert</span>
+      </div>
+      <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:10px 12px">
+        <strong style="color:#60a5fa">Diastole:</strong> <span style="color:var(--ink2);font-size:.85rem">Aorta zieht sich zusammen → Rückstoß treibt Blut weiter</span>
+      </div>
+      <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px">
+        <strong style="color:#22c55e">Ergebnis:</strong> <span style="color:var(--ink2);font-size:.85rem">Kontinuierlicher Blutstrom statt Stoßweise</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Der Puls</div></div>
+  <p class="lekt-prose">Der <strong>Puls</strong> ist die <strong>tastbare Druckwelle</strong>, die durch den systolischen Blutauswurf entsteht.</p>
+  <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+    <li>Entsteht durch die Druckwelle der Systole</li>
+    <li>Wird durch elastische Arterien fortgeleitet</li>
+    <li>An Arterien <strong>tastbar</strong> (z.B. A. radialis, A. carotis)</li>
+  </ul>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>Merke:</strong> Der Puls entsteht durch die Druckwelle des systolischen Blutauswurfs — die Aorta wirkt dabei als <strong>elastischer Windkessel</strong>.
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT

@@ -113,11 +113,27 @@ export const THEMES = [
     icon: '🩸',
     col: 'rose',
     module: 'kreislauf',
-    related: [],
+    related: ['herz'],
     lessons: [
       'Aufbau & Klappen der Gefäße',
       'Anatomie der Venen — Bein, Arm, Hals',
       'ZVK & Pfortaderkreislauf',
+    ],
+  },
+  {
+    id: 'herz',
+    name: 'Anatomie des Herzens',
+    icon: '🫀',
+    col: 'rose',
+    module: 'kreislauf',
+    related: ['gefaesse'],
+    lessons: [
+      'Das Herz — Lage, Größe & Funktion',
+      'Aufbau des Herzens',
+      'Herzklappen',
+      'Systole & Diastole',
+      'Herzhäute & Herzskelett',
+      'Windkesselfunktion & Puls',
     ],
   },
 ]
