@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { AppContext } from '../App'
 import { MODULES } from '../data/themes'
 
@@ -297,7 +297,36 @@ function DailyChallengeCard() {
   )
 }
 
+// Animation CSS pour le slide down des modules
+if (typeof document !== 'undefined' && !document.getElementById('module-slide-anim')) {
+  const style = document.createElement('style')
+  style.id = 'module-slide-anim'
+  style.textContent = `
+    @keyframes moduleSlideDown {
+      from { opacity: 0; transform: translateY(-8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  `
+  document.head.appendChild(style)
+}
+
 export default function Home() {
+  // État des modules pliables (persistant via localStorage)
+  const [openModules, setOpenModules] = useState(() => {
+    try {
+      const saved = localStorage.getItem('pflegepro_open_modules')
+      return saved ? JSON.parse(saved) : {}
+    } catch { return {} }
+  })
+
+  function toggleModule(modId) {
+    setOpenModules(prev => {
+      const next = { ...prev, [modId]: prev[modId] === false ? true : false }
+      try { localStorage.setItem('pflegepro_open_modules', JSON.stringify(next)) } catch {}
+      return next
+    })
+  }
+
   const { progress, THEMES, QUIZZES, openDetail, userName } = useContext(AppContext)
 
   const levels = progress.levels || {}
@@ -324,17 +353,23 @@ export default function Home() {
       <Mascot name={userName} />
       <DailyChallengeCard />
       <StatsBar quizCount={quizCount} avgScore={avgScore} streak={streak} mastered={mastered} />
-      {/* Groupement par modules */}
+      {/* Groupement par modules - PLIABLES */}
       {MODULES.map(mod => {
         const themesInModule = THEMES.filter(t => t.module === mod.id)
         if (themesInModule.length === 0) return null
+        const isOpen = openModules[mod.id] !== false  // true par défaut
         return (
-          <div key={mod.id} style={{ marginBottom: 24 }}>
-            <div style={{
-              display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10,
-              padding: '8px 12px', borderRadius: 12,
-              background: `var(--${mod.color}-dim)`,
-              borderLeft: `4px solid var(--${mod.color})`,
+          <div key={mod.id} style={{ marginBottom: 16 }}>
+            <div
+              onClick={() => toggleModule(mod.id)}
+              style={{
+                display: 'flex', alignItems: 'center', gap: 10, marginBottom: isOpen ? 10 : 0,
+                padding: '10px 14px', borderRadius: 12,
+                background: `var(--${mod.color}-dim)`,
+                borderLeft: `4px solid var(--${mod.color})`,
+                cursor: 'pointer',
+                transition: 'all .2s',
+                userSelect: 'none',
             }}>
               <span style={{ fontSize: '1.4rem' }}>{mod.icon}</span>
               <div style={{ flex: 1 }}>
@@ -346,12 +381,23 @@ export default function Home() {
                   {mod.description}
                 </div>
               </div>
-              <div style={{
-                fontSize: '.7rem', color: 'var(--ink3)', fontWeight: 600,
-                background: 'var(--card)', padding: '3px 8px', borderRadius: 999,
-              }}>{themesInModule.length}</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <div style={{
+                  fontSize: '.7rem', color: 'var(--ink3)', fontWeight: 600,
+                  background: 'var(--card)', padding: '3px 8px', borderRadius: 999,
+                }}>{themesInModule.length}</div>
+                <div style={{
+                  fontSize: '.95rem', color: 'var(--ink2)',
+                  transition: 'transform .3s ease',
+                  transform: isOpen ? 'rotate(0deg)' : 'rotate(-90deg)',
+                }}>▼</div>
+              </div>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, paddingLeft: 14, marginTop: 4 }}>
+            <div style={{
+              display: isOpen ? 'flex' : 'none',
+              flexDirection: 'column', gap: 6, paddingLeft: 14, marginTop: 4,
+              animation: isOpen ? 'moduleSlideDown .3s ease' : 'none',
+            }}>
               {themesInModule.map(t => {
                 const realLevel = getRealLevel(t.id)
                 const totalLvl  = getTotalLevels(t.id)

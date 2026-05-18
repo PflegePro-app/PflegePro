@@ -37,13 +37,32 @@ export default function Fachbegriffe() {
 
   const categories = ['Alle', ...Object.keys(CAT_STYLES)]
 
-  const filtered = allTerms.filter(t => {
-    const matchSearch = !search.trim() ||
-      t.term.toLowerCase().includes(search.toLowerCase()) ||
-      t.def.toLowerCase().includes(search.toLowerCase())
-    const matchCat = activeFilter === 'Alle' || (t.category || 'Pflege') === activeFilter
-    return matchSearch && matchCat
-  })
+  const filtered = (() => {
+    const q = search.trim().toLowerCase()
+    const results = allTerms.filter(t => {
+      const matchSearch = !q ||
+        t.term.toLowerCase().includes(q) ||
+        t.def.toLowerCase().includes(q)
+      const matchCat = activeFilter === 'Alle' || (t.category || 'Pflege') === activeFilter
+      return matchSearch && matchCat
+    })
+    if (!q) return results
+    // Tri par pertinence : exact > début de mot > term contient > def contient
+    return results.sort((a, b) => {
+      const aTerm = a.term.toLowerCase()
+      const bTerm = b.term.toLowerCase()
+      const aExact = aTerm === q ? 0 : 99
+      const bExact = bTerm === q ? 0 : 99
+      if (aExact !== bExact) return aExact - bExact
+      const aStarts = aTerm.startsWith(q) ? 1 : 99
+      const bStarts = bTerm.startsWith(q) ? 1 : 99
+      if (aStarts !== bStarts) return aStarts - bStarts
+      const aInTerm = aTerm.includes(q) ? 2 : 99
+      const bInTerm = bTerm.includes(q) ? 2 : 99
+      if (aInTerm !== bInTerm) return aInTerm - bInTerm
+      return 0
+    })
+  })()
 
   const toggleFlip = (i) => {
     setFlipped(prev => ({ ...prev, [i]: !prev[i] }))

@@ -145,7 +145,7 @@ export default function App() {
   }
 
   const ctx = {
-    screen, nav, goBack,
+    screen, nav, goBack, quizOrigin,
     openDetail, openLesson, startQuiz,
     currentTheme, currentLesson, quizState,
     THEMES, QUIZZES, LESSON_CONTENT, FACHBEGRIFFE, PRAXIS_DATA,

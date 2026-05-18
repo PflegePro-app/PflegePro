@@ -16,7 +16,7 @@ export const PRAXIS_DATA = {
     ],
     material:[
       {icon:'💉',name:'Venenverweilkanüle',desc:'Zugang für i.v.-Therapie'},
-      {icon:'🩺',name:'Stethoskop',desc:'Abhören von Herz und Lunge'},
+      {icon:'🩺',name:'Stethoskop',desc:'Abhören von Herz und Lunge',image:'/images/material/stethoskop.jpg'},
       {icon:'⏱️',name:'Pulsoximeter',desc:'Messung O₂-Sättigung'},
       {icon:'🩹',name:'Verbandsmaterial',desc:'Wundversorgung'},
       {icon:'💊',name:'Medikamentenwagen',desc:'Sichere Medikamentengabe'},
