@@ -9,6 +9,7 @@ const CAT_STYLES = {
   'Niere':      { bg: 'var(--blue-dim)',   color: 'var(--blue)',   back: '#1e3a5f' },
   'Gefäße':     { bg: 'var(--rose-dim)',   color: 'var(--rose)',   back: '#3f1515' },
   'Herz':       { bg: 'var(--rose-dim)',   color: 'var(--rose)',   back: '#3f1515' },
+  'EKG':        { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a3f' },
   'Pflege':     { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a3f' },
 }
 
@@ -19,6 +20,7 @@ const CAT_ICONS = {
   'Niere':      '💧',
   'Gefäße':     '🩸',
   'Herz':       '🫀',
+  'EKG':        '⚡',
   'Pflege':     '💙',
 }
 

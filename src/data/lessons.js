@@ -4567,4 +4567,284 @@ export const LESSON_CONTENT = {
 
   },
 
+  ekg: {
+
+    'Autonomie & Schrittmacherzellen': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">⚡ EKG · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Autonomie & Schrittmacherzellen</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wie das Herz seine eigenen Impulse erzeugt</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Autonomie des Herzens</div></div>
+  <p class="lekt-prose">Das Herz besitzt die Fähigkeit, elektrische Impulse <strong>selbstständig zu erzeugen</strong>. Diese Eigenschaft nennt man <strong>Autonomie des Herzens</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">⚡ Die 2 Systeme</div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+      <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#fb7185;font-size:.88rem">🎯 Erregungsbildungssystem</div>
+        <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Erzeugt die elektrischen Impulse</div>
+      </div>
+      <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#fb7185;font-size:.88rem">📡 Erregungsleitungssystem</div>
+        <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Leitet die Impulse weiter</div>
+      </div>
+    </div>
+    <div style="margin-top:10px;font-size:.78rem;color:var(--ink2);font-style:italic">Beide Systeme bestehen aus spezialisierten Herzmuskelzellen. Das vegetative Nervensystem beeinflusst nur die Herzleistung (Frequenz und Kraft).</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Zelltypen des Erregungssystems</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.9rem;margin-bottom:4px">⚡ Schrittmacherzellen</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Erzeugen <strong>spontan</strong> elektrische Impulse</div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.9rem;margin-bottom:4px">💪 Arbeitsmyokard</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Kontrahiert nach Erregung</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem;margin-bottom:4px">⬆️ Depolarisation</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Elektrische <strong>Aktivierung</strong> der Zellen</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.9rem;margin-bottom:4px">⬇️ Repolarisation</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Elektrische <strong>Rückbildung</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>Merke:</strong> Das Herz kann auch <strong>ohne Verbindung zum Gehirn</strong> selbstständig schlagen — z.B. nach einer Transplantation!
+</div>
+</div></div>`,
+
+    'Erregungsleitungssystem': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">⚡ EKG · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Erregungsleitungssystem</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Sinusknoten · AV-Knoten · His-Bündel · Purkinje-Fasern</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Sinusknoten — der Taktgeber</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fbbf24">🥇 Primärer Schrittmacher</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:rgba(251,191,36,.08);border-radius:8px;padding:10px">
+        <div style="font-size:.72rem;color:var(--ink2)">📍 Lage</div>
+        <div style="font-weight:700;color:#fbbf24;font-size:.85rem">Rechter Vorhof</div>
+      </div>
+      <div style="background:rgba(251,191,36,.08);border-radius:8px;padding:10px">
+        <div style="font-size:.72rem;color:var(--ink2)">⏱️ Frequenz</div>
+        <div style="font-weight:700;color:#fbbf24;font-size:.85rem">60–80/min</div>
+      </div>
+    </div>
+    <div style="margin-top:10px;font-size:.8rem;color:var(--ink2)">Rhythmus: <strong>Sinusrhythmus</strong> (= normaler Herzrhythmus)</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">AV-Knoten — die Verzögerung</div></div>
+  <p class="lekt-prose">Der AV-Knoten <strong>verzögert</strong> die Weiterleitung der elektrischen Erregung.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🥈 Sekundärer Schrittmacher</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:rgba(251,113,133,.08);border-radius:8px;padding:10px">
+        <div style="font-size:.72rem;color:var(--ink2)">📍 Lage</div>
+        <div style="font-weight:700;color:#fb7185;font-size:.82rem">Boden des rechten Vorhofs</div>
+      </div>
+      <div style="background:rgba(251,113,133,.08);border-radius:8px;padding:10px">
+        <div style="font-size:.72rem;color:var(--ink2)">⏱️ Verzögerung</div>
+        <div style="font-weight:700;color:#fb7185;font-size:.82rem">60–120 ms</div>
+      </div>
+      <div style="background:rgba(251,113,133,.08);border-radius:8px;padding:10px">
+        <div style="font-size:.72rem;color:var(--ink2)">🔄 Eigenfrequenz</div>
+        <div style="font-weight:700;color:#fb7185;font-size:.82rem">40–60/min</div>
+      </div>
+      <div style="background:rgba(251,113,133,.08);border-radius:8px;padding:10px">
+        <div style="font-size:.72rem;color:var(--ink2)">⚡ Funktion</div>
+        <div style="font-weight:700;color:#fb7185;font-size:.82rem">Ersatzschrittmacher</div>
+      </div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>🩺 Klinik:</strong> Ohne die Verzögerung des AV-Knotens würden Vorhöfe und Kammern <strong>gleichzeitig</strong> kontrahieren — das Herz könnte nicht effizient pumpen!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">His-Bündel & Purkinje-Fasern</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">🥉 His-Bündel</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px"><strong>Einziger Leitungsweg</strong> durch das Herzskelett — Eigenfrequenz: <strong>30–40/min</strong></div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">🔀 Tawara-Schenkel</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Rechter und linker Kammerschenkel</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">🌿 Purkinje-Fasern</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Leiten die Erregung <strong>in die Kammern</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Schrittmacher-Hierarchie</div></div>
+  <div style="background:rgba(251,113,133,.05);border-radius:12px;padding:14px;text-align:center;font-size:.9rem;color:var(--ink);line-height:2">
+    <strong style="color:#fbbf24">Sinusknoten (60–80/min)</strong><br>↓<br>
+    <strong style="color:#fb7185">AV-Knoten (40–60/min)</strong><br>↓<br>
+    <strong style="color:#a78bfa">His-Bündel → Tawara → Purkinje (30–40/min)</strong>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Je <strong>weiter weg</strong> vom Sinusknoten, desto <strong>langsamer</strong> die Eigenfrequenz!
+  </div>
+</div>
+</div></div>`,
+
+    'Das EKG': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">⚡ EKG · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Das EKG</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Elektrokardiogramm — die elektrische Aktivität sichtbar machen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist ein EKG?</div></div>
+  <p class="lekt-prose">Das <strong>Elektrokardiogramm (EKG)</strong> zeichnet die <strong>elektrische Aktivität</strong> des Herzens auf — durch Elektroden auf der Haut.</p>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Die EKG-Wellen im Detail</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.95rem">📈 P-Welle</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px"><strong>Vorhoferregung</strong> — Depolarisation der Vorhöfe</div>
+    </div>
+    <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.95rem">➡️ PQ-Strecke</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Überleitung im <strong>AV-Knoten</strong></div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.95rem">📊 QRS-Komplex</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px"><strong>Kammererregung</strong> — Depolarisation der Ventrikel</div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#fb7185;font-size:.95rem">➡️ ST-Strecke</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Beginn der Rückbildung</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.95rem">📉 T-Welle</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px"><strong>Repolarisation</strong> der Kammern</div>
+    </div>
+    <div style="background:rgba(255,255,255,.04);border-left:3px solid rgba(255,255,255,.2);border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:var(--ink);font-size:.95rem">〰️ U-Welle</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px"><strong>Nicht immer sichtbar</strong> — Nachschwankung</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+  <strong>🩺 Klinik:</strong> Das EKG hilft bei der Diagnose von <strong>Herzrhythmusstörungen</strong> und <strong>Herzinfarkt</strong>. Ein Standard im Pflegealltag!
+</div>
+</div></div>`,
+
+    'Herzfrequenz & Herzschrittmacher': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">⚡ EKG · Lektion 4</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Herzfrequenz & Herzschrittmacher</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Normwerte, HZV und künstliche Schrittmacher</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Normwerte Herzfrequenz</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.95rem">👨 Erwachsene</div>
+      <div style="font-size:1.3rem;color:var(--ink);margin-top:6px"><strong>60–80/min</strong></div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#fb7185;font-size:.95rem">👶 Neugeborene</div>
+      <div style="font-size:1.3rem;color:var(--ink);margin-top:6px"><strong>120–140/min</strong></div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:10px 12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.82rem">🐢 Bradykardie</div>
+      <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">&lt; 60/min</div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:10px;padding:10px 12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.82rem">🐇 Tachykardie</div>
+      <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">&gt; 100/min</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Herzzeitvolumen (HZV)</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🧮 Die Formel</div>
+    <div style="background:rgba(251,113,133,.08);border-radius:10px;padding:14px;margin-top:8px;text-align:center;font-size:1rem;color:var(--ink);font-family:'Fraunces',serif">
+      <strong>HZV = Schlagvolumen × Herzfrequenz</strong>
+    </div>
+    <div style="margin-top:10px;font-size:.85rem;color:var(--ink2);text-align:center">
+      Normales HZV: <strong>ca. 4,9 Liter/min</strong>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Bei Belastung (Sport, Stress) kann das HZV <strong>stark ansteigen</strong> — bis zu 20–25 L/min!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Vegetative Steuerung</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.9rem">⬆️ Sympathikus</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px"><strong>Steigert</strong> Herzfrequenz und Herzkraft (Stress, Sport)</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem">⬇️ Parasympathikus</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px"><strong>Senkt</strong> die Herzfrequenz (Ruhe, Erholung)</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Künstlicher Herzschrittmacher</div></div>
+  <p class="lekt-prose">Ein künstlicher Herzschrittmacher unterstützt das Herz bei <strong>schweren Rhythmusstörungen</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🔧 Funktionsweise</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Implantation meist <strong>unter dem Schlüsselbein</strong></li>
+      <li>Verbindung über <strong>Elektroden</strong> zum Herz</li>
+      <li>Gibt elektrische Impulse ab</li>
+      <li>Unterstützt bei <strong>Bradykardie</strong> oder Ausfall des Erregungssystems</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa">
+    <strong>🩺 Pflegerelevanz:</strong> Patienten mit Schrittmacher tragen einen <strong>Herzschrittmacherausweis</strong>! Wichtig bei MRT, Sicherheitskontrollen und im Notfall.
+  </div>
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT

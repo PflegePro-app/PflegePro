@@ -126,7 +126,7 @@ export const THEMES = [
     icon: '🫀',
     col: 'rose',
     module: 'kreislauf',
-    related: ['gefaesse'],
+    related: ['gefaesse', 'ekg'],
     lessons: [
       'Das Herz — Lage, Größe & Funktion',
       'Aufbau des Herzens',
@@ -134,6 +134,20 @@ export const THEMES = [
       'Systole & Diastole',
       'Herzhäute & Herzskelett',
       'Windkesselfunktion & Puls',
+    ],
+  },
+  {
+    id: 'ekg',
+    name: 'Erregungsleitung & EKG',
+    icon: '⚡',
+    col: 'rose',
+    module: 'kreislauf',
+    related: ['herz', 'gefaesse'],
+    lessons: [
+      'Autonomie & Schrittmacherzellen',
+      'Erregungsleitungssystem',
+      'Das EKG',
+      'Herzfrequenz & Herzschrittmacher',
     ],
   },
 ]
