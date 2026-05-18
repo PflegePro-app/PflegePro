@@ -4847,4 +4847,243 @@ export const LESSON_CONTENT = {
 
   },
 
+  blutkreislauf: {
+
+    'Körper- & Lungenkreislauf': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🔄 Kreislauf · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Körper- & Lungenkreislauf</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Die zwei Kreisläufe des Herz-Kreislauf-Systems</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Körperkreislauf (großer Kreislauf)</div></div>
+  <p class="lekt-prose">Der <strong>Körperkreislauf</strong> versorgt den gesamten Körper mit sauerstoffreichem Blut.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🔴 Der Weg des Blutes</div>
+    <div style="background:rgba(239,68,68,.05);border-radius:10px;padding:14px;margin-top:8px;font-size:.88rem;color:var(--ink);line-height:2;text-align:center">
+      <strong style="color:#ef4444">Linke Kammer</strong> → <strong>Aorta</strong> →<br>
+      <strong>Körper</strong> (Organe, Gewebe) →<br>
+      <strong>Hohlvene</strong> → <strong style="color:#60a5fa">Rechter Vorhof</strong>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Lungenkreislauf (kleiner Kreislauf)</div></div>
+  <p class="lekt-prose">Der <strong>Lungenkreislauf</strong> dient dem <strong>Gasaustausch</strong> zwischen Blut und Lunge.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">🔵 Der Weg des Blutes</div>
+    <div style="background:rgba(96,165,250,.05);border-radius:10px;padding:14px;margin-top:8px;font-size:.88rem;color:var(--ink);line-height:2;text-align:center">
+      <strong style="color:#60a5fa">Rechte Kammer</strong> → <strong>Lungenarterie</strong> →<br>
+      <strong>Lunge</strong> (Gasaustausch) →<br>
+      <strong>Lungenvene</strong> → <strong style="color:#ef4444">Linker Vorhof</strong>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>⚠️ Achtung — Ausnahmen!</strong><br>
+    • Die <strong>Lungenarterie</strong> transportiert <strong>sauerstoffARMES</strong> Blut<br>
+    • Die <strong>Lungenvene</strong> transportiert <strong>sauerstoffREICHES</strong> Blut
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Hochdruck- vs. Niederdrucksystem</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.95rem;margin-bottom:6px">🔥 Hochdrucksystem</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.6"><strong>Arterien</strong> des Körperkreislaufs</div>
+      <div style="margin-top:8px;background:rgba(239,68,68,.1);border-radius:6px;padding:6px 10px;font-size:.85rem;color:#ef4444"><strong>~100 mmHg</strong></div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.95rem;margin-bottom:6px">💧 Niederdrucksystem</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.6"><strong>Venen, Kapillaren</strong> und Lungenkreislauf</div>
+      <div style="margin-top:8px;background:rgba(96,165,250,.1);border-radius:6px;padding:6px 10px;font-size:.85rem;color:#60a5fa"><strong>&lt; 20 mmHg</strong></div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Der Großteil des Blutes (~85%) befindet sich im <strong>Niederdrucksystem</strong> — die Venen sind die "Blutreservoirs" des Körpers!
+  </div>
+</div>
+</div></div>`,
+
+    'Kapillaren & Stoffaustausch': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🔄 Kreislauf · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Kapillaren & Stoffaustausch</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wo Sauerstoff und Nährstoffe das Blut verlassen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was sind Kapillaren?</div></div>
+  <p class="lekt-prose">Kapillaren sind die <strong>kleinsten Blutgefäße</strong> und der Ort des <strong>Stoffaustauschs</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🔬 Eigenschaften</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li><strong>Sehr dünne</strong> Gefäßwand (1 Zellschicht)</li>
+      <li>Austausch von <strong>Sauerstoff</strong> und <strong>Nährstoffen</strong></li>
+      <li>Verbindung zwischen <strong>Arterien und Venen</strong></li>
+      <li>Bildung dichter <strong>Kapillarnetze</strong> um jedes Organ</li>
+    </ul>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Der Weg des Blutes</div></div>
+  <div class="lekt-card">
+    <div style="background:rgba(251,113,133,.05);border-radius:10px;padding:14px;margin-top:8px;text-align:center;line-height:2.2">
+      <span style="background:rgba(239,68,68,.15);border-radius:6px;padding:4px 10px;color:#ef4444;font-weight:700">Arterie</span> →
+      <span style="background:rgba(239,68,68,.1);border-radius:6px;padding:4px 8px;color:#ef4444;font-size:.85rem">Arteriole</span> →
+      <span style="background:rgba(167,139,250,.15);border-radius:6px;padding:4px 10px;color:#a78bfa;font-weight:700">Kapillare</span> →
+      <span style="background:rgba(96,165,250,.1);border-radius:6px;padding:4px 8px;color:#60a5fa;font-size:.85rem">Venole</span> →
+      <span style="background:rgba(96,165,250,.15);border-radius:6px;padding:4px 10px;color:#60a5fa;font-weight:700">Vene</span>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Was wird ausgetauscht?</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.9rem;margin-bottom:4px">➡️ Aus dem Blut</div>
+      <ul style="margin:4px 0 0 16px;color:var(--ink2);font-size:.78rem;line-height:1.7">
+        <li>Sauerstoff (O₂)</li>
+        <li>Glukose</li>
+        <li>Aminosäuren</li>
+        <li>Fettsäuren</li>
+        <li>Hormone</li>
+      </ul>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem;margin-bottom:4px">⬅️ Ins Blut</div>
+      <ul style="margin:4px 0 0 16px;color:var(--ink2);font-size:.78rem;line-height:1.7">
+        <li>Kohlendioxid (CO₂)</li>
+        <li>Stoffwechselprodukte</li>
+        <li>Harnstoff</li>
+        <li>Hormone (von Drüsen)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>💡 Merke:</strong> Die Kapillaren sind <strong>so dünn</strong>, dass nur eine einzige Endothelzelle die Wand bildet. Erst dadurch kann der Stoffaustausch funktionieren!
+</div>
+</div></div>`,
+
+    'Koronararterien & Herzinfarkt': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🔄 Kreislauf · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Koronararterien & Herzinfarkt</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Die Herzkranzgefäße — wie sich das Herz selbst versorgt</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was sind Koronararterien?</div></div>
+  <p class="lekt-prose">Die <strong>Herzkranzgefäße (Koronararterien)</strong> versorgen den Herzmuskel selbst mit Sauerstoff. Sie entspringen direkt aus der <strong>Aorta</strong>.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.95rem;margin-bottom:4px">➡️ A. coronaria dextra</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Rechte Herzkranzarterie — versorgt vor allem die rechte Herzhälfte</div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.95rem;margin-bottom:4px">⬅️ A. coronaria sinistra</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Linke Herzkranzarterie — mit dem wichtigen Ast <strong>RIVA</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Wann werden die Koronararterien durchblutet?</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fbbf24">⏰ Besonderheit</div>
+    <p style="font-size:.88rem;color:var(--ink2);line-height:1.6;margin-top:8px">Die Koronararterien werden vor allem in der <strong>DIASTOLE</strong> durchblutet, nicht in der Systole!</p>
+    <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:8px;padding:10px 12px;margin-top:10px;font-size:.8rem;color:var(--ink2);line-height:1.5">
+      <strong>Warum?</strong> In der Systole presst das Myokard die Koronararterien zusammen. Erst in der Diastole, wenn das Herz erschlafft, kann das Blut frei durch die Herzkranzgefäße fließen.
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">⚠️ Herzinfarkt</div></div>
+  <div style="background:rgba(239,68,68,.1);border:1.5px solid #ef4444;border-radius:12px;padding:14px;margin-top:8px">
+    <div style="font-weight:700;color:#ef4444;font-size:1rem;margin-bottom:6px">🚨 Was passiert?</div>
+    <p style="font-size:.85rem;color:var(--ink2);line-height:1.6">Ein <strong>Verschluss</strong> einer Koronararterie (meist durch Thrombus auf einem Plaque) führt zur <strong>Unterversorgung</strong> des Herzmuskels mit Sauerstoff. Das Gewebe stirbt ab → <strong>Herzinfarkt (Myokardinfarkt)</strong>.</p>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>🩺 Klinik:</strong> Typische Symptome sind <strong>Brustschmerzen</strong> (oft in linken Arm/Kiefer ausstrahlend), <strong>Atemnot</strong>, <strong>Schweißausbruch</strong>, Übelkeit. Bei Frauen oft <strong>unspezifisch</strong>! Sofort 112 anrufen!
+  </div>
+</div>
+</div></div>`,
+
+    'Klinik — Arteriosklerose, Stent & Bypass': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#7f1d1d,#991b1b,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(251,113,133,.2);border:1px solid rgba(251,113,133,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🔄 Kreislauf · Lektion 4</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Klinik — Arteriosklerose, Stent & Bypass</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wenn Gefäße erkranken — und wie man sie behandelt</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Arteriosklerose</div></div>
+  <p class="lekt-prose">Bei der <strong>Arteriosklerose</strong> kommt es zur <strong>Gefäßverengung durch Plaques</strong> (Ablagerungen aus Cholesterin, Kalk und Zellen in der Gefäßwand).</p>
+  <div class="lekt-card" style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25)">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Risikofaktoren</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:rgba(239,68,68,.08);border-radius:8px;padding:8px 10px;font-size:.82rem;color:var(--ink2)">🚬 Rauchen</div>
+      <div style="background:rgba(239,68,68,.08);border-radius:8px;padding:8px 10px;font-size:.82rem;color:var(--ink2)">🩺 Bluthochdruck</div>
+      <div style="background:rgba(239,68,68,.08);border-radius:8px;padding:8px 10px;font-size:.82rem;color:var(--ink2)">🍩 Diabetes</div>
+      <div style="background:rgba(239,68,68,.08);border-radius:8px;padding:8px 10px;font-size:.82rem;color:var(--ink2)">⚖️ Übergewicht</div>
+      <div style="background:rgba(239,68,68,.08);border-radius:8px;padding:8px 10px;font-size:.82rem;color:var(--ink2)">🧬 Genetik</div>
+      <div style="background:rgba(239,68,68,.08);border-radius:8px;padding:8px 10px;font-size:.82rem;color:var(--ink2)">🛋️ Bewegungsmangel</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Diagnostik — Herzkatheter</div></div>
+  <p class="lekt-prose">Bei Verdacht auf Koronare Herzkrankheit (KHK) erfolgt ein <strong>Herzkatheter</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🔬 Wie läuft es ab?</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Zugang meist über die <strong>A. radialis</strong> (Handgelenk) oder A. femoralis (Leiste)</li>
+      <li>Katheter wird bis zu den Herzkranzgefäßen vorgeschoben</li>
+      <li>Kontrastmittel sichtbar im Röntgen</li>
+      <li>Verengungen werden direkt diagnostiziert</li>
+    </ul>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Therapie — Stent & Bypass</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.95rem;margin-bottom:4px">🔩 Stent</div>
+      <div style="font-size:.82rem;color:var(--ink2);line-height:1.5"><strong>Drahtgitter</strong>, das während des Herzkatheters in das Gefäß eingesetzt wird, um es <strong>offen zu halten</strong>. Minimalinvasiv, schnelle Erholung.</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.95rem;margin-bottom:4px">🔄 Bypass</div>
+      <div style="font-size:.82rem;color:var(--ink2);line-height:1.5"><strong>Operative Umleitung</strong> eines Gefäßes — mit körpereigenem Ersatzgefäß (V. saphena magna oder bevorzugt <strong>A. mammaria interna</strong>). Offene OP, größerer Eingriff.</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-zusammen">
+  <strong>🩺 Pflegerelevanz:</strong> Patienten nach Herzkatheter benötigen <strong>Druckverband</strong> und Bettruhe. Nach Bypass-OP umfassende kardiologische Reha. <strong>Lebensstil-Änderung</strong> ist Pflicht: Rauchstopp, Ernährung, Bewegung!
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT

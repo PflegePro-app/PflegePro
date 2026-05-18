@@ -142,12 +142,26 @@ export const THEMES = [
     icon: '⚡',
     col: 'rose',
     module: 'kreislauf',
-    related: ['herz', 'gefaesse'],
+    related: ['herz', 'gefaesse', 'blutkreislauf'],
     lessons: [
       'Autonomie & Schrittmacherzellen',
       'Erregungsleitungssystem',
       'Das EKG',
       'Herzfrequenz & Herzschrittmacher',
+    ],
+  },
+  {
+    id: 'blutkreislauf',
+    name: 'Blutkreislauf & Klinik',
+    icon: '🔄',
+    col: 'rose',
+    module: 'kreislauf',
+    related: ['herz', 'gefaesse', 'ekg'],
+    lessons: [
+      'Körper- & Lungenkreislauf',
+      'Kapillaren & Stoffaustausch',
+      'Koronararterien & Herzinfarkt',
+      'Klinik — Arteriosklerose, Stent & Bypass',
     ],
   },
 ]
