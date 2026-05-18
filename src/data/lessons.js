@@ -5086,4 +5086,291 @@ export const LESSON_CONTENT = {
 
   },
 
+  atmung: {
+
+    'Aufbau der Atemwege': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#1e3a8a,#1e40af,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(96,165,250,.2);border:1px solid rgba(96,165,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(191,219,254,.95)">🫁 Atmung · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Aufbau der Atemwege</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Von der Nase bis zu den Bronchiolen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Aufgaben des Atmungssystems</div></div>
+  <p class="lekt-prose">Das Atmungssystem sorgt für den <strong>Austausch von Sauerstoff und Kohlendioxid</strong> sowie für die Aufbereitung der Atemluft.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">🎯 Die 4 Hauptaufgaben</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+      <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px">
+        <div style="font-weight:700;color:#22c55e;font-size:.85rem">⬇️ O₂-Aufnahme</div>
+      </div>
+      <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:10px 12px">
+        <div style="font-weight:700;color:#ef4444;font-size:.85rem">⬆️ CO₂-Abgabe</div>
+      </div>
+      <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:10px 12px">
+        <div style="font-weight:700;color:#60a5fa;font-size:.85rem">🧼 Reinigung</div>
+      </div>
+      <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:8px;padding:10px 12px">
+        <div style="font-weight:700;color:#fbbf24;font-size:.85rem">🌡️ Erwärmen & Anfeuchten</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Obere Luftwege</div></div>
+  <p class="lekt-prose">Zu den oberen Luftwegen gehören <strong>Nase und Rachen (Pharynx)</strong>.</p>
+  <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+    <li>Die <strong>Nasenatmung</strong> reinigt die Luft (Flimmerepithel & Nasenhaare)</li>
+    <li>Die Nase <strong>erwärmt und befeuchtet</strong> die Luft</li>
+    <li>Der Rachen verbindet Mund- und Nasenhöhle</li>
+    <li><strong>Luft- und Speiseweg kreuzen sich</strong> im Pharynx (Laryngopharynx)</li>
+  </ul>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Die <strong>Nasenatmung</strong> ist physiologisch besser als die Mundatmung — die Luft wird optimal vorbereitet!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Kehlkopf & Luftröhre</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem">🎤 Larynx (Kehlkopf)</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Enthält die <strong>Stimmbänder</strong> für die Lautbildung</div>
+    </div>
+    <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.9rem">🚪 Epiglottis (Kehldeckel)</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Verschließt die Luftröhre <strong>beim Schlucken</strong> — verhindert Aspiration</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem">🪈 Trachea (Luftröhre)</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Ca. <strong>10–12 cm lang</strong> — durch <strong>Knorpelspangen</strong> offen gehalten</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Bronchialbaum</div></div>
+  <p class="lekt-prose">Die <strong>Bronchien</strong> verzweigen sich <strong>baumartig</strong> in der Lunge.</p>
+  <div style="background:rgba(96,165,250,.05);border-radius:10px;padding:14px;margin-top:8px;text-align:center;line-height:2.2;font-size:.88rem">
+    <strong style="color:#60a5fa">Trachea</strong> →<br>
+    <strong>Hauptbronchien</strong> (rechts & links) →<br>
+    <strong>Lappenbronchien</strong> →<br>
+    <strong>Segmentbronchien</strong> →<br>
+    <strong style="color:#fbbf24">Bronchiolen</strong> (ohne Knorpel!)
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>🩺 Klinik:</strong> Bei <strong>Asthma bronchiale</strong> verengen sich die Bronchiolen <strong>krampfartig</strong> → Atemnot, Giemen!
+  </div>
+</div>
+</div></div>`,
+
+    'Alveolen & Gasaustausch': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#1e3a8a,#1e40af,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(96,165,250,.2);border:1px solid rgba(96,165,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(191,219,254,.95)">🫁 Atmung · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Alveolen & Gasaustausch</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wo Sauerstoff ins Blut diffundiert</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was sind Alveolen?</div></div>
+  <p class="lekt-prose">Die <strong>Alveolen</strong> (Lungenbläschen) sind die <strong>funktionelle Einheit</strong> der Lunge — der Ort des Gasaustauschs.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">🔬 Eigenschaften</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li><strong>Ort des Gasaustauschs</strong> zwischen Luft und Blut</li>
+      <li>Von <strong>Kapillaren</strong> umgeben (Lungenkapillarnetz)</li>
+      <li>Enthalten <strong>Surfactant</strong> — verhindert das Kollabieren</li>
+      <li>Ca. <strong>300 Millionen</strong> Alveolen in beiden Lungen!</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Surfactant:</strong> Ein oberflächenaktiver Stoff, der die Oberflächenspannung in den Alveolen senkt. <strong>Ohne Surfactant</strong> würden die Alveolen zusammenfallen (z.B. bei Frühgeborenen → Atemnotsyndrom).
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Der Gasaustausch</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.95rem;margin-bottom:4px">➡️ O₂ ins Blut</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5"><strong>Sauerstoff diffundiert</strong> von den Alveolen in die Lungenkapillaren</div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.95rem;margin-bottom:4px">⬅️ CO₂ aus Blut</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5"><strong>Kohlendioxid diffundiert</strong> aus dem Blut in die Alveolen → wird ausgeatmet</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Diffusion — wie funktioniert das?</div></div>
+  <p class="lekt-prose">Der Gasaustausch basiert auf <strong>Diffusion</strong> — einem passiven Vorgang.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">⚗️ Prinzip</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Teilchen bewegen sich <strong>selbstständig</strong></li>
+      <li>Wanderung von <strong>hoher zu niedriger Konzentration</strong></li>
+      <li><strong>Ausgleich</strong> der Konzentrationsunterschiede</li>
+      <li><strong>Passiv</strong> — ohne Energieaufwand</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>🎨 Beispiel:</strong> Ein <strong>Tintentropfen</strong> in Wasser verteilt sich von alleine — ohne Rühren. Das ist Diffusion!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Totraum</div></div>
+  <p class="lekt-prose">Der <strong>Totraum</strong> umfasst alle luftleitenden Wege <strong>ohne Gasaustausch</strong>.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+    <div style="background:rgba(167,139,250,.08);border-radius:8px;padding:8px 12px;font-size:.82rem;color:var(--ink2)">👃 Nase</div>
+    <div style="background:rgba(167,139,250,.08);border-radius:8px;padding:8px 12px;font-size:.82rem;color:var(--ink2)">👄 Rachen</div>
+    <div style="background:rgba(167,139,250,.08);border-radius:8px;padding:8px 12px;font-size:.82rem;color:var(--ink2)">🪈 Luftröhre</div>
+    <div style="background:rgba(167,139,250,.08);border-radius:8px;padding:8px 12px;font-size:.82rem;color:var(--ink2)">🌳 Bronchien</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Das Totraumvolumen beträgt beim Erwachsenen ca. <strong>150 ml</strong> — von 500 ml Atemzugvolumen kommen also nur 350 ml in den Alveolen an!
+  </div>
+</div>
+</div></div>`,
+
+    'Atemmechanik & Pleura': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#1e3a8a,#1e40af,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(96,165,250,.2);border:1px solid rgba(96,165,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(191,219,254,.95)">🫁 Atmung · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Atemmechanik & Pleura</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wie wir atmen — Zwerchfell, Druck und Lunge</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Inspiration (Einatmung)</div></div>
+  <div class="lekt-card" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25)">
+    <div class="lekt-card-label" style="color:#22c55e">⬇️ AKTIVER Vorgang</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.8">
+      <li><strong>Zwerchfell kontrahiert</strong> (bewegt sich nach unten)</li>
+      <li><strong>Brustkorb erweitert sich</strong></li>
+      <li><strong>Unterdruck</strong> entsteht in der Lunge</li>
+      <li><strong>Luft strömt ein</strong></li>
+    </ul>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Exspiration (Ausatmung)</div></div>
+  <div class="lekt-card" style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25)">
+    <div class="lekt-card-label" style="color:#60a5fa">⬆️ PASSIVER Vorgang (in Ruhe)</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.8">
+      <li><strong>Zwerchfell entspannt sich</strong></li>
+      <li><strong>Brustkorb verkleinert sich</strong></li>
+      <li><strong>Überdruck</strong> entsteht in der Lunge</li>
+      <li><strong>Luft strömt aus</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Die <strong>Einatmung ist AKTIV</strong> (Muskelarbeit), die <strong>Ausatmung in Ruhe PASSIV</strong> (elastische Rückstellkräfte). Bei Belastung wird auch die Ausatmung aktiv!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Die Pleura — das Brustfell</div></div>
+  <p class="lekt-prose">Die <strong>Pleura</strong> umgibt die Lunge und ermöglicht die Atembewegung.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.9rem">🫁 Pleura visceralis</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Lungenfell — liegt <strong>direkt auf der Lunge</strong></div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem">🛡️ Pleura parietalis</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Rippenfell — kleidet den <strong>Brustkorb von innen</strong> aus</div>
+    </div>
+    <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.9rem">💨 Pleuraspalt</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Zwischen beiden Blättern — hier herrscht <strong>Unterdruck</strong> (~ -5 mmHg)</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>🚨 Klinik — Pneumothorax:</strong> Bei Luft im Pleuraspalt geht der Unterdruck verloren → die <strong>Lunge fällt zusammen (kollabiert)</strong>! Notfall, sofortige Drainage nötig.
+  </div>
+</div>
+</div></div>`,
+
+    'Atemfrequenz & Klinik': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#1e3a8a,#1e40af,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(96,165,250,.2);border:1px solid rgba(96,165,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(191,219,254,.95)">🫁 Atmung · Lektion 4</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Atemfrequenz & Klinik</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Normwerte & Vitalzeichen erfassen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Atemzugvolumen</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">📊 Normwert</div>
+    <div style="background:rgba(96,165,250,.08);border-radius:10px;padding:14px;margin-top:8px;text-align:center;font-size:1.1rem;color:var(--ink)">
+      <strong>Atemzugvolumen ≈ 500 ml</strong>
+    </div>
+    <div style="margin-top:8px;font-size:.8rem;color:var(--ink2);text-align:center;font-style:italic">
+      Davon kommen ~350 ml in den Alveolen an (150 ml Totraum)
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Atemfrequenz nach Alter</div></div>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#22c55e;font-size:.9rem">👨 Erwachsene</div>
+      <div style="font-size:.95rem;color:var(--ink);margin-top:3px"><strong>12–18 Atemzüge/min</strong></div>
+    </div>
+    <div style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.9rem">🧒 Kinder</div>
+      <div style="font-size:.95rem;color:var(--ink);margin-top:3px">Höhere Atemfrequenz als Erwachsene</div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:10px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.9rem">👶 Säuglinge</div>
+      <div style="font-size:.95rem;color:var(--ink);margin-top:3px"><strong>~40 Atemzüge/min</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Pathologische Werte</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem">🐢 Bradypnoe</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">&lt; 12/min — z.B. bei Opioiden, Hirndruckerhöhung</div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.9rem">🐇 Tachypnoe</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">&gt; 20/min — z.B. bei Fieber, Angst, Herzinsuffizienz, Pneumonie</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.9rem">⏸️ Apnoe</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Atemstillstand &gt; 10 Sek. — z.B. Schlafapnoe</div>
+    </div>
+    <div style="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#fbbf24;font-size:.9rem">😮‍💨 Dyspnoe</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:3px">Subjektive Atemnot</div>
+    </div>
+  </div>
+</div>
+
+<div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+  <strong>🩺 Pflege-Tipp:</strong> Die Atemfrequenz sollte <strong>UNAUFFÄLLIG</strong> gezählt werden (z.B. während des Pulszählens), denn Patienten verändern ihre Atmung <strong>unbewusst</strong>, sobald sie merken, dass sie beobachtet werden!
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT

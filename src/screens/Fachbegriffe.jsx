@@ -10,6 +10,7 @@ const CAT_STYLES = {
   'Gefäße':     { bg: 'var(--rose-dim)',   color: 'var(--rose)',   back: '#3f1515' },
   'Herz':       { bg: 'var(--rose-dim)',   color: 'var(--rose)',   back: '#3f1515' },
   'EKG':        { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a3f' },
+  'Atmung':     { bg: 'var(--blue-dim)',   color: 'var(--blue)',   back: '#1e3a5f' },
   'Pflege':     { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a3f' },
 }
 
@@ -21,6 +22,7 @@ const CAT_ICONS = {
   'Gefäße':     '🩸',
   'Herz':       '🫀',
   'EKG':        '⚡',
+  'Atmung':     '🫁',
   'Pflege':     '💙',
 }
 

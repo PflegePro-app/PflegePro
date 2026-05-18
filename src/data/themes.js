@@ -22,6 +22,13 @@ export const MODULES = [
     description: 'Herz, Blutdruck & Gefäße',
   },
   {
+    id: 'atmung',
+    name: 'Atmung',
+    icon: '🫁',
+    color: 'blue',
+    description: 'Atmungssystem & Gasaustausch',
+  },
+  {
     id: 'ausscheidung',
     name: 'Ausscheidung',
     icon: '💧',
@@ -162,6 +169,20 @@ export const THEMES = [
       'Kapillaren & Stoffaustausch',
       'Koronararterien & Herzinfarkt',
       'Klinik — Arteriosklerose, Stent & Bypass',
+    ],
+  },
+  {
+    id: 'atmung',
+    name: 'Atmung & Lunge',
+    icon: '🫁',
+    col: 'blue',
+    module: 'atmung',
+    related: ['blutkreislauf'],
+    lessons: [
+      'Aufbau der Atemwege',
+      'Alveolen & Gasaustausch',
+      'Atemmechanik & Pleura',
+      'Atemfrequenz & Klinik',
     ],
   },
 ]
