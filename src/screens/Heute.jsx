@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react'
 import { AppContext } from '../App'
 import { MODULES } from '../data/themes'
+import Revision from './Revision'
 
 // === BADGES SYSTEM ===
 const ALL_BADGES = [
@@ -268,6 +269,8 @@ export default function Heute() {
       </div>
 
       <BadgesSection progress={progress} readCount={readCount} quizCount={quizCount} avgScore={avgScore} streak={streak} />
+
+      <Revision />
 
       {/* Modules pliables */}
       {MODULES.map(mod => {

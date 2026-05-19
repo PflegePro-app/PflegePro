@@ -1,6 +1,7 @@
 import { useContext, useState, useMemo } from 'react'
 import { AppContext } from '../App'
 import { useSpeech } from '../hooks/useSpeech'
+import { useSpacedRepetition } from '../hooks/useSpacedRepetition'
 
 // Couleurs exactes des thèmes PflegePro
 const CAT_STYLES = {
@@ -30,10 +31,13 @@ const CAT_ICONS = {
 export default function Fachbegriffe() {
   const { FACHBEGRIFFE } = useContext(AppContext)
   const { speak, isSpeaking } = useSpeech()
+  const { addCard, removeCard, hasCard } = useSpacedRepetition()
 
   const [search, setSearch] = useState('')
   const [activeFilter, setActiveFilter] = useState('Alle')
   const [flipped, setFlipped] = useState({})
+  const [toast, setToast] = useState(null)
+  const [seenIntro, setSeenIntro] = useState(() => localStorage.getItem('pflegepro_srs_intro') === 'true')
 
   const allTerms = useMemo(() => [...(Array.isArray(FACHBEGRIFFE) ? FACHBEGRIFFE : Object.values(FACHBEGRIFFE).flat())].sort(() => Math.random() - 0.5), [FACHBEGRIFFE])
 
@@ -67,7 +71,29 @@ export default function Fachbegriffe() {
   })()
 
   const toggleFlip = (i) => {
+    const wasFlipped = !!flipped[i]
     setFlipped(prev => ({ ...prev, [i]: !prev[i] }))
+    // Auto-ajout au flip (uniquement quand on révèle, pas quand on referme)
+    if (!wasFlipped) {
+      const item = filtered[i]
+      if (item && !hasCard(item.term)) {
+        const added = addCard(item.term)
+        if (added && !seenIntro) {
+          // 1ère fois — afficher toast explicatif
+          setToast({
+            term: item.term,
+            message: 'wurde zu deinen Wiederholungen hinzugefügt! Sieh sie unter "Heute".',
+            isIntro: true,
+          })
+          localStorage.setItem('pflegepro_srs_intro', 'true')
+          setSeenIntro(true)
+        } else if (added) {
+          // Toast plus discret pour les suivantes
+          setToast({ term: item.term, message: 'hinzugefügt', isIntro: false })
+        }
+        setTimeout(() => setToast(null), seenIntro ? 2000 : 5000)
+      }
+    }
   }
 
   function getCatStyle(cat) {
@@ -180,6 +206,23 @@ export default function Fachbegriffe() {
                           }}
                           title="Aussprache anhören"
                         >🔊</button>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            if (hasCard(item.term)) removeCard(item.term)
+                            else addCard(item.term)
+                          }}
+                          style={{
+                            background: hasCard(item.term) ? 'rgba(16,185,129,.2)' : 'rgba(255,255,255,.12)',
+                            border: hasCard(item.term) ? '1px solid rgba(16,185,129,.5)' : '1px solid rgba(255,255,255,.15)',
+                            borderRadius: '50%',
+                            width: 32, height: 32,
+                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            cursor: 'pointer', padding: 0, fontSize: '1rem',
+                            transition: 'transform .15s ease',
+                          }}
+                          title={hasCard(item.term) ? 'Aus Wiederholungen entfernen' : 'Zu Wiederholungen hinzufügen'}
+                        >{hasCard(item.term) ? '✅' : '📌'}</button>
                       </div>
                     </div>
                     <div className="fach-hint-txt">
@@ -210,6 +253,51 @@ export default function Fachbegriffe() {
           })}
         </div>
       )}
+      {/* Toast notification */}
+      {toast && (
+        <div style={{
+          position: 'fixed',
+          bottom: 80,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          background: toast.isIntro
+            ? 'linear-gradient(135deg, #6366f1, #a855f7)'
+            : 'var(--card)',
+          color: toast.isIntro ? 'white' : 'var(--ink)',
+          border: toast.isIntro ? 'none' : '1px solid var(--border)',
+          borderRadius: 14,
+          padding: toast.isIntro ? '14px 18px' : '10px 16px',
+          boxShadow: '0 8px 24px rgba(0,0,0,.25)',
+          zIndex: 1000,
+          maxWidth: '90%',
+          fontSize: toast.isIntro ? '.85rem' : '.8rem',
+          fontWeight: 600,
+          animation: 'toastSlideUp .3s ease',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 10,
+        }}>
+          <span style={{ fontSize: toast.isIntro ? '1.3rem' : '1rem' }}>
+            {toast.isIntro ? '💡' : '✅'}
+          </span>
+          <div>
+            {toast.isIntro && (
+              <div style={{ fontWeight: 700, marginBottom: 4 }}>
+                Tipp: Wiederholungen
+              </div>
+            )}
+            <div>
+              <strong>{toast.term}</strong> {toast.message}
+            </div>
+          </div>
+        </div>
+      )}
+      <style>{`
+        @keyframes toastSlideUp {
+          from { opacity: 0; transform: translate(-50%, 20px); }
+          to { opacity: 1; transform: translate(-50%, 0); }
+        }
+      `}</style>
     </div>
   )
 }
