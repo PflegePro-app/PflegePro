@@ -15,11 +15,11 @@ export const PRAXIS_DATA = {
       {de:'Wie fühlen Sie sich heute?',fr:'Comment vous sentez-vous aujourd\'hui ?'},
     ],
     material:[
-      {icon:'💉',name:'Venenverweilkanüle',desc:'Zugang für i.v.-Therapie'},
-      {icon:'🩺',name:'Stethoskop',desc:'Abhören von Herz und Lunge',image:'/images/material/stethoskop.jpg'},
-      {icon:'⏱️',name:'Pulsoximeter',desc:'Messung O₂-Sättigung'},
+      {icon:'💉',name:'Venenverweilkanüle',desc:'Zugang für i.v.-Therapie',image:'/images/material/venenverweilkanuele.webp'},
+      {icon:'🩺',name:'Stethoskop',desc:'Abhören von Herz und Lunge',image:'/images/material/stethoskop.webp'},
+      {icon:'⏱️',name:'Pulsoximeter',desc:'Messung O₂-Sättigung',image:'/images/material/pulsoximeter.webp'},
       {icon:'🩹',name:'Verbandsmaterial',desc:'Wundversorgung'},
-      {icon:'💊',name:'Medikamentenwagen',desc:'Sichere Medikamentengabe'},
+      {icon:'💊',name:'Medikamentenwagen',desc:'Sichere Medikamentengabe',image:'/images/material/medikamentenwagen.webp'},
       {icon:'📊',name:'EKG-Gerät',desc:'Herzstromkurve aufzeichnen'},
     ]
   },
@@ -37,10 +37,10 @@ export const PRAXIS_DATA = {
     ],
     material:[
       {icon:'🛁',name:'Badewannenlift',desc:'Sicheres Baden'},
-      {icon:'🚶',name:'Rollator',desc:'Gehhilfe / Mobilität'},
-      {icon:'🛏️',name:'Pflegebett',desc:'Höhenverstellbar, mit Seitengitter'},
+      {icon:'🚶',name:'Rollator',desc:'Gehhilfe / Mobilität',image:'/images/material/rollator.webp'},
+      {icon:'🛏️',name:'Pflegebett',desc:'Höhenverstellbar, mit Seitengitter',image:'/images/material/pflegebett.webp'},
       {icon:'🧴',name:'Hautpflegeprodukte',desc:'Dekubitusprophylaxe'},
-      {icon:'🩺',name:'Blutdruckgerät',desc:'Regelmäßige Kontrolle'},
+      {icon:'🩺',name:'Blutdruckgerät',desc:'Regelmäßige Kontrolle',image:'/images/material/blutdruckmessgeraet.webp'},
       {icon:'🍽️',name:'Hilfsmittel Essen',desc:'Spezialbesteck, Teller'},
     ]
   },
@@ -58,7 +58,7 @@ export const PRAXIS_DATA = {
     ],
     material:[
       {icon:'🛏️',name:'Sicherheitsbett',desc:'Mit Seitenschutz'},
-      {icon:'💊',name:'Medikamentendispenser',desc:'Sichere Ausgabe'},
+      {icon:'💊',name:'Medikamentendispenser',desc:'Sichere Ausgabe',image:'/images/material/medikamentendispenser.webp'},
       {icon:'📝',name:'Dokumentationsbogen',desc:'Verlaufsbeobachtung'},
       {icon:'🔒',name:'Sicherheitsschloss',desc:'Gesicherte Bereiche'},
       {icon:'🧘',name:'Therapiematerial',desc:'Für Gruppen-/Einzeltherapie'},
@@ -77,9 +77,9 @@ export const PRAXIS_DATA = {
     ],
     material:[
       {icon:'🧸',name:'Spielzeug / Ablenkung',desc:'Beruhigung beim Eingriff'},
-      {icon:'💉',name:'Kinderkanüle',desc:'Kleiner Durchmesser'},
-      {icon:'🌡️',name:'Ohrthermometer',desc:'Kindgerechte Messung'},
-      {icon:'⚖️',name:'Kinderwaage',desc:'Gewichtskontrolle'},
+      {icon:'💉',name:'Kinderkanüle',desc:'Kleiner Durchmesser',image:'/images/material/kinderkanuele.webp'},
+      {icon:'🌡️',name:'Ohrthermometer',desc:'Kindgerechte Messung',image:'/images/material/ohrthermometer.webp'},
+      {icon:'⚖️',name:'Kinderwaage',desc:'Gewichtskontrolle',image:'/images/material/kinderwaage.webp'},
       {icon:'🩺',name:'Kinderstethoskop',desc:'Kleinere Membrane'},
       {icon:'🍭',name:'Belohnungssystem',desc:'Motivation und Kooperation'},
     ]
