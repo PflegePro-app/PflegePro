@@ -1,0 +1,12 @@
+# PflegePro - robots.txt
+# https://pflegepro.eu
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pflegepro.eu/sitemap.xml
+
+# Disallow technical files
+Disallow: /OneSignalSDKWorker.js
+Disallow: /manifest.json
