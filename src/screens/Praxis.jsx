@@ -1,7 +1,8 @@
 import { useContext, useState, useMemo } from 'react'
 import { AppContext } from '../App'
+import { useSpeech } from '../hooks/useSpeech'
 
-function MaterialFlipCard({ item, index }) {
+function MaterialFlipCard({ item, index, speak }) {
   const [flipped, setFlipped] = useState(false)
   const hasImage = !!item.image
 
@@ -62,8 +63,22 @@ function MaterialFlipCard({ item, index }) {
           <div style={{
             fontWeight: 700, fontSize: '.85rem', color: 'var(--ink)',
             lineHeight: 1.25, textAlign: 'center',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
           }}>
-            {item.name}
+            <span>{item.name}</span>
+            {speak && (
+              <button
+                onClick={(e) => { e.stopPropagation(); speak(item.name); }}
+                style={{
+                  background: 'var(--teal-dim)', border: '1px solid var(--teal)',
+                  borderRadius: '50%', width: 26, height: 26,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  cursor: 'pointer', padding: 0, fontSize: '.75rem',
+                  flexShrink: 0,
+                }}
+                title="Aussprache anhören"
+              >🔊</button>
+            )}
           </div>
         </div>
 
@@ -107,6 +122,7 @@ export default function Praxis() {
   const [activeCtx, setActiveCtx] = useState(contexts[0]?.[0] || '')
   const [showFr, setShowFr] = useState(false)
   const [tab, setTab] = useState('expressions')
+  const { speak } = useSpeech()
   const [search, setSearch] = useState('')
 
   const current = PRAXIS_DATA[activeCtx]
@@ -315,7 +331,19 @@ export default function Praxis() {
                   fontSize: '.78rem', padding: '1px 7px',
                   background: 'var(--bg3)', borderRadius: 6, color: 'var(--ink3)',
                 }}>DE</span>
-                {expr.de}
+                <span>{expr.de}</span>
+                <button
+                  onClick={(e) => { e.stopPropagation(); speak(expr.de); }}
+                  style={{
+                    marginLeft: 8, background: 'var(--teal-dim)',
+                    border: '1px solid var(--teal)', borderRadius: '50%',
+                    width: 26, height: 26, display: 'inline-flex',
+                    alignItems: 'center', justifyContent: 'center',
+                    cursor: 'pointer', padding: 0, fontSize: '.75rem',
+                    verticalAlign: 'middle',
+                  }}
+                  title="Aussprache anhören"
+                >🔊</button>
               </div>
               {showFr && (
                 <div style={{
@@ -351,7 +379,7 @@ export default function Praxis() {
               {search ? `Keine Ergebnisse für "${search}"` : 'Kein Material'}
             </div>
           ) : filteredMaterial.map((item, i) => (
-            <MaterialFlipCard key={i} item={item} index={i} />
+            <MaterialFlipCard key={i} item={item} index={i} speak={speak} />
           ))}
         </div>
       )}

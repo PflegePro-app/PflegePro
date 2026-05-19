@@ -1,5 +1,6 @@
 import { useContext, useState, useMemo } from 'react'
 import { AppContext } from '../App'
+import { useSpeech } from '../hooks/useSpeech'
 
 // Couleurs exactes des thèmes PflegePro
 const CAT_STYLES = {
@@ -28,6 +29,7 @@ const CAT_ICONS = {
 
 export default function Fachbegriffe() {
   const { FACHBEGRIFFE } = useContext(AppContext)
+  const { speak, isSpeaking } = useSpeech()
 
   const [search, setSearch] = useState('')
   const [activeFilter, setActiveFilter] = useState('Alle')
@@ -163,8 +165,21 @@ export default function Fachbegriffe() {
                       >
                         {CAT_ICONS[cat]} {cat}
                       </div>
-                      <div className="fach-term" style={{ marginTop: 8 }}>
-                        {item.term}
+                      <div className="fach-term" style={{ marginTop: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+                        <span>{item.term}</span>
+                        <button
+                          onClick={(e) => { e.stopPropagation(); speak(item.term); }}
+                          style={{
+                            background: 'rgba(255,255,255,.12)',
+                            border: '1px solid rgba(255,255,255,.15)',
+                            borderRadius: '50%',
+                            width: 32, height: 32,
+                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            cursor: 'pointer', padding: 0, fontSize: '1rem',
+                            transition: 'transform .15s ease',
+                          }}
+                          title="Aussprache anhören"
+                        >🔊</button>
                       </div>
                     </div>
                     <div className="fach-hint-txt">
