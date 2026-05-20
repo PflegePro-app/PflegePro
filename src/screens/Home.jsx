@@ -281,7 +281,7 @@ function DailyChallengeCard() {
           fontWeight: 700, color: 'white', marginBottom: 3,
         }}>Tägliche Challenge</div>
         <div style={{ fontSize: '.85rem', color: 'rgba(255,255,255,.92)' }}>
-          5 Fragen · Schaffst du es? ⚡
+          Lesen · Lernen · Quiz ⚡
         </div>
       </div>
       <div style={{

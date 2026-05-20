@@ -23,7 +23,7 @@ import DailyChallenge from './screens/DailyChallenge.jsx'
 export const AppContext = React.createContext(null)
 
 export default function App() {
-  const { progress, saveProgress, theme, toggleTheme, checkStreak, markLessonRead, userName, saveName, completeChallenge, isChallengeCompletedToday } = useProgress()
+  const { progress, saveProgress, theme, toggleTheme, checkStreak, markLessonRead, userName, saveName, completeChallenge, isChallengeCompletedToday, getCurrentDayIndex } = useProgress()
 
   const [screen, setScreen] = useState('home')
   const [currentTheme, setCurrentTheme] = useState(null)
@@ -153,7 +153,7 @@ export default function App() {
     markLessonRead,
     userName,
     completeChallenge,
-    isChallengeCompletedToday,
+    isChallengeCompletedToday, getCurrentDayIndex,
   }
 
   const inLektionMode = ['lektion', 'detail', 'quiz'].includes(screen)

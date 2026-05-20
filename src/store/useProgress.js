@@ -10,10 +10,20 @@ function loadProgress() {
     mastered: [], levels: {}, lessonsRead: [],
     dailyChallenge: { date: null, completed: false, score: 0 },
     badges: [], challengeStreak: 0, challengeBest: 0,
+    // NOUVEAU — suivi séquentiel des Daily Challenges
+    dailySequence: {
+      dayIndex: 0,           // quel jour de la séquence on est (0 = première fois)
+      lastPlayedDate: null,  // dernier jour où on a JOUÉ une Daily (toDateString)
+    },
   }
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}
-    return { ...defaults, ...saved }
+    const merged = { ...defaults, ...saved }
+    // S'assurer que dailySequence existe pour les anciens utilisateurs
+    if (!merged.dailySequence) {
+      merged.dailySequence = { dayIndex: 0, lastPlayedDate: null }
+    }
+    return merged
   } catch { return defaults }
 }
 
@@ -23,8 +33,8 @@ export function useProgress() {
   const [userName, setUserName] = useState(() => localStorage.getItem(NAME_KEY) || '')
 
   const saveProgress = useCallback((newP) => {
-    // S'assurer que lessonsRead existe toujours
     if (!newP.lessonsRead) newP.lessonsRead = []
+    if (!newP.dailySequence) newP.dailySequence = { dayIndex: 0, lastPlayedDate: null }
     setProgress(newP)
     localStorage.setItem(STORAGE_KEY, JSON.stringify(newP))
   }, [])
@@ -41,7 +51,6 @@ export function useProgress() {
     localStorage.setItem(NAME_KEY, name)
   }, [])
 
-  // Marquer une leçon comme lue
   const markLessonRead = useCallback((themeId, lessonName) => {
     const key = `${themeId}::${lessonName}`
     const current = loadProgress()
@@ -64,13 +73,21 @@ export function useProgress() {
     return newP.streak
   }, [progress, saveProgress])
 
-  // Compléter le Daily Challenge
+  // Compléter le Daily Challenge — avance le dayIndex pour demain
   const completeChallenge = useCallback((score) => {
     const today = new Date().toDateString()
     const current = loadProgress()
     const passed = score >= 0.8
-    // Only mark as completed if passed (allow retries if failed)
-    current.dailyChallenge = { date: today, completed: passed, score: Math.round(score * 100) }
+
+    current.dailyChallenge = { date: today, completed: true, score: Math.round(score * 100) }
+
+    // Avancer le dayIndex (la prochaine Daily sera la leçon suivante)
+    if (!current.dailySequence) current.dailySequence = { dayIndex: 0, lastPlayedDate: null }
+    if (current.dailySequence.lastPlayedDate !== today) {
+      current.dailySequence.dayIndex = (current.dailySequence.dayIndex || 0) + 1
+      current.dailySequence.lastPlayedDate = today
+    }
+
     if (passed) {
       const yesterday = new Date(Date.now() - 86400000).toDateString()
       current.challengeStreak = current.dailyChallenge?.date === yesterday
@@ -88,11 +105,19 @@ export function useProgress() {
     return passed
   }, [saveProgress])
 
-  // Vérifier si Challenge fait aujourd'hui
   const isChallengeCompletedToday = useCallback(() => {
     const today = new Date().toDateString()
     return progress.dailyChallenge?.date === today && progress.dailyChallenge?.completed
   }, [progress])
 
-  return { progress, saveProgress, theme, toggleTheme, userName, saveName, checkStreak, markLessonRead, completeChallenge, isChallengeCompletedToday }
+  // Renvoie l'index du jour actuel pour la séquence (0 = première fois)
+  const getCurrentDayIndex = useCallback(() => {
+    return progress.dailySequence?.dayIndex || 0
+  }, [progress])
+
+  return {
+    progress, saveProgress, theme, toggleTheme, userName, saveName,
+    checkStreak, markLessonRead, completeChallenge, isChallengeCompletedToday,
+    getCurrentDayIndex,
+  }
 }

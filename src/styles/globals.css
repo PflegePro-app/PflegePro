@@ -582,3 +582,50 @@ body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--ink);
   pointer-events: none;
   transition: opacity .3s ease;
 }
+
+/* === Daily Challenge — Flip Card === */
+.dc-flip-card {
+  perspective: 1200px;
+  cursor: pointer;
+  min-height: 240px;
+  margin-bottom: 20px;
+  animation: dcFlipIn .4s ease both;
+}
+.dc-flip-inner {
+  position: relative;
+  width: 100%;
+  min-height: 240px;
+  transform-style: preserve-3d;
+  transition: transform .6s cubic-bezier(.4,0,.2,1);
+  border-radius: 20px;
+}
+.dc-flip-card.flipped .dc-flip-inner {
+  transform: rotateY(180deg);
+}
+.dc-flip-front, .dc-flip-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 32px 24px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dc-flip-front {
+  background: var(--card);
+  border: 2px solid var(--border);
+}
+.dc-flip-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  border: 2px solid rgba(59,130,246,.4);
+  box-shadow: 0 8px 32px rgba(59,130,246,.25);
+}
+@keyframes dcFlipIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
