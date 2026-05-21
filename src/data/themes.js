@@ -29,6 +29,13 @@ export const MODULES = [
     description: 'Atmungssystem & Gasaustausch',
   },
   {
+    id: 'hygiene',
+    name: 'Hygiene',
+    icon: '🧼',
+    color: 'green',
+    description: 'Hygiene, Infektionsschutz & Hautpflege',
+  },
+  {
     id: 'ausscheidung',
     name: 'Ausscheidung',
     icon: '💧',
@@ -183,6 +190,19 @@ export const THEMES = [
       'Alveolen & Gasaustausch',
       'Atemmechanik & Pleura',
       'Atemfrequenz & Klinik',
+    ],
+  },
+  {
+    id: 'hygiene_grundlagen',
+    name: 'Hygiene — Grundlagen',
+    icon: '🧼',
+    col: 'green',
+    module: 'hygiene',
+    related: [],
+    lessons: [
+      'Grundlagen & persönliche Hygiene',
+      'Händehygiene',
+      'PSA & Isolation',
     ],
   },
 ]

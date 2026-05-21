@@ -5373,4 +5373,276 @@ export const LESSON_CONTENT = {
 
   },
 
+  hygiene_grundlagen: {
+
+    'Grundlagen & persönliche Hygiene': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#14532d,#166534,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(74,222,128,.2);border:1px solid rgba(74,222,128,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(187,247,208,.95)">🧼 Hygiene · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Grundlagen & persönliche Hygiene</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Basics, Erscheinungsbild und Dienstkleidung</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist Hygiene?</div></div>
+  <p class="lekt-prose"><strong>Hygiene</strong> umfasst alle Maßnahmen zur Verhütung von Krankheiten und zur Vermeidung der Übertragung von Krankheitserregern. Ziel ist der Schutz von <strong>Patienten, Mitarbeitenden und Besuchern</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🦠 Was ist eine Infektion?</div>
+    <p style="font-size:.85rem;color:var(--ink2);line-height:1.6;margin-top:8px">Eine <strong>Infektion</strong> entsteht durch das <strong>Eindringen und Vermehren</strong> von Krankheitserregern im menschlichen Körper. Zur Vermeidung werden präventive Hygienemaßnahmen angewendet.</p>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Hygiene dient der <strong>Infektionsprävention</strong> und dem Schutz aller Beteiligten im Gesundheitswesen.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Persönliche Hygiene</div></div>
+  <p class="lekt-prose">In patientennahen Bereichen gelten <strong>besondere Anforderungen</strong> an das persönliche Erscheinungsbild.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Was ist erlaubt / Pflicht</div>
+    <div style="display:flex;flex-direction:column;gap:6px;margin-top:8px">
+      <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">
+        💇 <strong>Kurze Haare</strong> oder zusammengebundene Haare
+      </div>
+      <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">
+        💅 <strong>Kurze, saubere Fingernägel</strong>
+      </div>
+    </div>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#ef4444">❌ Was ist verboten</div>
+    <div style="display:flex;flex-direction:column;gap:6px;margin-top:8px">
+      <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">
+        Kein <strong>Nagellack</strong> oder künstliche Fingernägel
+      </div>
+      <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">
+        Keine <strong>Schmuckstücke</strong> an Händen und Unterarmen
+      </div>
+      <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">
+        <strong>Piercings</strong> entfernen, wenn Entzündungsgefahr besteht
+      </div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Hände und Unterarme müssen für eine wirksame Händedesinfektion <strong>frei von Schmuck</strong> sein.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Dienst- und Bereichskleidung</div></div>
+  <p class="lekt-prose">Dienstkleidung ist während der Arbeitszeit <strong>verpflichtend</strong> zu tragen und ersetzt private Kleidung. Sie dient dem <strong>Schutz vor Kontamination</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">👕 Wichtige Regeln</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Wechsel <strong>mindestens alle zwei Tage</strong></li>
+      <li><strong>Sofortiger Wechsel</strong> bei Verschmutzung</li>
+      <li>Keine private Kleidung unter kurzärmeliger Dienstkleidung</li>
+      <li>Aufbereitung durch den <strong>Arbeitgeber</strong></li>
+      <li>Arbeitskleidung darf <strong>nicht privat gewaschen</strong> werden</li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#a78bfa">🏥 Bereichskleidung</div>
+    <p style="font-size:.82rem;color:var(--ink2);line-height:1.5;margin-top:8px">Wird <strong>ausschließlich in festgelegten Bereichen</strong> getragen (z.B. OP, Intensivstation) und darf nicht außerhalb verwendet werden.</p>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Dienst- und Bereichskleidung <strong>verhindern die Verschleppung</strong> von Krankheitserregern.
+  </div>
+</div>
+</div></div>`,
+
+    'Händehygiene': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#14532d,#166534,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(74,222,128,.2);border:1px solid rgba(74,222,128,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(187,247,208,.95)">🧼 Hygiene · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Händehygiene</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Die wichtigste Einzelmaßnahme der Infektionsprävention</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Basishygiene</div></div>
+  <p class="lekt-prose">Die Basishygiene umfasst <strong>Standardmaßnahmen</strong> zur Vermeidung der Übertragung von Krankheitserregern.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🛡️ Die 8 Säulen der Basishygiene</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Konsequente Händehygiene</strong></li>
+      <li>Persönliche Hygiene</li>
+      <li>Sachgerechte Verwendung von PSA</li>
+      <li>Flächenreinigung und Flächendesinfektion</li>
+      <li>Aufbereitung von Medizinprodukten</li>
+      <li>Abfallentsorgung gemäß Vorschriften</li>
+      <li>Wäsche- und Geschirrhygiene</li>
+      <li>Patienten- und Besucheraufklärung</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Die <strong>Händehygiene</strong> gilt als <strong>wichtigste Einzelmaßnahme</strong> der Infektionsprävention!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Händedesinfektion — die 5 Momente (WHO)</div></div>
+  <p class="lekt-prose">Die hygienische Händedesinfektion ist die <strong>wirksamste Maßnahme</strong> zur Unterbrechung von Infektionsketten. Sie entfernt die <strong>transiente Hautflora</strong>.</p>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.88rem">1️⃣ Vor Patientenkontakt</div>
+    </div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.88rem">2️⃣ Vor aseptischen Tätigkeiten</div>
+    </div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.88rem">3️⃣ Nach Kontakt mit potenziell infektiösem Material</div>
+    </div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.88rem">4️⃣ Nach Patientenkontakt</div>
+    </div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.88rem">5️⃣ Nach Kontakt mit der Patientenumgebung</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>⏱️ Einwirkzeit:</strong> Die hygienische Händedesinfektion dauert in der Regel <strong>30 Sekunden</strong>!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Durchführung — Die 6 Schritte</div></div>
+  <p class="lekt-prose">Bei der Durchführung müssen <strong>alle Bereiche der Hände</strong> ausreichend benetzt werden:</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:10px;text-align:center">
+      <div style="font-weight:700;color:#60a5fa;font-size:.82rem">1️⃣ Handfläche auf Handfläche</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:10px;text-align:center">
+      <div style="font-weight:700;color:#60a5fa;font-size:.82rem">2️⃣ Handflächen über Handrücken</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:10px;text-align:center">
+      <div style="font-weight:700;color:#60a5fa;font-size:.82rem">3️⃣ Fingerzwischenräume</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:10px;text-align:center">
+      <div style="font-weight:700;color:#60a5fa;font-size:.82rem">4️⃣ Fingeraußenseiten</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:10px;text-align:center">
+      <div style="font-weight:700;color:#60a5fa;font-size:.82rem">5️⃣ Daumen kreisend</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:10px;text-align:center">
+      <div style="font-weight:700;color:#60a5fa;font-size:.82rem">6️⃣ Fingerspitzen</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Achtung:</strong> Nicht benetzte Hautbereiche stellen ein <strong>Infektionsrisiko</strong> dar!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Händewaschung & Hautpflege</div></div>
+  <p class="lekt-prose">Händewaschen dient vor allem der <strong>Entfernung sichtbarer Verschmutzungen</strong> und <strong>ersetzt die Händedesinfektion NICHT</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">💧 Wann Händewaschen?</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Arbeitsbeginn</li>
+      <li>Sichtbare <strong>Verschmutzung</strong></li>
+      <li>Vor Mahlzeiten</li>
+      <li>Nach <strong>Toilettenbesuch</strong></li>
+      <li>Nach Kontakt mit <strong>Sporenbildnern</strong> oder Parasiten</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa">
+    <strong>💡 Tipp:</strong> Regelmäßige <strong>Hautpflege</strong> schützt die Hautbarriere. Gesunde Haut ist Voraussetzung für wirksame Händehygiene!
+  </div>
+</div>
+</div></div>`,
+
+    'PSA & Isolation': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#14532d,#166534,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(74,222,128,.2);border:1px solid rgba(74,222,128,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(187,247,208,.95)">🧼 Hygiene · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">PSA & Isolation</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Schutzausrüstung, Masken und Isolationsformen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Persönliche Schutzausrüstung (PSA)</div></div>
+  <p class="lekt-prose">Die <strong>PSA</strong> schützt Mitarbeitende vor <strong>biologischen Arbeitsstoffen</strong> und infektiösen Materialien.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🛡️ Bestandteile der PSA</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px">
+      <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🧤 Einmalhandschuhe</div>
+      <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">😷 MNS</div>
+      <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">😷 FFP2-Maske</div>
+      <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">😷 FFP3-Maske</div>
+      <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🥽 Schutzbrille</div>
+      <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🛡️ Gesichtsschutzschild</div>
+      <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🥼 Schutzkittel</div>
+      <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">👕 Schutzschürze</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> PSA wird entsprechend der <strong>Gefährdungsbeurteilung</strong> und dem <strong>Übertragungsweg</strong> ausgewählt.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Handschuhe & Masken</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem;margin-bottom:4px">🧤 Einmalhandschuhe</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Schützen vor Kontakt mit <strong>Blut, Sekreten, Exkreten</strong> und kontaminierten Materialien</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem;margin-bottom:4px">😷 Mund-Nasen-Schutz (MNS)</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Schützt vor <strong>Tröpfchen</strong></div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#fb7185;font-size:.9rem;margin-bottom:4px">😷 FFP2 / FFP3</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Zusätzlicher Schutz vor <strong>luftgetragenen Erregern (Aerosolen)</strong></div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Wichtig:</strong>
+    <ul style="margin:6px 0 0 18px">
+      <li>Handschuhe ersetzen <strong>NICHT</strong> die Händedesinfektion</li>
+      <li>Masken müssen <strong>korrekt sitzen</strong></li>
+      <li>Vor und nach Gebrauch: <strong>Händedesinfektion</strong></li>
+    </ul>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Isolation von Patienten</div></div>
+  <p class="lekt-prose">Patienten mit bestimmten Erregern müssen <strong>isoliert</strong> werden, um eine Weiterverbreitung zu verhindern.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🏥 Die 4 Isolationsformen</div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+      <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#a78bfa;font-size:.85rem">🚪 Einzelzimmerisolierung</div>
+        <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Patient allein in einem separaten Zimmer</div>
+      </div>
+      <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#a78bfa;font-size:.85rem">🚪🚪 Isolierung mit Schleuse</div>
+        <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Zusätzlicher Raum vor dem Patientenzimmer</div>
+      </div>
+      <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#a78bfa;font-size:.85rem">👥 Kohortenisolierung</div>
+        <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Patienten mit <strong>gleichem Erreger</strong> gemeinsam untergebracht</div>
+      </div>
+      <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:#a78bfa;font-size:.85rem">🛡️ Umkehrisolierung (Schutzisolierung)</div>
+        <div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Schutz für <strong>immungeschwächte Patienten</strong> vor Erregern von außen</div>
+      </div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Isolation schützt <strong>Mitpatienten, Personal und Besucher</strong> vor Infektionsübertragungen. Vor Betreten: alle vorgeschriebenen Schutzmaßnahmen einhalten!
+  </div>
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT
