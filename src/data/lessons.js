@@ -5645,4 +5645,439 @@ export const LESSON_CONTENT = {
 
   },
 
+  koerperpflege_grundlagen: {
+
+    'Grundlagen der Körperpflege': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">🛁 Körperpflege · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Grundlagen der Körperpflege</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Bedeutung, Ziele und Grundregeln</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist Körperpflege?</div></div>
+  <p class="lekt-prose">Die <strong>Körperpflege</strong> gehört zu den wichtigsten pflegerischen Maßnahmen. Sie dient nicht nur der Reinigung des Körpers, sondern unterstützt <strong>Gesundheit, Wohlbefinden und Lebensqualität</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">👁️ Mehrere Funktionen gleichzeitig</div>
+    <p style="font-size:.85rem;color:var(--ink2);line-height:1.6;margin-top:8px">Während der Körperpflege beobachtet die Pflegefachperson den Gesundheitszustand: <strong>Haut, Beweglichkeit, Befinden</strong>. Sie wird individuell an Bedürfnisse, Gewohnheiten, Fähigkeiten und Wünsche angepasst.</p>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Körperpflege bedeutet mehr als Waschen. Sie verbindet <strong>Hygiene, Gesundheitsförderung, Beobachtung und Zuwendung</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Bedeutung der Körperpflege</div></div>
+  <p class="lekt-prose">Die Unterstützung bei der Körperpflege gehört zu den grundlegenden Aufgaben der professionellen Pflege.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🎯 Sie hilft, ...</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li><strong>Krankheiten vorzubeugen</strong></li>
+      <li><strong>Wohlbefinden zu steigern</strong></li>
+      <li><strong>Selbstwertgefühl zu fördern</strong></li>
+      <li><strong>Wahrnehmungsfähigkeit zu erhalten</strong></li>
+      <li><strong>Kommunikationsfähigkeit zu fördern</strong></li>
+      <li><strong>Selbstständigkeit zu unterstützen</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Die Körperpflege verbindet <strong>körperliche Versorgung mit Kommunikation und Beziehungsgestaltung</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Ziele der Körperpflege</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Hauptziele</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Erhaltung der Gesundheit</li>
+      <li>Förderung der <strong>Hautintegrität</strong></li>
+      <li>Vermeidung von Infektionen</li>
+      <li>Steigerung des Wohlbefindens</li>
+      <li>Förderung der <strong>Selbstständigkeit</strong></li>
+      <li>Verbesserung der Körperwahrnehmung</li>
+      <li>Erhaltung sozialer Teilhabe</li>
+      <li>Unterstützung der Mobilität</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Goldene Regel — Aktivierende Pflege:</strong><br/>
+    <em style="font-size:1.05rem">"So viel Selbstständigkeit wie möglich, so viel Unterstützung wie nötig."</em>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Einflussfaktoren</div></div>
+  <p class="lekt-prose">Die Planung und Durchführung wird von verschiedenen Faktoren beeinflusst.</p>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+    <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#fb7185;font-size:.9rem;margin-bottom:6px">🏥 Gesundheitszustand</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Fieber · Schmerzen · Erschöpfung · Bewegungseinschränkungen · Lähmungen · Vitalzeichen · Bettruhe</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem;margin-bottom:6px">👤 Persönliche Faktoren</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Alter · Kulturelle Gewohnheiten · Vorlieben · Schamgefühl · Religiöse Bedürfnisse</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.9rem;margin-bottom:6px">🏠 Umgebungsfaktoren</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Häusliche Umgebung · Pflegeheim · Krankenhaus · Verfügbare Hilfsmittel · Unterstützung durch Angehörige</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Jede Körperpflege muss <strong>individuell geplant</strong> werden. Standardlösungen gibt es nicht.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Grundregeln der Körperpflege</div></div>
+  <p class="lekt-prose">Für eine professionelle und menschenwürdige Körperpflege gelten grundlegende Prinzipien:</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🤝 <strong>Selbstbestimmung</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">💪 <strong>Selbstständigkeit</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">😌 <strong>Stress vermeiden</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🙈 <strong>Schamgefühl achten</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🛡️ <strong>Intimsphäre schützen</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🤲 <strong>Haut schonen</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🧼 <strong>Hygiene einhalten</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">⚠️ <strong>Sicherheit</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2);grid-column:span 2">🏋️ <strong>Rückenschonend arbeiten</strong></div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Der <strong>Patient steht im Mittelpunkt</strong> und entscheidet soweit möglich selbst.
+  </div>
+</div>
+</div></div>`,
+
+    'Vorbereitung der Körperpflege': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">🛁 Körperpflege · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Vorbereitung der Körperpflege</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Information, Material, Umgebung und Sicherheit</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Warum vorbereiten?</div></div>
+  <p class="lekt-prose">Eine sorgfältige Vorbereitung ist die Grundlage für eine <strong>sichere, hygienische und patientenorientierte Körperpflege</strong>. Sie ermöglicht einen strukturierten Ablauf, reduziert Risiken und schafft eine angenehme Atmosphäre.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">📋 Sie umfasst...</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li><strong>Informationssammlung</strong></li>
+      <li><strong>Organisation der Umgebung</strong></li>
+      <li><strong>Bereitstellung aller Materialien</strong></li>
+      <li><strong>Sicherheitsmaßnahmen</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Eine gute Vorbereitung <strong>verhindert Unterbrechungen</strong> und erhöht die Sicherheit für Patient und Pflegekraft.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Informationssammlung</div></div>
+  <p class="lekt-prose">Vor jeder Körperpflege müssen wichtige Informationen über den Patienten eingeholt werden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">📝 Zu erfassen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Aktueller Gesundheitszustand · Diagnosen · Erkrankungen</li>
+      <li><strong>Schmerzen · Fieber · Mobilitätseinschränkungen</strong></li>
+      <li>Angeordnete Bettruhe</li>
+      <li>Bekannte <strong>Allergien</strong></li>
+      <li>Pflegebedürftigkeit · Ressourcen des Patienten</li>
+      <li>Psychische Verfassung</li>
+      <li>Kulturelle und religiöse Bedürfnisse</li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#22c55e">📚 Wo finden?</div>
+    <p style="font-size:.82rem;color:var(--ink2);line-height:1.5;margin-top:8px">Gespräche mit Patient, Angehörigen, Kollegen · <strong>Pflegeanamnese</strong> · <strong>Pflegedokumentation</strong></p>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Je besser die Informationslage, desto <strong>individueller und sicherer</strong> die Pflege.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Gewohnheiten & Wünsche</div></div>
+  <p class="lekt-prose">Jeder Mensch besitzt individuelle Vorstellungen von Sauberkeit. Diese Gewohnheiten sollten <strong>möglichst berücksichtigt</strong> werden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">💭 Typische Beispiele</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Duschen statt Baden — oder umgekehrt</li>
+      <li>Körperpflege am Morgen oder Abend</li>
+      <li>Bevorzugte Wassertemperatur</li>
+      <li>Verwendung eigener Pflegeprodukte</li>
+      <li><strong>Pflege durch eine Person gleichen Geschlechts</strong></li>
+      <li>Bestimmte Reihenfolge der Körperpflege</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Gewohnheiten geben <strong>Sicherheit und Orientierung</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Vorbereitung der Umgebung</div></div>
+  <p class="lekt-prose">Die Umgebung muss so gestaltet werden, dass der Patient sich wohlfühlt und die Pflege ungestört durchgeführt werden kann.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:10px;font-size:.78rem;color:var(--ink2);text-align:center">🌡️ <strong>Raumtemperatur</strong></div>
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:10px;font-size:.78rem;color:var(--ink2);text-align:center">🪟 <strong>Fenster schließen</strong></div>
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:10px;font-size:.78rem;color:var(--ink2);text-align:center">💨 <strong>Zugluft vermeiden</strong></div>
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:10px;font-size:.78rem;color:var(--ink2);text-align:center">💡 <strong>Beleuchtung</strong></div>
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:10px;font-size:.78rem;color:var(--ink2);text-align:center">🛡️ <strong>Sichtschutz</strong></div>
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:10px;font-size:.78rem;color:var(--ink2);text-align:center">🚪 <strong>Besucher</strong></div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Die <strong>Wahrung der Intimsphäre</strong> beginnt bereits VOR der Pflegemaßnahme.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Vorbereitung der Materialien</div></div>
+  <p class="lekt-prose">Alle benötigten Materialien müssen <strong>vollständig bereitgestellt</strong> werden, bevor die Körperpflege beginnt.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🧺 Typische Materialien</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:8px">
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:5px 8px;font-size:.72rem;color:var(--ink2)">🪣 Waschschüssel</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:5px 8px;font-size:.72rem;color:var(--ink2)">🧖 Handtücher</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:5px 8px;font-size:.72rem;color:var(--ink2)">🧽 Waschlappen</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:5px 8px;font-size:.72rem;color:var(--ink2)">🧴 Waschlotion / Syndets</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:5px 8px;font-size:.72rem;color:var(--ink2)">💆 Hautpflegeprodukte</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:5px 8px;font-size:.72rem;color:var(--ink2)">🪥 Zahnpflege</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:5px 8px;font-size:.72rem;color:var(--ink2)">🪒 Rasierapparat</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:5px 8px;font-size:.72rem;color:var(--ink2)">🧤 Handschuhe</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:5px 8px;font-size:.72rem;color:var(--ink2)">👕 Frische Kleidung</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:5px 8px;font-size:.72rem;color:var(--ink2)">🛏️ Bettwäsche</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Wichtig:</strong> Die Pflegekraft sollte den Patienten <strong>nicht allein lassen müssen</strong>, um fehlendes Material zu holen.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Persönliche Vorbereitung der Pflegekraft</div></div>
+  <p class="lekt-prose">Auch die Pflegefachperson muss sich vorbereiten — für <strong>Hygiene und Sicherheit</strong>.</p>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">✅ Saubere <strong>Dienstkleidung</strong> tragen</div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">✅ Haare <strong>zusammenbinden</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">✅ <strong>Kurze Fingernägel</strong>, kein Nagellack</div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">✅ Kein <strong>Schmuck</strong> an Händen und Unterarmen</div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">✅ <strong>Händedesinfektion</strong> durchführen</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Schmuck und lange Fingernägel können <strong>Verletzungen verursachen</strong> und die Händehygiene beeinträchtigen.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Sicherheitsmaßnahmen</div></div>
+  <p class="lekt-prose">Risiken müssen erkannt und minimiert werden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Sturzprävention</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Rutschfeste Schuhe</strong> oder Antirutschsocken</li>
+      <li>Trockener Fußboden</li>
+      <li>Entfernung von Stolperfallen</li>
+      <li>Nutzung von <strong>Haltegriffen</strong></li>
+      <li>Bremsen von Rollator / Rollstuhl feststellen</li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#fbbf24">🛡️ Weitere Sicherheit</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Wassertemperatur prüfen</strong></li>
+      <li>Klingel in Reichweite</li>
+      <li>Patient bei Bedarf nicht allein lassen</li>
+      <li>Auf Schwindel und Schwäche achten</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Goldene Regel:</strong> Patientensicherheit hat <strong>immer Vorrang</strong> vor einem schnellen Arbeitsablauf.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Die 3 Phasen der Körperpflege</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.95rem;margin-bottom:4px">1️⃣ Vorbereitungsphase</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Informationssammlung · Material · Umgebung · persönliche Vorbereitung</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.95rem;margin-bottom:4px">2️⃣ Durchführungsphase</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Fachgerechte Durchführung · individuelle Wünsche · <strong>Kommunikation begleitet jeden Schritt</strong></div>
+    </div>
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.95rem;margin-bottom:4px">3️⃣ Nachbereitungsphase</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Aufräumen · Reinigung · Versorgung · <strong>Dokumentation</strong></div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Professionelle Pflege besteht <strong>immer aus diesen 3 Phasen</strong>.
+  </div>
+</div>
+</div></div>`,
+
+    'Scham und Intimsphäre': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">🛁 Körperpflege · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Scham und Intimsphäre</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Würde, Respekt und professioneller Umgang</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Scham in der Pflege</div></div>
+  <p class="lekt-prose">Das <strong>Schamgefühl</strong> gehört zu den stärksten und persönlichsten menschlichen Gefühlen. Besonders während der Körperpflege können Patienten Scham empfinden, da fremde Menschen in ihren <strong>persönlichen und intimen Lebensbereich</strong> eintreten.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">💔 Asymmetrie</div>
+    <p style="font-size:.85rem;color:var(--ink2);line-height:1.6;margin-top:8px">Für Pflegefachpersonen gehört der Umgang mit Nacktheit, Ausscheidungen oder Intimpflege zum <strong>Berufsalltag</strong>. Für den Patienten kann dieselbe Situation jedoch <strong>belastend, unangenehm oder beschämend</strong> sein.</p>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Scham schützt die <strong>persönliche Würde</strong> eines Menschen und muss in jeder Pflegesituation respektiert werden.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Was ist Scham?</div></div>
+  <p class="lekt-prose">Scham bezeichnet das Gefühl des <strong>Bloßgestelltseins</strong> oder die Angst, bloßgestellt zu werden. Sie entsteht häufig dort, wo persönliche Grenzen verletzt werden.</p>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+    <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#fb7185;font-size:.9rem;margin-bottom:4px">🙈 Intime Scham</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Verletzung der Intimsphäre oder körperliche Entblößung</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.9rem;margin-bottom:4px">👥 Soziale Scham</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Schuld- oder Versagensgefühle gegenüber anderen</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Scham entsteht häufig dort, wo Menschen sich <strong>verletzlich, abhängig oder ausgeliefert</strong> fühlen.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Scham bei Pflegebedürftigkeit</div></div>
+  <p class="lekt-prose">Krankheiten und körperliche Einschränkungen können das Selbstwertgefühl beeinträchtigen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Typische Auslöser</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Abhängigkeit von anderen Personen</li>
+      <li>Körperliche Schwäche</li>
+      <li>Pflegebedürftigkeit</li>
+      <li><strong>Nacktheit während der Pflege</strong></li>
+      <li>Hilfebedarf bei der Intimpflege</li>
+      <li><strong>Inkontinenz</strong> (Verlust der Kontrolle)</li>
+      <li>Verlust von Selbstständigkeit</li>
+      <li>Körperliche Veränderungen durch Krankheiten</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Je größer die <strong>Abhängigkeit</strong> von fremder Hilfe, desto stärker können Schamgefühle auftreten.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Anzeichen von Scham</div></div>
+  <p class="lekt-prose">Scham zeigt sich durch <strong>körperliche UND emotionale</strong> Reaktionen.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#fb7185;font-size:.9rem;margin-bottom:6px">🫀 Körperliche Reaktionen</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Erröten · Erbleichen · Schwitzen · Zittern · Herzklopfen · Hitzewallungen · Mundtrockenheit · Atembeschwerden · Schwindel</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.9rem;margin-bottom:6px">😔 Verhaltensweisen</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Verlegenes Lächeln · Sprachlosigkeit · Wegschauen · Vermeidungsverhalten · Nervosität · Weinen · Wut · Angst</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Achte auf <strong>beide Signale</strong> — körperlich UND emotional.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Intimsphäre schützen</div></div>
+  <p class="lekt-prose">Die Wahrung der Intimsphäre gehört zu den <strong>wichtigsten Aufgaben</strong> während der Körperpflege.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Konkrete Maßnahmen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Anklopfen</strong> vor dem Betreten des Zimmers</li>
+      <li>Patienten begrüßen</li>
+      <li>Pflegemaßnahmen <strong>erklären</strong></li>
+      <li><strong>Einverständnis einholen</strong></li>
+      <li>Besucher hinausbitten</li>
+      <li><strong>Sichtschutz</strong> verwenden, Vorhänge schließen</li>
+      <li>Nur notwendige Körperbereiche entkleiden</li>
+      <li>Patient <strong>niemals unnötig entblößen</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Goldene Regel:</strong> Nur die Körperregion wird entkleidet, die <strong>aktuell gepflegt</strong> wird.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Professionelle Berührungen</div></div>
+  <p class="lekt-prose">Berührungen vermitteln Sicherheit, Vertrauen und Wohlbefinden. <strong>Unangemessene</strong> Berührungen können dagegen Scham auslösen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">🤝 Regeln</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Vor jeder Berührung <strong>ankündigen</strong></li>
+      <li>Patient ansprechen</li>
+      <li><strong>Angenehme Wärme</strong> der Hände</li>
+      <li>Flächige Berührungen mit der Handinnenfläche</li>
+      <li>Ruhige und gleichmäßige Bewegungen</li>
+      <li>Leichten Druck verwenden</li>
+      <li><strong>Blickkontakt</strong> halten</li>
+      <li>Reaktionen beobachten</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Jede Berührung benötigt <strong>Respekt, Aufmerksamkeit und Einverständnis</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Vertrauen aufbauen</div></div>
+  <p class="lekt-prose">Pflegefachpersonen können aktiv dazu beitragen, Scham zu reduzieren und Vertrauen zu fördern.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🗣️ <strong>Ruhig sprechen</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">👂 <strong>Aktiv zuhören</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🕰️ <strong>Geduld zeigen</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">❤️ <strong>Wünsche ernst nehmen</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🤝 <strong>Entscheidungen ermöglichen</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">💪 <strong>Ressourcen fördern</strong></div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Vertrauen entsteht durch <strong>Respekt, Kommunikation und Wahrung der Menschenwürde</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Scham = Hüterin der Würde</div></div>
+  <p class="lekt-prose">Scham wird häufig als <strong>"Hüterin der menschlichen Würde"</strong> bezeichnet. Sie schützt persönliche Grenzen und erinnert Menschen daran, respektvoll miteinander umzugehen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🛡️ Grundwerte professioneller Pflege</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li><strong>Menschenwürde</strong></li>
+      <li><strong>Selbstbestimmung</strong></li>
+      <li><strong>Wertschätzung</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa">
+    <strong>💜 Goldene Regel:</strong> Jeder Mensch hat unabhängig von Alter, Krankheit oder Pflegebedarf Anspruch auf einen <strong>würdevollen Umgang</strong>.
+  </div>
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT

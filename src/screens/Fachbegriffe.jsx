@@ -14,6 +14,7 @@ const CAT_STYLES = {
   'EKG':        { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a3f' },
   'Atmung':     { bg: 'var(--blue-dim)',   color: 'var(--blue)',   back: '#1e3a5f' },
   'Hygiene':    { bg: 'var(--green-dim)',  color: 'var(--green)',  back: '#0d2e1a' },
+  'Körperpflege': { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a4a' },
   'Pflege':     { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a3f' },
 }
 
@@ -27,6 +28,7 @@ const CAT_ICONS = {
   'EKG':        '⚡',
   'Atmung':     '🫁',
   'Hygiene':    '🧼',
+  'Körperpflege': '🛁',
   'Pflege':     '💙',
 }
 

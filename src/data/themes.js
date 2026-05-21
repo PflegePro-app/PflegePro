@@ -36,6 +36,13 @@ export const MODULES = [
     description: 'Hygiene, Infektionsschutz & Hautpflege',
   },
   {
+    id: 'koerperpflege',
+    name: 'Körperpflege',
+    icon: '🛁',
+    color: 'purple',
+    description: 'Körperpflege, Hautpflege & Pflegepraxis',
+  },
+  {
     id: 'ausscheidung',
     name: 'Ausscheidung',
     icon: '💧',
@@ -203,6 +210,19 @@ export const THEMES = [
       'Grundlagen & persönliche Hygiene',
       'Händehygiene',
       'PSA & Isolation',
+    ],
+  },
+  {
+    id: 'koerperpflege_grundlagen',
+    name: 'Körperpflege — Grundlagen',
+    icon: '🛁',
+    col: 'purple',
+    module: 'koerperpflege',
+    related: [],
+    lessons: [
+      'Grundlagen der Körperpflege',
+      'Vorbereitung der Körperpflege',
+      'Scham und Intimsphäre',
     ],
   },
 ]
