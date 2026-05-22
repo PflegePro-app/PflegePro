@@ -11,8 +11,8 @@ export default function Pruefung() {
   } = useContext(AppContext)
 
   const levels = progress.levels || {}
-  const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte', 'Niveau 4 – Meister', 'Niveau 5 – Champion']
-  const levelIcons = ['🟢', '🟡', '🟠', '🔴', '💎']
+  const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte', 'Niveau 4 – Meister', 'Niveau 5 – Champion', 'Niveau 6 – Legende']
+  const levelIcons = ['🟢', '🟡', '🟠', '🔴', '💎', '🏅']
 
   // Modules pliables persistants
   const [openModules, setOpenModules] = useState(() => {
@@ -254,7 +254,7 @@ export default function Pruefung() {
                                 fontFamily: 'DM Sans, sans-serif',
                                 lineHeight: 1.15,
                               }}>
-                                {score !== null ? `${score}%` : ['Basis', 'Fortg.', 'Experte', 'Meister', 'Champ.'][lvl]}
+                                {score !== null ? `${score}%` : ['Basis', 'Fortg.', 'Experte', 'Meister', 'Champ.', 'Legende'][lvl]}
                               </div>
                             </div>
                           )

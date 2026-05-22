@@ -238,4 +238,20 @@ export const THEMES = [
       'Hautpflegeprodukte',
     ],
   },
+  {
+    id: 'koerperpflege_praxis',
+    name: 'Pflegepraxis & Hilfsmittel',
+    icon: '🛏️',
+    col: 'purple',
+    module: 'koerperpflege',
+    related: ['koerperpflege_grundlagen', 'koerperpflege_haut'],
+    lessons: [
+      'Teilkörperpflege am Waschbecken',
+      'Ganzkörperwaschung im Bett',
+      'Intimpflege',
+      'Berührung & Kommunikation',
+      'Duschen & Baden',
+      'Technische Hilfsmittel',
+    ],
+  },
 ]

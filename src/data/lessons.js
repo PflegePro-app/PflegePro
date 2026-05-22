@@ -6434,4 +6434,571 @@ export const LESSON_CONTENT = {
 
   },
 
+  koerperpflege_praxis: {
+
+    'Teilkörperpflege am Waschbecken': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">🛏️ Pflegepraxis · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Teilkörperpflege am Waschbecken</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Aktivierende Pflege fördert Selbstständigkeit</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist Teilkörperpflege?</div></div>
+  <p class="lekt-prose">Die <strong>Teilkörperpflege am Waschbecken</strong> ist eine aktivierende Pflegemaßnahme. Der Patient führt die Körperpflege <strong>soweit wie möglich selbstständig</strong> durch und erhält nur die notwendige Unterstützung.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🎯 Ziele</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Förderung der <strong>Selbstständigkeit</strong></li>
+      <li>Erhaltung der Mobilität</li>
+      <li>Förderung des <strong>Kreislaufs</strong></li>
+      <li>Höheres Wohlbefinden</li>
+      <li>Erhaltung vorhandener Ressourcen</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Goldene Regel:</strong> So viel Selbstständigkeit wie möglich, so viel Hilfe wie nötig.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Indikationen vs. Kontraindikationen</div></div>
+  <p class="lekt-prose">Nicht für jeden Patienten ist die Teilkörperpflege am Waschbecken geeignet.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.9rem;margin-bottom:4px">✅ Indikationen (geeignet)</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Mobilität vorhanden · Kreislauf stabil · geringes Sturzrisiko · Patient kann sitzen/stehen</div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.9rem;margin-bottom:4px">❌ Kontraindikationen (ungeeignet)</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Angeordnete Bettruhe · akute Schmerzen · Schwindel · postoperative Phase · starke Schwäche</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Bei Kontraindikationen wird stattdessen die <strong>Ganzkörperwaschung im Bett</strong> durchgeführt.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Vorbereitung & Material</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">📋 Vorbereitung</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Patient informieren & Einverständnis einholen</li>
+      <li>Material bereitstellen</li>
+      <li>Raumtemperatur & Sichtschutz</li>
+      <li>Händedesinfektion · Waschwasser vorbereiten</li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#22c55e">🧺 Material</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6;margin-top:8px">Waschschüssel · Handtücher · Waschlappen · Syndets/Waschlotion · Hautpflegeprodukte · Handschuhe · frische Kleidung · Zahnpflege</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Alle Materialien <strong>vor Beginn</strong> vollständig bereitstellen.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Durchführung — Reihenfolge</div></div>
+  <p class="lekt-prose">Von <strong>sauber nach unrein</strong>, von <strong>oben nach unten</strong>. Der Patient übernimmt möglichst viele Schritte selbst.</p>
+  <div style="display:flex;flex-direction:column;gap:4px;margin-top:10px">
+    <div style="background:rgba(167,139,250,.08);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">1️⃣ Gesicht → 2️⃣ Hals → 3️⃣ Ohren</div>
+    <div style="background:rgba(167,139,250,.08);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">4️⃣ Arme & Hände → 5️⃣ Achselhöhlen</div>
+    <div style="background:rgba(167,139,250,.08);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">6️⃣ Brust & Bauch → 7️⃣ Rücken</div>
+    <div style="background:rgba(167,139,250,.08);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">8️⃣ Beine → 9️⃣ Füße → 🔟 Intimbereich (zuletzt!)</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> Der <strong>Intimbereich</strong> wird immer <strong>zuletzt</strong> gereinigt.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Hautbeobachtung & Nachbereitung</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">👁️ Beobachten</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6;margin-top:8px">Rötungen · Druckstellen · Verletzungen · Hämatome · Ödeme · Pilzbefall · Wunden · trockene Haut</div>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Nachbereitung</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6;margin-top:8px">Patient bequem lagern · Klingel erreichbar · Getränke bereitstellen · Material aufräumen · Desinfektion · <strong>Dokumentation</strong></div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Körperpflege bietet die ideale Gelegenheit zur <strong>Hautbeobachtung</strong>.
+  </div>
+</div>
+</div></div>`,
+
+    'Ganzkörperwaschung im Bett': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">🛏️ Pflegepraxis · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Ganzkörperwaschung im Bett</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Für bettlägerige Patienten — strukturiert & sicher</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Wann im Bett waschen?</div></div>
+  <p class="lekt-prose">Die <strong>Ganzkörperwaschung im Bett</strong> wird durchgeführt, wenn Patienten ihr Bett <strong>nicht verlassen können oder dürfen</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🏥 Indikationen</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6;margin-top:8px">Bettlägerigkeit · schwere Erkrankungen · ausgeprägte Bewegungseinschränkungen · postoperative Zustände · angeordnete Bettruhe · starke Schwäche · akute Schmerzen</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Sie ist <strong>Hygiene, Beobachtung, Kommunikation und aktivierende Pflege</strong> zugleich.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Vorbereitung & Lagerung</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">🛏️ Positionierung</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Pflegebett auf <strong>Arbeitshöhe</strong> einstellen</li>
+      <li>Oberkörper leicht erhöhen</li>
+      <li>Patient möglichst <strong>mitarbeiten</strong> lassen</li>
+      <li>Sicherheit gewährleisten</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Wichtig:</strong> <strong>Rückenschonendes Arbeiten</strong> schützt die Gesundheit der Pflegekraft!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Die 3 wichtigsten Grundsätze</div></div>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.88rem">1️⃣ Von sauber → nach unrein</div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem">2️⃣ Von oben → nach unten</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">3️⃣ Von körperfern → nach körpernah</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> <strong>Kommunikation</strong> begleitet jeden einzelnen Pflegeschritt.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Durchführung Schritt für Schritt</div></div>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+    <div style="background:rgba(167,139,250,.06);border-radius:8px;padding:10px 12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.82rem;margin-bottom:2px">👁️ Gesicht</div>
+      <div style="font-size:.74rem;color:var(--ink2)"><strong>Ohne Waschlotion</strong> · Augen separat · von <strong>außen nach innen</strong> · Ohren nicht vergessen</div>
+    </div>
+    <div style="background:rgba(167,139,250,.06);border-radius:8px;padding:10px 12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.82rem;margin-bottom:2px">💪 Arme & Achseln</div>
+      <div style="font-size:.74rem;color:var(--ink2)">Arm einzeln freilegen · <strong>Achselhöhlen gründlich</strong> · vollständig trocknen</div>
+    </div>
+    <div style="background:rgba(167,139,250,.06);border-radius:8px;padding:10px 12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.82rem;margin-bottom:2px">🫁 Brust & Bauch</div>
+      <div style="font-size:.74rem;color:var(--ink2)"><strong>Hautfalten</strong> beachten · unter Brustfalten sorgfältig trocknen</div>
+    </div>
+    <div style="background:rgba(167,139,250,.06);border-radius:8px;padding:10px 12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.82rem;margin-bottom:2px">🔙 Rücken</div>
+      <div style="font-size:.74rem;color:var(--ink2)">Patient seitlich lagern · <strong>Dekubituszeichen</strong> & Druckstellen beobachten</div>
+    </div>
+    <div style="background:rgba(167,139,250,.06);border-radius:8px;padding:10px 12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.82rem;margin-bottom:2px">🦶 Beine & Füße</div>
+      <div style="font-size:.74rem;color:var(--ink2)"><strong>Zehenzwischenräume</strong> kontrollieren · auf Fußpilz achten · trocknen aber <strong>nicht eincremen</strong></div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> Feuchtigkeit zwischen den Zehen begünstigt <strong>Pilzinfektionen</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Hygiene während der Pflege</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🧼 Regeln</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Händedesinfektion · Handschuhe bei Bedarf wechseln</li>
+      <li>Saubere Waschlappen verwenden</li>
+      <li>Waschwasser wechseln</li>
+      <li>Für die <strong>Intimpflege immer frisches Wasser</strong></li>
+      <li>Kontaminierte Materialien sofort entsorgen</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> Für die <strong>Intimpflege</strong> wird <strong>immer frisches Wasser</strong> verwendet!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Nachbereitung</div></div>
+  <div style="font-size:.8rem;color:var(--ink2);line-height:1.7">
+    Patient ankleiden · Haare kämmen · Spiegel anbieten · bequem lagern · <strong>Klingel erreichbar</strong> · Getränke bereitstellen · Zimmer lüften · Material reinigen & desinfizieren · <strong>dokumentieren</strong> · Besonderheiten weitergeben
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Eine vollständige Pflege endet erst mit <strong>Dokumentation</strong> und Sicherstellung des Wohlbefindens.
+  </div>
+</div>
+</div></div>`,
+
+    'Intimpflege': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">🛏️ Pflegepraxis · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Intimpflege</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Die sensibelste Pflegemaßnahme — mit Würde</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Grundsätze der Intimpflege</div></div>
+  <p class="lekt-prose">Die <strong>Intimpflege</strong> umfasst die Reinigung des äußeren Genital- und Analbereichs. Sie gehört zu den <strong>sensibelsten Maßnahmen</strong> und erfordert besonderen Respekt.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Grundregeln</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Von <strong>sauber nach unrein</strong> arbeiten</li>
+      <li><strong>Frisches Wasser</strong> verwenden</li>
+      <li><strong>Handschuhe</strong> tragen</li>
+      <li>Schamgefühl respektieren · Pflegeschritte erklären</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💜 Priorität:</strong> Die <strong>Wahrung der Intimsphäre</strong> hat oberste Priorität.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Intimpflege bei der Frau</div></div>
+  <p class="lekt-prose">Reinigung grundsätzlich <strong>von vorne nach hinten</strong> (Symphyse → Anus), um Keimverschleppung in die Harnwege zu vermeiden.</p>
+  <div style="display:flex;flex-direction:column;gap:4px;margin-top:10px">
+    <div style="background:rgba(251,113,133,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">1️⃣ Leistenbereich</div>
+    <div style="background:rgba(251,113,133,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">2️⃣ Große Schamlippen → 3️⃣ Kleine Schamlippen</div>
+    <div style="background:rgba(251,113,133,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">4️⃣ Harnröhrenöffnung → 5️⃣ Scheideneingang</div>
+    <div style="background:rgba(251,113,133,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">6️⃣ Perinealbereich → 7️⃣ Anus (zuletzt!)</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> Waschrichtung <strong>immer von der Symphyse zum Anus</strong> — jeder Wischvorgang mit sauberer Stelle.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Intimpflege beim Mann</div></div>
+  <div style="display:flex;flex-direction:column;gap:4px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">1️⃣ Leistenbereich → 2️⃣ Penis</div>
+    <div style="background:rgba(96,165,250,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">3️⃣ <strong>Vorhaut vorsichtig zurückziehen</strong> → 4️⃣ Eichel reinigen</div>
+    <div style="background:rgba(96,165,250,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">5️⃣ Harnröhrenöffnung → 6️⃣ <strong>Vorhaut zurückschieben!</strong></div>
+    <div style="background:rgba(96,165,250,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">7️⃣ Hodensack → 8️⃣ Perineum → 9️⃣ Anus</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ WICHTIG:</strong> Die Vorhaut muss nach der Reinigung <strong>wieder vorgeschoben</strong> werden, um eine <strong>Paraphimose</strong> zu verhindern!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Pflege bei liegendem Blasenkatheter</div></div>
+  <p class="lekt-prose">Bei einem <strong>Blasenkatheter</strong> ist besondere Sorgfalt nötig, um Infektionen zu vermeiden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fbbf24">🩺 Katheterpflege</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Tägliche Reinigung</strong> des Katheterbereichs</li>
+      <li>Waschrichtung <strong>vom Katheter weg</strong></li>
+      <li>Beobachtung des Urins (<strong>Farbe, Geruch, Menge</strong>)</li>
+      <li>Vermeidung von <strong>Zug am Katheter</strong></li>
+      <li>Hygienestandards strikt beachten</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> Immer <strong>vom Katheter weg</strong> reinigen, um Keime nicht Richtung Blase zu verschleppen.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Gesäßpflege & Beobachtung</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🔍 Gesäß reinigen</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6;margin-top:8px">Gesäßhälften reinigen · Hautfalten kontrollieren · Feuchtigkeit entfernen · <strong>Anus zuletzt</strong> · auf Rötungen & Druckstellen achten</div>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#60a5fa">👁️ Beobachten</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6;margin-top:8px">Rötungen · Schwellungen · Verletzungen · Pilzinfektionen · <strong>Ausfluss</strong> · ungewöhnliche Gerüche</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Die Intimpflege endet erst mit <strong>Händedesinfektion und Dokumentation</strong>.
+  </div>
+</div>
+</div></div>`,
+
+    'Berührung & Kommunikation': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">🛏️ Pflegepraxis · Lektion 4</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Berührung & Kommunikation</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Beziehungsgestaltung durch Wort und Berührung</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Kommunikation in der Pflege</div></div>
+  <p class="lekt-prose">Kommunikation ermöglicht den Austausch von <strong>Informationen, Gefühlen und Bedürfnissen</strong> zwischen Pflegekraft und Patient.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🎯 Ziele</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6;margin-top:8px">Vertrauen aufbauen · Sicherheit vermitteln · Ängste reduzieren · Bedürfnisse erkennen · Zusammenarbeit fördern · Selbstbestimmung unterstützen</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Pflege ist immer <strong>Beziehungsgestaltung</strong> durch Kommunikation und Berührung.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Verbal vs. Nonverbal</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.95rem;margin-bottom:4px">🗣️ Verbale Kommunikation</div>
+      <div style="font-size:.76rem;color:var(--ink2);line-height:1.5">Deutlich & langsam sprechen · kurze Sätze · verständliche Begriffe · aktiv zuhören · Patienten ausreden lassen</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.95rem;margin-bottom:4px">😊 Nonverbale Kommunikation</div>
+      <div style="font-size:.76rem;color:var(--ink2);line-height:1.5">Mimik · Gestik · Blickkontakt · Körperhaltung · Berührung · Stimmlage · Abstand</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Merke:</strong> Nonverbale Signale verraten oft <strong>mehr als Worte</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Professionelle Berührungen</div></div>
+  <p class="lekt-prose">Berührungen vermitteln <strong>Sicherheit, Orientierung und Geborgenheit</strong> — müssen aber bewusst eingesetzt werden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🤝 Grundregeln</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Berührung <strong>ankündigen</strong></li>
+      <li>Patienten ansprechen · Einverständnis beachten</li>
+      <li><strong>Warme Hände</strong> verwenden</li>
+      <li>Ruhige, <strong>flächige</strong> Bewegungen</li>
+      <li>Patientenreaktionen beobachten</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Berührungen sollen Sicherheit vermitteln und <strong>niemals erschrecken</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Aktives Zuhören</div></div>
+  <p class="lekt-prose"><strong>Aktives Zuhören</strong> bedeutet, dem Gesprächspartner volle Aufmerksamkeit zu schenken.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">👁️ Blickkontakt halten</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🚫 Nicht unterbrechen</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">❓ Nachfragen stellen</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">💜 Gefühle wahrnehmen</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🔁 Zusammenfassen</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🤗 Verständnis zeigen</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Wer aufmerksam zuhört, erkennt <strong>Bedürfnisse und Sorgen</strong> schneller.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Kommunikation mit älteren Menschen & bei Demenz</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.9rem;margin-bottom:4px">👴 Ältere Menschen</div>
+      <div style="font-size:.76rem;color:var(--ink2);line-height:1.5">Langsam & deutlich · Augenkontakt · Nebengeräusche reduzieren · Zeit für Antworten lassen</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.9rem;margin-bottom:4px">🧠 Bei Demenz</div>
+      <div style="font-size:.76rem;color:var(--ink2);line-height:1.5">Ruhig sprechen · kurze, einfache Sätze · Wiederholungen zulassen · Gefühle ernst nehmen · <strong>Diskussionen vermeiden</strong> · Orientierung geben</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Bei Demenz stehen <strong>Verständnis, Sicherheit und Orientierung</strong> im Mittelpunkt.
+  </div>
+</div>
+</div></div>`,
+
+    'Duschen & Baden': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">🛏️ Pflegepraxis · Lektion 5</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Duschen & Baden</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Sicherheit und Wohlbefinden im Bad</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Duschen vs. Baden</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.95rem;margin-bottom:4px">🚿 Duschen</div>
+      <div style="font-size:.76rem;color:var(--ink2);line-height:1.5">Kürzerer Wasserkontakt · <strong>schonender für die Haut</strong> · zeitsparend · fördert Selbstständigkeit · geringere Hautaufweichung</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.95rem;margin-bottom:4px">🛁 Baden</div>
+      <div style="font-size:.76rem;color:var(--ink2);line-height:1.5">Entspannend · <strong>Muskelentspannung</strong> · Wärmegefühl · fördert Durchblutung · aber: nicht jeder verträgt ein Vollbad</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Merke:</strong> <strong>Duschen</strong> belastet die Haut meist weniger als langes Baden.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Kontraindikationen für ein Vollbad</div></div>
+  <p class="lekt-prose">Nicht jeder Patient darf ein Vollbad nehmen. Bei folgenden Zuständen ist <strong>Vorsicht geboten</strong>:</p>
+  <div class="lekt-card" style="background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.25)">
+    <div class="lekt-card-label" style="color:#ef4444">❌ Kontraindikationen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Akute <strong>Herzinsuffizienz</strong></li>
+      <li><strong>Hypotonie</strong> / Hypertonie</li>
+      <li>Schwere offene Wunden</li>
+      <li>Frische Operationsnarben</li>
+      <li>Hauterkrankungen mit offenen Stellen</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> Bei Herz-Kreislauf-Problemen kann die Wärme eines Vollbads <strong>gefährlich</strong> sein.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Sicherheitsmaßnahmen</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">👟 Rutschfeste Schuhe</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🟦 Antirutschmatte</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🤚 Haltegriffe nutzen</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">💧 Boden trocken halten</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🌡️ Temperatur prüfen</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">👁️ Nicht allein lassen</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> <strong>Nasse Böden</strong> gehören zu den häufigsten Sturzursachen im Bad.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Durchführung des Duschens</div></div>
+  <p class="lekt-prose">Reihenfolge von <strong>oben nach unten</strong>, Intimbereich zuletzt.</p>
+  <div style="display:flex;flex-direction:column;gap:4px;margin-top:10px">
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">1️⃣ Haare befeuchten → 2️⃣ Gesicht → 3️⃣ Hals</div>
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">4️⃣ Arme & Hände → 5️⃣ Brust & Bauch</div>
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">6️⃣ Rücken → 7️⃣ Beine → 8️⃣ Füße</div>
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:7px 10px;font-size:.76rem;color:var(--ink2)">9️⃣ Intimbereich (zuletzt!)</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> <strong>Hautfalten und Zehenzwischenräume</strong> gründlich trocknen!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Nachbereitung</div></div>
+  <div style="font-size:.8rem;color:var(--ink2);line-height:1.7">
+    Patient abtrocknen · <strong>Hautpflege</strong> durchführen · frische Kleidung · Haare trocknen · sicher begleiten · Material reinigen · <strong>dokumentieren</strong>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Nach der Körperpflege muss der Patient <strong>sicher und komfortabel</strong> versorgt sein.
+  </div>
+</div>
+</div></div>`,
+
+    'Technische Hilfsmittel': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">🛏️ Pflegepraxis · Lektion 6</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Technische Hilfsmittel</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Mehr Sicherheit und Selbstständigkeit</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Ziele technischer Hilfsmittel</div></div>
+  <p class="lekt-prose">Technische Hilfsmittel unterstützen bei <strong>Körperpflege, Mobilisation und Bewegung</strong>. Sie fördern Selbstständigkeit und entlasten Pflegekräfte.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🎯 Ziele</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6;margin-top:8px">Förderung der Selbstständigkeit · Erhöhung der Sicherheit · Vermeidung von Stürzen · Unterstützung der Mobilität · Entlastung der Pflegekräfte · Teilhabe am Alltag</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Merke:</strong> Hilfsmittel sollen vorhandene Fähigkeiten <strong>fördern, nicht ersetzen</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Hilfsmittel für die Körperpflege</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🪑 Duschstuhl / -hocker</div>
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🛁 Badewannenbrett</div>
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">⬆️ Badewannenlifter</div>
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🤚 Haltegriffe</div>
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🧽 Waschhilfen (lang)</div>
+    <div style="background:rgba(96,165,250,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🟦 Rutschfeste Unterlagen</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Hilfsmittel sollen die <strong>Eigenaktivität</strong> des Patienten unterstützen.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Mobilitätshilfen</div></div>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.88rem;margin-bottom:2px">🚶 Rollator</div>
+      <div style="font-size:.74rem;color:var(--ink2)">Verbessert Gangsicherheit · reduziert Sturzrisiko · Möglichkeit zum Ausruhen. <strong>⚠️ Bremsen regelmäßig kontrollieren!</strong></div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem;margin-bottom:2px">♿ Rollstuhl</div>
+      <div style="font-size:.74rem;color:var(--ink2)">Bei eingeschränkter Gehfähigkeit. <strong>⚠️ Vor jedem Transfer Bremsen feststellen!</strong></div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:10px;padding:12px 14px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem;margin-bottom:2px">⬆️ Patientenlifter</div>
+      <div style="font-size:.74rem;color:var(--ink2)">Sicheres Heben & Umsetzen · <strong>schont den Rücken</strong> der Pflegekraft · vermeidet Verletzungen</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Weitere Hilfsmittel: Gehstock · Unterarmgehstützen · Rutschbretter · Drehscheiben · Aufstehhilfen.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Sicherheit & Anleitung</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Grundsätze</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Individuelle Anpassung an den Patienten</li>
+      <li>Patienten <strong>anleiten und einweisen</strong></li>
+      <li>Regelmäßige <strong>Funktionskontrolle</strong></li>
+      <li>Defekte Hilfsmittel <strong>sofort melden</strong></li>
+      <li>Herstellerangaben & Hygiene beachten</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> Hilfsmittel verhindern Stürze <strong>nur, wenn sie richtig genutzt</strong> werden!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Pflegerische Verantwortung</div></div>
+  <p class="lekt-prose">Pflegefachpersonen tragen Verantwortung für den <strong>sicheren Einsatz</strong> technischer Hilfsmittel.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">✅ Funktionsfähigkeit prüfen</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🛠️ Mängel melden</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">🧼 Hygiene sicherstellen</div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.76rem;color:var(--ink2)">📝 Dokumentation</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> <strong>Sicherheit, Hygiene und fachgerechte Anwendung</strong> stehen immer im Mittelpunkt.
+  </div>
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT
