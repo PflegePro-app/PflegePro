@@ -225,4 +225,17 @@ export const THEMES = [
       'Scham und Intimsphäre',
     ],
   },
+  {
+    id: 'koerperpflege_haut',
+    name: 'Haut & Reinigung',
+    icon: '💧',
+    col: 'purple',
+    module: 'koerperpflege',
+    related: ['koerperpflege_grundlagen'],
+    lessons: [
+      'Hautpflege & Hautintegrität',
+      'Hautreinigung',
+      'Hautpflegeprodukte',
+    ],
+  },
 ]

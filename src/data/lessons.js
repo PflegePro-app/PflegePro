@@ -6080,4 +6080,358 @@ export const LESSON_CONTENT = {
 
   },
 
+  koerperpflege_haut: {
+
+    'Hautpflege & Hautintegrität': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">💧 Haut & Reinigung · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Hautpflege & Hautintegrität</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Das größte Organ und seine Schutzfunktion</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Die Haut — das größte Organ</div></div>
+  <p class="lekt-prose">Die Haut ist das <strong>größte Organ</strong> des menschlichen Körpers. Sie schützt vor äußeren Einflüssen, Krankheitserregern, chemischen Substanzen und mechanischen Belastungen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🌟 Vier Rollen der Haut</div>
+    <p style="font-size:.85rem;color:var(--ink2);line-height:1.6;margin-top:8px"><strong>Schutzorgan · Sinnesorgan · Temperaturregulator · Gesundheitsbestandteil</strong></p>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Eine gesunde Haut ist die Grundlage für <strong>Wohlbefinden, Gesundheit und Lebensqualität</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Hautintegrität</div></div>
+  <p class="lekt-prose">Unter <strong>Hautintegrität</strong> versteht man die Unversehrtheit und Funktionsfähigkeit der Haut.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🛡️ Funktionen der Haut</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Schutz vor Krankheitserregern</li>
+      <li>Schutz vor mechanischen Verletzungen</li>
+      <li>Schutz vor Austrocknung</li>
+      <li><strong>Regulation der Körpertemperatur</strong></li>
+      <li>Sinneswahrnehmung (Berührung, Druck, Schmerz)</li>
+      <li>Speicherung von Wasser und Fett</li>
+      <li>Beteiligung an der <strong>Immunabwehr</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Achtung:</strong> Eine gestörte Hautintegrität erhöht das Risiko für <strong>Infektionen und Wunden</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Ziele der Hautpflege</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🧼 <strong>Haut sauber halten</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">💨 <strong>Haut trocken halten</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🛡️ <strong>Hautschutz erhalten</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">💧 <strong>Austrocknung verhindern</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🚫 <strong>Allergien vermeiden</strong></div>
+    <div style="background:rgba(34,197,94,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">😊 <strong>Wohlbefinden fördern</strong></div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Hautpflege dient der <strong>Gesunderhaltung</strong> und dem körperlichen wie seelischen Wohlbefinden.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Der Hydro-Lipid-Film</div></div>
+  <p class="lekt-prose">Die Hautoberfläche wird von einem natürlichen Schutzfilm bedeckt — dem <strong>Hydro-Lipid-Film</strong>. Er besteht aus Wasser, Schweiß, Hautfetten und körpereigenen Bestandteilen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">💧 Aufgaben des Films</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Schutz vor Austrocknung</li>
+      <li>Schutz vor Krankheitserregern</li>
+      <li>Erhaltung der Hautfeuchtigkeit</li>
+      <li>Unterstützung des Säureschutzmantels</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Achtung:</strong> Häufiges Waschen, aggressive Mittel oder heißes Wasser <strong>beschädigen</strong> diesen Schutzfilm.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Der pH-Wert der Haut</div></div>
+  <p class="lekt-prose">Der <strong>pH-Wert</strong> beschreibt, wie sauer oder basisch eine Lösung ist.</p>
+  <div style="display:flex;flex-direction:column;gap:6px;margin-top:10px">
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">pH unter 7 = <strong>sauer</strong></div>
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">pH = 7 = <strong>neutral</strong></div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)">pH über 7 = <strong>basisch (alkalisch)</strong></div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Wichtig:</strong> Die gesunde Haut hat einen leicht sauren pH-Wert von etwa <strong>5,5</strong> — der <strong>Säureschutzmantel</strong> hemmt Krankheitserreger.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Hautbeobachtung</div></div>
+  <p class="lekt-prose">Die Körperpflege bietet die ideale Gelegenheit zur <strong>systematischen Hautbeobachtung</strong>.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:8px">
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">🎨 Hautfarbe</div>
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">🌡️ Hauttemperatur</div>
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">💧 Hautfeuchtigkeit</div>
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">🔴 Rötungen</div>
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">⬇️ Druckstellen</div>
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">🩹 Verletzungen</div>
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">🟣 Hämatome</div>
+    <div style="background:rgba(167,139,250,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">💧 Ödeme</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Auffälligkeiten <strong>dokumentieren</strong> und weiterleiten. Prävention ist wirksamer als Behandlung!
+  </div>
+</div>
+</div></div>`,
+
+    'Hautreinigung': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">💧 Haut & Reinigung · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Hautreinigung</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wasser, Seife und Syndets richtig einsetzen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Ziele der Hautreinigung</div></div>
+  <p class="lekt-prose">Die <strong>Hautreinigung</strong> entfernt Schmutz, Schweiß, abgestorbene Hautzellen und andere Substanzen — <strong>ohne die Schutzfunktion zu beeinträchtigen</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🧹 Was wird entfernt?</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:8px">
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">Staub & Schmutz</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">Schweiß</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">Hornzellen (Korneozyten)</div>
+      <div style="background:rgba(34,197,94,.06);border-radius:6px;padding:6px 8px;font-size:.72rem;color:var(--ink2)">Kosmetikreste</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Sauberkeit und Hautschutz müssen immer im <strong>Gleichgewicht</strong> stehen.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Wasser als Reinigungsmittel</div></div>
+  <p class="lekt-prose">Wasser ist das <strong>natürlichste Reinigungsmittel</strong> — aber zu langer oder zu heißer Kontakt schadet der Haut.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.9rem;margin-bottom:4px">✅ Vorteile</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Natürlich · Gut verträglich · Entfernt Schmutz und Schweiß · Einfach verfügbar</div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#ef4444;font-size:.9rem;margin-bottom:4px">⚠️ Nachteile</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Austrocknung · Schädigung des Hydro-Lipid-Films · Verlust von Hautfetten</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> Je heißer das Wasser und je länger der Kontakt, desto stärker wird die Haut <strong>entfettet</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Seifen</div></div>
+  <p class="lekt-prose">Seifen bestehen aus Natrium- oder Kaliumsalzen von <strong>Fettsäuren</strong>. Klassische Kernseifen sind stark <strong>alkalisch</strong> (pH ~12).</p>
+  <div class="lekt-card" style="margin-top:8px">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Nachteile von Seifen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Starke <strong>Entfettung</strong> der Haut</li>
+      <li>Austrocknung</li>
+      <li>Beeinträchtigung des <strong>Säureschutzmantels</strong></li>
+      <li>Höheres Risiko von Hautreizungen</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Je höher der pH-Wert eines Reinigungsmittels, desto stärker die Beeinträchtigung der Hautbarriere.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Syndets — die hautfreundliche Alternative</div></div>
+  <p class="lekt-prose"><strong>Syndets</strong> (synthetic detergents) sind synthetische Reinigungsmittel, die die Haut <strong>schonender</strong> reinigen als klassische Seifen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Vorteile von Syndets</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Hautfreundlicher pH-Wert</strong></li>
+      <li>Schonende Reinigung</li>
+      <li>Geringere Austrocknung</li>
+      <li>Geeignet für <strong>empfindliche Haut</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e">
+    <strong>✅ Merke:</strong> In der Pflege werden meist <strong>pH-hautneutrale Syndets</strong> bevorzugt.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">📊 pH-Werte im Vergleich</div></div>
+  <p class="lekt-prose">Ein Überblick über die pH-Werte verschiedener Produkte im Vergleich zur Haut:</p>
+  <div style="display:flex;flex-direction:column;gap:6px;margin-top:10px">
+    <div style="display:flex;align-items:center;gap:10px;background:rgba(34,197,94,.1);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px">
+      <span style="font-weight:800;color:#22c55e;font-size:1rem;min-width:42px">5,5</span>
+      <span style="font-size:.8rem;color:var(--ink2)"><strong>Gesunde Haut</strong> (Referenz, leicht sauer)</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;background:rgba(34,197,94,.08);border-left:3px solid #4ade80;border-radius:8px;padding:10px 12px">
+      <span style="font-weight:800;color:#4ade80;font-size:1rem;min-width:42px">5,5-6,5</span>
+      <span style="font-size:.8rem;color:var(--ink2)"><strong>Syndet</strong> (hautneutral) ✅</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:10px 12px">
+      <span style="font-weight:800;color:#60a5fa;font-size:1rem;min-width:42px">7</span>
+      <span style="font-size:.8rem;color:var(--ink2)"><strong>Wasser</strong> (neutral)</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;background:rgba(251,146,60,.08);border-left:3px solid #fb923c;border-radius:8px;padding:10px 12px">
+      <span style="font-weight:800;color:#fb923c;font-size:1rem;min-width:42px">9-10</span>
+      <span style="font-size:.8rem;color:var(--ink2)"><strong>Klassische Seife</strong> (alkalisch)</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:10px 12px">
+      <span style="font-weight:800;color:#ef4444;font-size:1rem;min-width:42px">~12</span>
+      <span style="font-size:.8rem;color:var(--ink2)"><strong>Kernseife</strong> (stark alkalisch) ⚠️</span>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Faustregel:</strong> Je näher am Haut-pH (5,5), desto schonender das Produkt!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Hautschonende Reinigung</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Empfehlungen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Duschen</strong> dem Baden vorziehen</li>
+      <li>Nicht zu heiß waschen</li>
+      <li>Milde, <strong>pH-hautneutrale</strong> Produkte</li>
+      <li>Seifen sparsam einsetzen</li>
+      <li>Haut gründlich, aber schonend <strong>trocknen</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444">
+    <strong>⚠️ Merke:</strong> <strong>Hautfalten und Zehenzwischenräume</strong> sorgfältig trocknen — Feuchtigkeit begünstigt Pilzinfektionen!
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Reinigung bei Neugeborenen</div></div>
+  <p class="lekt-prose">Die Haut von Neugeborenen ist <strong>besonders empfindlich</strong> und braucht schonende Pflege.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.25);border-radius:10px;padding:12px;text-align:center">
+      <div style="font-weight:800;color:#60a5fa;font-size:1.1rem">38-40°C</div>
+      <div style="font-size:.7rem;color:var(--ink3);margin-top:2px">Wassertemperatur</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.25);border-radius:10px;padding:12px;text-align:center">
+      <div style="font-weight:800;color:#a78bfa;font-size:1.1rem">5-10 Min</div>
+      <div style="font-size:.7rem;color:var(--ink3);margin-top:2px">Badezeit</div>
+    </div>
+    <div style="background:rgba(251,146,60,.08);border:1px solid rgba(251,146,60,.25);border-radius:10px;padding:12px;text-align:center">
+      <div style="font-weight:800;color:#fb923c;font-size:1.1rem">26-28°C</div>
+      <div style="font-size:.7rem;color:var(--ink3);margin-top:2px">Raumtemperatur</div>
+    </div>
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:10px;padding:12px;text-align:center">
+      <div style="font-weight:800;color:#22c55e;font-size:1.1rem">5,5-7</div>
+      <div style="font-size:.7rem;color:var(--ink3);margin-top:2px">pH-Wert Produkt</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Empfindliche Säuglingshaut braucht <strong>milde Produkte und kurze Badezeiten</strong>.
+  </div>
+</div>
+</div></div>`,
+
+    'Hautpflegeprodukte': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#4c1d95,#5b21b6,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(221,214,254,.95)">💧 Haut & Reinigung · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Hautpflegeprodukte</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Emulsionen, O/W und W/O verstehen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Bedeutung der Hautpflege</div></div>
+  <p class="lekt-prose">Hautpflegeprodukte müssen <strong>individuell</strong> ausgewählt werden — nach Alter, Hauttyp, Hautzustand, Gewohnheiten und Wünschen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🎯 Ziele</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Erhaltung der Hautintegrität</li>
+      <li>Schutz vor Austrocknung</li>
+      <li>Förderung der Hautregeneration</li>
+      <li>Unterstützung des Säureschutzmantels</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Nicht jedes Produkt eignet sich für jeden Menschen — die Auswahl erfolgt <strong>immer individuell</strong>.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Hydrophil vs. Lipophil</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.95rem;margin-bottom:4px">💧 Hydrophil = "wasserliebend"</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Wasser · Alkohole · wasserlösliche Bestandteile</div>
+    </div>
+    <div style="background:rgba(251,146,60,.08);border:1px solid rgba(251,146,60,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#fb923c;font-size:.95rem;margin-bottom:4px">🛢️ Lipophil = "fettliebend"</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Öle · Vaseline · Wachse · fettlösliche Bestandteile</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Eselsbrücke:</strong> Hydro = Wasser 💧 · Lipo = Fett 🛢️
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Emulsionen</div></div>
+  <p class="lekt-prose">Die meisten Cremes und Lotionen sind <strong>Emulsionen</strong> — eine Mischung aus Wasser und Fett. Da sich beide normalerweise nicht mischen, braucht es <strong>Emulgatoren</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🧪 3 Bestandteile</div>
+    <div style="display:flex;gap:6px;margin-top:8px">
+      <div style="flex:1;background:rgba(96,165,250,.1);border-radius:8px;padding:10px;text-align:center;font-size:.78rem;color:var(--ink2)">💧<br/><strong>Wasserphase</strong></div>
+      <div style="flex:1;background:rgba(251,146,60,.1);border-radius:8px;padding:10px;text-align:center;font-size:.78rem;color:var(--ink2)">🛢️<br/><strong>Fettphase</strong></div>
+      <div style="flex:1;background:rgba(167,139,250,.1);border-radius:8px;padding:10px;text-align:center;font-size:.78rem;color:var(--ink2)">🔗<br/><strong>Emulgator</strong></div>
+    </div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Ohne <strong>Emulgatoren</strong> würden sich Wasser und Öl wieder trennen.
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">O/W vs. W/O — der wichtigste Unterschied</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.95rem;margin-bottom:6px">💧 Öl-in-Wasser (O/W)</div>
+      <div style="font-size:.76rem;color:var(--ink2);line-height:1.6">Hoher <strong>Wasseranteil</strong> (~60%) · <strong>kühlt</strong> die Haut · zieht schnell ein · leicht abwaschbar<br/><span style="color:#60a5fa">→ Für normale & fettige Haut, warme Jahreszeit</span></div>
+    </div>
+    <div style="background:rgba(251,146,60,.08);border:1px solid rgba(251,146,60,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#fb923c;font-size:.95rem;margin-bottom:6px">🛢️ Wasser-in-Öl (W/O)</div>
+      <div style="font-size:.76rem;color:var(--ink2);line-height:1.6">Hoher <strong>Fettanteil</strong> · starker Schutzfilm · <strong>rückfettend</strong> · schützt vor Feuchtigkeitsverlust<br/><span style="color:#fb923c">→ Für trockene Haut, ältere Menschen, kalte Jahreszeit</span></div>
+    </div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(251,191,36,.08);border-left:3px solid #fbbf24">
+    <strong>💡 Merke:</strong> <strong>O/W kühlt</strong> (Wasser außen) · <strong>W/O fettet</strong> (Öl außen)
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Pflege nach Hauttyp</div></div>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:10px 12px;font-size:.8rem;color:var(--ink2)"><strong>Normale Haut:</strong> Leichte Lotionen ausreichend</div>
+    <div style="background:rgba(251,146,60,.08);border-left:3px solid #fb923c;border-radius:8px;padding:10px 12px;font-size:.8rem;color:var(--ink2)"><strong>Trockene Haut:</strong> Rückfettend, W/O-Emulsionen bevorzugen</div>
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:10px 12px;font-size:.8rem;color:var(--ink2)"><strong>Fettige Haut:</strong> Leichte Produkte, O/W-Emulsionen</div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:10px 12px;font-size:.8rem;color:var(--ink2)"><strong>Empfindliche Haut:</strong> Milde Produkte, Duftstoffe vermeiden</div>
+  </div>
+  <div class="lekt-zusammen">
+    <strong>Merke:</strong> Der <strong>Hauttyp</strong> bestimmt die Wahl des geeigneten Produktes.
+  </div>
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT
