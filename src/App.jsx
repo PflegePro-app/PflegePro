@@ -19,6 +19,7 @@ import Praxis from './screens/Praxis.jsx'
 import Heute from './screens/Heute.jsx'
 import Pruefung from './screens/Pruefung.jsx'
 import DailyChallenge from './screens/DailyChallenge.jsx'
+import Landing from './screens/Landing.jsx'
 
 export const AppContext = React.createContext(null)
 
@@ -33,7 +34,9 @@ export default function App() {
   const [lastLessonContext, setLastLessonContext] = useState(null)
 
   // Afficher le modal si pas de nom encore
-  const [showWelcome, setShowWelcome] = useState(() => !localStorage.getItem('pflegepro_name'))
+  const [showWelcome, setShowWelcome] = useState(false)
+  const [showLanding, setShowLanding] = useState(() => !localStorage.getItem('pflegepro_name'))
+  const [legalScreen, setLegalScreen] = useState(null)
   const [showSearch, setShowSearch] = useState(false)
   const [focusMode, setFocusMode] = useState(false)
 
@@ -69,6 +72,17 @@ export default function App() {
       if (scrollTimer) clearTimeout(scrollTimer)
     }
   }, [screen])
+
+  const handleStartFromLanding = (target) => {
+    // Si on clique un lien légal du footer
+    if (target === 'impressum' || target === 'datenschutz') {
+      setLegalScreen(target)
+      return
+    }
+    // Sinon : démarrer l'app → afficher le modal prénom
+    setShowLanding(false)
+    setShowWelcome(true)
+  }
 
   const handleSaveName = (name) => {
     saveName(name)
@@ -162,7 +176,10 @@ export default function App() {
     <AppContext.Provider value={ctx}>
       <div className={`app ${focusMode ? 'focus-mode' : ''}`} data-theme={theme}>
 
-        {/* Modal de bienvenue — premier lancement */}
+        {/* Landing page — nouveaux visiteurs */}
+        {showLanding && <Landing onStart={handleStartFromLanding} />}
+
+        {/* Modal de bienvenue — après la landing */}
         {showWelcome && <WelcomeModal onSave={handleSaveName} />}
 
         <Topbar
