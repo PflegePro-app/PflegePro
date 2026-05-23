@@ -20,6 +20,7 @@ import Heute from './screens/Heute.jsx'
 import Pruefung from './screens/Pruefung.jsx'
 import DailyChallenge from './screens/DailyChallenge.jsx'
 import Landing from './screens/Landing.jsx'
+import Legal from './screens/Legal.jsx'
 
 export const AppContext = React.createContext(null)
 
@@ -178,6 +179,9 @@ export default function App() {
 
         {/* Landing page — nouveaux visiteurs */}
         {showLanding && <Landing onStart={handleStartFromLanding} />}
+
+        {/* Pages légales (Impressum / Datenschutz) */}
+        {legalScreen && <Legal type={legalScreen} onClose={() => setLegalScreen(null)} />}
 
         {/* Modal de bienvenue — après la landing */}
         {showWelcome && <WelcomeModal onSave={handleSaveName} />}
