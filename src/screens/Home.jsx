@@ -327,7 +327,7 @@ export default function Home() {
     })
   }
 
-  const { progress, THEMES, QUIZZES, openDetail, userName } = useContext(AppContext)
+  const { progress, THEMES, QUIZZES, openDetail, userName, openLegal } = useContext(AppContext)
 
   const levels = progress.levels || {}
   const allScores = Object.values(levels)
@@ -456,6 +456,13 @@ export default function Home() {
           </div>
         )
       })}
+
+      {/* Footer légal — accessible aussi pour les utilisateurs connus */}
+      <div className="app-footer">
+        <a onClick={() => openLegal('impressum')}>Impressum</a>
+        <span>·</span>
+        <a onClick={() => openLegal('datenschutz')}>Datenschutz</a>
+      </div>
     </div>
   )
 }

@@ -21,6 +21,7 @@ import Pruefung from './screens/Pruefung.jsx'
 import DailyChallenge from './screens/DailyChallenge.jsx'
 import Landing from './screens/Landing.jsx'
 import Legal from './screens/Legal.jsx'
+import CookieBanner from './components/CookieBanner.jsx'
 
 export const AppContext = React.createContext(null)
 
@@ -84,6 +85,8 @@ export default function App() {
     setShowLanding(false)
     setShowWelcome(true)
   }
+
+  const openLegal = (type) => setLegalScreen(type)
 
   const handleSaveName = (name) => {
     saveName(name)
@@ -167,6 +170,7 @@ export default function App() {
     progress, saveProgress, theme, toggleTheme,
     markLessonRead,
     userName,
+    openLegal,
     completeChallenge,
     isChallengeCompletedToday, getCurrentDayIndex,
   }
@@ -182,6 +186,9 @@ export default function App() {
 
         {/* Pages légales (Impressum / Datenschutz) */}
         {legalScreen && <Legal type={legalScreen} onClose={() => setLegalScreen(null)} />}
+
+        {/* Cookie-Banner — Consentement Google Analytics */}
+        <CookieBanner openLegal={openLegal} />
 
         {/* Modal de bienvenue — après la landing */}
         {showWelcome && <WelcomeModal onSave={handleSaveName} />}
