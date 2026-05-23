@@ -177,12 +177,23 @@ export default function App() {
 
   const inLektionMode = ['lektion', 'detail', 'quiz'].includes(screen)
 
+  // Early return : tant que la Landing est affichée, on ne monte PAS toute l'app
+  // (évite que le contenu de la Home apparaisse derrière au scroll)
+  if (showLanding) {
+    return (
+      <AppContext.Provider value={ctx}>
+        <div data-theme={theme}>
+          <Landing onStart={handleStartFromLanding} />
+          {legalScreen && <Legal type={legalScreen} onClose={() => setLegalScreen(null)} />}
+          <CookieBanner openLegal={openLegal} />
+        </div>
+      </AppContext.Provider>
+    )
+  }
+
   return (
     <AppContext.Provider value={ctx}>
       <div className={`app ${focusMode ? 'focus-mode' : ''}`} data-theme={theme}>
-
-        {/* Landing page — nouveaux visiteurs */}
-        {showLanding && <Landing onStart={handleStartFromLanding} />}
 
         {/* Pages légales (Impressum / Datenschutz) */}
         {legalScreen && <Legal type={legalScreen} onClose={() => setLegalScreen(null)} />}

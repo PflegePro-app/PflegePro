@@ -357,7 +357,7 @@ export default function Home() {
       {MODULES.map(mod => {
         const themesInModule = THEMES.filter(t => t.module === mod.id)
         if (themesInModule.length === 0) return null
-        const isOpen = openModules[mod.id] !== false  // true par défaut
+        const isOpen = openModules[mod.id] === true  // false (fermé) par défaut
         return (
           <div key={mod.id} style={{ marginBottom: 16 }}>
             <div

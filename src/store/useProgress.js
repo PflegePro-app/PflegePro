@@ -29,7 +29,7 @@ function loadProgress() {
 
 export function useProgress() {
   const [progress, setProgress] = useState(loadProgress)
-  const [theme, setThemeState]  = useState(() => localStorage.getItem(THEME_KEY) || 'dark')
+  const [theme, setThemeState]  = useState(() => localStorage.getItem(THEME_KEY) || 'light')
   const [userName, setUserName] = useState(() => localStorage.getItem(NAME_KEY) || '')
 
   const saveProgress = useCallback((newP) => {

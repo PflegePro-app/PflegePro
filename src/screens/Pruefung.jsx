@@ -120,7 +120,7 @@ export default function Pruefung() {
       {MODULES.map(mod => {
         const themesInModule = THEMES.filter(t => t.module === mod.id)
         if (themesInModule.length === 0) return null
-        const isOpen = openModules[mod.id] !== false
+        const isOpen = openModules[mod.id] === true
 
         // Stats du module
         let totalLevelsInMod = 0
