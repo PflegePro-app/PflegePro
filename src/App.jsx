@@ -48,6 +48,44 @@ export default function App() {
 
   useEffect(() => { checkStreak() }, [])
 
+  // ── Deep links : lire ?go= dans l'URL (pour les notifications) ──
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const go = params.get('go')
+    if (!go) return
+
+    // Si on arrive via un lien de notif, on saute la landing
+    setShowLanding(false)
+
+    const themeId = params.get('theme')
+
+    // Petit délai pour laisser l'app se monter
+    setTimeout(() => {
+      if (go === 'challenge') {
+        setScreen('challenge')
+      } else if (go === 'heute') {
+        setScreen('heute')
+      } else if (go === 'pruefung') {
+        setScreen('pruefung')
+      } else if (go === 'fachbegriffe') {
+        setScreen('fachbegriffe')
+      } else if (go === 'praxis') {
+        setScreen('praxis')
+      } else if (go === 'quiz' && themeId) {
+        const t = THEMES.find(th => th.id === themeId)
+        if (t) startQuiz(themeId, 0, 'home')
+      } else if (go === 'lektion' && themeId) {
+        const t = THEMES.find(th => th.id === themeId)
+        if (t) { setCurrentTheme(t); setCurrentLesson(t.lessons ? t.lessons[0] : null); setScreen('lektion') }
+      } else if (go === 'detail' && themeId) {
+        const t = THEMES.find(th => th.id === themeId)
+        if (t) openDetail(t)
+      }
+      // Nettoyer l'URL (enlever le ?go= pour ne pas re-déclencher au refresh)
+      window.history.replaceState({}, '', window.location.pathname)
+    }, 100)
+  }, [])
+
   // Auto-focus mode : cacher les barres pendant le scroll, les remontrer à l'arrêt
   useEffect(() => {
     if (screen !== 'lektion') {
