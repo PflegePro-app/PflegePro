@@ -61,7 +61,9 @@ export default function App() {
 
     // Petit délai pour laisser l'app se monter
     setTimeout(() => {
-      if (go === 'challenge') {
+      if (go === 'home') {
+        setScreen('home')
+      } else if (go === 'challenge') {
         setScreen('challenge')
       } else if (go === 'heute') {
         setScreen('heute')
