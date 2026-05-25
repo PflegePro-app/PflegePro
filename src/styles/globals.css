@@ -18,6 +18,8 @@
   --green-dim: rgba(74,222,128,0.12);
   --purple: #c084fc;
   --purple-dim: rgba(192,132,252,0.12);
+  --indigo: #818cf8;
+  --indigo-dim: rgba(129,140,248,0.12);
   --ink: #e6edf3;
   --ink2: #8b949e;
   --ink3: #484f58;
@@ -44,6 +46,8 @@
   --green-dim: rgba(22,163,74,0.08);
   --purple: #7c3aed;
   --purple-dim: rgba(124,58,237,0.08);
+  --indigo: #4f46e5;
+  --indigo-dim: rgba(79,70,229,0.08);
   --ink: #111827;
   --ink2: #4b5563;
   --ink3: #9ca3af;

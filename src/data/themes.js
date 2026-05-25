@@ -56,6 +56,13 @@ export const MODULES = [
     color: 'teal',
     description: 'Grundlagen & Pflegetechniken',
   },
+  {
+    id: 'pharmakologie',
+    name: 'Pharmakologie',
+    icon: '💊',
+    color: 'indigo',
+    description: 'Arzneimittel, Dosierung & Sicherheit',
+  },
 ]
 
 // Thèmes PflegePro
@@ -252,6 +259,19 @@ export const THEMES = [
       'Berührung & Kommunikation',
       'Duschen & Baden',
       'Technische Hilfsmittel',
+    ],
+  },
+  {
+    id: 'pharma_grundlagen',
+    name: 'Pharmakologie — Grundlagen',
+    icon: '💊',
+    col: 'indigo',
+    module: 'pharmakologie',
+    related: [],
+    lessons: [
+      'Einführung in die Pharmakologie',
+      'Arzneimittel & Arzneimitteltherapie',
+      'Wirkung von Arzneimitteln',
     ],
   },
 ]

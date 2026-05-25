@@ -7001,4 +7001,417 @@ export const LESSON_CONTENT = {
 
   },
 
+  pharma_grundlagen: {
+
+    'Einführung in die Pharmakologie': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">💊 Pharmakologie · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Einführung in die Pharmakologie</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Die Wissenschaft von den Arzneimitteln</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist Pharmakologie?</div></div>
+  <p class="lekt-prose">Die <strong>Pharmakologie</strong> ist die Wissenschaft von Arzneimitteln. Sie beschäftigt sich mit Eigenschaften, Wirkungen, Nebenwirkungen, Anwendungsgebieten und der Anwendung von Medikamenten beim Menschen.</p>
+  <p class="lekt-prose">Pflegefachpersonen kommen täglich mit Arzneimitteln in Kontakt. Deshalb gehören pharmakologische Grundkenntnisse zu den wichtigsten Kompetenzen im Pflegeberuf.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Pharmakologie beschreibt, wie Arzneimittel wirken und wie sie sicher angewendet werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Was ist ein Arzneimittel?</div></div>
+  <p class="lekt-prose">Nach dem <strong>Arzneimittelgesetz (AMG)</strong> sind Arzneimittel Stoffe oder Stoffzubereitungen, die zur Heilung, Linderung oder Verhütung von Krankheiten eingesetzt werden. Sie können außerdem physiologische Funktionen beeinflussen oder medizinische Diagnosen ermöglichen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🎯 Aufgaben von Arzneimitteln</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Krankheiten <strong>heilen</strong></li>
+      <li>Beschwerden <strong>lindern</strong></li>
+      <li>Krankheiten <strong>vorbeugen</strong></li>
+      <li>Körperfunktionen beeinflussen</li>
+      <li>Diagnosen ermöglichen</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Arzneimittel dienen nicht nur der Therapie, sondern auch der <strong>Prävention und Diagnostik</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Teilgebiete der Pharmakologie</div></div>
+  <p class="lekt-prose">Die Pharmakologie umfasst verschiedene Fachgebiete, die unterschiedliche Aspekte von Arzneimitteln untersuchen.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px">
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🔄 <strong>Pharmakokinetik</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">⚡ <strong>Pharmakodynamik</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🧪 <strong>Pharmazeutik</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">💊 <strong>Galenik</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🩺 <strong>Pharmakotherapie</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">☠️ <strong>Toxikologie</strong></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die verschiedenen Teilgebiete erklären Herstellung, Wirkung und Anwendung von Medikamenten.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Pharmakokinetik — das ADME-Prinzip</div></div>
+  <p class="lekt-prose">Die <strong>Pharmakokinetik</strong> beschreibt den Weg eines Arzneistoffs durch den Körper. Sie beantwortet die Frage: <em>„Was macht der Körper mit dem Medikament?"</em></p>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:10px 12px"><strong style="color:#60a5fa">A</strong> — Resorption (Aufnahme)</div>
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:10px 12px"><strong style="color:#818cf8">D</strong> — Distribution (Verteilung)</div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:10px 12px"><strong style="color:#a78bfa">M</strong> — Metabolismus (Umwandlung)</div>
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:8px;padding:10px 12px"><strong style="color:#fb7185">E</strong> — Exkretion (Ausscheidung)</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>ADME</strong> = Aufnahme, Verteilung, Verstoffwechselung und Ausscheidung eines Arzneistoffs.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Resorption (Aufnahme)</div></div>
+  <p class="lekt-prose">Unter <strong>Resorption</strong> versteht man die Aufnahme eines Arzneistoffs in den Blutkreislauf. Die Geschwindigkeit hängt von der Applikationsart ab.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">💡 Beispiele</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Tabletten über den <strong>Magen-Darm-Trakt</strong></li>
+      <li>Subkutane Injektionen über das Gewebe</li>
+      <li>Inhalationen über die <strong>Lunge</strong></li>
+      <li>Sublinguale Medikamente über die Mundschleimhaut</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Ohne Resorption kann ein Arzneistoff nicht im Körper wirken.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Distribution (Verteilung)</div></div>
+  <p class="lekt-prose"><strong>Distribution</strong> bedeutet die Verteilung des Arzneistoffs im Organismus. Über den Blutkreislauf gelangt das Medikament zu den Zielorganen und Geweben.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📊 Beeinflussende Faktoren</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Durchblutung · Körpergewicht · Alter · Fettanteil · Eiweißbindung im Blut</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Gut durchblutete Organe werden schneller erreicht als schlecht durchblutete Gewebe.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Metabolismus (Umwandlung)</div></div>
+  <p class="lekt-prose">Der <strong>Metabolismus</strong> beschreibt die chemische Umwandlung eines Arzneistoffs. Die wichtigste Rolle spielt dabei die <strong>Leber</strong>. Durch Stoffwechselprozesse können Arzneimittel aktiviert, verändert oder abgebaut werden.</p>
+  <div class="lekt-zusammen" style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa"><strong>Merke:</strong> Die <strong>Leber</strong> ist das wichtigste Stoffwechselorgan für Arzneimittel.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Exkretion (Ausscheidung)</div></div>
+  <p class="lekt-prose"><strong>Exkretion</strong> bedeutet Ausscheidung von Arzneistoffen oder deren Abbauprodukten. Die Ausscheidung erfolgt überwiegend über die <strong>Nieren</strong> mit dem Urin.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🚪 Ausscheidungswege</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Niere (Urin) · Darm (Stuhl) · Lunge (Atemluft) · Haut (Schweiß)</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die <strong>Niere</strong> ist das wichtigste Ausscheidungsorgan für Medikamente.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Pharmakodynamik</div></div>
+  <p class="lekt-prose">Die <strong>Pharmakodynamik</strong> beschreibt die Wirkung eines Arzneimittels auf den Körper. Sie beantwortet die Frage: <em>„Was macht das Medikament mit dem Körper?"</em></p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">⚡ Beispiele für Wirkungen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Schmerzlinderung · Blutdrucksenkung · Entzündungshemmung · Beruhigung · Fiebersenkung</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Pharmakodynamik beschreibt die eigentliche Arzneimittelwirkung.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">10</div><div class="lekt-title">Pharmazeutik & Galenik</div></div>
+  <p class="lekt-prose">Die <strong>Pharmazeutik</strong> beschäftigt sich mit Entwicklung, Herstellung und Qualität von Arzneimitteln. Die <strong>Galenik</strong> beschreibt die Arzneiform eines Medikaments.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">💊 Arzneiformen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Tabletten · Kapseln · Tropfen · Salben · Zäpfchen · Infusionslösungen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Galenik beeinflusst <strong>Aufnahmegeschwindigkeit und Wirkdauer</strong> eines Arzneimittels.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">11</div><div class="lekt-title">Pharmakotherapie</div></div>
+  <p class="lekt-prose">Die <strong>Pharmakotherapie</strong> bezeichnet die Behandlung von Krankheiten mit Arzneimitteln.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🎯 Ziele</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Heilung von Krankheiten</li>
+      <li>Linderung von Beschwerden</li>
+      <li>Vorbeugung von Erkrankungen</li>
+      <li>Verbesserung der <strong>Lebensqualität</strong></li>
+      <li>Verlängerung der Lebenserwartung</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Pharmakotherapie nutzt Arzneimittel gezielt zur Behandlung von Erkrankungen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">12</div><div class="lekt-title">Gesetzliche Grundlagen</div></div>
+  <p class="lekt-prose">Die Anwendung von Arzneimitteln wird durch verschiedene Gesetze geregelt.</p>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)"><strong>AMG</strong> — Arzneimittelgesetz</div>
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)"><strong>BtMG</strong> — Betäubungsmittelgesetz</div>
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:10px 12px;font-size:.82rem;color:var(--ink2)"><strong>BtMVV</strong> — Betäubungsmittelverschreibungsverordnung</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e"><strong>Merke:</strong> <strong>Sicherheit und Patientenschutz</strong> stehen im Mittelpunkt aller arzneimittelrechtlichen Regelungen.</div>
+</div>
+</div></div>`,
+
+    'Arzneimittel & Arzneimitteltherapie': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">💊 Pharmakologie · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Arzneimittel & Arzneimitteltherapie</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Arten von Arzneimitteln und Therapieformen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Definition eines Arzneimittels</div></div>
+  <p class="lekt-prose">Arzneimittel sind Stoffe oder Stoffzubereitungen, die am oder im menschlichen Körper angewendet werden, um Krankheiten zu <strong>erkennen, verhüten, heilen oder lindern</strong>. Sie können außerdem physiologische Funktionen beeinflussen oder ersetzen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🎯 Hauptaufgaben</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.85rem;line-height:1.7">
+      <li>Vorbeugung von Krankheiten</li>
+      <li>Diagnostik</li>
+      <li>Behandlung von Erkrankungen</li>
+      <li>Linderung von Beschwerden</li>
+      <li>Ersatz fehlender Stoffe</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Nicht jedes Medikament heilt – viele Arzneimittel <strong>lindern lediglich Symptome</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Präsentationsarzneimittel</div></div>
+  <p class="lekt-prose"><strong>Präsentationsarzneimittel</strong> sind Produkte, die ausdrücklich als Mittel zur Heilung, Linderung oder Verhütung von Krankheiten angeboten oder beworben werden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">💡 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Schmerztabletten · Hustensaft · Nasenspray · fiebersenkende Medikamente</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die beabsichtigte Darstellung eines Produkts kann bereits dazu führen, dass es rechtlich als Arzneimittel gilt.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Funktionsarzneimittel</div></div>
+  <p class="lekt-prose"><strong>Funktionsarzneimittel</strong> wirken durch pharmakologische, immunologische oder metabolische Mechanismen auf den Organismus ein. Sie verändern gezielt Körperfunktionen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">💡 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Insulin · Antibiotika · Blutdrucksenker · Antidepressiva</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Funktionsarzneimittel verändern oder beeinflussen <strong>Körperfunktionen direkt</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Diagnostische Arzneimittel</div></div>
+  <p class="lekt-prose"><strong>Diagnostika</strong> unterstützen medizinische Untersuchungen und helfen bei der Erkennung von Krankheiten. Häufig werden <strong>Kontrastmittel</strong> eingesetzt, um Organe besser sichtbar zu machen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🔬 Anwendungsgebiete</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Röntgendiagnostik · CT · MRT · Laboruntersuchungen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Diagnostika dienen nicht der Behandlung, sondern der <strong>Diagnosestellung</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Prophylaktische Therapie</div></div>
+  <p class="lekt-prose">Die <strong>prophylaktische Therapie</strong> dient der Vorbeugung von Krankheiten oder Komplikationen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">💉 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Impfungen · Thromboseprophylaxe · Malariaprophylaxe · Vitamin-D-Gabe</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Prophylaxe bedeutet <strong>Vorbeugung</strong> vor dem Auftreten einer Erkrankung.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Kurative Therapie</div></div>
+  <p class="lekt-prose">Die <strong>kurative Therapie</strong> verfolgt das Ziel, eine Krankheit zu heilen oder deren Ursache zu beseitigen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">💡 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Antibiotikatherapie bei Infektionen · OP eines entzündeten Blinddarms · Behandlung einer Lungenentzündung</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Kurativ</strong> bedeutet heilend.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Substitutionstherapie</div></div>
+  <p class="lekt-prose">Bei der <strong>Substitutionstherapie</strong> werden Stoffe ersetzt, die dem Körper fehlen oder nicht ausreichend produziert werden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">💡 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Insulin bei Diabetes Typ 1 · Schilddrüsenhormone bei Hypothyreose · Eisenpräparate · Vitamin B12</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Substitution</strong> bedeutet Ersatz eines fehlenden Stoffes.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Symptomatische Therapie</div></div>
+  <p class="lekt-prose">Die <strong>symptomatische Therapie</strong> behandelt Beschwerden, ohne die eigentliche Ursache der Erkrankung zu beseitigen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">💡 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Schmerzmittel bei Kopfschmerzen · Hustenstiller · Fiebersenker · Antiemetika gegen Übelkeit</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Symptomatische Therapie lindert Symptome, beseitigt aber nicht die Ursache.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Palliative Therapie</div></div>
+  <p class="lekt-prose">Die <strong>palliative Therapie</strong> wird eingesetzt, wenn eine Heilung nicht mehr möglich ist. Ziel ist die Verbesserung der <strong>Lebensqualität</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">💜 Ziele</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Schmerzlinderung</li>
+      <li>Symptomkontrolle</li>
+      <li>Leidensminderung</li>
+      <li>Erhaltung von Würde und Lebensqualität</li>
+      <li>Unterstützung von Patienten und Angehörigen</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Palliative Therapie bedeutet nicht Aufgabe der Behandlung, sondern <strong>Fokus auf Lebensqualität</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">10</div><div class="lekt-title">Lokale & systemische Therapie</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#22c55e;font-size:.9rem;margin-bottom:4px">📍 Lokale Therapie</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Wirkung beschränkt sich auf den Anwendungsort: Salben · Augentropfen · Nasensprays · Lokalanästhetika</div>
+    </div>
+    <div style="background:rgba(129,140,248,.08);border:1px solid rgba(129,140,248,.3);border-radius:12px;padding:14px">
+      <div style="font-weight:700;color:#818cf8;font-size:.9rem;margin-bottom:4px">🌐 Systemische Therapie</div>
+      <div style="font-size:.78rem;color:var(--ink2);line-height:1.5">Wirkstoff gelangt über den Blutkreislauf in den ganzen Körper: Tabletten · Infusionen · Injektionen · Kapseln</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Lokale Therapie wirkt <strong>am Ort der Anwendung</strong>, systemische Therapie im <strong>gesamten Körper</strong>.</div>
+</div>
+</div></div>`,
+
+    'Wirkung von Arzneimitteln': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">💊 Pharmakologie · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Wirkung von Arzneimitteln</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Haupt- & Nebenwirkungen, Indikation, Allergien</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Hauptwirkung</div></div>
+  <p class="lekt-prose">Die <strong>Hauptwirkung</strong> ist die gewünschte therapeutische Wirkung eines Arzneimittels.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">💡 Beispiele</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Schmerzlinderung durch <strong>Analgetika</strong></li>
+      <li>Blutdrucksenkung durch Antihypertensiva</li>
+      <li>Fiebersenkung durch Antipyretika</li>
+      <li>Bekämpfung von Bakterien durch Antibiotika</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Hauptwirkung entspricht dem <strong>therapeutischen Ziel</strong> der Behandlung.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Nebenwirkungen</div></div>
+  <p class="lekt-prose"><strong>Nebenwirkungen</strong> sind unerwünschte Wirkungen, die zusätzlich zur Hauptwirkung auftreten können. Nicht jeder Patient entwickelt dieselben Nebenwirkungen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">⚠️ Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Übelkeit · Schwindel · Müdigkeit · Durchfall · Hautausschläge · Kopfschmerzen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Nebenwirkungen können <strong>leicht, schwer oder lebensbedrohlich</strong> sein.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Indikation</div></div>
+  <p class="lekt-prose">Die <strong>Indikation</strong> beschreibt den medizinischen Grund für die Anwendung eines Arzneimittels.</p>
+  <div style="display:flex;flex-direction:column;gap:6px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 12px;font-size:.8rem;color:var(--ink2)">Schmerzen → <strong>Analgetikum</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 12px;font-size:.8rem;color:var(--ink2)">Bluthochdruck → <strong>Antihypertensivum</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 12px;font-size:.8rem;color:var(--ink2)">Infektion → <strong>Antibiotikum</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 12px;font-size:.8rem;color:var(--ink2)">Fieber → <strong>Antipyretikum</strong></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Indikation beantwortet: <em>„Warum wird das Medikament gegeben?"</em></div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Kontraindikation</div></div>
+  <p class="lekt-prose">Eine <strong>Kontraindikation</strong> ist ein Umstand, bei dem ein Arzneimittel nicht oder nur eingeschränkt angewendet werden darf.</p>
+  <div style="display:flex;gap:8px;margin:8px 0">
+    <div style="flex:1;background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.3);border-radius:10px;padding:10px"><div style="font-weight:700;color:#fb7185;font-size:.82rem">🚫 Absolut</div><div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Darf nicht angewendet werden</div></div>
+    <div style="flex:1;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.3);border-radius:10px;padding:10px"><div style="font-weight:700;color:#f59e0b;font-size:.82rem">⚖️ Relativ</div><div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Nur nach Nutzen-Risiko-Abwägung</div></div>
+  </div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">💡 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Allergie gegen einen Wirkstoff · schwere Lebererkrankung · bestimmte Schwangerschaften · schwere Niereninsuffizienz</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Kontraindikationen schützen Patienten vor vermeidbaren Risiken.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Allergische Reaktionen</div></div>
+  <p class="lekt-prose">Eine <strong>Allergie</strong> ist eine überschießende Reaktion des Immunsystems auf einen eigentlich harmlosen Stoff. Sie kann unmittelbar oder verzögert auftreten.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">⚠️ Mögliche Symptome</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Juckreiz · Hautausschlag · Rötungen · Schwellungen · Atembeschwerden · Kreislaufprobleme</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Arzneimittelallergien müssen <strong>dokumentiert und weitergegeben</strong> werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Anaphylaktischer Schock</div></div>
+  <div style="background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.4);border-radius:12px;padding:14px;margin-bottom:12px">
+    <div style="font-weight:700;color:#ef4444;font-size:.9rem">🚨 Medizinischer Notfall</div>
+    <div style="font-size:.8rem;color:var(--ink2);margin-top:4px">Die schwerste Form einer allergischen Reaktion — lebensbedrohlich!</div>
+  </div>
+  <p class="lekt-prose" style="font-weight:600;color:var(--ink);font-size:.82rem;margin-bottom:4px">Mögliche Anzeichen:</p>
+  <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-bottom:10px">Atemnot · Schwellung von Zunge und Rachen · Blutdruckabfall · Tachykardie · Bewusstseinsstörungen · Kreislaufversagen</div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🏥 Pflegerische Maßnahmen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Notruf</strong> veranlassen</li>
+      <li>Arzt informieren</li>
+      <li>Vitalzeichen überwachen</li>
+      <li>Patient beobachten</li>
+      <li>Notfallmaßnahmen vorbereiten</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Der anaphylaktische Schock ist <strong>lebensbedrohlich</strong> und erfordert sofortiges Handeln.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Wechselwirkungen</div></div>
+  <p class="lekt-prose"><strong>Wechselwirkungen</strong> entstehen, wenn sich mehrere Arzneimittel gegenseitig beeinflussen. Auch Lebensmittel, Alkohol oder pflanzliche Präparate können sie verursachen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#f59e0b">🔀 Mögliche Folgen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Wirkungsverstärkung · Wirkungsabschwächung · veränderte Nebenwirkungen · erhöhtes Komplikationsrisiko</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Mehrere Medikamente erhöhen das Risiko für Wechselwirkungen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Compliance & Adhärenz</div></div>
+  <p class="lekt-prose"><strong>Compliance</strong> beschreibt, in welchem Ausmaß Patienten ärztliche oder pflegerische Empfehlungen befolgen. Der modernere Begriff <strong>Adhärenz</strong> betont die gemeinsame Entscheidung zwischen Patient und Behandelnden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📊 Einflussfaktoren</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Verständnis der Therapie · Motivation · Nebenwirkungen · Vertrauen · Komplexität des Therapieplans</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Eine gute <strong>Adhärenz</strong> verbessert den Therapieerfolg erheblich.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Placebo-Effekt</div></div>
+  <p class="lekt-prose">Ein <strong>Placebo</strong> enthält keinen pharmakologisch wirksamen Stoff. Trotzdem kann es durch die <strong>Erwartung</strong> des Patienten zu einer Verbesserung von Beschwerden kommen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✨ Mögliche Wirkungen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Schmerzlinderung · verbessertes Wohlbefinden · subjektive Symptomverbesserung</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Erwartungen und Vertrauen können den Therapieerfolg beeinflussen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">10</div><div class="lekt-title">Nocebo-Effekt</div></div>
+  <p class="lekt-prose">Der <strong>Nocebo-Effekt</strong> beschreibt das Auftreten negativer Beschwerden aufgrund <strong>negativer Erwartungen</strong> eines Patienten. Er kann auch ohne tatsächliche pharmakologische Ursache auftreten.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">⚠️ Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Kopfschmerzen · Übelkeit · Schwindel · verstärkte Schmerzempfindung</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Negative Erwartungen können Beschwerden <strong>verstärken oder auslösen</strong>.</div>
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT
