@@ -7414,4 +7414,365 @@ export const LESSON_CONTENT = {
 
   },
 
+  pharma_arzneiformen: {
+
+    'Feste Arzneiformen': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">💉 Arzneiformen · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Feste Arzneiformen</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Tabletten, Kapseln, Zäpfchen & Co.</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was sind Arzneiformen?</div></div>
+  <p class="lekt-prose">Arzneimittel bestehen nicht nur aus Wirkstoffen. Damit sie sicher angewendet und richtig dosiert werden können, werden sie in unterschiedlichen <strong>Arzneiformen</strong> hergestellt. Die Wahl der Arzneiform beeinflusst Aufnahmegeschwindigkeit, Wirkdauer, Anwendung und Verträglichkeit.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Arzneiform beeinflusst maßgeblich die <strong>Wirkung und Anwendung</strong> eines Medikaments.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Feste Arzneiformen — Überblick</div></div>
+  <p class="lekt-prose">Feste Arzneiformen enthalten Wirkstoffe in fester Form und gehören zu den am häufigsten verwendeten Arzneiformen.</p>
+  <div style="display:flex;gap:8px;margin:8px 0">
+    <div style="flex:1;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.3);border-radius:10px;padding:10px"><div style="font-weight:700;color:#22c55e;font-size:.82rem">✅ Vorteile</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Einfache Dosierung · gute Haltbarkeit · leichte Lagerung · genaue Wirkstoffmenge</div></div>
+    <div style="flex:1;background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.3);border-radius:10px;padding:10px"><div style="font-weight:700;color:#fb7185;font-size:.82rem">⚠️ Nachteile</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Schluckbeschwerden möglich · nicht für alle geeignet · manche dürfen nicht geteilt werden</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Feste Arzneiformen ermöglichen eine <strong>präzise Dosierung</strong> des Wirkstoffs.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Pulver & Granulat</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">🥄 Pulver</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Fein zerkleinerte feste Stoffe. Schnelle Auflösung, flexible Dosierung. Beispiele: Magnesiumpulver, Elektrolytpulver, Wundpuder.</div></div>
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">🌾 Granulat</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Kleine Körnchen mit Wirkstoffen, meist in Wasser aufgelöst. Gute Dosierbarkeit, angenehmere Einnahme.</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Pulver lösen sich häufig schneller auf als Tabletten.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Tabletten</div></div>
+  <p class="lekt-prose"><strong>Tabletten</strong> sind die am häufigsten verwendete Arzneiform. Sie entstehen durch das <strong>Pressen</strong> von Wirkstoffen und Hilfsstoffen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#f59e0b">⚠️ Wichtige Hinweise</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Nur teilen, <strong>wenn erlaubt</strong></li>
+      <li>Mit ausreichend Flüssigkeit einnehmen</li>
+      <li>Nicht eigenmächtig zerkleinern</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Nicht jede Tablette darf <strong>geteilt oder zerdrückt</strong> werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Filmtabletten</div></div>
+  <p class="lekt-prose"><strong>Filmtabletten</strong> besitzen einen dünnen Überzug, der den Wirkstoff schützt oder die Einnahme erleichtert.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Vorteile</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Leichteres Schlucken · Geschmacksschutz · Wirkstoffschutz · bessere Stabilität</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Der Filmüberzug schützt Wirkstoff und Patient.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Retardtabletten</div></div>
+  <p class="lekt-prose"><strong>Retardtabletten</strong> geben den Wirkstoff über einen längeren Zeitraum langsam und kontrolliert ab.</p>
+  <div style="display:flex;gap:8px;margin:8px 0">
+    <div style="flex:1;background:rgba(34,197,94,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#22c55e;font-size:.8rem">✅ Vorteile</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Längere Wirkdauer · weniger Einnahmen · gleichmäßigere Konzentration</div></div>
+    <div style="flex:1;background:rgba(239,68,68,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#ef4444;font-size:.8rem">🚫 Niemals</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Nicht teilen · nicht mörsern · nicht zerkauen</div></div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Retardtabletten dürfen meist nicht zerstört werden, da sonst der Wirkstoff <strong>schlagartig</strong> freigesetzt wird.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Brausetabletten</div></div>
+  <p class="lekt-prose"><strong>Brausetabletten</strong> werden vor der Einnahme vollständig in Wasser aufgelöst. Schnelle Auflösung, geeignet bei Schluckbeschwerden.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Brausetabletten müssen <strong>vollständig aufgelöst</strong> sein, bevor sie getrunken werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Lutsch- & Kautabletten</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">🍬 Lutschtabletten</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Lösen sich langsam im Mund auf, wirken häufig lokal im Mund- und Rachenraum.</div></div>
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">😋 Kautabletten</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Werden vor dem Schlucken zerkaut. Geeignet für Kinder, schnellere Freisetzung.</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Lutschtabletten werden <strong>gelutscht</strong>, Kautabletten werden <strong>gekaut</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Dragees</div></div>
+  <p class="lekt-prose"><strong>Dragees</strong> besitzen einen Zucker- oder Schutzüberzug.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🎯 Funktionen des Überzugs</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Geschmacksverbesserung · Wirkstoffschutz · leichteres Schlucken · verbesserte Stabilität</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Dragees sollten in der Regel <strong>unzerkaut</strong> geschluckt werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">10</div><div class="lekt-title">Hart- & Weichkapseln</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">💊 Hartkapseln</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Zwei Kapselhälften, enthalten meist Pulver oder Granulate.</div></div>
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">🥚 Weichkapseln</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Enthalten flüssige oder ölige Wirkstoffe.</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Viele Kapseln dürfen <strong>nicht geöffnet</strong> werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">11</div><div class="lekt-title">Suppositorien (Zäpfchen)</div></div>
+  <p class="lekt-prose"><strong>Suppositorien</strong> werden rektal angewendet — über den Enddarm.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Vorteile</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Geeignet bei Übelkeit & Erbrechen · Umgehung von Schluckproblemen · teilweise Umgehung des Magen-Darm-Trakts</div>
+  </div>
+  <p class="lekt-prose" style="font-size:.8rem;margin-top:8px">Anwendung: Schmerztherapie · Fiebersenkung · Abführmittel</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Suppositorien werden über den <strong>Enddarm</strong> verabreicht.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">12</div><div class="lekt-title">Vaginalsuppositorien</div></div>
+  <p class="lekt-prose"><strong>Vaginalsuppositorien</strong> werden in die Scheide eingeführt und wirken überwiegend <strong>lokal</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🎯 Anwendungsgebiete</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Pilzinfektionen · Entzündungen · lokale Hormontherapie</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Vaginalsuppositorien entfalten ihre Wirkung hauptsächlich <strong>lokal</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">13</div><div class="lekt-title">Arzneitees</div></div>
+  <p class="lekt-prose"><strong>Arzneitees</strong> bestehen aus getrockneten Pflanzenteilen und werden mit heißem Wasser aufgegossen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🌿 Bestandteile & Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Blätter · Blüten · Wurzeln · Samen · Früchte<br>Beispiele: Kamillentee · Fencheltee · Pfefferminztee</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Auch Arzneitees sind <strong>Arzneimittel</strong> und müssen korrekt angewendet werden.</div>
+</div>
+</div></div>`,
+
+    'Flüssige Arzneiformen': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">💉 Arzneiformen · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Flüssige Arzneiformen</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Lösungen, Tropfen, Tinkturen, Suspensionen & Emulsionen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Überblick</div></div>
+  <p class="lekt-prose">Flüssige Arzneiformen enthalten Wirkstoffe in gelöster, suspendierter oder emulgierter Form. Besonders bei Kindern, älteren Menschen oder Patienten mit <strong>Schluckstörungen</strong> sind sie eine wichtige Alternative zu Tabletten.</p>
+  <div style="display:flex;gap:8px;margin:8px 0">
+    <div style="flex:1;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.3);border-radius:10px;padding:10px"><div style="font-weight:700;color:#22c55e;font-size:.82rem">✅ Vorteile</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Schneller Wirkungseintritt · einfache Einnahme · flexible Dosierung · geeignet bei Schluckstörungen</div></div>
+    <div style="flex:1;background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.3);border-radius:10px;padding:10px"><div style="font-weight:700;color:#fb7185;font-size:.82rem">⚠️ Nachteile</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Kürzere Haltbarkeit · Dosierungsfehler möglich · empfindlich gegen Licht/Temperatur</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Flüssige Arzneiformen wirken oft <strong>schneller</strong> als feste Arzneiformen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Lösungen</div></div>
+  <p class="lekt-prose">Eine <strong>Lösung</strong> besteht aus Wirkstoffen, die vollständig in einer Flüssigkeit gelöst sind. Die Flüssigkeit erscheint <strong>klar</strong> und enthält keine sichtbaren Partikel.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">💡 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Trinklösungen · Infusionslösungen · Augenlösungen · Mundspüllösungen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Bei Lösungen ist der Wirkstoff <strong>vollständig gelöst</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Tropfen</div></div>
+  <p class="lekt-prose"><strong>Tropfen</strong> werden mithilfe eines Tropfers oder Dosiersystems verabreicht. Die Dosierung erfolgt häufig über die <strong>Anzahl der Tropfen</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🎯 Anwendungsbereiche</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Augentropfen · Nasentropfen · Ohrentropfen · Trinktropfen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Tropfenzahl muss immer sorgfältig <strong>kontrolliert</strong> werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Augentropfen</div></div>
+  <p class="lekt-prose"><strong>Augentropfen</strong> werden direkt in den <strong>Bindehautsack</strong> eingebracht und wirken überwiegend lokal.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🏥 Pflegerische Hinweise</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Händedesinfektion durchführen</li>
+      <li><strong>Tropferspitze nicht berühren</strong></li>
+      <li>Kopf leicht nach hinten neigen</li>
+      <li>Unterlid vorsichtig nach unten ziehen</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Tropferspitze darf weder Auge noch Haut berühren.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Nasentropfen</div></div>
+  <p class="lekt-prose"><strong>Nasentropfen</strong> werden in die Nasenhöhle eingebracht und wirken meist lokal auf die Schleimhaut. Anwendung: Erkältungen, Allergien, Schleimhautschwellungen, Nasennebenhöhlenentzündungen.</p>
+  <div class="lekt-zusammen" style="background:rgba(245,158,11,.08);border-left:3px solid #f59e0b"><strong>Merke:</strong> Abschwellende Nasentropfen sollten nur <strong>begrenzte Zeit</strong> angewendet werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Tinkturen</div></div>
+  <p class="lekt-prose"><strong>Tinkturen</strong> sind alkoholische oder hydroalkoholische Lösungen von Arzneistoffen oder pflanzlichen Wirkstoffen. Lange Haltbarkeit, hohe Wirkstoffkonzentration.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">💡 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Jodtinktur · pflanzliche Heilpflanzentinkturen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Viele Tinkturen enthalten <strong>Alkohol</strong> als Lösungsmittel.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Medizinweine</div></div>
+  <p class="lekt-prose"><strong>Medizinweine</strong> sind Arzneizubereitungen, bei denen Wein als Trägerstoff verwendet wird. Heute besitzen sie nur noch eine geringe Bedeutung.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Medizinweine spielen in der modernen Pharmakotherapie <strong>kaum noch eine Rolle</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Suspensionen</div></div>
+  <p class="lekt-prose">Bei <strong>Suspensionen</strong> sind feste Wirkstoffpartikel in einer Flüssigkeit verteilt, jedoch <strong>nicht vollständig gelöst</strong>. Die Partikel können sich mit der Zeit am Boden absetzen (Sedimentation).</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#f59e0b">⚠️ Besonderheiten & Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Vor Gebrauch schütteln · sichtbare Partikel möglich<br>Beispiele: Antibiotikasäfte · Antazida</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(245,158,11,.08);border-left:3px solid #f59e0b"><strong>Merke:</strong> Suspensionen müssen vor der Anwendung gut <strong>geschüttelt</strong> werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Emulsionen</div></div>
+  <p class="lekt-prose">Eine <strong>Emulsion</strong> besteht aus zwei Flüssigkeiten, die normalerweise nicht mischbar sind — typischerweise <strong>Öl und Wasser</strong>.</p>
+  <div style="display:flex;gap:8px;margin:8px 0">
+    <div style="flex:1;background:rgba(129,140,248,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#818cf8;font-size:.8rem">💧 O/W</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Öl-in-Wasser: Öltröpfchen in Wasser</div></div>
+    <div style="flex:1;background:rgba(129,140,248,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#818cf8;font-size:.8rem">🛢️ W/O</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Wasser-in-Öl: Wassertröpfchen in Öl</div></div>
+  </div>
+  <p class="lekt-prose" style="font-size:.8rem">Beispiele: medizinische Cremes · Pflegelotionen · Trinkemulsionen</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Emulsionen verbinden zwei normalerweise <strong>nicht mischbare</strong> Flüssigkeiten.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">10</div><div class="lekt-title">Pflegerische Verantwortung</div></div>
+  <p class="lekt-prose">Pflegefachpersonen tragen Verantwortung für die korrekte Vorbereitung, Dosierung und Verabreichung flüssiger Arzneiformen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Wichtige Maßnahmen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Verordnung kontrollieren · Dosierung überprüfen · Messhilfen korrekt verwenden · Verfallsdatum & Lagerung beachten · Patient beobachten · dokumentieren</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Eine <strong>genaue Dosierung</strong> ist besonders bei flüssigen Arzneimitteln entscheidend.</div>
+</div>
+</div></div>`,
+
+    'Halbfeste & gasförmige Arzneiformen': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">💉 Arzneiformen · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Halbfeste & gasförmige Arzneiformen</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Salben, Cremes, Gele, Aerosole & Sauerstoff</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Überblick</div></div>
+  <p class="lekt-prose">Halbfeste und gasförmige Arzneiformen werden überwiegend <strong>lokal</strong> angewendet. Sie ermöglichen eine gezielte Behandlung von Haut, Schleimhäuten oder Atemwegen.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die richtige Arzneiform unterstützt <strong>Wirksamkeit und Sicherheit</strong> der Therapie.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Halbfeste Arzneiformen</div></div>
+  <p class="lekt-prose">Halbfeste Arzneiformen besitzen eine <strong>streichfähige</strong> Konsistenz und werden meist auf Haut oder Schleimhäuten angewendet. Wichtige Vertreter: Salben, Cremes, Gele, Pasten.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Vorteile</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Gezielte lokale Wirkung · geringere systemische Belastung · einfache Anwendung</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Halbfeste Arzneiformen wirken überwiegend <strong>am Ort der Anwendung</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Salben</div></div>
+  <p class="lekt-prose"><strong>Salben</strong> bestehen überwiegend aus fettigen Grundlagen und enthalten wenig oder kein Wasser. Sie bilden einen schützenden <strong>Fettfilm</strong> und verhindern Wasserverlust.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📋 Eigenschaften & Anwendung</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Stark rückfettend · wasserabweisend · schützend<br>Bei: trockener Haut, chronischen Hauterkrankungen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Salben eignen sich besonders für <strong>trockene und schuppige Haut</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Cremes</div></div>
+  <p class="lekt-prose"><strong>Cremes</strong> bestehen aus <strong>Fett und Wasser</strong> und sind dadurch leichter aufzutragen als Salben.</p>
+  <div style="display:flex;gap:8px;margin:8px 0">
+    <div style="flex:1;background:rgba(129,140,248,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#818cf8;font-size:.8rem">💧 O/W</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px">Öl-in-Wasser-Creme</div></div>
+    <div style="flex:1;background:rgba(129,140,248,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#818cf8;font-size:.8rem">🛢️ W/O</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px">Wasser-in-Öl-Creme</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Cremes enthalten sowohl <strong>Wasser als auch Fett</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Gele</div></div>
+  <p class="lekt-prose"><strong>Gele</strong> bestehen überwiegend aus Wasser und enthalten Gelbildner. Sie ziehen schnell ein und hinterlassen kaum Fett.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">❄️ Eigenschaften & Anwendung</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Kühlend · schnelle Aufnahme · nicht fettend<br>Bei: Sportverletzungen, Entzündungen, Schwellungen, Schmerzen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Gele wirken häufig <strong>kühlend</strong> und ziehen rasch ein.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Pasten</div></div>
+  <p class="lekt-prose"><strong>Pasten</strong> enthalten große Mengen pulverförmiger Bestandteile in einer Salbengrundlage und besitzen eine <strong>festere</strong> Konsistenz.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📋 Eigenschaften & Anwendung</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Schützend · bindet Feuchtigkeit · haftet gut<br>Bei: Wundschutz, Windeldermatitis, nässenden Hautveränderungen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Pasten schützen die Haut und <strong>binden Feuchtigkeit</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Okklusivverband</div></div>
+  <p class="lekt-prose">Ein <strong>Okklusivverband</strong> deckt die behandelte Haut luft- und wasserdicht ab und verbessert die Aufnahme bestimmter Wirkstoffe.</p>
+  <div style="display:flex;gap:8px;margin:8px 0">
+    <div style="flex:1;background:rgba(34,197,94,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#22c55e;font-size:.8rem">✅ Wirkungen</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Erhöhte Hautfeuchtigkeit · bessere Wirkstoffaufnahme · verstärkte Wirkung</div></div>
+    <div style="flex:1;background:rgba(251,113,133,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#fb7185;font-size:.8rem">⚠️ Risiken</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Hautreizungen · Mazeration · Infektionsrisiko</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Unter einem Okklusivverband steigt die <strong>Durchlässigkeit</strong> der Haut.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Gasförmige Arzneiformen</div></div>
+  <p class="lekt-prose">Gasförmige Arzneiformen werden hauptsächlich über die <strong>Atemwege</strong> aufgenommen. Die Wirkstoffe gelangen über die Lunge in den Körper oder wirken direkt in den Atemwegen. Beispiele: Aerosole, Dosieraerosole, Sauerstoff, Inhalationsnarkotika.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Lunge besitzt eine <strong>große Aufnahmefläche</strong> für Arzneistoffe.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Aerosole & Dosieraerosole</div></div>
+  <p class="lekt-prose"><strong>Aerosole</strong> bestehen aus fein verteilten festen oder flüssigen Partikeln in einem Gas und werden eingeatmet. <strong>Dosieraerosole</strong> geben bei jeder Anwendung eine exakt festgelegte Wirkstoffmenge ab.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🎯 Anwendung & Hinweise</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Bei Asthma bronchiale, COPD, chronischen Atemwegserkrankungen<br><strong>Wichtig:</strong> richtige Inhalationstechnik, Koordination von Auslösen und Einatmen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Eine falsche Inhalationstechnik vermindert die Wirksamkeit erheblich. Je kleiner die Partikel, desto tiefer gelangen sie in die Atemwege.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">10</div><div class="lekt-title">Sauerstoff</div></div>
+  <p class="lekt-prose">Medizinischer <strong>Sauerstoff</strong> wird zur Behandlung von Patienten mit Sauerstoffmangel eingesetzt. Anwendungsformen: Nasenbrille, Sauerstoffmaske, Reservoirmaske.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🩺 Pflegebeobachtung</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Atemfrequenz · Sauerstoffsättigung · Hautfarbe · Bewusstseinslage</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(245,158,11,.08);border-left:3px solid #f59e0b"><strong>Merke:</strong> Sauerstoff ist ein <strong>Arzneimittel</strong> und darf nur nach ärztlicher Anordnung verabreicht werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">11</div><div class="lekt-title">Inhalationsnarkotika</div></div>
+  <p class="lekt-prose"><strong>Inhalationsnarkotika</strong> sind gasförmige oder verdampfbare Arzneistoffe zur Durchführung einer Allgemeinanästhesie. Sie führen zu Bewusstlosigkeit, Schmerzfreiheit und Muskelentspannung.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🎯 Ziele der Allgemeinanästhesie</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Bewusstseinsverlust · Schmerzfreiheit · Muskelrelaxation · Operationsfähigkeit</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Inhalationsnarkotika werden überwiegend im <strong>Operationsbereich</strong> eingesetzt.</div>
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT

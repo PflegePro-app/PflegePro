@@ -274,4 +274,17 @@ export const THEMES = [
       'Wirkung von Arzneimitteln',
     ],
   },
+  {
+    id: 'pharma_arzneiformen',
+    name: 'Pharmakologie — Arzneiformen',
+    icon: '💉',
+    col: 'indigo',
+    module: 'pharmakologie',
+    related: ['pharma_grundlagen'],
+    lessons: [
+      'Feste Arzneiformen',
+      'Flüssige Arzneiformen',
+      'Halbfeste & gasförmige Arzneiformen',
+    ],
+  },
 ]
