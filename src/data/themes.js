@@ -301,4 +301,19 @@ export const THEMES = [
       'Sichere Arzneimittelgabe (6-R & 10-R)',
     ],
   },
+  {
+    id: 'pharma_sicherheit',
+    name: 'Pharmakologie — Sicherheit, Recht & Praxis',
+    icon: '🛡️',
+    col: 'indigo',
+    module: 'pharmakologie',
+    related: ['pharma_dosierung'],
+    lessons: [
+      'Arzneimittel richtig aufbewahren',
+      'Risikomanagement & Dokumentation',
+      'Richten von Arzneimitteln',
+      'Arzneimittelgesetz (AMG)',
+      'Betäubungsmittel & Bedarfsmedikation',
+    ],
+  },
 ]

@@ -8333,4 +8333,720 @@ export const LESSON_CONTENT = {
 
   },
 
+  pharma_sicherheit: {
+
+    'Arzneimittel richtig aufbewahren': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">🛡️ Sicherheit · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Arzneimittel richtig aufbewahren</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Lagerung, Temperaturen, Kühlkette, FEFO-Prinzip und Gefahrstoffe</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Allgemeine Lagerungsregeln</div></div>
+  <p class="lekt-prose">Die richtige Aufbewahrung von Arzneimitteln ist ein wesentlicher Bestandteil der <strong>Patientensicherheit</strong>. Falsch gelagerte Medikamente können ihre Wirkung verlieren oder sogar schädlich werden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📋 Grundregeln</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Behältnisse <strong>sicher verschließen</strong></li>
+      <li>Lichtempfindliche Substanzen <strong>vor Licht schützen</strong></li>
+      <li><strong>Trocken</strong> lagern</li>
+      <li>Vor <strong>mechanischen Einflüssen</strong> schützen</li>
+      <li>Auf das <strong>Verfallsdatum</strong> achten (FEFO-Prinzip)</li>
+      <li>Möglichst <strong>kleine Lagermengen</strong></li>
+      <li>Veränderungen <strong>erkennen und dokumentieren</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Arzneimittel immer verschlossen, trocken, lichtgeschützt und in kleinen Mengen lagern.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Lagerungstemperaturen (Europäische Pharmakopöe)</div></div>
+  <p class="lekt-prose">Die <strong>Lagerungstemperatur</strong> steht auf der Packung oder im Beipackzettel und ist in den nationalen Arzneimittelbüchern definiert.</p>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+    <div style="background:rgba(245,158,11,.08);border-left:3px solid #f59e0b;border-radius:8px;padding:10px 12px"><div style="font-weight:700;color:#f59e0b;font-size:.85rem">🌡️ Raumtemperatur · 15–25 °C</div><div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Tabletten, Kapseln, Salben, Sprays, Suppositorien</div></div>
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:10px 12px"><div style="font-weight:700;color:#60a5fa;font-size:.85rem">❄️ Kalt/Kühl · 8–15 °C</div><div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Bestimmte Augentropfen, einige Sirupe</div></div>
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:10px 12px"><div style="font-weight:700;color:#818cf8;font-size:.85rem">🧊 Kühlschrank · 2–8 °C</div><div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Insulin, Suprarenin, Impfstoffe</div></div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:10px 12px"><div style="font-weight:700;color:#a78bfa;font-size:.85rem">🥶 Tiefgekühlt · unter −15 °C</div><div style="font-size:.75rem;color:var(--ink2);margin-top:3px">Bestimmte Impfstoffe (z.B. COVID-19)</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Lagerungstemperatur gilt nur für original <strong>verschlossene</strong> Medikamente.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Kühlkette</div></div>
+  <p class="lekt-prose">Kühlungspflichtige Medikamente (Insulin, Suprarenin) müssen bei <strong>2–8 °C</strong> aufbewahrt werden. Sie dürfen <strong>keinesfalls eingefroren</strong> werden — das Einfrieren verändert die Proteinstruktur und macht das Medikament unwirksam.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">❄️ Die Kühlkette</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px"><strong>Kühlkettenpflichtige Arzneimittel</strong> müssen über die gesamte Lieferkette — vom Hersteller bis zur Anwendung — <strong>ohne Unterbrechung</strong> im vorgeschriebenen Temperaturbereich gehalten werden. Beispiele: Lebendimpfstoffe, Insulin, bestimmte Biologika.</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Kühlkette nie unterbrechen — bei Unterbrechung sofort <strong>dokumentieren</strong> und Apotheke/Arzt informieren.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Verfallsdatum & FEFO-Prinzip</div></div>
+  <p class="lekt-prose">Das <strong>Verfallsdatum</strong> ("verwendbar bis…") gilt nur für <strong>original verschlossene</strong> Medikamente. Nach dem Anbruch gilt oft ein kürzeres Verfallsdatum.</p>
+  <div style="background:linear-gradient(135deg,rgba(129,140,248,.15),rgba(79,70,229,.1));border:2px solid rgba(129,140,248,.4);border-radius:12px;padding:16px;margin-bottom:10px">
+    <div style="font-weight:700;color:#818cf8;font-size:.92rem;margin-bottom:6px">🗓️ FEFO-Prinzip</div>
+    <div style="font-size:.82rem;color:var(--ink);line-height:1.6"><strong>F</strong>irst <strong>E</strong>xpired — <strong>F</strong>irst <strong>O</strong>ut</div>
+    <div style="font-size:.78rem;color:var(--ink2);margin-top:6px;line-height:1.5">Arzneimittel mit dem frühesten Verfallsdatum werden zuerst verwendet. Vorgeschrieben in den <strong>EU-Leitlinien für die Gute Vertriebspraxis (GDP)</strong>.</div>
+  </div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#f59e0b">⚠️ Nach dem Anbruch</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Angebrochene oder weiterverarbeitete Arzneimittel sind oft nur kurzzeitig haltbar. Immer mit <strong>Anbruchsdatum</strong> und <strong>Verfallsdatum nach Anbruch</strong> beschriften.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> FEFO = zuerst verfallende Medikamente zuerst verwenden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Originalverpackung</div></div>
+  <p class="lekt-prose">Medikamente müssen in der <strong>kompletten Originalverpackung</strong> zusammen mit dem Beipackzettel aufbewahrt werden — bis zum Verbrauch der letzten Tablette.</p>
+  <div class="lekt-card" style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3)">
+    <div class="lekt-card-label" style="color:#ef4444">🚫 Niemals umfüllen!</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Um <strong>Verwechslungen zu vermeiden</strong>, dürfen Medikamente niemals in andere Gefäße umgefüllt werden. Alle relevanten Informationen sind an die Originalverpackung gebunden.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Arzneimittel immer in der <strong>Originalverpackung</strong> mit Beipackzettel — niemals umfüllen!</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Lagerung im häuslichen Bereich</div></div>
+  <p class="lekt-prose">Im häuslichen Pflegebereich müssen Arzneimittel so aufbewahrt werden, dass sie für <strong>demenzkranke Patienten und Kinder nicht zugänglich</strong> sind.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🔒 Aufbewahrung zu Hause</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Medikamentenschrank in <strong>kühlem, trockenem Raum</strong> (z.B. Schlafzimmer) — <strong>nicht</strong> Bad oder Küche</li>
+      <li>Kühlpflichtige Medikamente: <strong>abschließbare Box</strong> im Kühlschrank (Gemüsefach)</li>
+      <li>BtM: möglichst <strong>eingeschlossen</strong></li>
+      <li>Bei Selbstgefährdung: Pflegedienst <strong>führt Tabletten mit sich</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Im häuslichen Bereich Sicherheit vor <strong>Kindern und dementen Personen</strong> gewährleisten.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Umgang mit Gefahrstoffen</div></div>
+  <p class="lekt-prose">Manche Substanzen gelten als <strong>feuergefährlich</strong> (Alkohol, Aceton, Benzin). Ihre Dämpfe sind leicht entzündlich → <strong>Explosionsgefahr</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🔥 Lagerung feuergefährlicher Stoffe</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Nur in <strong>verschlossenen Gefäßen</strong></li>
+      <li><strong>Nicht in der Nähe</strong> von Heizquellen oder offenem Feuer</li>
+      <li>Vor <strong>direkter Sonneneinstrahlung</strong> schützen</li>
+      <li>In Krankenhäusern oft <strong>feuerfester Schrank</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Feuergefährliche Substanzen verschlossen, kühl und fernab von Zündquellen lagern.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Entsorgung</div></div>
+  <p class="lekt-prose">Abgelaufene Arzneimittel gelten als <strong>Sondermüll</strong> und dürfen nicht über Toilette oder Abfluss entsorgt werden — Arzneimittelrückstände belasten das Grundwasser.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🗑️ Richtige Entsorgung</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Über <strong>Apotheke</strong> oder <strong>kommunale Abfallentsorgung</strong></li>
+      <li><strong>Niemals</strong> über Toilette/Abfluss</li>
+      <li>Medikamentenmüll <strong>kindersicher</strong> abwerfen</li>
+      <li>Arzneimittel verstorbener Bewohner = Eigentum der <strong>Erben</strong></li>
+      <li><strong>Nicht</strong> an andere Bewohner weitergeben</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Arzneimittel sind <strong>Sondermüll</strong> — immer über Apotheke oder kommunale Entsorgung.</div>
+</div>
+
+</div></div>`,
+
+    'Risikomanagement & Dokumentation': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">🛡️ Sicherheit · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Risikomanagement & Dokumentation</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Medikationsfehler erkennen, melden, analysieren und dokumentieren</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was sind Medikationsfehler?</div></div>
+  <p class="lekt-prose">Ein <strong>Medikationsfehler</strong> ist jede vermeidbare Handlung oder Unterlassung im Umgang mit Arzneimitteln, die zu einer <strong>unangemessenen Medikation</strong> führt oder führen kann — unabhängig davon, ob ein Schaden entsteht.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Häufige Arten</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Falsches Medikament</strong></li>
+      <li><strong>Falsche Dosierung</strong> (zu viel/wenig)</li>
+      <li><strong>Falscher Patient</strong> — Verwechslung</li>
+      <li><strong>Falscher Zeitpunkt</strong></li>
+      <li><strong>Falsche Applikationsform/-route</strong></li>
+      <li><strong>Abgelaufenes Medikament</strong></li>
+      <li><strong>Doppelgabe</strong> oder <strong>unterlassene Gabe</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Ein Medikationsfehler liegt auch ohne sichtbaren Schaden vor — entscheidend ist die <strong>Abweichung vom Standard</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Fehlerquellen</div></div>
+  <p class="lekt-prose">Fehler entstehen selten durch eine einzelne Ursache — meist sind <strong>mehrere Faktoren</strong> beteiligt.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.88rem">🧠 Personenbezogen</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Übermüdung · Stress · Ablenkung · Wissensmängel · Kommunikationsfehler · Routine</div>
+    </div>
+    <div style="background:rgba(245,158,11,.08);border-left:3px solid #f59e0b;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#f59e0b;font-size:.88rem">⚙️ Systembezogen</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5"><strong>Look-alike/Sound-alike</strong> · unleserliche Verordnungen · Schnittstellen · <strong>Polymedikation</strong> · Zeitmangel · fehlendes Vier-Augen-Prinzip</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Systemfehler analysieren, <strong>nicht Personen beschuldigen</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Sicherheitskultur & CIRS</div></div>
+  <p class="lekt-prose">Eine positive <strong>Sicherheitskultur</strong> nutzt Fehler als <strong>Lernchance</strong>. Ziel: Systemverbesserung, nicht Schuldzuweisung.</p>
+  <div style="background:linear-gradient(135deg,rgba(129,140,248,.15),rgba(79,70,229,.1));border:2px solid rgba(129,140,248,.4);border-radius:12px;padding:14px;margin-bottom:10px">
+    <div style="font-weight:700;color:#818cf8;font-size:.95rem;margin-bottom:6px">🔄 CIRS</div>
+    <div style="font-size:.78rem;color:var(--ink2);line-height:1.6"><strong>Critical Incident Reporting System</strong> — anonymes, sanktionsfreies Fehlermeldesystem. Auch <em>Beinahe-Fehler (Near-Miss)</em> können gemeldet werden.</div>
+  </div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">⚖️ Gesetzliche Grundlage</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Seit <strong>2014 (§ 137 SGB V)</strong> sind Krankenhäuser in Deutschland verpflichtet, ein Risikomanagement-System vorzuhalten. Rund <strong>90 %</strong> der Allgemeinkrankenhäuser nehmen an einrichtungsübergreifenden Lernsystemen teil.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Fehler melden ist <strong>professionelle Verantwortung</strong>, kein Versagen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Das Vier-Augen-Prinzip</div></div>
+  <p class="lekt-prose">Eine zweite Person kontrolliert <strong>unabhängig</strong>, ob das Medikament korrekt vorbereitet wurde — <strong>bevor</strong> es verabreicht wird.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">👁️ Wann anwenden?</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Hochrisikomedikamente</strong> (Insulin, Heparin, Zytostatika)</li>
+      <li><strong>Mündliche Anordnungen</strong> (Rückbestätigung!)</li>
+      <li><strong>Ungewohnte/unbekannte</strong> Medikamente</li>
+      <li>Bei <strong>Unsicherheiten</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#22c55e">📌 Was wird kontrolliert?</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Medikament · Dosierung · Patient · Applikationsform/-route · Zeitpunkt</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Keine Misstrauensgeste — ein <strong>Sicherheitsstandard</strong> zum Schutz aller.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Verhalten bei Fehlern</div></div>
+  <p class="lekt-prose">Bei einem Medikationsfehler ist <strong>schnelles, strukturiertes Handeln</strong> entscheidend. <strong>Nicht verschweigen!</strong></p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🚨 Sofortmaßnahmen</div>
+    <ol style="margin:8px 0 0 22px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Ruhe bewahren</strong></li>
+      <li><strong>Patienten beobachten</strong> (Vitalzeichen)</li>
+      <li><strong>Sofort melden</strong> (Vorgesetzte + Arzt)</li>
+      <li>Bei schwerer Reaktion: <strong>Notarzt/Giftnotruf</strong></li>
+      <li><strong>Dokumentieren</strong> — lückenlos</li>
+      <li><strong>Fehler analysieren</strong></li>
+    </ol>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#a78bfa">⚗️ Überdosierung</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Symptome je nach Wirkstoff: Herzrhythmusstörungen bei Digitalisglykosiden · Blutungsgefahr bei Antikoagulanzien · Hypoglykämie bei Insulin.</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Fehler <strong>niemals vertuschen</strong> — melden, beobachten, dokumentieren.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Nebenwirkungsbeobachtung</div></div>
+  <p class="lekt-prose">Nach jeder Medikamentengabe: <strong>Patienten beobachten</strong>, Reaktionen beurteilen und dokumentieren.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">👁️ Worauf achten?</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Allgemeinzustand</strong> und Bewusstseinslage</li>
+      <li><strong>Vitalzeichen</strong>: RR, Puls, Atmung, Temperatur</li>
+      <li><strong>Haut</strong>: Rötung, Juckreiz, Schwellung (Allergie!)</li>
+      <li><strong>Magen-Darm</strong>: Übelkeit, Erbrechen, Durchfall</li>
+      <li><strong>Schwindel/Stürze</strong></li>
+      <li>Veränderte <strong>Laborwerte</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#a78bfa">📋 Meldepflicht</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Schwerwiegende Nebenwirkungen → <strong>Arzt</strong>. In bestimmten Fällen über das <strong>BfArM</strong> melden.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Bei auffälligen Reaktionen sofort <strong>informieren</strong> und <strong>dokumentieren</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Dokumentation</div></div>
+  <p class="lekt-prose">Eine <strong>lückenlose Dokumentation</strong> ist rechtlich vorgeschrieben — sie schützt Patient und Pflegekraft.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📝 Was dokumentieren?</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Verordnung</strong> des Arztes</li>
+      <li><strong>Verabreichung</strong> (wer, wann, was)</li>
+      <li><strong>Abgelehnte</strong> oder <strong>vergessene</strong> Gaben</li>
+      <li>Beobachtete <strong>Nebenwirkungen</strong></li>
+      <li><strong>Medikationsfehler</strong> — ehrlich!</li>
+      <li>Bei BtM: <strong>BtM-Nachweisbuch</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#22c55e">✍️ Grundsätze</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Zeitnah</strong> dokumentieren</li>
+      <li><strong>Klar und nachvollziehbar</strong></li>
+      <li>Korrekturen: <strong>durchstreichen</strong> (lesbar lassen), Datum + Handzeichen — <strong>nie überkleben</strong>!</li>
+      <li>Mit <strong>Signatur</strong> versehen</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> <strong>Nicht dokumentiert = nicht gemacht</strong>. Dokumentation = Beweismittel vor Gericht.</div>
+</div>
+
+</div></div>`,
+
+    'Richten von Arzneimitteln': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">🛡️ Sicherheit · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Richten von Arzneimitteln</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Voraussetzungen, Verantwortlichkeiten, Settings & Hilfsmittel</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was bedeutet „Richten"?</div></div>
+  <p class="lekt-prose">Das <strong>Richten von Arzneimitteln</strong> bezeichnet die Vorbereitung und Bereitstellung von Medikamenten für die spätere Verabreichung. Eine der <strong>fehleranfälligsten</strong> Tätigkeiten im Medikationsprozess.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📋 Grundvoraussetzungen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Nur nach <strong>schriftlicher ärztlicher Anordnung</strong></li>
+      <li><strong>Störungsquellen</strong> ausschließen (keine Ablenkung)</li>
+      <li><strong>Hygienevorschriften</strong> einhalten (Händedesinfektion)</li>
+      <li><strong>Dreifache Kontrolle</strong>: Schrank → Verpackung → Zurückstellen</li>
+      <li><strong>Verfallsdatum</strong> und Verpackungszustand prüfen</li>
+      <li><strong>Anbruchdatum</strong> notieren</li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#f59e0b">✂️ Teilen & Mörsern</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Mit <strong>Arzt/Apotheker</strong> klären oder Beipackzettel beachten. <strong>Retardtabletten</strong>, magensaftresistente und beschichtete Tabletten dürfen i.d.R. <strong>nicht</strong> geteilt/gemörsert werden — die Wirkungsweise wird zerstört.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Kein Richten ohne <strong>schriftliche Anordnung</strong> — immer dreifach kontrollieren.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Remonstrationspflicht</div></div>
+  <p class="lekt-prose">Die <strong>Remonstrationspflicht</strong> verpflichtet die Pflegefachkraft, dem Arzt gegenüber <strong>Bedenken zu äußern</strong>, wenn eine Anordnung den Patienten gefährden könnte — und die Durchführung abzulehnen, bis eine Klärung erfolgt.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#818cf8;font-size:.88rem">👨‍⚕️ Arzt — Anordnungsverantwortung</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Richtigkeit und Sicherheit der Verordnung</div>
+    </div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#22c55e;font-size:.88rem">👩‍⚕️ Pflegefachkraft — Durchführungsverantwortung</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Sach- und fachgerechte Ausführung der Anordnung</div>
+    </div>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#a78bfa">💡 Beispiel</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Ein Arzt verordnet eine ungewöhnlich hohe Dosis. Die Pflegekraft bemerkt eine Verschlechterung des Patienten. Sie ist <strong>verpflichtet</strong>, Bedenken zu äußern und erst nach Rücksprache zu verabreichen.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Remonstrieren ist <strong>keine Respektlosigkeit</strong> — sondern Berufspflicht und Patientenschutz.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Richten im Krankenhaus</div></div>
+  <p class="lekt-prose">Im <strong>Krankenhaus</strong> erfolgt das Richten auf der Station, durch examiniertes Pflegepersonal, unter kontrollierten Bedingungen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🏥 Besonderheiten</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Anordnung im <strong>Kurvenblatt</strong> oder digitalen System</li>
+      <li>Richten am <strong>Stellwagen / Medikamententisch</strong></li>
+      <li><strong>Vier-Augen-Prinzip</strong> bei Hochrisikomedikamenten</li>
+      <li>Medikamente <strong>patientenbezogen</strong> beschriften</li>
+      <li>Injektionen/Infusionen: <strong>aseptisches Arbeiten</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Kein Richten ohne <strong>Kurvenblatt-Anordnung</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Stationäre Langzeitpflege</div></div>
+  <p class="lekt-prose">In <strong>Pflegeheimen</strong> werden Medikamente häufig für <strong>eine Woche im Voraus</strong> gerichtet. Erfordert besondere Sorgfalt.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🏠 Besonderheiten</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Wochenweise im Voraus richten</li>
+      <li><strong>Dispenser / Pillenbox / Wochenbox</strong></li>
+      <li>Fächer nach Einnahmezeitpunkt (Morgen/Mittag/Abend/Nacht)</li>
+      <li>Nur durch <strong>examinierte Pflegefachkräfte</strong></li>
+      <li><strong>Medikamentenplan</strong> des Arztes erforderlich</li>
+      <li>Alternativ: <strong>Verblisterung</strong> durch Apotheke</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Klare Beschriftung, sorgfältige Kontrolle, schriftliche Arztanordnung.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Ambulante Pflege</div></div>
+  <p class="lekt-prose">In der <strong>ambulanten Pflege</strong> findet das Richten im <strong>häuslichen Umfeld</strong> statt — weniger kontrollierte Bedingungen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🚗 Besonderheiten</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Richten <strong>beim Patienten zu Hause</strong></li>
+      <li>Häufig <strong>Pillenbox / Wochenbox</strong></li>
+      <li>Einwilligungsfähige Patienten: <strong>Selbstmedikation</strong> möglich, Pflegekraft behält sie im Blick</li>
+      <li>Bei Selbstgefährdung (Demenz, Suizidalität): Pflegedienst <strong>führt Tabletten mit sich</strong></li>
+      <li>Schriftliche Anordnung auch hier Pflicht</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Auch ambulant: nur nach <strong>schriftlicher Anordnung</strong> richten.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Verblisterung</div></div>
+  <p class="lekt-prose">Die <strong>Verblisterung</strong> ist ein industrielles Verfahren, bei dem feste orale Arzneimittel von der <strong>Apotheke maschinell</strong> in beschriftete Blister eingeschweißt werden — nach Einnahmedatum und -uhrzeit geordnet.</p>
+  <div style="display:flex;gap:8px;margin:8px 0">
+    <div style="flex:1;background:rgba(34,197,94,.08);border-radius:10px;padding:10px">
+      <div style="font-weight:700;color:#22c55e;font-size:.82rem">✅ Vorteile</div>
+      <div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Zeitersparnis · weniger Fehler · klare Beschriftung · höhere Adhärenz · Nachvollziehbarkeit</div>
+    </div>
+    <div style="flex:1;background:rgba(239,68,68,.08);border-radius:10px;padding:10px">
+      <div style="font-weight:700;color:#ef4444;font-size:.82rem">❌ Grenzen</div>
+      <div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Nur feste orale AM · <strong>keine BtM</strong> · schwer bei wechselnder Medikation · Kunststoffabfall</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Verblisterung = maschinelles Richten durch die Apotheke — sicher, aber nicht für alle Medikamente.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Dispenser & Pillenbox</div></div>
+  <p class="lekt-prose"><strong>Dispenser</strong> und <strong>Pillenboxen</strong> sind Hilfsmittel zur strukturierten Aufbewahrung vorgerichteter Medikamente — sie unterstützen die Therapietreue.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#818cf8;font-size:.88rem">💊 Pillenbox (Wochenbox)</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Kunststoffbox mit <strong>7 Fächern für die Wochentage</strong>, unterteilt nach Einnahmezeitpunkten. <strong>Manuell</strong> befüllt — nach ärztlichem Medikamentenplan.</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">🤖 Automatischer Dispenser</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Gibt Medikamente <strong>automatisch zum richtigen Zeitpunkt</strong> aus, oft mit Alarm. Besonders bei <strong>eingeschränkter Kognition</strong> oder Compliance-Problemen geeignet.</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Dispenser/Pillenbox erhöhen Sicherheit und Therapietreue — ersetzen aber <strong>nicht</strong> die ärztliche Anordnung.</div>
+</div>
+
+</div></div>`,
+
+    'Arzneimittelgesetz (AMG)': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">🛡️ Sicherheit · Lektion 4</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Das Arzneimittelgesetz (AMG)</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Rechtliche Grundlagen, Arzneimittelnamen & Kennzeichnung</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist das AMG?</div></div>
+  <p class="lekt-prose">Das <strong>Arzneimittelgesetz (AMG)</strong> — „Gesetz über den Verkehr mit Arzneimitteln" — ist die zentrale Rechtsgrundlage in Deutschland. Erstmals <strong>1961</strong> eingeführt, nach dem <strong>Contergan-Skandal</strong> <strong>1976 grundlegend neu gefasst</strong>.</p>
+  <div style="background:linear-gradient(135deg,rgba(129,140,248,.15),rgba(79,70,229,.1));border:2px solid rgba(129,140,248,.4);border-radius:12px;padding:14px;margin:10px 0">
+    <div style="font-weight:700;color:#818cf8;font-size:.92rem;margin-bottom:6px">🎯 Ziele (§ 1 AMG)</div>
+    <div style="display:flex;gap:8px;margin-top:8px">
+      <div style="flex:1;background:rgba(34,197,94,.1);border-radius:8px;padding:8px;text-align:center"><div style="font-weight:700;color:#22c55e;font-size:.82rem">Qualität</div></div>
+      <div style="flex:1;background:rgba(96,165,250,.1);border-radius:8px;padding:8px;text-align:center"><div style="font-weight:700;color:#60a5fa;font-size:.82rem">Wirksamkeit</div></div>
+      <div style="flex:1;background:rgba(167,139,250,.1);border-radius:8px;padding:8px;text-align:center"><div style="font-weight:700;color:#a78bfa;font-size:.82rem">Unbedenklichkeit</div></div>
+    </div>
+  </div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📜 Was regelt das AMG?</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Definition</strong> des Arzneimittelbegriffs</li>
+      <li><strong>Zulassung</strong> und Registrierung</li>
+      <li><strong>Herstellung</strong> und Qualitätssicherung</li>
+      <li><strong>Kennzeichnung</strong> und Packungsbeilage</li>
+      <li><strong>Abgabe und Handel</strong></li>
+      <li><strong>Pharmakovigilanz</strong> (Sicherheitsüberwachung)</li>
+      <li><strong>Haftung</strong> bei Arzneimittelschäden</li>
+      <li>Schutz bei <strong>klinischen Prüfungen</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Das AMG schützt die Gesundheit der Bevölkerung — nur <strong>wirksame, sichere und qualitativ hochwertige</strong> Arzneimittel kommen in den Verkehr.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Definition Arzneimittel (§ 2 AMG)</div></div>
+  <p class="lekt-prose">Arzneimittel sind <strong>Stoffe oder Zubereitungen</strong>, die dazu bestimmt sind:</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">💊 Bestimmung</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Krankheiten zu <strong>heilen, lindern oder verhüten</strong></li>
+      <li>Körperfunktionen <strong>zu erkennen</strong> (Diagnostika)</li>
+      <li>Krankheitserreger <strong>unschädlich</strong> zu machen</li>
+      <li>Körper- oder seelische Zustände <strong>zu beeinflussen</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#f59e0b">⚠️ Abgrenzung</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Nahrungsergänzungsmittel</strong> → Lebensmittelrecht</li>
+      <li><strong>Medizinprodukte</strong> (Verbandmaterial, Katheter) → Medizinprodukterecht</li>
+      <li><strong>Kosmetika</strong> → Kosmetikrecht</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Nur Arzneimittel unterliegen der <strong>Zulassungspflicht</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Zulassung & Registrierung</div></div>
+  <p class="lekt-prose">Ein Arzneimittel darf nur in den Handel, wenn es <strong>zugelassen</strong> oder <strong>registriert</strong> ist.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#22c55e;font-size:.88rem">✅ Zulassung</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Standardverfahren. Nachweis von <strong>Wirksamkeit, Sicherheit, Qualität</strong>. Zuständig: <strong>BfArM</strong> (D) oder <strong>EMA</strong> (EU).</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">📋 Registrierung</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Vereinfacht für <strong>Homöopathika</strong> & <strong>traditionelle Pflanzenmittel</strong>. Kein Wirksamkeitsnachweis nötig.</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Zulassung = voller Nachweis · Registrierung = vereinfacht für Homöopathika/Pflanzenmittel.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Die drei Namen eines Arzneimittels</div></div>
+  <p class="lekt-prose">Jedes Arzneimittel hat in der Regel <strong>drei Bezeichnungen</strong>. Im Pflegealltag wichtig: <strong>INN</strong> und <strong>Handelsname</strong>.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#818cf8;font-size:.88rem">🧪 1. Chemischer Name</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Genaue chemische Struktur (IUPAC). Nur in Wissenschaft.<br><em>Bsp: (RS)-2-(4-(2-methylpropyl)phenyl)propansäure</em></div>
+    </div>
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem">🌍 2. INN — Internationaler Freiname</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Von der <strong>WHO</strong> vergebener, weltweit einheitlicher, <strong>gemeinfreier</strong> Wirkstoffname. Nicht markenrechtlich geschützt.<br><em>Bsp: Ibuprofen</em></div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">🏷️ 3. Handelsname</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5"><strong>Markenrechtlich geschützt</strong> (®). Vom Hersteller gewählt.<br><em>Bsp: Nurofen®, Ibuflam®, Dolgit® → alle Ibuprofen</em></div>
+    </div>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#22c55e">🔢 Namenszusätze</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Zahlen</strong> → Wirkstoffstärke (Ibuprofen 400/600)</li>
+      <li><strong>retard / SR / depot</strong> → verzögerte Freisetzung</li>
+      <li><strong>forte / mite</strong> → stark / schwach</li>
+      <li><strong>N1 / N2 / N3</strong> → Packungsgröße</li>
+      <li><strong>comp.</strong> → Kombination mehrerer Wirkstoffe</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Chemischer Name (Wissenschaft) · INN (WHO, weltweit) · Handelsname (Marke). Pflegealltag: <strong>INN + Handelsname</strong> kennen!</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Kennzeichnung (§ 10 AMG)</div></div>
+  <p class="lekt-prose">Das AMG schreibt in <strong>§ 10</strong> genau vor, welche Angaben auf der Verpackung stehen müssen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🏷️ Pflichtangaben</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Name</strong> des Arzneimittels (Handelsname)</li>
+      <li><strong>Wirkstoff</strong> (INN) mit Stärke</li>
+      <li><strong>Darreichungsform</strong></li>
+      <li><strong>Inhalt</strong> (Gewicht/Volumen/Stückzahl)</li>
+      <li><strong>Hersteller</strong></li>
+      <li><strong>Zulassungsnummer</strong> (Zul.-Nr.)</li>
+      <li><strong>Chargennummer</strong> (Ch.-B.) — Rückverfolgung</li>
+      <li><strong>Verfallsdatum</strong></li>
+      <li><strong>Lagerungshinweise</strong></li>
+      <li>Hinweis auf <strong>Packungsbeilage</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Alle Pflichtangaben nach <strong>§ 10 AMG</strong> müssen vollständig und korrekt sein.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Packungsbeilage (§ 11 AMG)</div></div>
+  <p class="lekt-prose">Die <strong>Packungsbeilage</strong> ist gesetzlich vorgeschrieben — sie richtet sich an den <strong>Patienten</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📄 Pflichtinhalte</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Bezeichnung & Wirkstoff</li>
+      <li><strong>Anwendungsgebiete</strong> (Indikationen)</li>
+      <li><strong>Gegenanzeigen</strong> (Kontraindikationen)</li>
+      <li><strong>Wechselwirkungen</strong></li>
+      <li>Dosierung & Art der Anwendung</li>
+      <li><strong>Nebenwirkungen</strong></li>
+      <li>Lagerung & Haltbarkeit nach Anbruch</li>
+      <li>Verfallsdatum & Hersteller</li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#a78bfa">⏰ Verfallsdatum</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">„Verwendbar bis…" / „EXP". Gibt <strong>Monat + Jahr</strong> an — bis zum <strong>letzten Tag dieses Monats</strong>. Gilt für <strong>original verschlossene</strong> AM. Nach Anbruch: oft kürzer (siehe Packungsbeilage).</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Packungsbeilage = Pflicht. Bis zur letzten Einnahme aufbewahren!</div>
+</div>
+
+</div></div>`,
+
+    'Betäubungsmittel & Bedarfsmedikation': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">🛡️ Sicherheit · Lektion 5</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Betäubungsmittel & Bedarfsmedikation</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">BtMG, BtMVV, BtM-Schrank, Dokumentation & VuG-Prinzip</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was sind Betäubungsmittel?</div></div>
+  <p class="lekt-prose"><strong>Betäubungsmittel (BtM)</strong> sind Stoffe mit hohem <strong>Sucht- und Missbrauchspotenzial</strong>, die einer besonderen gesetzlichen Kontrolle unterliegen. Unverzichtbar in <strong>Schmerztherapie, Palliativversorgung und Anästhesie</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">💊 Beispiele</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Morphin</strong> — starkes Opioid</li>
+      <li><strong>Fentanyl</strong> — sehr starkes Opioid (Pflaster, Injektion)</li>
+      <li><strong>Oxycodon</strong> — Opioid</li>
+      <li><strong>Tramadol</strong> — schwaches Opioid</li>
+      <li><strong>Methadon</strong> — Substitutionstherapie</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> BtM sind wirksame Schmerzmittel — der strikte rechtliche Rahmen dient dem <strong>Schutz vor Missbrauch und Abhängigkeit</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Rechtliche Grundlagen: BtMG & BtMVV</div></div>
+  <p class="lekt-prose">Der Umgang mit BtM ist in Deutschland durch <strong>zwei zentrale Rechtsgrundlagen</strong> geregelt.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#818cf8;font-size:.88rem">⚖️ BtMG — Betäubungsmittelgesetz</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Übergeordnetes Gesetz. Definiert BtM (Anlagen I–III) · regelt Verkehr · <strong>Strafvorschriften</strong> (bis 5 Jahre Freiheitsstrafe) · BtM-Schrank (§ 15)</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">📋 BtMVV — Verschreibungsverordnung</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Konkretisiert das BtMG: Verschreibung · BtM-Rezept · Abgabe · Dokumentation (BtM-Nachweisbuch) · monatliche ärztliche Kontrolle (§ 13)</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> BtMG = Gesetz · BtMVV = Detailregeln. Beide bilden den rechtlichen Rahmen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Das BtM-Rezept</div></div>
+  <p class="lekt-prose">BtM dürfen nur auf einem <strong>speziellen BtM-Rezept (gelb, dreiteilig)</strong> verschrieben werden. Ausgestellt vom Arzt mit persönlicher <strong>BtM-Nummer</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📝 Pflichtangaben</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Name, Vorname & <strong>Anschrift des Patienten</strong></li>
+      <li><strong>Ausstellungsdatum</strong></li>
+      <li>Bezeichnung des BtM (Wirkstoff, Form, Stärke)</li>
+      <li>Menge in <strong>Buchstaben und Ziffern</strong></li>
+      <li>Name, Anschrift & <strong>BtM-Nummer des Arztes</strong></li>
+      <li><strong>Unterschrift</strong> des Arztes</li>
+    </ul>
+    <div style="font-size:.78rem;color:var(--ink2);margin-top:8px;line-height:1.5">Dreiteilig: <strong>Teil 1</strong> → Apotheke · <strong>Teil 2</strong> → Arzt · <strong>Teil 3</strong> → Krankenkasse</div>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#a78bfa">🏥 BtM-Anforderungsschein</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Im <strong>Krankenhaus</strong> für den <strong>Stationsbedarf</strong> (§ 10 BtMVV) — nicht für einzelne Patienten. BtM-Rezepte: in <strong>Pflegeheimen, Hospizen, ambulant</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Kein normales Rezept für BtM — nur das <strong>gelbe dreiteilige BtM-Rezept</strong> oder der BtM-Anforderungsschein.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">BtM-Schrank & Lagerung (§ 15 BtMG)</div></div>
+  <p class="lekt-prose">BtM müssen in einem <strong>gesonderten, gesicherten Schrank</strong> aufbewahrt werden — gesetzlich in <strong>§ 15 BtMG</strong> geregelt.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🔒 Anforderungen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Verschlossener, verankerter Wertschutzschrank</strong> (Widerstandsgrad 0+, EN 1143-1)</li>
+      <li><strong>Ständig verschlossen</strong></li>
+      <li><strong>Schlüsselverwaltung</strong>: durch diensthabende Pflegefachkraft · Übergabe beim Dienstwechsel</li>
+      <li>Nur <strong>berechtigte Personen</strong> haben Zugang</li>
+      <li><strong>Monatliche ärztliche Kontrolle</strong> (§ 13 BtMVV)</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> BtM-Schlüssel <strong>niemals unbeaufsichtigt</strong> lassen — Verlust hat ernste rechtliche Konsequenzen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Dokumentation & Nachweisführung</div></div>
+  <p class="lekt-prose">Der <strong>Verbleib jedes BtM</strong> muss lückenlos dokumentiert werden — von der Lieferung bis zur Verabreichung/Vernichtung.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📓 BtM-Nachweisbuch (§ 14 BtMVV)</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Bezeichnung</strong> des BtM</li>
+      <li><strong>Zugang/Abgang</strong> + resultierender <strong>Bestand</strong></li>
+      <li><strong>Datum</strong> jeder Bewegung</li>
+      <li>Name des <strong>Patienten</strong></li>
+      <li><strong>Name + Unterschrift</strong> der Pflegefachkraft</li>
+    </ul>
+    <div style="font-size:.78rem;color:var(--ink2);margin-top:6px">Auch per <strong>EDV</strong> möglich.</div>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#a78bfa">🗑️ Vernichtung (§ 16 BtMG)</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>In Anwesenheit von <strong>zwei Zeugen</strong></li>
+      <li><strong>Dokumentation</strong> der Vernichtung</li>
+      <li>Niederschrift <strong>3 Jahre</strong> aufbewahren</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Lücken in der BtM-Dokumentation sind <strong>strafbar</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Bedarfsmedikation</div></div>
+  <p class="lekt-prose"><strong>Bedarfsmedikation</strong> = vom Arzt verordnet, wird <strong>bei Bedarf</strong> bei bestimmtem Symptom verabreicht. Gibt der Pflegekraft Handlungssicherheit.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Pflichtangaben in der Anordnung</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Genaue Indikation</strong> (z.B. „bei Schmerzen NRS ≥ 5")</li>
+      <li><strong>Einzeldosis</strong></li>
+      <li><strong>Verabreichungsintervall</strong> (Mindestabstand)</li>
+      <li><strong>Maximale Tagesdosis</strong></li>
+      <li>Ggf. wann Arzt kontaktieren</li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Wichtige Grenzen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Nur für das verordnete Symptom</strong>! Ibuprofen bei Knieschmerzen ≠ bei Kopfschmerzen</li>
+      <li>Gabe immer <strong>dokumentieren</strong> (Zeit, Dosis, Symptom, Wirkung)</li>
+      <li>Höchstdosis & Intervall <strong>strikt einhalten</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Bedarfsmedikation = nur für das <strong>verordnete Symptom</strong>, in verordneter Dosis, mit vorgeschriebenem Abstand.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Telefonische Anordnung & VuG-Prinzip</div></div>
+  <p class="lekt-prose">In <strong>Akutsituationen</strong> kann eine schriftliche Anordnung nicht sofort vorliegen. Lösung: <strong>telefonische Anordnung nach VuG-Prinzip</strong>.</p>
+  <div style="background:linear-gradient(135deg,rgba(129,140,248,.15),rgba(79,70,229,.1));border:2px solid rgba(129,140,248,.4);border-radius:12px;padding:14px;margin:10px 0">
+    <div style="font-weight:700;color:#818cf8;font-size:.95rem;margin-bottom:6px">📞 VuG = Vorgelesen und Genehmigt</div>
+    <ol style="margin:8px 0 0 22px;color:var(--ink2);font-size:.8rem;line-height:1.7">
+      <li>Pflegefachkraft nimmt mündliche Anordnung entgegen</li>
+      <li><strong>Wiederholt die Anordnung laut</strong> gegenüber dem Arzt</li>
+      <li>Arzt <strong>bestätigt</strong> die Richtigkeit</li>
+      <li>Pflegefachkraft <strong>dokumentiert sofort</strong> mit Vermerk „VuG" + Unterschrift</li>
+      <li>Arzt <strong>unterzeichnet schriftlich</strong> bei nächster Visite</li>
+    </ol>
+  </div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#f59e0b">👩‍⚕️ Wer darf entgegennehmen?</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Nur eine <strong>Pflegefachkraft mit dreijähriger Berufsausbildung</strong> — <strong>nicht</strong> Pflegehilfskräfte oder Auszubildende.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>VuG = Vorgelesen und Genehmigt</strong>. Telefonische Anordnung sofort dokumentieren → Arzt unterzeichnet bei nächster Visite.</div>
+</div>
+
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT
