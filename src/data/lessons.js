@@ -7775,4 +7775,562 @@ export const LESSON_CONTENT = {
 
   },
 
+  pharma_dosierung: {
+
+    'Dosierungslehre': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">⚖️ Dosierung · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Dosierungslehre</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Normdosis, Einzeldosis, Maximaldosis & Co.</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist Dosierung?</div></div>
+  <p class="lekt-prose">Die <strong>Dosierung</strong> beschreibt die Menge eines Arzneimittels, die einem Patienten verabreicht wird. Eine korrekte Dosierung ist entscheidend für <strong>Therapieerfolg und Patientensicherheit</strong>.</p>
+  <div style="display:flex;gap:8px;margin:8px 0">
+    <div style="flex:1;background:rgba(251,113,133,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#fb7185;font-size:.8rem">⬇️ Zu niedrig</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px">Unzureichende Wirkung</div></div>
+    <div style="flex:1;background:rgba(239,68,68,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#ef4444;font-size:.8rem">⬆️ Zu hoch</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px">Nebenwirkungen, Vergiftung</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die richtige Dosierung ist eine der wichtigsten Voraussetzungen für eine <strong>sichere Arzneimitteltherapie</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Einflussfaktoren auf die Dosierung</div></div>
+  <p class="lekt-prose">Die erforderliche Dosierung kann von Patient zu Patient unterschiedlich sein.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">👤 Alter</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">⚖️ Körpergewicht</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">📏 Körpergröße</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">⚧ Geschlecht</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">💧 Nierenfunktion</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🫀 Leberfunktion</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🤰 Schwangerschaft</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">💊 Wechselwirkungen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die gleiche Dosis kann bei verschiedenen Patienten <strong>unterschiedlich wirken</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Normdosis</div></div>
+  <p class="lekt-prose">Die <strong>Normdosis</strong> ist die durchschnittliche Dosis eines Arzneimittels für einen gesunden Erwachsenen. Sie dient als <strong>Orientierung</strong>.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Normdosis ist ein <strong>Richtwert</strong> und muss individuell angepasst werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Einzeldosis & Tagesdosis</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">💊 Einzeldosis</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Menge bei einer einzelnen Verabreichung. Beispiel: Paracetamol 500 mg einmalig</div></div>
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">📅 Tagesdosis</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Gesamtmenge in 24 h. Beispiel: 3 × 500 mg = <strong>1500 mg/Tag</strong></div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Tagesdosis ergibt sich aus der <strong>Summe aller Einzeldosen</strong> eines Tages.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Initialdosis</div></div>
+  <p class="lekt-prose">Die <strong>Initialdosis</strong> ist die erste verabreichte Dosis zu Beginn einer Therapie. Sie kann höher sein als die spätere Erhaltungsdosis, um rasch eine wirksame Konzentration zu erreichen.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Initialdosis dient dem <strong>schnellen Erreichen</strong> eines therapeutischen Wirkspiegels.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Sättigungsdosis (Loading Dose)</div></div>
+  <p class="lekt-prose">Die <strong>Sättigungsdosis</strong> ist eine erhöhte Anfangsdosis, um schnell einen wirksamen Arzneimittelspiegel zu erreichen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🎯 Anwendungsgebiete</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Herzmedikamente · bestimmte Antibiotika · Notfallmedikamente</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Sättigungsdosis ist meist <strong>höher</strong> als die spätere Erhaltungsdosis.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Erhaltungsdosis</div></div>
+  <p class="lekt-prose">Die <strong>Erhaltungsdosis</strong> dient dazu, den gewünschten Wirkstoffspiegel über einen längeren Zeitraum aufrechtzuerhalten. Sie folgt häufig auf eine Initial- oder Sättigungsdosis.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Erhaltungsdosis <strong>stabilisiert</strong> den therapeutischen Effekt.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Maximaldosis</div></div>
+  <p class="lekt-prose">Die <strong>Maximaldosis</strong> ist die höchste zulässige Dosis eines Arzneimittels innerhalb eines bestimmten Zeitraums. Eine Überschreitung kann zu <strong>schweren Nebenwirkungen</strong> führen.</p>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Die Maximaldosis darf <strong>niemals</strong> überschritten werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Toxische Dosis</div></div>
+  <p class="lekt-prose">Die <strong>toxische Dosis</strong> ist die Arzneimittelmenge, bei der Vergiftungserscheinungen auftreten können.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">⚠️ Mögliche Folgen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Übelkeit · Erbrechen · Bewusstseinsstörungen · Organschäden · Kreislaufstörungen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die toxische Dosis liegt <strong>oberhalb</strong> des therapeutischen Bereichs.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">10</div><div class="lekt-title">Letaldosis</div></div>
+  <p class="lekt-prose">Die <strong>Letaldosis</strong> bezeichnet die Arzneimittelmenge, die zum Tod führen kann.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">☠️ LD50</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">In der Pharmakologie wird häufig die <strong>LD50</strong> verwendet — die Dosis, bei der 50 % einer Versuchsgruppe sterben würden.</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Die Letaldosis ist <strong>lebensgefährlich</strong> und weit oberhalb der therapeutischen Dosis.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">11</div><div class="lekt-title">Kinderdosierung</div></div>
+  <p class="lekt-prose">Kinder erhalten <strong>keine Standarddosen</strong> für Erwachsene. Die Dosierung wird individuell berechnet. Kinder reagieren empfindlicher auf Dosierungsfehler.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">👶 Wichtige Kriterien</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Körpergewicht · Alter · Körperoberfläche · Entwicklungsstand</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e"><strong>Merke:</strong> Kinder sind <strong>keine kleinen Erwachsenen</strong> — ihre Dosierung muss individuell berechnet werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">12</div><div class="lekt-title">Pflegerische Verantwortung</div></div>
+  <p class="lekt-prose">Pflegefachpersonen tragen Verantwortung für die <strong>sichere Verabreichung</strong> von Medikamenten.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Wichtige Aufgaben</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Dosierung <strong>überprüfen</strong></li>
+      <li>Verordnung kontrollieren</li>
+      <li>Patient beobachten</li>
+      <li>Nebenwirkungen erkennen</li>
+      <li>Dokumentation durchführen</li>
+      <li>Unklarheiten <strong>sofort klären</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Jede Dosierung muss <strong>vor</strong> der Verabreichung sorgfältig überprüft werden.</div>
+</div>
+</div></div>`,
+
+    'Mengenberechnung': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">⚖️ Dosierung · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Mengenberechnung</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Einheiten, Umrechnungen & Dosierungsformeln</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Wichtigkeit der Mengenberechnung</div></div>
+  <p class="lekt-prose">Die Mengenberechnung gehört zu den <strong>wichtigsten Kompetenzen</strong> in der Pflege. Fehler können zu Überdosierungen, Unterdosierungen oder schwerwiegenden Komplikationen führen.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Bei jeder Medikamentengabe muss die berechnete Menge <strong>überprüft</strong> werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Maßeinheiten in der Pharmakologie</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)"><strong>g</strong> — Gramm</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)"><strong>mg</strong> — Milligramm</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)"><strong>µg</strong> — Mikrogramm</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)"><strong>l</strong> — Liter</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)"><strong>ml</strong> — Milliliter</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)"><strong>gtt</strong> — Tropfen</div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2);grid-column:span 2"><strong>IE</strong> — Internationale Einheiten</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> <strong>mg und µg</strong> dürfen niemals verwechselt werden!</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Gewichtseinheiten umrechnen</div></div>
+  <div style="background:rgba(129,140,248,.08);border:1px solid rgba(129,140,248,.3);border-radius:12px;padding:14px;margin-bottom:10px">
+    <div style="font-weight:700;color:#818cf8;font-size:.88rem;margin-bottom:6px">📏 Grundlagen</div>
+    <div style="font-size:.85rem;color:var(--ink2);line-height:1.8">
+      1 g = <strong>1000 mg</strong><br>
+      1 mg = <strong>1000 µg</strong><br>
+      1 g = <strong>1.000.000 µg</strong>
+    </div>
+  </div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">💡 Beispiele</div>
+    <div style="font-size:.82rem;color:var(--ink2);line-height:1.8;margin-top:6px">
+      2 g = <strong>2000 mg</strong><br>
+      500 mg = <strong>0,5 g</strong><br>
+      2500 µg = <strong>2,5 mg</strong>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Beim Umrechnen <strong>nach unten</strong> wird multipliziert, <strong>nach oben</strong> dividiert.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Volumeneinheiten umrechnen</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">💧 Umrechnungen</div>
+    <div style="font-size:.85rem;color:var(--ink2);line-height:1.8;margin-top:6px">
+      1 l = <strong>1000 ml</strong><br>
+      0,5 l = <strong>500 ml</strong><br>
+      250 ml = <strong>0,25 l</strong>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>1000 ml</strong> entsprechen immer 1 Liter.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Tropfenberechnung</div></div>
+  <p class="lekt-prose">Bei Tropfenlösungen erfolgt die Dosierung über die Anzahl der Tropfen.</p>
+  <div style="background:rgba(129,140,248,.08);border:1px solid rgba(129,140,248,.3);border-radius:12px;padding:14px">
+    <div style="font-weight:700;color:#818cf8;font-size:.88rem">📐 Faustregel</div>
+    <div style="font-size:1rem;color:var(--ink);font-weight:600;margin-top:6px"><strong>20 Tropfen ≈ 1 ml</strong></div>
+    <div style="font-size:.78rem;color:var(--ink3);margin-top:4px">Beispiel: 10 ml ≈ 200 Tropfen</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(245,158,11,.08);border-left:3px solid #f59e0b"><strong>Merke:</strong> Die <strong>Herstellerangaben</strong> haben immer Vorrang vor allgemeinen Faustregeln.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Internationale Einheiten (IE)</div></div>
+  <p class="lekt-prose">Einige Arzneimittel werden in <strong>Internationalen Einheiten (IE)</strong> angegeben — sie beschreiben die <strong>biologische Wirkung</strong> eines Wirkstoffs.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">💉 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Insulin · Heparin · Vitamin D</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> IE können <strong>nicht einfach</strong> in Gramm oder Milligramm umgerechnet werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Grundformel der Dosierung</div></div>
+  <div style="background:linear-gradient(135deg,rgba(129,140,248,.15),rgba(79,70,229,.1));border:2px solid rgba(129,140,248,.4);border-radius:12px;padding:16px;text-align:center;margin-bottom:12px">
+    <div style="font-size:.75rem;color:var(--ink3);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">🔑 Wichtigste Formel</div>
+    <div style="font-family:'Fraunces',serif;font-size:1rem;color:var(--ink);font-weight:600;line-height:1.5">Verordnete Dosis<br>÷ vorhandene Dosis<br>× vorhandenes Volumen</div>
+  </div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">💡 Beispiel</div>
+    <div style="font-size:.82rem;color:var(--ink2);line-height:1.7;margin-top:6px">
+      Verordnet: <strong>250 mg</strong><br>
+      Vorhanden: 500 mg in 1 Tablette<br><br>
+      <strong>250 ÷ 500 × 1 = 0,5 Tabletten</strong>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Immer zuerst prüfen, welche <strong>Wirkstoffmenge</strong> tatsächlich vorhanden ist.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Berechnung von Flüssigkeiten</div></div>
+  <p class="lekt-prose">Auch bei Lösungen wird dieselbe Grundformel verwendet.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">💡 Beispiel</div>
+    <div style="font-size:.82rem;color:var(--ink2);line-height:1.7;margin-top:6px">
+      Verordnet: <strong>250 mg</strong><br>
+      Vorhanden: 500 mg in 10 ml<br><br>
+      <strong>250 ÷ 500 × 10 = 5 ml</strong>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Einheit des Endergebnisses entspricht dem <strong>vorhandenen Volumen</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Insulinberechnung</div></div>
+  <p class="lekt-prose">Insulin wird in <strong>IE</strong> angegeben. Die Dosierung erfolgt mit speziellen Insulinspritzen oder Insulinpens.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">💉 Beispiel</div>
+    <div style="font-size:.82rem;color:var(--ink2);line-height:1.7;margin-top:6px">Verordnet: <strong>8 IE Insulin</strong><br>→ Der Patient erhält exakt 8 IE gemäß Skala des Pens oder der Spritze.</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Insulin gehört zu den <strong>Hochrisiko-Arzneimitteln</strong> und muss besonders sorgfältig kontrolliert werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">10</div><div class="lekt-title">Häufige Berechnungsfehler</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">⚠️ Vorsicht!</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Verwechslung von <strong>mg und µg</strong></li>
+      <li>Falsche Dezimalstellen</li>
+      <li>Fehlerhafte Umrechnungen</li>
+      <li>Verwechslung von <strong>IE und mg</strong></li>
+      <li>Nichtbeachtung der Konzentration</li>
+      <li>Rechenfehler unter Zeitdruck</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e"><strong>Merke:</strong> Berechnungen sollten möglichst durch eine <strong>zweite Person</strong> kontrolliert werden (Vier-Augen-Prinzip).</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">11</div><div class="lekt-title">Pflegerische Verantwortung</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Wichtige Maßnahmen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Berechnung überprüfen · Verordnung kontrollieren · Einheiten beachten · Vier-Augen-Prinzip · Patient beobachten · dokumentieren</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Jede fehlerhafte Berechnung kann die <strong>Patientensicherheit</strong> gefährden.</div>
+</div>
+</div></div>`,
+
+    'Applikationsarten & Applikationswege': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">⚖️ Dosierung · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Applikationsarten & Applikationswege</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wie kommt das Arzneimittel in den Körper?</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist Applikation?</div></div>
+  <p class="lekt-prose">Unter <strong>Applikation</strong> versteht man die Verabreichung eines Arzneimittels. Der Applikationsweg beeinflusst <strong>Wirkungseintritt, Wirkungsdauer, Resorption</strong> und Nebenwirkungen.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Der Applikationsweg beeinflusst <strong>Geschwindigkeit und Stärke</strong> der Arzneimittelwirkung.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Einteilung der Applikationswege</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+    <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.3);border-radius:10px;padding:10px"><div style="font-weight:700;color:#22c55e;font-size:.82rem">🍽️ Enteral</div><div style="font-size:.72rem;color:var(--ink2);margin-top:4px">Über Magen-Darm-Trakt</div></div>
+    <div style="background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.3);border-radius:10px;padding:10px"><div style="font-weight:700;color:#fb7185;font-size:.82rem">💉 Parenteral</div><div style="font-size:.72rem;color:var(--ink2);margin-top:4px">Umgehung Verdauung</div></div>
+    <div style="background:rgba(129,140,248,.08);border:1px solid rgba(129,140,248,.3);border-radius:10px;padding:10px"><div style="font-weight:700;color:#818cf8;font-size:.82rem">📍 Lokal</div><div style="font-size:.72rem;color:var(--ink2);margin-top:4px">Am Ort der Anwendung</div></div>
+    <div style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.3);border-radius:10px;padding:10px"><div style="font-weight:700;color:#a78bfa;font-size:.82rem">🌐 Systemisch</div><div style="font-size:.72rem;color:var(--ink2);margin-top:4px">Im ganzen Körper</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Enteral</strong> = über den Verdauungstrakt · <strong>parenteral</strong> = unter Umgehung des Verdauungstrakts.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Enterale Applikation</div></div>
+  <p class="lekt-prose">Das Arzneimittel gelangt über den <strong>Magen-Darm-Trakt</strong> in den Körper: Oral · Sublingual · Bukkal · Rektal.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Vorteile</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Einfache Anwendung · nicht invasiv · hohe Patientenakzeptanz</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die <strong>orale Gabe</strong> ist weltweit die häufigste Applikationsform.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Parenterale Applikation</div></div>
+  <p class="lekt-prose"><strong>Parenterale</strong> Arzneimittel werden unter Umgehung des Verdauungstrakts verabreicht: Intrakutan · Subkutan · Intramuskulär · Intravenös.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Vorteile</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Schneller Wirkungseintritt · exakte Dosierung · auch bei Bewusstlosigkeit möglich</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Intravenöse</strong> Arzneimittel wirken meist am schnellsten.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Orale Applikation</div></div>
+  <p class="lekt-prose">Bei der <strong>oralen</strong> Anwendung wird das Arzneimittel geschluckt: Tabletten · Kapseln · Tropfen · Säfte.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">⚠️ Nachteile</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Langsamer Wirkungseintritt · <strong>First-Pass-Effekt</strong> der Leber · nicht geeignet bei Erbrechen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Viele oral verabreichte Arzneimittel passieren zunächst die <strong>Leber</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Sublinguale & bukkale Applikation</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">👅 Sublingual</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Unter die Zunge, Aufnahme über Mundschleimhaut. Umgeht First-Pass-Effekt. Beispiel: <strong>Nitroglycerin</strong> bei Angina pectoris</div></div>
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">😊 Bukkal</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Zwischen Zahnfleisch und Wangenschleimhaut</div></div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(245,158,11,.08);border-left:3px solid #f59e0b"><strong>Merke:</strong> Sublinguale Arzneimittel dürfen <strong>nicht geschluckt</strong> werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Rektale & vaginale Applikation</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">🍑 Rektal</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Über den Enddarm: Suppositorien · Klistiere · Rektallösungen. Geeignet bei Übelkeit/Erbrechen, besonders bei Kindern.</div></div>
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">🌸 Vaginal</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Vaginaltabletten · Zäpfchen · Cremes. Häufig zur lokalen Infektionsbehandlung.</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die rektale Anwendung umgeht teilweise den First-Pass-Effekt.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Kutan & transdermal</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:12px"><div style="font-weight:700;color:#22c55e;font-size:.88rem">🖐️ Kutan</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Auf der Haut mit <strong>lokaler</strong> Wirkung: Salben · Cremes · Gele</div></div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:12px"><div style="font-weight:700;color:#a78bfa;font-size:.88rem">🩹 Transdermal</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Wirkstoff <strong>durch die Haut</strong> in den Blutkreislauf: Schmerz-, Nikotin-, Hormonpflaster</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Transdermale Systeme wirken <strong>systemisch</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Intrakutane Injektion (i.c.)</div></div>
+  <p class="lekt-prose">Die Injektion erfolgt in die <strong>Haut (Dermis)</strong> — sehr oberflächlich.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🎯 Anwendung & Menge</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Allergietests · Tuberkulintest<br>Meist <strong>0,1 ml</strong></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Intrakutane Injektionen werden sehr <strong>oberflächlich</strong> verabreicht.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">10</div><div class="lekt-title">Subkutane Injektion (s.c.)</div></div>
+  <p class="lekt-prose">Injektion in das <strong>Unterhautfettgewebe</strong>. Eine der häufigsten Injektionen in der Pflege.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">💉 Beispiele & Orte</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px"><strong>Medikamente:</strong> Insulin · Heparin<br><strong>Orte:</strong> Bauch · Oberschenkel · Oberarm</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die subkutane Injektion gehört zu den <strong>häufigsten</strong> Injektionen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">11</div><div class="lekt-title">Intramuskuläre Injektion (i.m.)</div></div>
+  <p class="lekt-prose">Injektion direkt in die <strong>Muskulatur</strong>. Schnellere Resorption als s.c., größere Volumina möglich.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">💪 Typische Orte</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">M. deltoideus · M. vastus lateralis · ventrogluteale Region</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Intramuskuläre Injektionen wirken <strong>schneller</strong> als subkutane.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">12</div><div class="lekt-title">Intravenöse Applikation (i.v.)</div></div>
+  <p class="lekt-prose">Der Arzneistoff wird <strong>direkt in eine Vene</strong> verabreicht.</p>
+  <div style="display:flex;gap:8px;margin:8px 0">
+    <div style="flex:1;background:rgba(34,197,94,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#22c55e;font-size:.8rem">✅ Vorteile</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Sofortige Wirkung · 100% Bioverfügbarkeit · exakte Dosierung</div></div>
+    <div style="flex:1;background:rgba(239,68,68,.08);border-radius:10px;padding:10px"><div style="font-weight:700;color:#ef4444;font-size:.8rem">⚠️ Risiken</div><div style="font-size:.74rem;color:var(--ink2);margin-top:4px;line-height:1.5">Infektionen · Paravasate · Embolien</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Intravenös verabreichte Arzneimittel gelangen <strong>unmittelbar</strong> in den Blutkreislauf.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">13</div><div class="lekt-title">Inhalative Applikation</div></div>
+  <p class="lekt-prose">Arzneimittel werden über die <strong>Atemwege</strong> aufgenommen: Dosieraerosole · Vernebler · Sauerstoff.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Vorteile</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Schneller Wirkungseintritt · gezielte Wirkung in den Atemwegen · geringere systemische Belastung</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die richtige <strong>Inhalationstechnik</strong> ist entscheidend für den Therapieerfolg.</div>
+</div>
+</div></div>`,
+
+    'Sichere Arzneimittelgabe (6-R & 10-R)': () => `
+<div class="lekt-layout"><div>
+<div style="background:linear-gradient(135deg,#312e81,#4338ca,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.2);border:1px solid rgba(129,140,248,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(199,210,254,.95)">⚖️ Dosierung · Lektion 4</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Sichere Arzneimittelgabe</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">6-R · 10-R · Hochrisiko-Medikamente</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Regeln der sicheren Arzneimittelgabe</div></div>
+  <p class="lekt-prose">Die sichere Verabreichung von Arzneimitteln gehört zu den wichtigsten Aufgaben von Pflegefachpersonen. Fehler können <strong>schwerwiegende Folgen</strong> für Patienten haben.</p>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> <strong>Patientensicherheit</strong> hat bei jeder Arzneimittelgabe höchste Priorität.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Die 6-R-Regel</div></div>
+  <p class="lekt-prose">Die <strong>6-R-Regel</strong> bildet die Grundlage einer sicheren Medikamentengabe.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">1️⃣ Richtiger <strong>Patient</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">2️⃣ Richtiges <strong>Arzneimittel</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">3️⃣ Richtige <strong>Dosierung</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">4️⃣ Richtiger <strong>Zeitpunkt</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">5️⃣ Richtiger <strong>Applikationsweg</strong></div>
+    <div style="background:rgba(129,140,248,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">6️⃣ Richtige <strong>Dokumentation</strong></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Vor jeder Arzneimittelgabe müssen <strong>alle sechs</strong> Punkte überprüft werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Die 10-R-Regel</div></div>
+  <p class="lekt-prose">Die moderne Pflege erweitert die 6-R-Regel zur <strong>10-R-Regel</strong>. Zusätzlich:</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px">
+    <div style="background:rgba(167,139,250,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">7️⃣ Richtige <strong>Anwendungsdauer</strong></div>
+    <div style="background:rgba(167,139,250,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">8️⃣ Richtige <strong>Aufbewahrung</strong></div>
+    <div style="background:rgba(167,139,250,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">9️⃣ Richtiges <strong>Risikomanagement</strong></div>
+    <div style="background:rgba(167,139,250,.08);border-radius:8px;padding:8px 10px;font-size:.78rem;color:var(--ink2)">🔟 Richtige <strong>Entsorgung</strong></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die 10-R-Regel umfasst den gesamten Lebenszyklus des Arzneimittels — von der Anwendung bis zur Entsorgung.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Patientenidentifikation</div></div>
+  <p class="lekt-prose">Vor jeder Medikamentengabe muss die Identität des Patienten <strong>eindeutig</strong> überprüft werden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Möglichkeiten</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Name erfragen · Geburtsdatum kontrollieren · Patientenarmband prüfen · Pflegedokumentation vergleichen</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Niemals Medikamente verabreichen, wenn <strong>Zweifel</strong> an der Patientenidentität bestehen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Medikamentenfehler</div></div>
+  <p class="lekt-prose">Medikamentenfehler gehören zu den häufigsten <strong>vermeidbaren Risiken</strong> im Gesundheitswesen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">⚠️ Häufige Fehlerquellen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Falscher Patient · falsches Medikament · falsche Dosierung · falscher Applikationsweg · falscher Zeitpunkt · Berechnungsfehler · Verwechslungen</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die meisten Fehler entstehen durch mangelnde Kontrolle und <strong>Zeitdruck</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Dokumentation</div></div>
+  <p class="lekt-prose">Jede Arzneimittelgabe muss <strong>nachvollziehbar</strong> dokumentiert werden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">📋 Inhalte</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Name des Arzneimittels · Dosierung · Uhrzeit · Applikationsweg · Besonderheiten · Beobachtungen</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> <strong>Nicht dokumentiert = nicht durchgeführt</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Delegation & Verantwortung</div></div>
+  <p class="lekt-prose">Bestimmte Tätigkeiten können vom Arzt an Pflegefachpersonen delegiert werden.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(129,140,248,.08);border-left:3px solid #818cf8;border-radius:8px;padding:12px"><div style="font-weight:700;color:#818cf8;font-size:.88rem">👨‍⚕️ Arzt</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Indikation · Verordnung · Therapieentscheidung</div></div>
+    <div style="background:rgba(34,197,94,.08);border-left:3px solid #22c55e;border-radius:8px;padding:12px"><div style="font-weight:700;color:#22c55e;font-size:.88rem">👩‍⚕️ Pflegefachperson</div><div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Kontrolle · Vorbereitung · Verabreichung · Beobachtung · Dokumentation</div></div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Delegation bedeutet <strong>nicht Übertragung</strong> der Verantwortung für die Durchführung.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Hochrisiko-Medikamente</div></div>
+  <p class="lekt-prose"><strong>Hochrisiko-Medikamente</strong> können bereits bei kleinen Fehlern schwere Schäden verursachen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Besondere Vorsicht bei</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Insulin · Heparin · Opioide · Kaliumkonzentrate · Zytostatika</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Hochrisiko-Medikamente müssen <strong>besonders sorgfältig</strong> kontrolliert werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Insulin</div></div>
+  <p class="lekt-prose"><strong>Insulin</strong> zählt zu den wichtigsten Hochrisiko-Medikamenten in der Pflege.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">✓ Kontrollpunkte</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Blutzuckerwert prüfen</li>
+      <li>Insulinart kontrollieren</li>
+      <li>Dosierung überprüfen</li>
+      <li>Verfallsdatum beachten</li>
+      <li><strong>Vier-Augen-Prinzip</strong> anwenden</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Fehler bei Insulin können zu <strong>Hypoglykämien oder Hyperglykämien</strong> führen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">10</div><div class="lekt-title">Heparin</div></div>
+  <p class="lekt-prose"><strong>Heparin</strong> wird zur Hemmung der Blutgerinnung eingesetzt.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">⚠️ Risiken</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Blutungen · Hämatome · Dosierungsfehler</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Bei Heparin muss besonders auf <strong>Blutungszeichen</strong> geachtet werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">11</div><div class="lekt-title">Betäubungsmittel (BtM)</div></div>
+  <p class="lekt-prose"><strong>Betäubungsmittel</strong> unterliegen besonderen gesetzlichen Vorschriften. Beispiele: Morphin · Fentanyl · Oxycodon.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">📋 Besonderheiten</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Gesonderte Dokumentation · Bestandskontrolle · sichere Aufbewahrung · nachvollziehbare Entnahme</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Für BtM gelten <strong>strengere</strong> Dokumentationspflichten als für normale Arzneimittel.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">12</div><div class="lekt-title">Lagerung & Verfallsdatum</div></div>
+  <p class="lekt-prose">Die richtige <strong>Lagerung</strong> beeinflusst Wirksamkeit und Sicherheit von Arzneimitteln.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Wichtige Regeln</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Vor Licht schützen · Temperatur beachten · trocken lagern · Zugriff sichern · Originalverpackung</div>
+  </div>
+  <p class="lekt-prose" style="margin-top:10px">Das <strong>Verfallsdatum</strong> gibt an, bis wann ein Arzneimittel verwendet werden darf. Besonders zu beachten nach Anbruch: Augentropfen, Insulin, Infusionslösungen, Antibiotikasäfte.</p>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Abgelaufene Arzneimittel dürfen <strong>grundsätzlich nicht mehr</strong> angewendet werden.</div>
+</div>
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT

@@ -287,4 +287,18 @@ export const THEMES = [
       'Halbfeste & gasförmige Arzneiformen',
     ],
   },
+  {
+    id: 'pharma_dosierung',
+    name: 'Pharmakologie — Dosierung & Applikation',
+    icon: '⚖️',
+    col: 'indigo',
+    module: 'pharmakologie',
+    related: ['pharma_grundlagen', 'pharma_arzneiformen'],
+    lessons: [
+      'Dosierungslehre',
+      'Mengenberechnung',
+      'Applikationsarten & Applikationswege',
+      'Sichere Arzneimittelgabe (6-R & 10-R)',
+    ],
+  },
 ]
