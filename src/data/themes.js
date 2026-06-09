@@ -332,7 +332,7 @@ export const THEMES = [
       'Risikofaktoren der Thrombose',
       'Symptome einer Thrombose',
       'Maßnahmen der Thromboseprophylaxe',
-      'Lerneinheit 9',
+      'Heparin und Antikoagulation',
     ],
   },
 ]

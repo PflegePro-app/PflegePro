@@ -9759,6 +9759,89 @@ export const LESSON_CONTENT = {
 
 </div></div>`,
 
+    'Heparin und Antikoagulation': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#7f1d1d,#dc2626,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(239,68,68,.2);border:1px solid rgba(239,68,68,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Thrombose · Lektion 9</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Heparin und Antikoagulation</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Medikamentöse Maßnahmen zur Thromboseprophylaxe</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Medikamentöse Prophylaxe</div></div>
+  <p class="lekt-prose">Neben Bewegungsübungen und Kompression gibt es die <strong>medikamentöse Thromboseprophylaxe</strong>. Medikamente beeinflussen die Blutgerinnung.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">💊 Ziel</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Die Bildung von <strong>Blutgerinnseln verhindern</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Antikoagulanzien</strong> senken das Risiko einer Thrombose.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Heparin</div></div>
+  <p class="lekt-prose"><strong>Heparin</strong> gehört zu den wichtigsten Medikamenten der Thromboseprophylaxe.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🩸 Antikoagulation</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Heparin wirkt <strong>gerinnungshemmend</strong> und wird häufig <strong>prophylaktisch</strong> eingesetzt.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Heparin gehört zu den <strong>Antikoagulanzien</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Die zwei Heparinformen</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.88rem">NMH — Niedermolekulares Heparin</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Häufig verwendete Form der Heparintherapie</div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.88rem">UFH — Unfraktioniertes Heparin</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Klassische Form des Heparins</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>NMH und UFH</strong> gehören beide zur Gruppe der Heparine.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">PTT — Partielle Thromboplastinzeit</div></div>
+  <p class="lekt-prose">Im Zusammenhang mit der Heparintherapie wird die <strong>PTT (partielle Thromboplastinzeit)</strong> kontrolliert.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">🧪 Laborwert</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Die PTT gehört zu den wichtigen <strong>Gerinnungswerten</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die <strong>PTT</strong> ist ein Gerinnungsparameter.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Cumarine / Marcumar®</div></div>
+  <p class="lekt-prose">Neben Heparin werden <strong>Cumarine</strong> bzw. <strong>Marcumar®</strong> als weitere gerinnungshemmende Medikamente eingesetzt.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">💊 Weitere Antikoagulanzien</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Neben Heparin können auch andere <strong>gerinnungshemmende Medikamente</strong> eingesetzt werden.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Marcumar®</strong> gehört zur Gruppe der Cumarine.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Zusammenfassung</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">📋 Medikamentöse Prophylaxe</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Heparin</strong></li>
+      <li><strong>Niedermolekulares Heparin (NMH)</strong></li>
+      <li><strong>Unfraktioniertes Heparin (UFH)</strong></li>
+      <li><strong>PTT-Kontrolle</strong></li>
+      <li><strong>Cumarine / Marcumar®</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Antikoagulanzien <strong>ergänzen</strong> die nicht-medikamentösen Maßnahmen der Thromboseprophylaxe.</div>
+</div>
+
+</div></div>`,
+
   },
 
 }; // end LESSON_CONTENT

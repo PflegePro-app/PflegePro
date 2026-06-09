@@ -16,6 +16,7 @@ const CAT_STYLES = {
   'Hygiene':    { bg: 'var(--green-dim)',  color: 'var(--green)',  back: '#0d2e1a' },
   'Körperpflege': { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a4a' },
   'Pharmakologie': { bg: 'var(--indigo-dim)', color: 'var(--indigo)', back: '#1e1b4b' },
+  'Thrombose':  { bg: 'var(--red-bg)',     color: 'var(--red)',    back: '#3a1010' },
   'Pflege':     { bg: 'var(--purple-dim)', color: 'var(--purple)', back: '#2a1a3f' },
 }
 
@@ -31,6 +32,7 @@ const CAT_ICONS = {
   'Hygiene':    '🧼',
   'Körperpflege': '🛁',
   'Pharmakologie': '💊',
+  'Thrombose':  '🩸',
   'Pflege':     '💙',
 }
 

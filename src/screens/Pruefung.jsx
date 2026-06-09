@@ -11,7 +11,7 @@ export default function Pruefung() {
   } = useContext(AppContext)
 
   const levels = progress.levels || {}
-  const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte', 'Niveau 4 – Meister', 'Niveau 5 – Champion', 'Niveau 6 – Legende']
+  const levelNames = ['Niveau 1 – Basis', 'Niveau 2 – Fortgeschritten', 'Niveau 3 – Experte', 'Niveau 4 – Meister', 'Niveau 5 – Champion', 'Niveau 6 – Legende', 'Niveau 7 – Mythos', 'Niveau 8 – Titan', 'Niveau 9 – Phönix', 'Niveau 10 – Olymp']
   const levelIcons = ['🟢', '🟡', '🟠', '🔴', '💎', '🏅']
 
   // Modules pliables persistants
@@ -254,7 +254,7 @@ export default function Pruefung() {
                                 fontFamily: 'DM Sans, sans-serif',
                                 lineHeight: 1.15,
                               }}>
-                                {score !== null ? `${score}%` : ['Basis', 'Fortg.', 'Experte', 'Meister', 'Champ.', 'Legende'][lvl]}
+                                {score !== null ? `${score}%` : ['Basis', 'Fortg.', 'Experte', 'Meister', 'Champ.', 'Legende', 'Mythos', 'Titan', 'Phönix', 'Olymp'][lvl]}
                               </div>
                             </div>
                           )
