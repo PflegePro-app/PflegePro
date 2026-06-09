@@ -316,4 +316,23 @@ export const THEMES = [
       'Betäubungsmittel & Bedarfsmedikation',
     ],
   },
+  {
+    id: 'thrombose',
+    name: 'Thrombose',
+    icon: '🩸',
+    col: 'red',
+    module: 'kreislauf',
+    related: ['blutkreislauf', 'gefaesse'],
+    lessons: [
+      'Grundlagen der Thrombose',
+      'Folgen und Häufigkeit der Thrombose',
+      'Blutgefäße und Gefäßwand',
+      'Blutgerinnung und Hämostase',
+      'Virchow-Trias',
+      'Risikofaktoren der Thrombose',
+      'Symptome einer Thrombose',
+      'Maßnahmen der Thromboseprophylaxe',
+      'Lerneinheit 9',
+    ],
+  },
 ]

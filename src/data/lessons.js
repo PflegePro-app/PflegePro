@@ -9049,4 +9049,716 @@ export const LESSON_CONTENT = {
 
   },
 
+  thrombose: {
+
+    'Grundlagen der Thrombose': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#7f1d1d,#dc2626,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(239,68,68,.2);border:1px solid rgba(239,68,68,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Thrombose · Lektion 1</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Grundlagen der Thrombose</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Definition, Entstehung, Symptome & Grundlagen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was ist eine Thrombose?</div></div>
+  <p class="lekt-prose">Der Begriff <strong>Thrombose</strong> stammt vom griechischen <strong>„thrombosis"</strong> = „Gerinnen". Eine Thrombose ist die <strong>Bildung eines Blutgerinnsels innerhalb eines Blutgefäßes</strong>. Dieses kann das Gefäß teilweise oder vollständig verschließen — betroffen sein können <strong>Venen und Arterien</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">💡 Thrombus</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Das Blutgerinnsel selbst wird <strong>Thrombus</strong> genannt.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Eine Thrombose entsteht durch ein Blutgerinnsel, das ein Blutgefäß <strong>verengt oder verschließt</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Thrombus vs. Embolus</div></div>
+  <p class="lekt-prose">Ein <strong>Thrombus</strong> bleibt am Ort seiner Entstehung. Ein <strong>Embolus</strong> wird dagegen mit dem Blutstrom <strong>weitertransportiert</strong> und kann an anderer Stelle ein Gefäß verschließen.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.88rem">🔴 Thrombus</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5"><strong>Fest sitzendes</strong> Blutgerinnsel am Entstehungsort</div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.88rem">🩸 Embolus</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5"><strong>Verschlepptes</strong> Gerinnsel im Blutstrom</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Nicht jedes Gerinnsel bleibt an seinem Entstehungsort.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Wo entstehen Thrombosen?</div></div>
+  <p class="lekt-prose">Etwa <strong>80–90 % aller Thrombosen</strong> entstehen in den Venen der <strong>unteren Körperhälfte</strong> — vor allem in <strong>Beinen und Becken</strong>. Diese Form heißt <strong>tiefe Beinvenenthrombose (TVT)</strong> oder <strong>Phlebothrombose</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#f59e0b">⚠️ Hochrisikogruppen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Besonders gefährdet: Patienten nach <strong>Hüft- oder Knieoperationen</strong>, längerer Immobilisation, schweren Erkrankungen.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die meisten Thrombosen entstehen in den <strong>tiefen Bein- und Beckenvenen</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Die Muskel-Venen-Pumpe</div></div>
+  <p class="lekt-prose">Die Beinmuskulatur unterstützt den <strong>Rücktransport des venösen Blutes zum Herzen</strong>. Bei jeder Muskelbewegung werden die Venen zusammengedrückt — die <strong>Venenklappen</strong> verhindern den Rückfluss.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">💪 Bedeutung für die Pflege</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px"><strong>Bewegung</strong> aktiviert die Muskel-Venen-Pumpe und schützt vor Blutstau — Kernprinzip der Thromboseprophylaxe!</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Bewegung schützt</strong> vor venösem Blutstau.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Symptome einer Thrombose</div></div>
+  <p class="lekt-prose">Mögliche Anzeichen einer TVT:</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🚨 Symptome</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Ziehende Wadenschmerzen</strong></li>
+      <li><strong>Spannungs- und Schweregefühl</strong></li>
+      <li><strong>Schwellungen</strong> (einseitig!)</li>
+      <li><strong>Überwärmung</strong></li>
+      <li><strong>Glattglänzende</strong> oder <strong>bläulich verfärbte Haut</strong></li>
+      <li>Kribbeln oder Brennen</li>
+    </ul>
+  </div>
+  <div class="lekt-card" style="margin-top:10px;background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3)">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ „Lautlose Gefahr"</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Eine Thrombose kann auch <strong>symptomlos</strong> verlaufen — deshalb die Bezeichnung „lautlose Gefahr".</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> <strong>Fehlende Symptome schließen eine Thrombose nicht aus</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Blutgerinnung & Hämostase</div></div>
+  <p class="lekt-prose">Das <strong>Blutgerinnungssystem</strong> dichtet Gefäßschäden ab, stoppt Blutungen und leitet die Wundheilung ein. Es arbeitet in <strong>zwei Schritten</strong>:</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem">1️⃣ Primäre Hämostase (Blutstillung)</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Vasokonstriktion · Thrombozytenadhäsion · Thrombozytenaggregation → Bildung des <strong>weißen Thrombus</strong></div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">2️⃣ Sekundäre Hämostase (Blutgerinnung)</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5"><strong>Stabilisierung</strong> des Thrombus durch Fibrin-Bildung</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Blutstillung und Blutgerinnung arbeiten <strong>zusammen</strong>, um Gefäßschäden zu verschließen.</div>
+</div>
+
+</div></div>`,
+
+    'Folgen und Häufigkeit der Thrombose': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#7f1d1d,#dc2626,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(239,68,68,.2);border:1px solid rgba(239,68,68,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Thrombose · Lektion 2</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Folgen und Häufigkeit der Thrombose</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Risikogruppen und mögliche Langzeitfolgen einer TVT</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Häufigkeit von Thrombosen</div></div>
+  <p class="lekt-prose">Eine <strong>TVT</strong> tritt besonders häufig bei bestimmten Risikogruppen auf. <strong>40–60 %</strong> der Pflegeempfänger mit frischen <strong>Knie- oder Hüftendoprothesen</strong> sowie hüftgelenksnahen Frakturen entwickeln eine TVT.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">📊 Risikogruppe</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Besonders gefährdet: Menschen nach <strong>größeren orthopädischen Eingriffen</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Operationen und Frakturen im <strong>Hüft- und Kniebereich</strong> erhöhen das Thromboserisiko deutlich.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Rückenmarksverletzungen</div></div>
+  <p class="lekt-prose">Pflegeempfänger mit einer <strong>Rückenmarksverletzung</strong> haben ein besonders hohes Risiko: TVT-Anteil von <strong>60–80 %</strong>.</p>
+  <div class="lekt-card" style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3)">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Sehr hohes Risiko</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Eine <strong>eingeschränkte Mobilität</strong> begünstigt die Entstehung von Thrombosen massiv.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Je weniger Bewegung möglich ist, desto <strong>größer das Thromboserisiko</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Schwangerschaft & Thromboserisiko</div></div>
+  <p class="lekt-prose">Etwa <strong>zwei Drittel aller Schwangeren</strong> weisen Thromboserisikofaktoren auf.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🤰 Veränderungen in der Schwangerschaft</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Veränderungen des <strong>Hormonhaushalts</strong></li>
+      <li>Nachlassende <strong>Elastizität der Venenwände</strong></li>
+      <li><strong>Erweiterte Blutgefäße</strong></li>
+      <li><strong>Erhöhter Druck</strong> auf die Venen im Bauchraum</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Schwangerschaft bedeutet nicht automatisch Thrombose, <strong>erhöht aber das Risiko</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Postthrombotisches Syndrom (PTS)</div></div>
+  <p class="lekt-prose">Selbst nach Behandlung entwickeln <strong>20–50 %</strong> der TVT-Patienten ein <strong>postthrombotisches Syndrom (PTS)</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🩺 Typische Beschwerden</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Beinschwere</strong></li>
+      <li><strong>Beinschwellung</strong></li>
+      <li><strong>Schmerzen</strong></li>
+      <li><strong>Hautulzerationen</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Ein PTS kann <strong>chronisch</strong> verlaufen und die Lebensqualität stark beeinträchtigen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Ulcus cruris venosum</div></div>
+  <p class="lekt-prose">Als mögliche Folge einer <strong>chronisch venösen Insuffizienz</strong> kann ein <strong>Ulcus cruris venosum</strong> entstehen — eine schwer heilende Unterschenkelwunde durch <strong>Rückflussstörung</strong> des venösen Blutes.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">📌 Langzeitfolge</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Das Ulcus cruris venosum gehört zu den möglichen <strong>Langzeitfolgen</strong> venöser Erkrankungen.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Chronische venöse Störungen können zu <strong>schwer heilenden Hautschäden</strong> führen.</div>
+</div>
+
+</div></div>`,
+
+    'Blutgefäße und Gefäßwand': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#7f1d1d,#dc2626,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(239,68,68,.2);border:1px solid rgba(239,68,68,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Thrombose · Lektion 3</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Blutgefäße und Gefäßwand</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Anatomische Grundlagen für das Verständnis der Thromboseentstehung</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Warum sind Blutgefäße wichtig?</div></div>
+  <p class="lekt-prose">Blutgefäße bilden das <strong>Transportsystem des Körpers</strong>. Für das Verständnis von Thrombosen ist wichtig: <strong>Schädigungen der Gefäßwand</strong> begünstigen die Entstehung von Blutgerinnseln.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">💡 Zusammenhang mit Thrombosen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Die Gefäßwand spielt eine zentrale Rolle bei der <strong>Blutstillung und Blutgerinnung</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Ohne intakte Gefäßwände kann das Blutgerinnungssystem aktiviert werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Aufbau eines Blutgefäßes</div></div>
+  <p class="lekt-prose">Die Wand eines Blutgefäßes besteht aus <strong>drei Schichten</strong> — jede mit eigener Aufgabe.</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.88rem">1️⃣ Tunica intima</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Innerste Schicht — Endothel + Basalmembran</div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.88rem">2️⃣ Tunica media</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Mittlere Schicht — glatte Muskelzellen + elastische Fasern</div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">3️⃣ Tunica externa</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Äußere Schicht — Bindegewebe</div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Blutgefäße bestehen aus <strong>drei übereinanderliegenden Wandschichten</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Tunica intima</div></div>
+  <p class="lekt-prose">Die <strong>Tunica intima</strong> ist die <strong>innerste Schicht</strong>. Sie besteht aus dünnen, flachen Zellen — dem <strong>Endothel</strong> — die auf einer feinen Bindegewebsmembran, der <strong>Basalmembran</strong>, liegen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🔬 Endothel</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Das Endothel bildet die <strong>direkte Innenauskleidung</strong> des Blutgefäßes.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Tunica intima steht <strong>direkt mit dem Blut</strong> in Kontakt.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Tunica media</div></div>
+  <p class="lekt-prose">Die <strong>Tunica media</strong> besteht aus <strong>glatten Muskelzellen</strong> und <strong>elastischen Fasern</strong>. Bei <strong>Arterien</strong> besonders stark ausgeprägt.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">💪 Funktion</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Die Tunica media verleiht dem Gefäß <strong>Stabilität und Elastizität</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Tunica media enthält <strong>Muskelzellen und elastische Fasern</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Tunica externa</div></div>
+  <p class="lekt-prose">Die <strong>Tunica externa</strong> ist die <strong>äußere Schicht</strong> aus Bindegewebe mit elastischen Fasern.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🧩 Aufgabe</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Die Tunica externa bildet die <strong>äußere Stabilisierung</strong> des Gefäßes.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die Tunica externa ist die <strong>äußere Bindegewebsschicht</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Kapillargefäße</div></div>
+  <p class="lekt-prose"><strong>Kapillaren</strong> sind viel einfacher aufgebaut: Sie bestehen <strong>nur aus einem dünnen Endothel</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">📌 Besonderheit</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Kapillaren besitzen <strong>keinen dreischichtigen Wandaufbau</strong> wie größere Blutgefäße.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Kapillaren bestehen <strong>nur aus einer sehr dünnen Endothelschicht</strong>.</div>
+</div>
+
+</div></div>`,
+
+    'Blutgerinnung und Hämostase': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#7f1d1d,#dc2626,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(239,68,68,.2);border:1px solid rgba(239,68,68,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Thrombose · Lektion 4</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Blutgerinnung und Hämostase</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wie der Körper Blutungen stoppt und Gefäßschäden verschließt</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Aufgaben des Blutgerinnungssystems</div></div>
+  <p class="lekt-prose">Das <strong>Blutgerinnungssystem</strong> sorgt bei einem Gefäßschaden für: <strong>Abdichtung der Gefäßwand</strong>, <strong>Stoppen der Blutung</strong>, <strong>Einleitung der Wundheilung</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">💡 Beteiligte Strukturen</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Hauptsächlich beteiligt: <strong>geschädigte Gefäßwand</strong>, <strong>Thrombozyten</strong>, <strong>Gerinnungsfaktoren</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Ziel der Hämostase ist die schnelle <strong>Abdichtung eines Gefäßschadens</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Die zwei Phasen</div></div>
+  <p class="lekt-prose">Die Hämostase läuft immer in <strong>zwei Schritten</strong> ab:</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(96,165,250,.08);border-left:3px solid #60a5fa;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#60a5fa;font-size:.88rem">1️⃣ Primäre Hämostase (Blutstillung)</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">→ Bildung des <strong>weißen Thrombus</strong></div>
+    </div>
+    <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.88rem">2️⃣ Sekundäre Hämostase (Blutgerinnung)</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">→ Stabilisierung durch <strong>Fibrin</strong> → <strong>roter Thrombus</strong></div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die sekundäre Hämostase baut auf der primären auf.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Primäre Hämostase</div></div>
+  <p class="lekt-prose">Beginnt nach einem <strong>Gefäßwandschaden</strong>. Beteiligt: <strong>Gefäßwand und Thrombozyten</strong>. Ziel: Bildung eines <strong>Thrombozytenpfropfes (weißer Thrombus)</strong> zur vorübergehenden Verschließung.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die primäre Hämostase dient der <strong>schnellen Blutstillung</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Schritt 1: Vasokonstriktion</div></div>
+  <p class="lekt-prose">Das verletzte Blutgefäß <strong>verengt sich</strong>. Die Strömungsgeschwindigkeit nimmt ab.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🔬 Erster Schutzmechanismus</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Durch die Gefäßverengung wird der <strong>Blutverlust reduziert</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Vasokonstriktion = <strong>Gefäßverengung</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Schritt 2: Thrombozytenadhäsion</div></div>
+  <p class="lekt-prose">Die geschädigte Gefäßwand setzt den <strong>von-Willebrand-Faktor (vWF)</strong> frei. Dieser verbindet die freigelegten <strong>Kollagenfasern</strong> mit den Thrombozyten — sie heften sich an die Wunde an.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🧩 Rolle des vWF</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Bildet die <strong>Verbindung zwischen Gefäßwand und Thrombozyten</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Adhäsion = Anheftung</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Schritt 3: Thrombozytenaggregation</div></div>
+  <p class="lekt-prose">Die Thrombozyten werden aktiviert und vernetzen sich über <strong>Fibrinogen</strong>. Es entsteht der <strong>weiße Thrombus</strong> (Thrombozytenpfropf).</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🩸 Weißer Thrombus</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Verschließt den Gefäßschaden <strong>vorübergehend</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Aggregation = Zusammenlagerung</strong> der Thrombozyten.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Sekundäre Hämostase</div></div>
+  <p class="lekt-prose">Der weiße Thrombus wird durch ein <strong>Fibrinnetz stabilisiert</strong>. Es entsteht der <strong>Fibrinthrombus (roter Thrombus)</strong> — er verschließt den Gefäßschaden bis zur Neubildung von Gewebe.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🔒 Dauerhafte Stabilisierung</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Erst durch das <strong>Fibrinnetz</strong> wird der Verschluss ausreichend stabil.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Weißer Thrombus → roter Thrombus</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Gerinnungsfaktoren & Kaskade</div></div>
+  <p class="lekt-prose">Für die Fibrinbildung läuft die <strong>Gerinnungskaskade</strong> ab. Wichtige Faktoren:</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">⚙️ Schlüsselfaktoren</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Fibrinogen</strong> (Faktor I)</li>
+      <li><strong>Fibrin</strong> (Faktor Ia)</li>
+      <li><strong>Thrombin</strong> (Faktor IIa)</li>
+    </ul>
+    <div style="font-size:.78rem;color:var(--ink2);margin-top:8px;line-height:1.5"><strong>Thrombin</strong> wandelt <strong>Fibrinogen → Fibrin</strong> um. Fibrin bildet das stabilisierende Netz.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Thrombin wandelt Fibrinogen in Fibrin um</strong>.</div>
+</div>
+
+</div></div>`,
+
+    'Virchow-Trias': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#7f1d1d,#dc2626,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(239,68,68,.2);border:1px solid rgba(239,68,68,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Thrombose · Lektion 5</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Virchow-Trias</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Die drei Hauptursachen der Thromboseentstehung</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Rudolf Virchow</div></div>
+  <p class="lekt-prose">Der deutsche Arzt <strong>Rudolf Virchow</strong> beschrieb im Jahr <strong>1846</strong> drei wesentliche Ursachen für die Entstehung einer Thrombose — die <strong>Virchow-Trias</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">📚 Definition</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Die Virchow-Trias fasst die <strong>drei wichtigsten Faktoren</strong> der Thromboseentstehung zusammen.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Die <strong>Virchow-Trias</strong> beschreibt die Hauptursachen einer Thrombose.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Die drei Faktoren im Überblick</div></div>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+    <div style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#ef4444;font-size:.88rem">1️⃣ Wandfaktor</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Schädigung der <strong>Gefäßwand</strong></div>
+    </div>
+    <div style="background:rgba(251,113,133,.08);border-left:3px solid #fb7185;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#fb7185;font-size:.88rem">2️⃣ Blutfaktor</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Veränderung der <strong>Blutzusammensetzung</strong></div>
+    </div>
+    <div style="background:rgba(167,139,250,.08);border-left:3px solid #a78bfa;border-radius:8px;padding:12px">
+      <div style="font-weight:700;color:#a78bfa;font-size:.88rem">3️⃣ Kreislauffaktor</div>
+      <div style="font-size:.78rem;color:var(--ink2);margin-top:4px;line-height:1.5">Verlangsamung des <strong>Blutflusses</strong></div>
+    </div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Wand + Blut + Kreislauf</strong> = Virchow-Trias.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Wandfaktor — Schädigung der Gefäßwand</div></div>
+  <p class="lekt-prose">Der erste Bestandteil der Virchow-Trias ist die <strong>Schädigung der Gefäßwand</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">🩸 Wandfaktor</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Eine Schädigung der Gefäßwand kann die <strong>Entstehung eines Thrombus begünstigen</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Schädigung der Gefäßwand = <strong>Wandfaktor</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Blutfaktor — Veränderung der Blutzusammensetzung</div></div>
+  <p class="lekt-prose">Der zweite Bestandteil ist die <strong>Veränderung der Blutzusammensetzung</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🧪 Blutfaktor</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Veränderungen im Blut können die <strong>Bildung eines Thrombus fördern</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Veränderung der Blutzusammensetzung = <strong>Blutfaktor</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Kreislauffaktor — Verlangsamung des Blutflusses</div></div>
+  <p class="lekt-prose">Der dritte Bestandteil ist die <strong>Verlangsamung des Blutflusses</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">❤️ Kreislauffaktor</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Ein verlangsamter Blutfluss kann die Entstehung einer Thrombose begünstigen.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Verlangsamung des Blutflusses = <strong>Kreislauffaktor</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Zusammenfassung</div></div>
+  <p class="lekt-prose">Die Virchow-Trias beschreibt die <strong>drei Hauptursachen</strong> einer Thrombose:</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">✅ Die drei Faktoren</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Schädigung der Gefäßwand (<strong>Wandfaktor</strong>)</li>
+      <li>Veränderung der Blutzusammensetzung (<strong>Blutfaktor</strong>)</li>
+      <li>Verlangsamung des Blutflusses (<strong>Kreislauffaktor</strong>)</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> <strong>Wandfaktor + Blutfaktor + Kreislauffaktor = Virchow-Trias</strong>.</div>
+</div>
+
+</div></div>`,
+
+    'Risikofaktoren der Thrombose': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#7f1d1d,#dc2626,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(239,68,68,.2);border:1px solid rgba(239,68,68,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Thrombose · Lektion 6</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Risikofaktoren der Thrombose</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Personengruppen mit erhöhtem Thromboserisiko</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Was sind Risikofaktoren?</div></div>
+  <p class="lekt-prose"><strong>Risikofaktoren</strong> sind Merkmale oder Situationen, die die Entstehung einer Thrombose begünstigen können.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">📌 Wichtig</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Mehrere Personengruppen weisen ein <strong>erhöhtes Risiko</strong> auf.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Nicht alle Menschen haben das gleiche Thromboserisiko.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Knie- und Hüftendoprothesen</div></div>
+  <p class="lekt-prose">Patienten mit frischen <strong>Knie- oder Hüftendoprothesen</strong> haben ein deutlich erhöhtes Risiko für eine TVT.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">📊 Risiko</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Etwa <strong>40–60 %</strong> entwickeln eine TVT.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Nach <strong>orthopädischen Eingriffen</strong> steigt das Thromboserisiko stark.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Hüftgelenksnahe Frakturen</div></div>
+  <p class="lekt-prose">Patienten mit <strong>hüftgelenksnahen Frakturen</strong> gehören ebenfalls zur Hochrisikogruppe.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">⚠️ Risikogruppe</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Im Dokument zusammen mit Endoprothesen als <strong>Hochrisikogruppe</strong> genannt.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Hüftnahe Frakturen erhöhen das TVT-Risiko.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Rückenmarksverletzungen</div></div>
+  <p class="lekt-prose">Besonders gefährdet: Pflegeempfänger mit einer <strong>Rückenmarksverletzung</strong>.</p>
+  <div class="lekt-card" style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3)">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Sehr hohes Risiko</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">TVT-Anteil von <strong>60–80 %</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Rückenmarksverletzungen gehören zu den <strong>wichtigsten Risikofaktoren</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Schwangerschaft</div></div>
+  <p class="lekt-prose">Etwa <strong>zwei Drittel der Schwangeren</strong> weisen Thromboserisikofaktoren auf.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🤰 Ursachen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li>Veränderungen des <strong>Hormonhaushalts</strong></li>
+      <li>Nachlassende <strong>Elastizität der Venenwände</strong></li>
+      <li><strong>Erweiterte Blutgefäße</strong></li>
+      <li>Erhöhter Druck auf die Venen im Bauchraum</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Schwangerschaft <strong>erhöht das Risiko</strong>, bedeutet aber nicht automatisch Thrombose.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Eingeschränkte Mobilität</div></div>
+  <p class="lekt-prose"><strong>Bewegungsmangel und Immobilität</strong> verlangsamen die Blutströmungsgeschwindigkeit → erhöhte Thrombosegefahr.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🚶 Frühmobilisation</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Je früher die Mobilisation beginnt, desto eher kann das <strong>Thromboserisiko gesenkt</strong> werden.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Immobilität fördert</strong> die Entstehung einer Thrombose.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Zusammenfassung</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">📋 Risikofaktoren im Überblick</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Knieendoprothesen</strong></li>
+      <li><strong>Hüftendoprothesen</strong></li>
+      <li><strong>Hüftgelenksnahe Frakturen</strong></li>
+      <li><strong>Rückenmarksverletzungen</strong></li>
+      <li><strong>Schwangerschaft</strong></li>
+      <li><strong>Immobilität & Bewegungsmangel</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Viele Risikofaktoren beeinflussen den <strong>Blutfluss</strong> oder die <strong>Mobilität</strong> des Patienten.</div>
+</div>
+
+</div></div>`,
+
+    'Symptome einer Thrombose': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#7f1d1d,#dc2626,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(239,68,68,.2);border:1px solid rgba(239,68,68,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Thrombose · Lektion 7</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Symptome einer Thrombose</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Typische Anzeichen einer TVT erkennen</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Warum sind Symptome wichtig?</div></div>
+  <p class="lekt-prose">Die <strong>frühzeitige Erkennung</strong> einer Thrombose ist wichtig, um rechtzeitig Maßnahmen einzuleiten.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#ef4444">📌 Beobachtung in der Pflege</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Veränderungen an den Beinen sollten immer <strong>aufmerksam beobachtet</strong> und <strong>dokumentiert</strong> werden.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Symptome können Hinweise auf eine bestehende Thrombose geben.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Ziehender Wadenschmerz</div></div>
+  <p class="lekt-prose">Typisches Symptom: <strong>ziehender Wadenschmerz</strong> — oft mit Muskelkater verwechselt. Verstärkt sich beim <strong>Aufrollen oder Abrollen des Fußes</strong>.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Wadenschmerzen können ein <strong>Warnzeichen</strong> sein.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Spannungs- und Schweregefühl</div></div>
+  <p class="lekt-prose">Betroffene berichten häufig über <strong>Spannungsgefühl</strong> oder <strong>Schweregefühl</strong> im betroffenen Bein.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#fb7185">🦵 Typische Beschwerde</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Das Bein fühlt sich <strong>schwerer oder gespannter</strong> an als gewöhnlich.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Spannungs- und Schweregefühl gehören zu den häufigen Symptomen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Schwellung des Beines</div></div>
+  <p class="lekt-prose">Eine Thrombose kann zu einer <strong>einseitigen Schwellung</strong> führen — die Beine können an gleicher Stelle unterschiedlich dick erscheinen.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Eine <strong>einseitige Beinschwellung</strong> sollte ernst genommen werden.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Überwärmung</div></div>
+  <p class="lekt-prose">Der betroffene Beinabschnitt kann <strong>überwärmt</strong> sein.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#f59e0b">🌡️ Beobachtung</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Die Haut fühlt sich <strong>wärmer</strong> an als die Gegenseite.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Überwärmung zählt zu den typischen lokalen Anzeichen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Veränderungen der Haut</div></div>
+  <p class="lekt-prose">Mögliche Hautveränderungen:</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">👀 Sichtbare Zeichen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Glattglänzende</strong> Haut</li>
+      <li><strong>Gespannte</strong> Haut</li>
+      <li><strong>Bläulich verfärbte</strong> Haut</li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Veränderungen der <strong>Hautfarbe oder -spannung</strong> sind wichtige Hinweise.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Sensibilitätsstörungen</div></div>
+  <p class="lekt-prose">Manche Betroffene berichten über <strong>Kribbeln</strong> oder <strong>Brennen</strong> im betroffenen Bein.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Auch Sensibilitätsstörungen können auftreten.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">08</div><div class="lekt-title">Allgemeine Symptome</div></div>
+  <p class="lekt-prose">Gelegentlich auch <strong>Temperaturanstieg</strong> oder <strong>Anstieg der Herzfrequenz</strong>.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Neben lokalen Beschwerden können auch <strong>allgemeine Symptome</strong> auftreten.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">09</div><div class="lekt-title">Die „lautlose Gefahr"</div></div>
+  <p class="lekt-prose">Eine Thrombose kann auch <strong>symptomlos</strong> verlaufen — deshalb die Bezeichnung <strong>„lautlose Gefahr"</strong>.</p>
+  <div class="lekt-card" style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3)">
+    <div class="lekt-card-label" style="color:#ef4444">⚠️ Achtung</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Das <strong>Fehlen von Beschwerden</strong> schließt eine Thrombose <strong>nicht aus</strong>.</div>
+  </div>
+  <div class="lekt-zusammen" style="background:rgba(239,68,68,.08);border-left:3px solid #ef4444"><strong>Merke:</strong> Nicht jede Thrombose verursacht erkennbare Symptome.</div>
+</div>
+
+</div></div>`,
+
+    'Maßnahmen der Thromboseprophylaxe': () => `
+<div class="lekt-layout"><div>
+
+<div style="background:linear-gradient(135deg,#7f1d1d,#dc2626,#0d1117);border-radius:16px;padding:32px 28px;margin-bottom:24px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:2">
+    <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(239,68,68,.2);border:1px solid rgba(239,68,68,.3);border-radius:20px;padding:4px 12px;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:rgba(254,202,202,.95)">🩸 Thrombose · Lektion 8</div>
+    <div style="font-family:'Fraunces',serif;font-size:clamp(1.4rem,3vw,2rem);color:white;line-height:1.2;margin-bottom:8px;margin-top:12px">Maßnahmen der Thromboseprophylaxe</div>
+    <div style="font-size:.85rem;color:rgba(255,255,255,.65)">Wie Pflegende das Thromboserisiko senken können</div>
+  </div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">01</div><div class="lekt-title">Ziele der Thromboseprophylaxe</div></div>
+  <p class="lekt-prose">Die Maßnahmen verfolgen drei Ziele: <strong>venösen Rückfluss fördern</strong>, <strong>Gefäßwände schützen</strong>, <strong>Blutgerinnsel verhindern</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🎯 Ziel</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Durch gezielte Maßnahmen soll die <strong>Bildung einer Thrombose verhindert</strong> werden.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Prophylaxe unterstützt den <strong>Blutfluss</strong> und reduziert Risikofaktoren.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">02</div><div class="lekt-title">Frühmobilisation</div></div>
+  <p class="lekt-prose">Die <strong>Frühmobilisation</strong> ist eine der wichtigsten Maßnahmen. Bewegung aktiviert die <strong>Muskel-Venen-Pumpe</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">🚶 Aktiv bleiben</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Jede sichere Bewegung unterstützt die <strong>Blutzirkulation in den Beinen</strong>.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Bewegung ist die wichtigste <strong>nicht-medikamentöse Maßnahme</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">03</div><div class="lekt-title">Bewegungsübungen</div></div>
+  <p class="lekt-prose"><strong>Bewegungsübungen</strong> fördern die Durchblutung — auch Bettlägerige können <strong>aktiv oder passiv</strong> bewegt werden.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#818cf8">🦵 Beispiele</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px"><strong>Fußkreisen</strong> · <strong>Fußwippen</strong> · andere Beinbewegungen aktivieren die Muskel-Venen-Pumpe.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Regelmäßige Bewegung verbessert den <strong>venösen Rückfluss</strong>.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">04</div><div class="lekt-title">Fußsohlendruck & Bettfahrrad</div></div>
+  <p class="lekt-prose">Der <strong>Fußsohlendruck</strong> und Übungen mit dem <strong>Bettfahrrad</strong> aktivieren die Beinmuskulatur.</p>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Auch <strong>kleine Bewegungen</strong> können die Muskel-Venen-Pumpe unterstützen.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">05</div><div class="lekt-title">Flüssigkeitszufuhr</div></div>
+  <p class="lekt-prose">Eine ausreichende <strong>Flüssigkeitszufuhr</strong> unterstützt die <strong>Fließeigenschaft des Blutes</strong>.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#60a5fa">💧 Flüssigkeit</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Die Trinkmenge muss immer an die <strong>individuelle Situation</strong> des Patienten angepasst werden.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Ausreichendes Trinken unterstützt die Prophylaxe.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">06</div><div class="lekt-title">Venenkompression</div></div>
+  <p class="lekt-prose">Die <strong>Venenkompression</strong> unterstützt den venösen Rückstrom aus den Beinen.</p>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#a78bfa">🧦 Kompression</div>
+    <div style="font-size:.8rem;color:var(--ink2);line-height:1.6;margin-top:8px">Kompressionsmaßnahmen gehören zu den <strong>physikalischen Methoden</strong> der Prophylaxe.</div>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> Kompression fördert den Rückfluss des venösen Blutes.</div>
+</div>
+
+<div class="lekt-sec">
+  <div class="lekt-sec-label"><div class="lekt-num">07</div><div class="lekt-title">Zusammenfassung</div></div>
+  <div class="lekt-card">
+    <div class="lekt-card-label" style="color:#22c55e">📋 Wichtige Maßnahmen</div>
+    <ul style="margin:8px 0 0 18px;color:var(--ink2);font-size:.82rem;line-height:1.7">
+      <li><strong>Frühmobilisation</strong></li>
+      <li><strong>Bewegungsübungen</strong></li>
+      <li><strong>Fußsohlendruck</strong></li>
+      <li><strong>Bettfahrrad</strong></li>
+      <li><strong>Flüssigkeitszufuhr</strong></li>
+      <li><strong>Venenkompression</strong></li>
+    </ul>
+  </div>
+  <div class="lekt-zusammen"><strong>Merke:</strong> <strong>Bewegung</strong> und <strong>Förderung des venösen Rückflusses</strong> stehen im Mittelpunkt.</div>
+</div>
+
+</div></div>`,
+
+  },
+
 }; // end LESSON_CONTENT

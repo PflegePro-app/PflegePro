@@ -19,6 +19,8 @@
   --purple: #c084fc;
   --purple-dim: rgba(192,132,252,0.12);
   --indigo: #818cf8;
+  --red: #ef4444;
+  --red-bg: rgba(239,68,68,0.12);
   --indigo-dim: rgba(129,140,248,0.12);
   --ink: #e6edf3;
   --ink2: #8b949e;
@@ -47,6 +49,8 @@
   --purple: #7c3aed;
   --purple-dim: rgba(124,58,237,0.08);
   --indigo: #4f46e5;
+  --red: #dc2626;
+  --red-bg: rgba(220,38,38,0.08);
   --indigo-dim: rgba(79,70,229,0.08);
   --ink: #111827;
   --ink2: #4b5563;
